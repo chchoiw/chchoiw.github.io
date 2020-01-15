@@ -1,3 +1,12 @@
+---
+title: 'Run WRF(NMM)'
+date: 2017-07-26
+permalink: /posts/2017/07/run_wrf_nmm/
+tags:
+  - WRF
+  - NMM
+  - RUN
+---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 

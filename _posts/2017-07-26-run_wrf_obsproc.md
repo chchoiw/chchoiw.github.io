@@ -1,4 +1,14 @@
 
+---
+title: 'Run WRF obsproc'
+date: 2017-07-26
+permalink: /posts/2017/07/run_wrf_obsproc/
+tags:
+  - WRF
+  - RUN
+  - obsproc
+---
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->

@@ -1,3 +1,12 @@
+---
+title: 'Temperature and specific humidity'
+date: 2017-07-26
+permalink: /posts/2017/07/temp_sp/
+tags:
+  - Temperature
+  - Specific humidity
+---
+
 This is mainly talking about the relation between temperature, relative humidity and specific humidity.
 
 
