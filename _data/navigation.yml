@@ -17,8 +17,10 @@ main:
     
   # - title: "Portfolio"
   #   url: /portfolio/
-        
-  - title: "Blogs"
+  - title: "Blogs(Date)"
+    url: /year-archive/
+    # url: /categories/        
+  - title: "Blogs(Category)"
     # url: /year-archive/
     url: /categories/
     
