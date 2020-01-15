@@ -6,6 +6,8 @@ permalink: /posts/2017/07/lap_radar_ingest/
 tags:
   - LAPS
   - RADAR
+category:
+  - Numerical weather model
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->

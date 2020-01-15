@@ -5,6 +5,8 @@ permalink: /posts/2017/07/install_wrfda3_8_1/
 tags:
   - WRF
   - WRFDA
+category:
+  - Numerical weather model
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
