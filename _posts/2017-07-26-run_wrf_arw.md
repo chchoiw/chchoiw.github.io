@@ -12,20 +12,20 @@ tags:
 
 <!-- code_chunk_output -->
 
-* [1.  Run real.exe](#1-run-realexe)
-	* [a.  Link needed files to my working directory:](#a-link-needed-files-to-my-working-directory)
-		* [i. export my working directory](#i-export-my-working-directory)
-		* [ii. link neededs files](#ii-link-neededs-files)
-	* [b. vim namelist.input](#b-vim-namelistinput)
-	* [c . Run geogrid.exe](#c-run-geogridexe)
-	* [d.  output](#d-output)
-* [2.  Run wrf.exe](#2-run-wrfexe)
-	* [a.  for core dump:](#a-for-core-dump)
-		* [i set unlimited ram](#i-set-unlimited-ram)
-		* [ii vim namelist.input](#ii-vim-namelistinput)
-		* [iii. reinstall wrf by vim configure.wrf](#iii-reinstall-wrf-by-vim-configurewrf)
-	* [b.  disable cuda](#b-disable-cuda)
-	* [c.  Output:](#c-output)
+- [1.  Run real.exe](#1-run-realexe)
+  - [a.  Link needed files to my working directory:](#a-link-needed-files-to-my-working-directory)
+    - [i. export my working directory](#i-export-my-working-directory)
+    - [ii. link neededs files](#ii-link-neededs-files)
+  - [b. vim namelist.input](#b-vim-namelistinput)
+  - [c . Run geogrid.exe](#c-run-geogridexe)
+  - [d.  output](#d-output)
+- [2.  Run wrf.exe](#2-run-wrfexe)
+  - [a.  for core dump:](#a-for-core-dump)
+    - [i set unlimited ram](#i-set-unlimited-ram)
+    - [ii vim namelist.input](#ii-vim-namelistinput)
+    - [iii. reinstall wrf by vim configure.wrf](#iii-reinstall-wrf-by-vim-configurewrf)
+  - [b.  disable cuda](#b-disable-cuda)
+  - [c.  Output:](#c-output)
 
 <!-- /code_chunk_output -->
 

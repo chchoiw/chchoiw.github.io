@@ -135,7 +135,7 @@ This tag should denote <ins>inserted</ins> text.
 
 ### Keyboard Tag
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>gg` tag.
 
 ### Preformatted Tag
 

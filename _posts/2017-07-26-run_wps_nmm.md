@@ -15,14 +15,14 @@ tags:
 - [run geogrid.exe](#run-geogridexe)
     - [My working directory:](#my-working-directory)
     - [vim namelist.wps with geogrid and metgrid parts respectively.](#vim-namelistwps-with-geogrid-and-metgrid-parts-respectively)
-    - [Run geogrid.exe](#run-geogridexe)
+    - [Run geogrid.exe](#run-geogridexe-1)
     - [output](#output)
 - [Run ungrib.exe](#run-ungribexe)
     - [Locations:](#locations)
     - [link NAM grib files and ungrib Vtable (for nmm)](#link-nam-grib-files-and-ungrib-vtable-for-nmm)
-    - [Output:](#output)
-- [Run metgrid.exe](#run-metgridexe)
     - [Output:](#output-1)
+- [Run metgrid.exe](#run-metgridexe)
+    - [Output:](#output-2)
 
 <!-- /code_chunk_output -->
 
