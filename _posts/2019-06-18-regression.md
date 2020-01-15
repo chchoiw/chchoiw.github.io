@@ -217,7 +217,7 @@ $$R^2_{\text{adj}}=1-\frac{Q/\text{df}Q}{T/\text{df}T}$$
 
 ## 方差膨脹因子
 - 容忍度：$1-R_i=\frac{Q}{T}$表示以其它自變數來預測第$i$個自變數之決定係數。
-- 當容忍度愈小時表示$R_i$愈大 ，即其他$\{ x_j \vert j\neq i \} $能解釋$x_i$的能力愈大。
+- 當容忍度愈小時表示$R_i$愈大 ，即其他$\left\{ x_j \vert j\neq i \right\} $能解釋$x_i$的能力愈大。
 - 方差膨脹因子$\text{VIF}=\frac{1}{1-R_i}$，與$R_i$成正比。$\text{VIF}>10$時，為顯著共線性。
 
 
