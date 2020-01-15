@@ -1,4 +1,3 @@
-
 ---
 title: 'Radar ingest into LAPS'
 date: 2017-07-26
@@ -6,8 +5,6 @@ permalink: /posts/2017/07/lap_radar_ingest/
 tags:
   - LAPS
   - RADAR
-category:
-  - Numerical weather model
 category:
   - Numerical weather model
 ---

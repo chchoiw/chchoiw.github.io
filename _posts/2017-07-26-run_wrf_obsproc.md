@@ -1,4 +1,3 @@
-
 ---
 title: 'Run WRF obsproc'
 date: 2017-07-26
@@ -15,21 +14,21 @@ category:
 
 <!-- code_chunk_output -->
 
-* [install madis-4.3 and MADIS2LITTLER](#install-madis-43-and-madis2littler)
-		* [prerequisite: export PATH](#prerequisite-export-path)
-	* [1. install madis-4.3, needed netcdf3](#1-install-madis-43-needed-netcdf3)
-		* [a. vim $madis-4.3/src/makefile](#a-vim-madis-43srcmakefile)
-	* [2. install MADIS2LITTLER](#2-install-madis2littler)
-		* [a. vim compile.ksh](#a-vim-compileksh)
-		* [b. compile](#b-compile)
-	* [3. run MADIS2LITTLER](#3-run-madis2littler)
-		* [a. vim run_madis_to_little_r.ksh](#a-vim-run_madis_to_little_rksh)
-		* [b.  running madis_to_little_r.ksh](#b-running-madis_to_little_rksh)
-	* [4. combine three files together](#4-combine-three-files-together)
-	* [5. running obsproc.exe](#5-running-obsprocexe)
-		* [a.  copy and link files](#a-copy-and-link-files)
-		* [b. vi namelist.obsproc](#b-vi-namelistobsproc)
-		* [c. Run obsproc.exe](#c-run-obsprocexe)
+- [install madis-4.3 and MADIS2LITTLER](#install-madis-43-and-madis2littler)
+  - [prerequisite: export PATH](#prerequisite-export-path)
+  - [1. install madis-4.3, needed netcdf3](#1-install-madis-43-needed-netcdf3)
+  - [a. vim $madis-4.3/src/makefile](#a-vim-madis-43srcmakefile)
+  - [2. install MADIS2LITTLER](#2-install-madis2littler)
+  - [a. vim compile.ksh](#a-vim-compileksh)
+  - [b. compile](#b-compile)
+  - [3. run MADIS2LITTLER](#3-run-madis2littler)
+  - [a. vim run_madis_to_little_r.ksh](#a-vim-run_madis_to_little_rksh)
+  - [b.  running madis_to_little_r.ksh](#b-running-madis_to_little_rksh)
+  - [4. combine three files together](#4-combine-three-files-together)
+  - [5. running obsproc.exe](#5-running-obsprocexe)
+  - [a.  copy and link files](#a-copy-and-link-files)
+  - [b. vi namelist.obsproc](#b-vi-namelistobsproc)
+  - [c. Run obsproc.exe](#c-run-obsprocexe)
 
 <!-- /code_chunk_output -->
 

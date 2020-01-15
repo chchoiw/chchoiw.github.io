@@ -13,10 +13,10 @@ category:
 
 <!-- code_chunk_output -->
 
-* [little_r](#little_r)
-	* [head recorder](#head-recorder)
-	* [data record](#data-record)
-	* [ending record](#ending-record)
+- [little_r](#little_r)
+  - [head recorder](#head-recorder)
+  - [data record](#data-record)
+  - [ending record](#ending-record)
 
 <!-- /code_chunk_output -->
 

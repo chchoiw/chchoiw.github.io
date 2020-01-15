@@ -36,10 +36,10 @@ For NMM, I only tried the official test data.
 
 
 
-## run geogrid.exe
+# run geogrid.exe
 
 
-####  My working directory:
+##  My working directory:
 
 ```bash
 export WKDIR=/home/chchoi/domains/boston/
@@ -51,7 +51,7 @@ cp ~/WPS/metgrid/METGRID.TBL.NMM ~/WPS/metgrid/METGRID.TBL
 ```
 
 
-#### vim namelist.wps with geogrid and metgrid parts respectively.
+## vim namelist.wps with geogrid and metgrid parts respectively.
 
 ```bash
 opt_geogrid_tbl_path = '/home/chchoi/WPS/geogrid/'
@@ -61,7 +61,7 @@ opt_metgrid_tbl_path = '/home/chchoi/WPS/metgrid/'
 > Remark: METGRIDTBL is for running metgrid.exe section
 
 
-####  Run geogrid.exe
+##  Run geogrid.exe
 
 ```bash
 ./geogrid.exe
@@ -72,13 +72,13 @@ or
 mpirun -np 4 geogrid.exe
 ```
 
-####  output
+##  output
 
 ```bash
 geo_em.d01.nc, geo_em.d02.nc
 ```
 
-##  Run ungrib.exe
+#  Run ungrib.exe
 
 
 
@@ -87,11 +87,11 @@ geo_em.d01.nc, geo_em.d02.nc
 
 
 
-####  Locations:
+##  Locations:
 The locations I put NAM files is ~/NAM and I installed WPS at ~/WPS. Just revised for your own location.
 
 
-#### link NAM grib files and ungrib Vtable (for nmm) 
+## link NAM grib files and ungrib Vtable (for nmm) 
 link NAM grib files and ungrib Vtable (for nmm) to $WRKDIR. Then run ungrib.exe
 
 ```bash
@@ -102,19 +102,19 @@ link NAM grib files and ungrib Vtable (for nmm) to $WRKDIR. Then run ungrib.exe
 
 
 
-####  Output:
+##  Output:
 
 geo_em.d01.nc, geo_em.d02.nc
 
 
-## Run metgrid.exe
+# Run metgrid.exe
 
 ```bash
  cp ~/WPS/metgrid/METGRID.TBL.NMM ~/WPS/metgrid/METGRID.TBL
  ./metgrid.exe
 ```
 
-#### Output:
+## Output:
 
 met_em.d01.2017-05-21_00:00:00.nc
 

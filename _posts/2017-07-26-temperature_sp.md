@@ -5,6 +5,8 @@ permalink: /posts/2017/07/temp_sp/
 tags:
   - Temperature
   - Specific humidity
+category:
+  - Numerical weather models
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
