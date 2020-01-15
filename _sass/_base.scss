@@ -241,6 +241,7 @@ figcaption {
     border-bottom: 1px solid $light-gray;
     -webkit-transition: $global-transition;
     transition: $global-transition;
+     color:#007bff;
 
     &:hover {
       color: #000;
@@ -309,7 +310,4 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   transition: $global-transition;
 }
 
-html body a,
-a :hover{color:green;}
-html body a,
-a {color:#007bff;}
+
