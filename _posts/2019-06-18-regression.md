@@ -8,6 +8,7 @@ category:
   - Statistic
 ---
 
+
 # 一元簡單線性迴歸
 令 
 $$
