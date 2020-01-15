@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Lantao Yu"
 title_separator          : "-"
-name                     : &name "Lantao Yu"
-description              : &description "Ph.D. student, Computer Science Department, Stanford University"
+name                     : &name "Elsa CHOI"
+description              : &description #"Ph.D. student, Computer Science Department, Stanford University"
 url                      : https://chchoiw.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "chchoiw/chchoiw.github.io"
@@ -77,10 +77,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lantao Yu"
-  avatar           : "lantaoyu.jpg"
-  bio              : "Ph.D. student, Computer Science Department, Stanford University"
-  location         : "Stanford, California"
+  name             : "Elsa CHOI"
+  avatar           : #"lantaoyu.jpg"
+  bio              : #"Ph.D. student, Computer Science Department, Stanford University"
+  location         : #"Stanford, California"
   employer         : 
   googlescholar    : #"https://scholar.google.com/citations?user=Ixg9n-EAAAAJ&hl=en"
   email            : #"lantaoyu@cs.stanford.edu"
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         : 
   foursquare       :
-  github           : "LantaoYu"
+  github           : "chchoiw"
   google_plus      :
   keybase          :
   instagram        : 
