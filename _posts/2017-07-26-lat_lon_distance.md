@@ -1,3 +1,14 @@
+---
+title: 'Lat Lon distance'
+date: 2017-07-26
+permalink: /posts/2017/07/lat_lon_distance/
+tags:
+  - lat
+  - lon
+---
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
 
 Let
 $$ \text{lat} =\phi $$ $$ \text{lon}=\lambda $$ 

@@ -45,9 +45,9 @@ Using MADIS observations
 
 
 
-###  install madis-4.3 and MADIS2LITTLER
+#  install madis-4.3 and MADIS2LITTLER
 
-##### prerequisite: export PATH
+## prerequisite: export PATH
 
 ```bash
  export DAT_DIR=/home/chchoi/arw/wrfda_test
@@ -71,10 +71,10 @@ We mainly  transfer MADIS natural netcdf files to LITTLE_R format via MADIS2LITT
 
 
 
-#### 1. install madis-4.3, needed netcdf3
+## 1. install madis-4.3, needed netcdf3
 
 
-##### a. vim $madis-4.3/src/makefile
+## a. vim $madis-4.3/src/makefile
 ```bash
  NETCDF_INC=/home/chchoi/netcdf3/include/
  NETCDF_LIB=/home/chchoi/netcdf3/lib/libnetcdf.a
@@ -94,26 +94,26 @@ We mainly  transfer MADIS natural netcdf files to LITTLE_R format via MADIS2LITT
 
 
 
-#### 2. install MADIS2LITTLER
+## 2. install MADIS2LITTLER
 
 
-##### a. vim compile.ksh
+## a. vim compile.ksh
 
 ```bash
 MADIS_EXTERNAL=/home/chchoi/x64/madis/lib/
 NETCDF_LIB=/home/chchoi/x64/netcdf3/lib/
 ```
 
-##### b. compile
+## b. compile
 ```bash
 ./compile.ksh pgf90
 ```
 
 
-#### 3. run MADIS2LITTLER
+## 3. run MADIS2LITTLER
 
 
-#####  a. vim run_madis_to_little_r.ksh
+##  a. vim run_madis_to_little_r.ksh
 
 ```bash
  export MADIS_DATA=/home/chchoi/raw_data/madis 
@@ -149,7 +149,7 @@ NETCDF_LIB=/home/chchoi/x64/netcdf3/lib/
 
 
 
-##### b.  running madis_to_little_r.ksh
+## b.  running madis_to_little_r.ksh
 
 ```bash
 ./madis_to_little_r.ksh
@@ -161,7 +161,7 @@ NETCDF_LIB=/home/chchoi/x64/netcdf3/lib/
 
 
 
-#### 4. combine three files together
+## 4. combine three files together
 
 ```bash
 cat RAOB_LITTLE_R_2017-06-12_16 METAR_LITTLE_R_2017-06-12_16 SHIP_LITTLE_R_2017-06-12_16 >& obs.2017061216
@@ -185,7 +185,7 @@ cat RAOB_LITTLE_R_2017-06-12_16 METAR_LITTLE_R_2017-06-12_16 SHIP_LITTLE_R_2017-
 
 
 
-#### 5. running obsproc.exe
+## 5. running obsproc.exe
 
 
 
@@ -194,7 +194,7 @@ cat RAOB_LITTLE_R_2017-06-12_16 METAR_LITTLE_R_2017-06-12_16 SHIP_LITTLE_R_2017-
 
 
 
-##### a.  copy and link files
+## a.  copy and link files
 
 ```bash
  cp $WRFDA/var/obsproc/namelist.obsproc.3dvar.wrfvar-tut namelist.obsproc
@@ -209,9 +209,9 @@ cat RAOB_LITTLE_R_2017-06-12_16 METAR_LITTLE_R_2017-06-12_16 SHIP_LITTLE_R_2017-
 
 
 
-##### b. vi namelist.obsproc
+## b. vi namelist.obsproc
 
-```code
+```
 &record1
  obs_gts_filename = 'obs.2017061212'
  obs_err_filename = 'obserr.txt',
@@ -292,7 +292,7 @@ cat RAOB_LITTLE_R_2017-06-12_16 METAR_LITTLE_R_2017-06-12_16 SHIP_LITTLE_R_2017-
 
 
 
-##### c. Run obsproc.exe
+## c. Run obsproc.exe
 
 ```bash
 ./obsproc.exe

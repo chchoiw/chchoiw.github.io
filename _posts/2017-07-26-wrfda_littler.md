@@ -1,3 +1,11 @@
+---
+title: 'WRFDA little r'
+date: 2017-07-26
+permalink: /posts/2017/07/wrfda_littler/
+tags:
+  - WRFDA
+  - little r
+---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
@@ -10,7 +18,7 @@
 
 <!-- /code_chunk_output -->
 
-### little_r
+# little_r
 For WRFDA, we need to transfer observations to little_r format. What is [little_r](http://www2.mmm.ucar.edu/wrf/users/wrfda/OnlineTutorial/Help/littler.html)?
 
 
@@ -23,7 +31,7 @@ There are three parts of little_r code.
 
 
 
-#### head recorder
+## head recorder
 
 Basically, there are 44 fields, please see the following graph.
 
@@ -60,7 +68,7 @@ The fortran code of this format is
 
 
 
-#### data record
+## data record
 
 
 
@@ -113,7 +121,7 @@ The fortran code is
 
 
 
-#### ending record
+## ending record
 
 
 
