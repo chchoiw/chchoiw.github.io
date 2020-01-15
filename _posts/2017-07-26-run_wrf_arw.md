@@ -6,6 +6,8 @@ tags:
   - WRF
   - RUN
   - ARW
+category:
+  - Numerical weather model
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->

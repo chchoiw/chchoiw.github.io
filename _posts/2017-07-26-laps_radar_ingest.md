@@ -8,25 +8,27 @@ tags:
   - RADAR
 category:
   - Numerical weather model
+category:
+  - Numerical weather model
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-* [A. Revise $TEMPLATE/remap.nl](#a-revise-templateremapnl)
-* [B.  run remap_polar_netcdf.exe](#b-run-remap_polar_netcdfexe)
-	* [1. Run systime.pl](#1-run-systimepl)
-	* [2.  run remap_polar_netcdf.exe](#2-run-remap_polar_netcdfexe)
-	* [3.  check](#3-check)
-		* [a. log files:](#a-log-files)
-		* [b.  output files for running remap_polar_netcdf.exe](#b-output-files-for-running-remap_polar_netcdfexe)
-	* [4. run shced.pl which includes "mosaic_radar.x"](#4-run-shcedpl-which-includes-mosaic_radarx)
-		* [a. run sched.pl](#a-run-schedpl)
-		* [b. check](#b-check)
-	* [5. remark :](#5-remark)
-		* [a. run remap_polar_netcdf.exe again](#a-run-remap_polar_netcdfexe-again)
-		* [b.  v01 is not netcdf file](#b-v01-is-not-netcdf-file)
+- [A. Revise $TEMPLATE/remap.nl](#a-revise-templateremapnl)
+- [B.  run remap_polar_netcdf.exe](#b-run-remap_polar_netcdfexe)
+  - [1. Run systime.pl](#1-run-systimepl)
+  - [2.  run remap_polar_netcdf.exe](#2-run-remap_polar_netcdfexe)
+  - [3.  check](#3-check)
+    - [a. log files:](#a-log-files)
+    - [b.  output files for running remap_polar_netcdf.exe](#b-output-files-for-running-remap_polar_netcdfexe)
+  - [4. run shced.pl which includes "mosaic_radar.x"](#4-run-shcedpl-which-includes-mosaic_radarx)
+    - [a. run sched.pl](#a-run-schedpl)
+    - [b. check](#b-check)
+  - [5. remark :](#5-remark)
+    - [a. run remap_polar_netcdf.exe again](#a-run-remap_polar_netcdfexe-again)
+    - [b.  v01 is not netcdf file](#b-v01-is-not-netcdf-file)
 
 <!-- /code_chunk_output -->
 

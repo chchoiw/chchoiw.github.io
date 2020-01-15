@@ -13,16 +13,16 @@ category:
 
 <!-- code_chunk_output -->
 
-* [a. vim ~/.bashrc](#a-vim-~bashrc)
-* [b.  cd $WRFDA](#b-cd-wrfda)
-* [c.  vim your configure.wrf](#c-vim-your-configurewrf)
-* [d.  compile](#d-compile)
-* [e.  check](#e-check)
+- [a. vim ~/.bashrc](#a-vim-~bashrc)
+- [b.  cd $WRFDA](#b-cd-wrfda)
+- [c.  vim your configure.wrf](#c-vim-your-configurewrf)
+- [d.  compile](#d-compile)
+- [e.  check](#e-check)
 
 <!-- /code_chunk_output -->
 
 
-### a. vim ~/.bashrc
+# a. vim ~/.bashrc
 ```bash
 export BUFR=1
 export CRTM=1
@@ -31,7 +31,7 @@ export WRFDA=/home/chchoi/arw/WRFDA
 
 
 
-### b.  cd $WRFDA
+# b.  cd $WRFDA
 ```bash
 cd $WRFDA
 ./configure wrfda
@@ -40,12 +40,12 @@ cd $WRFDA
 
 
 
-### c.  vim your configure.wrf
+# c.  vim your configure.wrf
 
 if your lib path of hdf5 is $HDF5/lib64, please vim your configure.wrf
  /home/chchoi/hdf5/lib64 -lhdf5
 
-### d.  compile
+# d.  compile
 ```bash
 ./compile all_wrfvar >& compile.out &
 tail -f compile.out
@@ -53,7 +53,7 @@ tail -f compile.out
 
 
 
-### e.  check
+# e.  check
 ```bash
 ls $WRFDA/var/build/*.exe
 ls $WRFDA/var/obsproc.exe

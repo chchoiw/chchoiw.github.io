@@ -5,6 +5,8 @@ permalink: /posts/2017/07/lat_lon_distance/
 tags:
   - lat
   - lon
+category:
+  - Numerical weather model
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
