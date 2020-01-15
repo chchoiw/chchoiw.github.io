@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Lantao Yu"
+title                    : "Notes for my studying"
 title_separator          : "-"
 name                     : &name "Elsa CHOI"
 description              : &description #"Ph.D. student, Computer Science Department, Stanford University"
@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "Elsa CHOI"
-  avatar           : #"lantaoyu.jpg"
+  avatar           : "profile.png"
   bio              : #"Ph.D. student, Computer Science Department, Stanford University"
   location         : #"Stanford, California"
   employer         : 
