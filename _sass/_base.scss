@@ -289,14 +289,10 @@ nav {
     list-style: none;
   }
 
-  li a {
+  a {
     text-decoration: none;
     color:#007bff;
   }
-  li a:hover{
-    color:#0056b3;
-    text-decoration: underline;
-    },
 
   /* override white-space for nested lists */
   ul li,
