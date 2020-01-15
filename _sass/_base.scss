@@ -110,8 +110,10 @@ a {
   &:focus {
     @extend %tab-focus;
   }
-
-  &:hover,
+   
+   &:hover{
+   color:#007bff;
+   },
   &:active {
     outline: 0;
   }
@@ -241,7 +243,7 @@ figcaption {
     border-bottom: 1px solid $light-gray;
     -webkit-transition: $global-transition;
     transition: $global-transition;
-     color:#007bff;
+     
 
     &:hover {
       color: #000;
