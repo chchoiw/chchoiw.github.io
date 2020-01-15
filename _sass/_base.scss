@@ -109,6 +109,7 @@ blockquote {
 a {
   &:focus {
     @extend %tab-focus;
+    color:#007bff;
   }
    
    &:hover{
