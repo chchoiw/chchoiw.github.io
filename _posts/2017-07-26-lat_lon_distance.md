@@ -9,11 +9,17 @@ tags:
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
+<!-- code_chunk_output -->
+
+
+
+<!-- /code_chunk_output -->
+
 
 Let
 $$ \text{lat} =\phi $$ $$ \text{lon}=\lambda $$ 
 $$R = \text{the radiance of earth} $$
-
+![](/images/wrf_laps/sphere.png)
 Therefore, the length of equator be $ 2\pi R$, and the distance of 1 deg at equator is  $ \frac{\pi}{180}R$.
 
 Moreover, the the distance of  the circle of latitude at  $ \text{lat} =\phi$ is
