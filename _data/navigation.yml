@@ -19,7 +19,8 @@ main:
   #   url: /portfolio/
         
   - title: "Blogs"
-    url: /year-archive/
+    # url: /year-archive/
+    url: /tag-archive/
     
 #   - title: "Contact"
 #     url: /contact/  
