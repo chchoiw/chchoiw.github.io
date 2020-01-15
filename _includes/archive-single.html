@@ -36,9 +36,10 @@
     
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+      
     {% endif %}
     
-
+    {% include tag-list.html %}
 
     {% if post.citation and post.paperurl %}
       <p>{{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
