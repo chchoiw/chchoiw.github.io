@@ -242,12 +242,10 @@ $$R^2_{x_3|x_1,x_2}=\frac{\text{SSR}(x_3|x_1,x_2)}{\text{SSE}(x_1,x_2)} $$
 $$H^{(i)}_0:\beta_i=0 \quad (i=1,2,\cdots,m)$$
 在$H_0$下，
 
-$$
-\begin{align}
+$$\begin{align}
 F_i &=\frac{P_i}{Q/n-m-1} \sim F(1,n-m-1), \\
 T_i &=\frac{ \sqrt{P_i} }{\sqrt{Q/(n-m-1)}} \sim t(n-m-1)
-\end{align}
-$$
+\end{align}$$
 
 如果 $
 F >F_\alpha \quad \text{ or } \quad p=\{F>F_\alpha\} <\alpha
