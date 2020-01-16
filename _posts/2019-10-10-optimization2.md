@@ -23,7 +23,9 @@ category:
 
 # Optimization(Primal and Dual problem)
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
+
 ## Standard Support Vector Machine
+
 $$
 \begin{aligned}
 \min\limits_{w,\xi_A \xi_B} C(\mathbf 1^T\xi_A+ \mathbf 1^T\xi_B) & +\frac{1}{2}\Vert w\Vert^2_2 \\
@@ -101,7 +103,7 @@ $$
 
 where $\alpha, \beta\geq 0$
 - If $f(x),g(x)$ are convex and $h(x)$ is linear, then $\mathcal{L}$ is convex.
-- For fixed $\alpha \geq 0$, if $\bar x \in \argmin(\mathcal{L(x,\alpha,\beta)| x \in \R^n})$, then 
+- For fixed $\alpha \geq 0$, if $\bar x \in \argmin(\mathcal{L(x,\alpha,\beta) \vert x \in \mathbb R^n})$, then 
 
 $$
 \frac{\partial \mathcal L (x,\alpha,\beta)}{\partial x} \bigg\vert_{x=\bar x} =\nabla f(\bar x)+\bar \alpha^T \nabla g(\bar x)+\bar \beta^T \nabla h(\bar x) =0
@@ -180,7 +182,7 @@ Primal LP:
 
 $$
 \begin{aligned}
-&\min\limits_{x \in \R^n} p^Tx \\ 
+&\min\limits_{x \in \mathbb R^n} p^Tx \\ 
 \text{subject to } \quad  &Ax \geq b, x\geq 0
 \end{aligned}
 $$
@@ -189,7 +191,7 @@ Dual LP:
 
 $$
 \begin{aligned}
-&\max\limits_{\alpha \in \R^m} b^T\alpha \\ 
+&\max\limits_{\alpha \in \mathbb R^m} b^T\alpha \\ 
 \text{subject to } \quad  &A^T\alpha \leq p, \alpha \geq 0
 \end{aligned}
 $$
@@ -207,7 +209,7 @@ Hence,
 
 $$
 \begin{aligned}
-\theta(\alpha,\beta)&=\min_{x \in \R^n}\mathcal L (x,\alpha,\beta)=\alpha_1^Tb \\
+\theta(\alpha,\beta)&=\min_{x \in \mathbb R^n}\mathcal L (x,\alpha,\beta)=\alpha_1^Tb \\
 p-A^T\alpha_1-\alpha_2 &=0 \iff A^T\alpha_1 \leq p ,\alpha_1 \geq 0
 \end{aligned}
 $$
@@ -233,7 +235,7 @@ which is the dual form.
 
 ## Application of LP Duality
 LSQ: 
-For any matrix $A \in \R^{m\times n}$ and any vector $b\in \R^{m},$ consider
+For any matrix $A \in \mathbb R^{m\times n}$ and any vector $b\in \mathbb R^{m},$ consider
 
 $$
 \min \Vert Ax-b\Vert_2^2
@@ -253,7 +255,7 @@ Clearly, $\alpha=0$ is the solution of Dual problem which equal to minimum of pr
 Primal QP
 
 $$
-\min_{x\in \R^n} \frac{1}{2}x^TQx+p^Tx \quad \text{s.t.} \quad Ax \leq b
+\min_{x\in \mathbb R^n} \frac{1}{2}x^TQx+p^Tx \quad \text{s.t.} \quad Ax \leq b
 $$
 
 with strictly convex assumption, we have 

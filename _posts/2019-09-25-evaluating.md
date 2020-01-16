@@ -25,7 +25,9 @@ category:
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
 ## Error rate
 
-$$\text{Error rate }=\frac{\text{Number of misclassified point}}{\text{Total number of data point}}$$
+$$
+\text{Error rate }=\frac{\text{Number of misclassified point}}{\text{Total number of data point}}
+$$
 
 ## k-fold stratified cross validation
 
@@ -40,13 +42,17 @@ Similarly, spliting the data into $k$ equal partitions.
 
 ## Testing Hypothesis
 paired t-test
+
 $$
 H_0: \bar d=0 \quad v.s. \quad H_1: \bar d\neq 0
 $$
+
 where 
+
 $$
 \bar d=\frac{1}{k}\sum\limits_{i=1}^k d_i, \quad d_i=x_i-y_i
 $$
+
 Here $x_i$ refers the learning method 1 while $y_i$ refers the learning method 2.
 
 $$
@@ -54,6 +60,7 @@ t=\frac{\bar d}{ \sqrt\frac{\sigma_d^2}{k}}
 $$
 
 ## $2 \times 2$ confusion matrix
+
 $$
 C = 
 \begin{bmatrix} 
@@ -67,6 +74,7 @@ $$
 $$
 
 ## Cost martix
+
 $$
 C = 
 \begin{bmatrix} 
@@ -74,6 +82,7 @@ C =
 1(\text{False Pos}) & 0
 \end{bmatrix}
 $$
+
 Here 10 refers the weight when false negative occurs.
 
 ## ROC curve
@@ -81,9 +90,9 @@ Here 10 refers the weight when false negative occurs.
 1. calculate the probability of being positive class $p(y_i=1)$ for each $i$
 2. sort order from high to low ($p$)
 3. draw the ROC curve which the true positive rate as a function of the false positive rate.
-![](eveulating1.JPG)
+![](/images/machine_learning/eveulating1.JPG)
 
-![](eveulating2.JPG)
+![](/images/machine_learning/eveulating2.JPG)
 
 The above two graphs are captured from [link](https://youtu.be/V-oQ7Z8qzJw).
 
@@ -93,6 +102,7 @@ The above two graphs are captured from [link](https://youtu.be/V-oQ7Z8qzJw).
 $$
 \text{AUC}=\frac{\sum\limits_{i=1}^m \sum\limits_{j=1}^n  I_{\{f(x_i)>f{x_j}\}}}{m\times n}
 $$
+
 Here, 
 - $m$: number of positive instances
 - $n$: number of negative instances
@@ -179,6 +189,7 @@ roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
 
 ```
 - plot figure
+
 ```python
 plt.figure()
 lw = 2

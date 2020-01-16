@@ -12,6 +12,7 @@ category:
   - [E-step](#E-step)
   - [M-step](#M-step)
   - [EM and K-means](#EM-and-K-means)
+
 # Clustering
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
 
@@ -26,9 +27,11 @@ There are total $N$ points and $K$ clusters.
 - Each interation of the EM algorithm consistes of two processes
     * E-step: the missing data are estimated given the observed data and current esstimate of the model parameters.
     * M-step: the likelihood function is maximized under the assumption that the missing data are known.
+
 $$
 P^{(i)}(k|n)=\frac{P_k^{(i)}g(x_n,m_k^{(i)},\sigma_k^{(i)})}{\sum\limits_{k=1}^{K} P_j^{(i)}g(x_n,m_j^{(i)},\sigma_j^{(i)})}
 $$
+
 where $P_k=P(X=k)$
 
 

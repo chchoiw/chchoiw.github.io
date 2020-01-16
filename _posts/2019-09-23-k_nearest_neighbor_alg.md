@@ -16,8 +16,11 @@ category:
 
 1. define distance
     * if values are real number, 
+
     $$d(x,x_0)=\left\Vert (x-x_0)\right\Vert^2$$
-    * if values are ordinal, 
+
+    * if values are ordinal,
+
     $$d(x,x_0)=\sum_{i=1}^n \mathbb{1}(x_i \neq x_0) $$
 
 2. Given q query point $x_0$, find k-nearest neighbors and count which type is majority. 
@@ -25,6 +28,7 @@ category:
 3. Classify $x_0$ to the same class with the majority within k-nearest neighbors.
 
 4. Be careful with scale with different attributes. We might need to normalize
+5. 
 $$
 \hat x_j=\frac{x_j-\mu_j}{\sigma_j}
 $$
@@ -45,6 +49,7 @@ Until $Z$ does not change
 * The folling codes came from [website](https://stackabuse.com/k-nearest-neighbors-algorithm-in-python-and-scikit-learn/)
 
 - Importing the Dataset
+
 ```python 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -66,6 +71,7 @@ y = dataset.iloc[:, 4].values
 ```
 
 - Train Test Split
+
 ```python 
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
@@ -80,6 +86,7 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 - Training and Predictions
+
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors=5)

@@ -13,6 +13,7 @@ category:
 - [Stop in Finite steps](#Stop-in-Finite-steps)
 - [Perceptron Algorithm(Dual Form)](#Perceptron-AlgorithmDual-Form)
 - [Python Code](#Python-Code)
+
 # Perceptron Algorithm
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I will take the key points for my references.
 
@@ -20,6 +21,7 @@ category:
 # Binary Classification Problem
 
 Given a training dataset
+
 $$
 S=\{(x_i,y_i) | x_i \in \mathbb{R}^n,  y_i \in {-1,1,i=1,2,\dots,l} \}
 $$
@@ -34,6 +36,7 @@ $$
 Main Goal
 - Predit the unseen class label for new data
 - Find a function $f:\mathbb{R}_n \rightarrow \mathbb{R}$ by learning from data such that
+
 $$
 \begin{aligned}
 f(x) \geq 0  & \Longleftrightarrow x  \in A_{+} \\
@@ -42,6 +45,7 @@ f(x) \geq 0  & \Longleftrightarrow x  \in A_{-}
 $$
 
 Here the simplest function is linear 
+
 $$
 f(x)=w^{T}x+b
 $$
@@ -52,6 +56,7 @@ An on-line and mistake-driven produce
 Repeat
 for i =1 to l 
 if $y_i(\langle w_{k},x_i \rangle +b_k) \leq 0$, then 
+
 $$
 \begin{aligned}
 w_{k+1}  &\leftarrow  w_{k} +\eta y_ix_i\\
@@ -59,11 +64,13 @@ b_{k+1}  &\leftarrow  b_{k}  +\eta y_iR^2 \\
 k & \leftarrow k+1
 \end{aligned}
 $$
+
 end if
 Until no mistakes made within the for loop 
 return: $k,(w_k,b_k)$
 
 Remark:
+
 $$
 y_i(\langle w_{k+1},x_i \rangle +b_{k+1})=
 y_i(\langle w_{k},x_i \rangle +b_{k})+\eta(\langle x_{i},x_i \rangle +R^2)
@@ -72,10 +79,13 @@ $$
 # Stop in Finite steps
 Theorem(Novikoff)
 Let $S$ be a non-trival training set, and let
+
 $$
 R=\max\limits_{1\leq i \leq l} \Vert x_i\Vert
 $$
+
 Suppose that there exists a vector $\omega_{opt}$ such that $\Vert \omega_{opt} \Vert =1 $ and 
+
 $$
 y_i(\langle w_{opt},x_i \rangle +b_{opt}) \geq r \quad \text{for} \quad 1\leq i \leq l 
 $$
@@ -87,33 +97,41 @@ Remark:
 - the value of $\eta$ is irreverent.
 
 # Perceptron Algorithm(Dual Form)
+
 $$ 
 w_i=\sum\limits_{i=1}^l \alpha_i y_i x_i
 $$
+
 Given a linearly seperable training set $S$ and $\alpha=0$, $\alpha \in \mathbb{R}^l$, $b=0$ and $R=\max\limits_{1\leq i \leq l }\Vert x_i \Vert$
+
 $$
 y_i(\langle w_{k},x_i \rangle +b_{k})=y_i\left(\sum\limits_{i=1}^l \alpha_i y_i \langle w_i,x_i \rangle +b_k \right)
 $$
+
 Repeat
 for i= 1 to l 
 if $y_i\left(\sum\limits_{i=1}^l \alpha_i y_i \langle w_i,x_i \rangle +b_k \right) \leq 0$, then
+
 $$
 \begin{aligned}
 \alpha_{i}  &\leftarrow  \alpha_{i}+1\\
 b_{i}  &\leftarrow  b_{i}  + y_iR^2 \\
 \end{aligned}
 $$
+
 end if
 Until no mistakes made within the for loop 
 Reutrn :$(\alpha, b)$
 Remark:
 - The number of updates: 
-$$\sum\li
-
-mits_{i=1}^l \alpha_i=\Vert \alpha \Vert \leq \left( \frac{2R}{r} \right)^2
+- 
 $$
+\sum\limits_{i=1}^l \alpha_i=\Vert \alpha \Vert \leq \left( \frac{2R}{r} \right)^2
+$$
+
 which $\alpha_i >0$ means that $\langle x_i,y_i \rangle$ has been misclassified.
  - Training data only appear in the algorithm through the entries of the Gram matrix
+
 $$
 G_{ij}=\langle x_i, x_j \rangle
 $$
@@ -121,6 +139,7 @@ $$
 # Python Code
 The following code are from [website](https://towardsdatascience.com/an-introduction-to-perceptron-algorithm-40f2ab4e2099)
 - Import data
+
 ```python
 from sklearn import datasets
 import numpy as np
@@ -133,7 +152,9 @@ iris=datasets.load_iris()
 X = iris.data[0:99,:2]
 y = iris.target[0:99]
 ```
+
 - Plot figure
+
 ```python 
 # Plot figure
 plt.plot(X[:50, 0], X[:50, 1], 'bo', color='blue', label='0')
