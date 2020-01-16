@@ -20,6 +20,7 @@ category:
   - [Summary of LP Duality](#Summary-of-LP-Duality)
   - [Application of LP Duality](#Application-of-LP-Duality)
   - [Dual Problem of strictly Convex Quadratic Program](#Dual-Problem-of-strictly-Convex-Quadratic-Program)
+
 # Optimization(Primal and Dual problem)
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
 ## Standard Support Vector Machine
@@ -89,74 +90,99 @@ $$
 \end{aligned}
 $$
 ## Generalized Lagrangian Function
+
 $$
 \mathcal{L}(x,\alpha,\beta)=f(x)+\alpha^Tg(x)+\beta^Th(x)
 $$
+
 where $\alpha, \beta\geq 0$
 - If $f(x),g(x)$ are convex and $h(x)$ is linear, then $\mathcal{L}$ is convex.
 - For fixed $\alpha \geq 0$, if $\bar x \in \argmin(\mathcal{L(x,\alpha,\beta)| x \in \R^n})$, then 
+
 $$
 \frac{\partial \mathcal L (x,\alpha,\beta)}{\partial x} \bigg\vert_{x=\bar x} =\nabla f(\bar x)+\bar \alpha^T \nabla g(\bar x)+\bar \beta^T \nabla h(\bar x) =0
 $$
+
 - Above result is a sufficient condition if $\mathcal{L}(x,\alpha,\beta)$ is convex.
 
 ## Lagrangian Dual Problem
+
 $$
 \max_{\alpha, \beta}\min_{x \in \Omega} \mathcal{L}(x,\alpha,\beta) \quad \text{s.t.} \quad \alpha \geq 0 \iff \max_{\alpha, \beta} \theta(\alpha,\beta)\quad \text{s.t.} \quad \alpha \geq 0
 $$
+
 where 
+
 $$
 \theta(\alpha,\beta)=\inf_{x \in \Omega} \mathcal{L}(x,\alpha,\beta)
 $$
 
 ## Weak Duality Theorem
 Let $\bar x \in \Omega$ be a feasible solution of the primal problem and $(\alpha,\beta)$ a feasible solution of the dual problem. Then
+
+
 $$
 \begin{aligned}
 f(\bar x) &\geq \theta(\alpha, \beta) \\
 \text{where} \quad  \theta(\alpha, \beta)=\inf_{x \in \Omega} \mathcal{L}(x,\alpha,\beta) &\leq \mathcal{L}(\bar x,\alpha,\beta)
 \end{aligned}
 $$
+
 ## Corollary 1:
+
 $$
 \sup\{\theta(\alpha, \beta) |\alpha \geq 0\}\leq \inf\{f(x)|g(x) \leq 0, h(x)=0 \}
 $$
+
 ## Corollary 2:
 If $f(x^*)=\theta(\alpha^*, \beta^*)$ where $\alpha^* \geq 0$ and $g(x^*) \leq 0$, $h(x^*)=0$, then $x^*$ and $(\alpha^*, \beta^*)$ solve the primal and dual problem respectively.
 In this case,
+
 $$
 \alpha^* \bot g(x^*) \iff \alpha_i^* g_i(x^*)=0 \quad \forall i
 $$
->proof:
+
+proof:
+
 $$
 \mathcal{L}(x,\alpha,\beta)=f(x)+\alpha^Tg(x)+\beta^Th(x)
 $$
+
 If $\hat x$ satisfies $g(\hat x) \leq 0,\alpha\geq 0 \implies \alpha^Tg(\hat x) \leq 0$, then
+
 $$
 \theta(\alpha, \beta)=\inf_{x \in \Omega} \mathcal{L}(x,\alpha,\beta) \leq \mathcal{L}(\hat x,\alpha,\beta) \leq f(\hat x). \tag1
 $$
+
 The last inequality holds if and only if $$\alpha^Tg(\hat x) = 0 \tag2 $$.
 Hence, taking sup on the left side while the right side takes inf
+
 $$
 \sup\{\theta(\alpha, \beta) |\alpha \geq 0\}\leq \inf\{f(x)|g(x) \leq 0, h(x)=0 \}
 $$
+
 The above holds for corollary 1.
 If $x*,\alpha^*,\beta^*$ satisfiy $f(x^*)=\theta(\alpha^*,\beta^*)$, by corollary 1, $$f(x^*)=\theta(\alpha^*,\beta^*)=\max_{\alpha,\beta}\min_{x \in \Omega} \mathcal{L}(x,\alpha,\beta)$$ is the feasible solution.
 Therefore, (2) implies
+
 $$
 \alpha^* \bot g(x^*) \iff \alpha_i^* g_i(x^*)=0 \quad \forall i
 $$
+
 This proves corollary 2.
 
 ## Dual Problem of Linear Program
 Primal LP: 
+
 $$
 \begin{aligned}
 &\min\limits_{x \in \R^n} p^Tx \\ 
 \text{subject to } \quad  &Ax \geq b, x\geq 0
 \end{aligned}
 $$
+
 Dual LP: 
+
 $$
 \begin{aligned}
 &\max\limits_{\alpha \in \R^m} b^T\alpha \\ 
@@ -172,13 +198,16 @@ $$
 \\
 \end{aligned}
 $$
+
 Hence,
+
 $$
 \begin{aligned}
 \theta(\alpha,\beta)&=\min_{x \in \R^n}\mathcal L (x,\alpha,\beta)=\alpha_1^Tb \\
 p-A^T\alpha_1-\alpha_2 &=0 \iff A^T\alpha_1 \leq p ,\alpha_1 \geq 0
 \end{aligned}
 $$
+
 which is the dual form.
 
 ## Summary of LP Duality
@@ -201,6 +230,7 @@ which is the dual form.
 ## Application of LP Duality
 LSQ: 
 For any matrix $A \in \R^{m\times n}$ and any vector $b\in \R^{m},$ consider
+
 $$
 \min \Vert Ax-b\Vert_2^2
 $$
@@ -208,6 +238,7 @@ $$
 $$
 x^* \in \arg\min\{\Vert Ax-b\Vert_2^2\} \iff A^TAx=A^Tb
 $$
+
 Claim: $A^TAx=A^Tb$ always has a solution.
 Using LP Duality
 Primal: $\mathbf 0^Tx$ s.t. $A^TAx=A^Tb$ 
@@ -216,11 +247,14 @@ Clearly, $\alpha=0$ is the solution of Dual problem which equal to minimum of pr
 
 ## Dual Problem of strictly Convex Quadratic Program
 Primal QP
+
 $$
 \min_{x\in \R^n} \frac{1}{2}x^TQx+p^Tx \quad \text{s.t.} \quad Ax \leq b
 $$
+
 with strictly convex assumption, we have 
 Dual QP
+
 $$
 \max -\frac{1}{2}(p^T+\alpha^TA)Q^{-1}(A^T\alpha +p)-\alpha^Tb\quad \text{s.t.}\quad \alpha  \geq 0
 $$
