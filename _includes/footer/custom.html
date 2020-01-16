@@ -3,6 +3,7 @@
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
        MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
          data.math = data.math.replace(/^\s*<!\[CDATA\[\s*(.*)\s*\]\]> 
+         console.log(data.math)
 \s*$/m,"$1");
        });
      });
