@@ -2,13 +2,14 @@
      <script type="text/x-mathjax-config">
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
        MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
-         data.math = data.math.replace(%/^(\/\/\s*)?<!\[CDATA\[|(\/\/\s*)?\]\]>$/g, '');
-         data.math = data.math.replace("% <![CDATA[","");
-         
+         data.math = data.math.replace(/^(\/\/\s*)?<!\[CDATA\[|(\/\/\s*)?\]\]>$/g, '');
+
           console.log(data.math);
        });
      });
      console.log("run test");
+     <!-- data.math = data.math.replace("% <![CDATA[",""); -->
+     <!-- data.math = data.math.replace("% <![CDATA[",""); -->
      </script>
 <a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
