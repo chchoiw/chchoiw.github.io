@@ -16,6 +16,8 @@
        MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
          data.math = data.math.replace(/^(\/\/\s*)?<!\[CDATA\[|(\/\/\s*)?\]\]>$/g, '');
          data.math = data.math.replace("% <![CDATA[",""); 
+         data.math = data.math.replace("%]]>",""); 
+         
           console.log(data.math);
        });
      });
