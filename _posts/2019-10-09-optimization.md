@@ -32,6 +32,7 @@ category:
 - Backpropagation
 
 ## Least-square Problem
+
 $$
 \min\limits_{x\in \mathbb R^n}\Vert Ax-b\Vert_2^2
 $$
@@ -47,6 +48,7 @@ $$
 ## Quadratic Function(Standard Form)
 
 Let $f:\mathbb R^n \rightarrow \mathbb R$:
+
 $$
 f(x) =\frac{1}{2}x^THx+p^Tx
 $$
@@ -68,13 +70,17 @@ $$
     * Need to choose a good step size to guarantee global convergence.
 ## The First Order Tayor Expansion
 Let $f:\mathbb R^n \rightarrow \mathbb R$ be a differentiable function:
+
 $$
 f(x+d)=f(x)+ \nabla f(x)^Td+\alpha(x,d) \Vert  d\Vert
 $$
+
 where 
+
 $$
 \lim_{d \rightarrow 0}\alpha(x,d)  =0
 $$
+
 If $\nabla f(x)^Td<0$ and $d$ is small enough, then $f(x+d) < f(x)$. We call $d$ is descent direction.
 
 ## Newton's Method
@@ -82,6 +88,7 @@ If $\nabla f(x)^Td<0$ and $d$ is small enough, then $f(x+d) < f(x)$. We call $d$
 $$
 f(x+d)=\nabla f(x)^Td+d\frac{1}{2}d^T \nabla^2f(x)d+\beta(x,d) \Vert d\Vert
 $$
+
 where $\lim\limits_{d \rightarrow 0} \beta(x,d)=0.$
 
 Start with $x_0 \in \mathbb R^n$. Having $x_i$, stop if $\nabla f(x_i)=0$. Else compute $x_i$ as follows:
@@ -99,10 +106,12 @@ g_i(x) \leq 0 &\quad \forall  i \\
 h_j(x) = 0 &\quad \forall  j
 \end{aligned} 
 $$
+
 where $f(x)$ is called the objective function and $g(x) \leq 0$, $h(x)=0$ are called constrains.
 
 ## Definitions and Notations
 - Feasible region:
+
 $$
 \mathbf F= \{x \in \Omega | g(x) \leq 0, h(x)=0 \}
 $$
@@ -146,6 +155,7 @@ L \leq x &\leq U
 $$
 
 ## $L_1$- Approximation
+
 $$
 \begin{aligned}
 &\min\limits_{x \in \mathbb R^n} \Vert Ax-b \Vert_1 \\ 

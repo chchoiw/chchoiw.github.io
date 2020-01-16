@@ -55,6 +55,7 @@ b &\in \text{row spaces of }A \quad \text{and}\quad \alpha \geq 0  \\
 \end{aligned}
 $$
 On the other hand, (1) says that 
+
 $$
 \begin{aligned}
 b^Tx>0 &\implies x  \text{ is in the inside part of the hyperplane } H_b \text{ with normal vector }b \\
@@ -72,11 +73,13 @@ In other words, (2) says that $b \notin
 
 ## Minimization Problem v.s. Kuhn-Tucker Stationary-point Problem
 MP:
+
 $$
 \min\limits_{x\in \Omega}f(x) \quad \text{s.t.} \quad  g(x) \leq 0 \quad \text{and} \quad h(x)=0
 $$
 
 KTSP: Find
+
 $$
 \bar x \in \Omega , \bar \alpha \in \mathbb R^m,  \bar \beta_{+} \in \mathbb R^r,  \bar \beta_{-} \in \mathbb R^r  \quad \text{s.t.} 
 $$
@@ -89,6 +92,7 @@ $$
  \bar \alpha ,\beta_{+} ,\beta_{-} &\geq 0 
 \end{aligned}
 $$
+
 ## Generalized Lagrangian Function
 
 $$
