@@ -15,7 +15,8 @@
 
 ``` 
 - mathjax fix ```CDATA```
-add _inclue/footer/金山尸廿.html
+  [ref](https://groups.google.com/forum/#!topic/mathjax-users/AS6swTZzyWY)
+add _inclue/footer/custom.html
 ```javascript
      <script type="text/x-mathjax-config">
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
@@ -26,6 +27,26 @@ add _inclue/footer/金山尸廿.html
        });
      });
      </script>
+```
+
+- fix mermaid cannot render
+  [ref](https://github.com/mermaid-js/mermaid/issues/772)
+add _inclue/footer/custom.html
+```javascript
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+<script>
+var config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
+
 ```
 
 - update link color: _variable.scss ($link-color  )
