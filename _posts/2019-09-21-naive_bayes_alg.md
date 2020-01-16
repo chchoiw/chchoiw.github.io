@@ -1,10 +1,25 @@
+---
+title: 'Naive Bayes Algorithm'
+date: 2019-09-21
+permalink: /posts/2019/09/naive_bayes_alg/
+tags:
+  - Naive Bayes Algorithm
+category:
+  - Machine Learning
+---
 
-
-
-## Naive Bayes Algorithm
+- [Naive Bayes Algorithm](#Naive-Bayes-Algorithm)
+  - [Bayes' Rule](#Bayes-Rule)
+  - [The Bayes' Classifier](#The-Bayes-Classifier)
+  - [Naive Bayes Algorithm](#Naive-Bayes-Algorithm-1)
+  - [Likelihood Function](#Likelihood-Function)
+  - [Example](#Example)
+  - [python code](#python-code)
+  
+# Naive Bayes Algorithm
 
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
-### Bayes' Rule
+## Bayes' Rule
 Assume that $\{B_i, i=1,\dots,n\}$ is a partition of $S$ such that $P(B_i)>0 \text{ for }  i=1,2,...,k$. Then
 
 $$
@@ -14,7 +29,7 @@ P(B_j|A)  &= \frac{P(A|B_j)P(B_j)}{P(A)}\\
 \end{aligned}
 $$
 
-### The Bayes' Classifier
+## The Bayes' Classifier
 
 $$
 P(C_i|x)=max_{k} p(C_k|x)
@@ -22,7 +37,7 @@ $$
 
 * For choose $i$ such that $P(C_i|x)$ is maximum is irrelevant with the value of $P(x)$.
 
-### Naive Bayes Algorithm
+## Naive Bayes Algorithm
 - Two not reasonalbe assumptions
     * The importance of each of attribute is equal
     * All attributes are conditional probability independent.
@@ -32,7 +47,7 @@ P(y=1|x)=\frac{P(y=1)}{P(X=x)} \prod_{i=1}^n
  P(y=1|X_i=x_i)\end{aligned}
 $$
 
-### Likelihood Function
+## Likelihood Function
 
 - ex. a baised coin flip $N$ times, and we could use **MLE**(Maximum Likelihood Estimates) to estimate the probability $p$ of coin with positive side.
 
@@ -40,7 +55,7 @@ $$
 p=\frac{\sum_{i=1}^N x_t}{N}
 $$
 
-### Example
+## Example
 
 ![](naive_bayes_alog.JPG)
 
@@ -49,7 +64,7 @@ $$
 - The above images are captured from [link](https://youtu.be/ZDFYXjc-j4w)
 
 
-### python code
+## python code
 - This is from [website](https://www.datacamp.com/community/tutorials/naive-bayes-scikit-learn)
 
 ```python 

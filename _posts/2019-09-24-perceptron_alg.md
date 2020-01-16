@@ -1,8 +1,23 @@
-## Perceptron Algorithm
+---
+title: 'Perceptron Algorithm'
+date: 2019-09-24
+permalink: /posts/2019/09/perceptron_alg/
+tags:
+  - Perceptron Algorithm
+category:
+  - Machine Learning
+---
+- [Perceptron Algorithm](#Perceptron-Algorithm)
+- [Binary Classification Problem](#Binary-Classification-Problem)
+- [Perceptron Algorithm (Primal From)](#Perceptron-Algorithm-Primal-From)
+- [Stop in Finite steps](#Stop-in-Finite-steps)
+- [Perceptron Algorithm(Dual Form)](#Perceptron-AlgorithmDual-Form)
+- [Python Code](#Python-Code)
+# Perceptron Algorithm
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I will take the key points for my references.
 
 
-### Binary Classification Problem
+# Binary Classification Problem
 
 Given a training dataset
 $$
@@ -31,7 +46,7 @@ $$
 f(x)=w^{T}x+b
 $$
 
-### Perceptron Algorithm (Primal From)
+# Perceptron Algorithm (Primal From)
 An on-line and mistake-driven produce 
 
 Repeat
@@ -54,7 +69,7 @@ y_i(\langle w_{k+1},x_i \rangle +b_{k+1})=
 y_i(\langle w_{k},x_i \rangle +b_{k})+\eta(\langle x_{i},x_i \rangle +R^2)
 $$
 
-### Stop in Finite steps
+# Stop in Finite steps
 Theorem(Novikoff)
 Let $S$ be a non-trival training set, and let
 $$
@@ -71,7 +86,7 @@ The number of mistakes made by the on-line perceptron algorithm on $S$ is almost
 Remark:
 - the value of $\eta$ is irreverent.
 
-### Perceptron Algorithm(Dual Form)
+# Perceptron Algorithm(Dual Form)
 $$ 
 w_i=\sum\limits_{i=1}^l \alpha_i y_i x_i
 $$
@@ -103,7 +118,7 @@ $$
 G_{ij}=\langle x_i, x_j \rangle
 $$
 
-### Python Code
+# Python Code
 The following code are from [website](https://towardsdatascience.com/an-introduction-to-perceptron-algorithm-40f2ab4e2099)
 - Import data
 ```python
@@ -134,9 +149,9 @@ y=np.array([1 if i==1 else -1 for i in y])
 ```
 - Perceptron Algorithm (Primal From)
 ```python
-#################################
+#########
 # Gradient Descent
-#################################
+#########
 # Initialize parameters
 w=np.ones((X.shape[1],1));
 b=1;

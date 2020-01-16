@@ -1,10 +1,33 @@
-## 	Evaluating the Learning Models
+---
+title: 'Evaluating'
+date: 2019-09-25
+permalink: /posts/2019/09/evaluating/
+tags:
+  - Evaluating
+category:
+  - Machine Learning
+---
+
+- [Evaluating](#Evaluating)
+  - [Error rate](#Error-rate)
+  - [k-fold stratified cross validation](#k-fold-stratified-cross-validation)
+  - [Testing Hypothesis](#Testing-Hypothesis)
+  - [$2 \times 2$ confusion matrix](#2-times-2-confusion-matrix)
+  - [Cost martix](#Cost-martix)
+  - [ROC curve](#ROC-curve)
+  - [AUC Index](#AUC-Index)
+  - [Recall and Precision](#Recall-and-Precision)
+  - [F-measure](#F-measure)
+  - [Python code](#Python-code)
+
+# 	Evaluating 
+
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
-### Error rate
+## Error rate
 
 $$\text{Error rate }=\frac{\text{Number of misclassified point}}{\text{Total number of data point}}$$
 
-### k-fold stratified cross validation
+## k-fold stratified cross validation
 
 Split the data instances into two parts:
 - Training set: for learning the classifier
@@ -15,7 +38,7 @@ Similarly, spliting the data into $k$ equal partitions.
 - The labels(+/-) in the training and testing tests should be in right proportion.
 - if $k=\text{number or data point}$, this is called nonstratified.
 
-### Testing Hypothesis
+## Testing Hypothesis
 paired t-test
 $$
 H_0: \bar d=0 \quad v.s. \quad H_1: \bar d\neq 0
@@ -30,7 +53,7 @@ $$
 t=\frac{\bar d}{ \sqrt\frac{\sigma_d^2}{k}}
 $$
 
-### $2 \times 2$ confusion matrix
+## $2 \times 2$ confusion matrix
 $$
 C = 
 \begin{bmatrix} 
@@ -43,7 +66,7 @@ $$
 \text{Error rate }=\frac{\text{FP}+\text{FN}}{\text{TP+FN+TN+FP}}
 $$
 
-#### Cost martix
+## Cost martix
 $$
 C = 
 \begin{bmatrix} 
@@ -53,7 +76,7 @@ C =
 $$
 Here 10 refers the weight when false negative occurs.
 
-### ROC curve
+## ROC curve
 (Receiver Operating Characteristic Curve)
 1. calculate the probability of being positive class $p(y_i=1)$ for each $i$
 2. sort order from high to low ($p$)
@@ -64,7 +87,7 @@ Here 10 refers the weight when false negative occurs.
 
 The above two graphs are captured from [link](https://youtu.be/V-oQ7Z8qzJw).
 
-### AUC Index
+## AUC Index
 - AUC is an index of ROC curve with range from 0 to 1.
 
 $$
@@ -74,7 +97,7 @@ Here,
 - $m$: number of positive instances
 - $n$: number of negative instances
 
-### Recall and Precision
+## Recall and Precision
 
 $$
 \text{Recall}=\frac{\text{TP}}{\text{TP+FN}}
@@ -95,14 +118,14 @@ Also, Precision and Recall have reverse relationship.
 
 - $\text{Recall}=1 \Rightarrow \text{precision small}$
 
-#### F-measure
+## F-measure
 F-meaure balance Recall and Precision
 
 $$
 F=\frac{2}{\frac{1}{\text{Recall}}+\frac{1}{\text{Precision}}}
 $$
 
-### Python code
+## Python code
 The following code is retrieved from [website](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
 
 ```python

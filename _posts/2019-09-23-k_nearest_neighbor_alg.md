@@ -1,17 +1,30 @@
-## k-Nearest Neighbor Algorithm
+---
+title: 'k-Nearest Neighbor Algorithm'
+date: 2019-09-23
+permalink: /posts/2019/09/k_nearest_neighbor_alg/
+tags:
+  - k-Nearest Neighbor Algorithm
+category:
+  - Machine Learning
+---
+
+---
+- [k-Nearest Neighbor Algorithm](#k-Nearest-Neighbor-Algorithm)
+
+# k-Nearest Neighbor Algorithm
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I will take the key points for my references.
 
-0. define distance
+1. define distance
     * if values are real number, 
     $$d(x,x_0)=\left\Vert (x-x_0)\right\Vert^2$$
     * if values are ordinal, 
     $$d(x,x_0)=\sum_{i=1}^n \mathbb{1}(x_i \neq x_0) $$
 
-1. Given q query point $x_0$, find k-nearest neighbors and count which type is majority. 
+2. Given q query point $x_0$, find k-nearest neighbors and count which type is majority. 
 
-2. Classify $x_0$ to the same class with the majority within k-nearest neighbors.
+3. Classify $x_0$ to the same class with the majority within k-nearest neighbors.
 
-3. Be careful with scale with different attributes. We might need to normalize
+4. Be careful with scale with different attributes. We might need to normalize
 $$
 \hat x_j=\frac{x_j-\mu_j}{\sigma_j}
 $$
