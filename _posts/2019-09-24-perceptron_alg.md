@@ -154,7 +154,6 @@ y = iris.target[0:99]
 ```
 
 - Plot figure
-
 ```python 
 # Plot figure
 plt.plot(X[:50, 0], X[:50, 1], 'bo', color='blue', label='0')

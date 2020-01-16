@@ -21,8 +21,8 @@ category:
   - [Python code](#Python-code)
 
 # 	Evaluating 
-
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
+
 ## Error rate
 
 $$

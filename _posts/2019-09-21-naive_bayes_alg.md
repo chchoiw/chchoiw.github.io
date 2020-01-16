@@ -23,10 +23,10 @@ category:
 Assume that $\{B_i, i=1,\dots,n\}$ is a partition of $S$ such that $P(B_i)>0 \text{ for }  i=1,2,...,k$. Then
 
 $$
-\begin{aligned}
+\begin{aligned\*}
 P(B_j|A)  &= \frac{P(A|B_j)P(B_j)}{P(A)}\\
 &=\frac{P(A|B_j)P(B_j)}{\sum_{i=1}^kP(A|B_i)P(B_i)}
-\end{aligned}
+\end{aligned\*}
 $$
 
 ## The Bayes' Classifier
@@ -35,12 +35,13 @@ $$
 P(C_i|x)=max_{k} p(C_k|x)
 $$
 
-* For choose $i$ such that $P(C_i|x)$ is maximum is irrelevant with the value of $P(x)$.
+* For choose $i$ such that $P(C_i \vert x)$ is maximum is irrelevant with the value of $P(x)$.
 
 ## Naive Bayes Algorithm
 - Two not reasonalbe assumptions
     * The importance of each of attribute is equal
     * All attributes are conditional probability independent.
+
 $$
 \begin{aligned}
 P(y=1|x)=\frac{P(y=1)}{P(X=x)} \prod_{i=1}^n
@@ -57,9 +58,9 @@ $$
 
 ## Example
 
-![](naive_bayes_alog.JPG)
+![](/images/machine_learning/naive_bayes_alog.JPG)
 
-![](naive_bayes_alog2.JPG)
+![](/images/machine_learning/naive_bayes_alog2.JPG)
 
 - The above images are captured from [link](https://youtu.be/ZDFYXjc-j4w)
 

@@ -22,6 +22,7 @@ category:
   - [Minimum Principle](#Minimum-Principle)
   - [Linear Programming Problem](#Linear-Programming-Problem)
   - [$L_1$- Approximation](#L_1--Approximation)
+
 # Optimization
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
 ## Optimization Examples in Machine Learning
@@ -68,6 +69,7 @@ $$
 - Newton's Method is highly recommded
     * Local and quadratic convergent algorithm
     * Need to choose a good step size to guarantee global convergence.
+
 ## The First Order Tayor Expansion
 Let $f:\mathbb R^n \rightarrow \mathbb R$ be a differentiable function:
 
@@ -116,9 +118,9 @@ $$
 \mathbf F= \{x \in \Omega | g(x) \leq 0, h(x)=0 \}
 $$
 
-- A solution of the optimization problem is a point $x^* \in \mathbf F$ s.t. $x \in \mathbf F$ for which $f(x) \leq f(x^{*})$ and $x^*$ is called global minimum.
+- A solution of the optimization problem is a point $x^\* \in \mathbf F$ s.t. $x \in \mathbf F$ for which $f(x) \leq f(x^\*)$ and $x^\*$ is called global minimum.
 
-- At the solution $x^{*}$, an inequality constraint $g_i(x)$ is said to be active if $g_i(x^*)=0$. Otherwise it is called an inactive constraint.
+- At the solution $x^{*}$, an inequality constraint $g_i(x)$ is said to be active if $g_i(x^\*)=0$. Otherwise it is called an inactive constraint.
 
 - $g_i(x) \leq 0 \Leftrightarrow g_i(x)+\xi_i=0,\quad \xi_i \geq 0$ where $\xi_i $ is called slack variable.
 

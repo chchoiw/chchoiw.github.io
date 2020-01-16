@@ -49,7 +49,6 @@ Until $Z$ does not change
 * The folling codes came from [website](https://stackabuse.com/k-nearest-neighbors-algorithm-in-python-and-scikit-learn/)
 
 - Importing the Dataset
-
 ```python 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -71,7 +70,6 @@ y = dataset.iloc[:, 4].values
 ```
 
 - Train Test Split
-
 ```python 
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
@@ -86,7 +84,6 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 ```
 - Training and Predictions
-
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors=5)
