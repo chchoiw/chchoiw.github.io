@@ -1,4 +1,13 @@
-
+---
+title: '數據收集'
+date: 2019-05-07
+permalink: /posts/2019/05/statistic_data_collection/
+tags:
+  - data collection
+category:
+  - Statistic
+---
+<!--
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->

@@ -1,6 +1,29 @@
-## 正態分佈檢驗
+---
+title: '正態分佈、獨立性和方差齊次性檢驗'
+date: 2019-06-19
+permalink: /posts/2019/06/normal_independ_cvar/
+tags:
+  - 正態分佈檢驗
+  - 獨立性檢驗
+  - 方差齊次性檢驗
+category:
+  - Statistic
+---
 
-### 經驗分布函數
+- [正態分佈檢驗](#%e6%ad%a3%e6%85%8b%e5%88%86%e4%bd%88%e6%aa%a2%e9%a9%97)
+  - [經驗分布函數](#%e7%b6%93%e9%a9%97%e5%88%86%e5%b8%83%e5%87%bd%e6%95%b8)
+  - [Shapiro-Wilk](#shapiro-wilk)
+  - [Kolmogorov-Smirnov](#kolmogorov-smirnov)
+  - [Cramer-von Mises](#cramer-von-mises)
+  - [Anderson-Darling](#anderson-darling)
+  - [Q-Q圖](#q-q%e5%9c%96)
+- [獨立性檢驗](#%e7%8d%a8%e7%ab%8b%e6%80%a7%e6%aa%a2%e9%a9%97)
+  - [Durbin -Watson Test](#durbin--watson-test)
+- [方差齊次性檢驗](#%e6%96%b9%e5%b7%ae%e9%bd%8a%e6%ac%a1%e6%80%a7%e6%aa%a2%e9%a9%97)
+  - [Bartlett檢驗](#bartlett%e6%aa%a2%e9%a9%97)
+# 正態分佈檢驗
+
+## 經驗分布函數
 
 $$
 \begin{aligned}
@@ -9,7 +32,7 @@ $$
 \end{aligned}
 $$
 
-### Shapiro-Wilk
+## Shapiro-Wilk
 - Wiki: [link](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)
 - Another academic pdf [link](https://math.mit.edu/~rmd/465/shapiro.pdf)
 
@@ -27,23 +50,23 @@ $$
 通常$W$越大，越接近正態分布
 $H_0: X \text{ is normal distribution}$
 當$W<W_\alpha$ 或者 $p<1- \alpha $ 時，否定$H_0$
-### Kolmogorov-Smirnov
+## Kolmogorov-Smirnov
 
 $$
 D=\text{Sup}| F_n(x)-F_0(x)|
 $$
 
-### Cramer-von Mises
+## Cramer-von Mises
 $$
 W^2=n \int_{-\infty}^{+\infty}(F_n(x)-F_0(x))^2dF_0(x)
 $$
-### Anderson-Darling
+## Anderson-Darling
 
 $$
 A^2=n \int_{-\infty}^{+\infty}(F_n(x)-F_0(x))^2[F_0(x)(1-F_0(x))]^{-1}dF_0(x)
 $$
 
-### Q-Q圖
+## Q-Q圖
 繪制散點$(q_i,x^*_{(i)})$的散布圖，其中
 $$
 \begin{aligned}
@@ -55,8 +78,8 @@ $$
 > 這些點應散布在一條$y=x$附近上。
 
 
-## 獨立性檢驗
-### Durbin -Watson Test
+# 獨立性檢驗
+## Durbin -Watson Test
 - [simple example](https://www.investopedia.com/terms/d/durbin-watson-statistic.asp)
 - [wiki]()
 $$
@@ -68,8 +91,8 @@ Since $d$ is approximately equal to $$2(1 −  {{\hat {\rho }}}),$$ where ${ {\h
 
 A rule of thumb is that test statistic values in the **range of 1.5 to 2.5** are relatively normal.
 
-## 方差齊次性檢驗
-### Bartlett檢驗
+# 方差齊次性檢驗
+## Bartlett檢驗
 $$
 \begin{aligned}
 s_i^2 &=\frac{1}{m_i-1} \sum_{j=1}^{m_i} (y_{ij}- \bar y_i)^2=\frac{Q_i}{f_i} \\

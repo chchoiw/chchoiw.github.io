@@ -1,4 +1,12 @@
-
+---
+title: '統計方法'
+date: 2019-05-08
+permalink: /posts/2019/05/statistic_analysis/
+tags:
+  - statistic analysis
+category:
+  - Statistic
+---
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->

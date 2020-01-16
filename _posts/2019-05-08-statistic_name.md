@@ -1,4 +1,12 @@
-
+---
+title: '統計名詞解釋'
+date: 2019-05-08
+permalink: /posts/2019/05/statistic_name/
+tags:
+  - 統計名詞解釋
+category:
+  - Statistic
+---
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
