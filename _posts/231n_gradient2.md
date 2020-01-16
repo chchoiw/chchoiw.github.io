@@ -1,0 +1,397 @@
+## CS231n-Gradient of Affine, Convolution and Max Pool layer
+
+- This is the notes (mainly focus on needed math) while completed Stanford CS231n [assignment2](http://cs231n.github.io/assignments2019/assignment2).
+
+- I omitted most prerequisite definitions and knowledge, so if it is difficult to follow, please first take a look of [course videos](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) and [notes](http://cs231n.github.io/).
+
+- The related lecture note is on the [website1](http://cs231n.github.io/convolutional-networks/).
+
+
+### The gradient of affine layers
+s
+Let $X$ be a $N \times D$, $W$ be a $D\times C$ and $D$ be a $1\times C$ matrices. 
+$$Y=XW+b$$ 
+Let $l: \mathbb R^{N\times C} \rightarrow \R$ be the loss function, and the jacobian matrix of function $l$ is 
+$$ \frac{\partial l}{\partial Y}=Z \quad \text{where }Z\text{ is a } N\times C \text{ matrix}$$ Now, we consider the composition function $l(Y(W))$ and calculate its jocobian matrices with respect to $W,X$ and $b$.
+
+#### The jocobian matrix with respect to $W$
+By chain rule we know that 
+$$
+\frac{\partial l}{\partial W}=\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}
+$$
+First, we recall the jacobian matrix of a function $f:\R^{n} \rightarrow \R^{m}$ is 
+$$\frac{\partial f}{\partial X}=
+\left[
+\begin{matrix}
+\frac{\partial f_1}{\partial x_1}  & \frac{\partial f_1}{\partial x_2} & \dots & \frac{\partial f_1}{\partial x_n}\\
+\frac{\partial f_2}{\partial x_2}  & \frac{\partial f_2}{\partial x_2} & \dots & \frac{\partial f_2}{\partial x_n}\\
+\vdots & \vdots & \ddots &\vdots \\
+\frac{\partial f_m}{\partial x_2}  & \frac{\partial f_m}{\partial x_m} & \dots & \frac{\partial f_m}{\partial x_n}
+\end{matrix}
+\right]
+$$
+Also, let $w_j=(w_{1,j},w_{2,j},\dots,w_{D,j})$ be the $j$-th column of $W$, the $y_j =(y_{1,j},y_{2,j},\dots,y_{N,j})$
+$$
+y_j=Xw_j
+$$
+The jocobian matrix is $X$.
+Hence, if we stretch columns of the matrix $W$ and $Y$ and concatenates columns be a 1-dim row, then we can view $Y$ as $N\times C$ tupe $(y_{1,1},y_{2,1},y_{N,1},\dots,y_{1,2},y_{2,2},y_{N,2},\dots,y_{1,C},y_{2,C},y_{N,C})$ and $W$ as $D \times C$ tupe $(w_{1,1},w_{2,1},\dots,w_{D,1}, w_{1,2},w_{2,2},\dots,w_{D,2},\dots,w_{1,C},w_{2,C},\dots,w_{D,C})$, the jocobian matrix is 
+
+$$
+\left[
+    \def\arraystretch{2}
+   \begin{array}{cccc:cccc:c:ccc}
+   \frac{\partial y_{1,1}}{\partial w_{1,1}} & \frac{\partial y_{1,1}}{\partial w_{2,1}} & \dots & \frac{\partial y_{1,1}}{\partial w_{D,1} }  & \frac{\partial y_{1,1}}{\partial w_{1,2} } & \frac{\partial y_{1,1}}{\partial w_{2,2} } & \dots & \frac{\partial y_{1,1}}{\partial w_{D,2} } & \dots & \frac{\partial y_{1,1}}{\partial w_{1,C} }& \dots& \frac{\partial y_{1,1}}{\partial w_{D,C} } \\
+\frac{\partial y_{2,1}}{\partial w_{1,1}} & \frac{\partial y_{2,1}}{\partial w_{2,1}} & \dots & \frac{\partial y_{2,1}}{\partial w_{D,1} }  & \frac{\partial y_{2,1}}{\partial w_{1,2} } & \frac{\partial y_{2,1}}{\partial w_{2,2} } & \dots & \frac{\partial y_{2,1}}{\partial w_{D,2} } & \dots & \frac{\partial y_{2,1}}{\partial w_{1,C} }& \dots& \frac{\partial y_{2,1}}{\partial w_{D,C} } \\
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots & \\
+\frac{\partial y_{N,1}}{\partial w_{1,1}} & \frac{\partial y_{N,1}}{\partial w_{2,1}} & \dots & \frac{\partial y_{N,1}}{\partial w_{D,1} }  & \frac{\partial y_{N,1}}{\partial w_{1,2} } & \frac{\partial y_{N,1}}{\partial w_{2,2} } & \dots & \frac{\partial y_{N,1}}{\partial w_{D,2} } & \dots & \frac{\partial y_{N,1}}{\partial w_{1,C} }& \dots& \frac{\partial y_{N,1}}{\partial w_{D,C} }\\ \hline
+\frac{\partial y_{1,2}}{\partial w_{1,1}} & \frac{\partial y_{1,2}}{\partial w_{2,1}} & \dots & \frac{\partial y_{1,2}}{\partial w_{D,1} }  & \frac{\partial y_{1,2}}{\partial w_{1,2} } & \frac{\partial y_{1,2}}{\partial w_{2,2} } & \dots & \frac{\partial y_{1,2}}{\partial w_{D,2} } & \dots & \frac{\partial y_{1,2}}{\partial w_{1,C} }& \dots& \frac{\partial y_{1,2}}{\partial w_{D,C} } \\
+\frac{\partial y_{2,2}}{\partial w_{1,1}} & \frac{\partial y_{2,2}}{\partial w_{2,1}} & \dots & \frac{\partial y_{2,2}}{\partial w_{D,1} }  & \frac{\partial y_{2,2}}{\partial w_{1,2} } & \frac{\partial y_{2,2}}{\partial w_{2,2} } & \dots & \frac{\partial y_{2,2}}{\partial w_{D,2} } & \dots & \frac{\partial y_{2,2}}{\partial w_{1,C} }& \dots& \frac{\partial y_{2,2}}{\partial w_{D,C} } \\
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots & \\
+\frac{\partial y_{N,2}}{\partial w_{1,1}} & \frac{\partial y_{N,2}}{\partial w_{2,1}} & \dots & \frac{\partial y_{N,2}}{\partial w_{D,1} }  & \frac{\partial y_{N,2}}{\partial w_{1,2} } & \frac{\partial y_{N,2}}{\partial w_{2,2} } & \dots & \frac{\partial y_{N,2}}{\partial w_{D,2} } & \dots & \frac{\partial y_{N,2}}{\partial w_{1,C} }& \dots& \frac{\partial y_{N,2}}{\partial w_{D,C} } \\ \hline
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots & \\ \hline
+\frac{\partial y_{1,C}}{\partial w_{1,1}} & \frac{\partial y_{1,C}}{\partial w_{2,1}} & \dots & \frac{\partial y_{1,C}}{\partial w_{D,1} }  & \frac{\partial y_{1,C}}{\partial w_{1,2} } & \frac{\partial y_{1,C}}{\partial w_{2,2} } & \dots & \frac{\partial y_{1,C}}{\partial w_{D,2} } & \dots & \frac{\partial y_{1,C}}{\partial w_{1,C} }& \dots& \frac{\partial y_{1,C}}{\partial w_{D,C} } \\
+   \vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots &
+\vdots & \vdots & \ddots & \vdots & \\
+\frac{\partial y_{N,C}}{\partial w_{1,1}} & \frac{\partial y_{N,C}}{\partial w_{2,1}} & \dots & \frac{\partial y_{N,C}}{\partial w_{D,1} }  & \frac{\partial y_{N,C}}{\partial w_{1,2} } & \frac{\partial y_{N,C}}{\partial w_{2,2} } & \dots & \frac{\partial y_{N,C}}{\partial w_{D,2} } & \dots & \frac{\partial y_{N,C}}{\partial w_{1,C} }& \dots& \frac{\partial y_{N,C}}{\partial w_{D,C} }
+\end{array}
+\right]
+$$
+$Y_{*i}$ and $Y_{i*}$ denote $i$-th column of $Y$ and $i$-th row of $Y$ respectively. In term of the above notations, we have 
+$$
+\frac{\partial Y }{\partial W}=
+=\left[\begin{array}{c}
+\frac{\partial Y_{*1}}{\partial W_{*1}}  & 0 & \dots & 0 \\
+0 & \frac{\partial Y_{*2}}{\partial W_{*2}} & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & \frac{\partial Y_{*C}}{\partial W_{*C}}
+\end{array}\right]
+=C
+\overbrace{
+    \begin{cases}
+\left[
+\begin{array}{cccc}
+X & 0 & \dots & 0 \\
+0 & X & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & X
+\end{array}
+\right]
+\end{cases}
+}^{C}
+$$
+
+Also, we stretch the columns of $Z=\frac{\partial l}{\partial Y}$ and concatenate them together as a $1 \times N C$ row 
+$$Z=(Z_{1,1},Z_{2,1},\dots,\Z_{N,1},\dots Z_{1,2},Z_{2,2},\dots,Z_{N,2},\dots,Z_{1,C},Z_{2,C},\dots,Z_{N,C}).$$
+
+After clarifying the notations, the next step is to calculate $\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}$. Assume $k=(j-1)N+i$ and $q=(s-1)D+r$
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{q} 
+&=\sum_{k} Z_{k}\left(\frac{\partial Y}{\partial W}\right)_{k,q}  \\
+&=\sum_{i,j} Z_{i,j}\left(\frac{\partial Y_{i,j}}{\partial W_{r,s}}\right)
+\end{aligned}
+$$
+
+Since 
+$$
+\begin{aligned}
+\left(\frac{\partial Y_{i,j}}{\partial W_{r,s}}\right)&=0 \quad &\text{when } j\neq  s \\
+\left(\frac{\partial Y_{i,j}}{\partial W_{r,s}}\right)&=X_{i,r} \quad &\text{when } j= s
+\end{aligned}
+$$
+
+we conclude that
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{q} 
+&=\sum_{i} Z_{i,s}\left(\frac{\partial Y_{i,s}}{\partial W_{r,s}}\right) \\
+&=\sum_{i} Z_{i,s}X_{i,r}\\
+&=\langle Z_{*s}, X_{*r} \rangle
+\end{aligned}
+$$
+where $Z_{*s}$ is $s$-th column of Z.
+The last step, we rearrange $\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{q} $ to $N\times C$ matrix
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{r,s}&=\langle Z_{*s}, X_{*r} \rangle \\
+\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}&=X^TZ
+\end{aligned} \tag 2
+$$
+
+#### The jocobian matrix with respect to $X$
+On the other hand, if we stretch rows of $Y,Z$ and $X$ first and concatenate them as 1-D array, then we get
+$$
+\frac{\partial Y }{\partial X}
+=\left[\begin{array}{c}
+\frac{\partial Y_{1*}}{\partial X_{1*}}  & 0 & \dots & 0 \\
+0 & \frac{\partial Y_{2*}}{\partial X_{2*}} & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & \frac{\partial Y_{N*}}{\partial X_{N*}}
+\end{array}\right]
+=N
+\overbrace{
+    \begin{cases}
+\left[
+\begin{array}{cccc}
+W^T & 0 & \dots & 0 \\
+0 & W^T & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & W^T
+\end{array}
+\right]
+\end{cases}
+}^{N}
+$$
+Assume $k=(i-1)C+j$ and $q=(r-1)D+s$
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial X}\right)_{q} 
+&=\sum_{k} Z_{k}\left(\frac{\partial Y}{\partial X}\right)_{k,q}  \\
+&=\sum_{k} Z_{k}\left(\frac{\partial Y_k}{\partial X_q}\right)  \\
+&=\sum_{i,j} Z_{i,j}\left(\frac{\partial Y_{i,j}}{\partial X_{r,s}}\right)\\
+&=\sum_{j} Z_{r,j}\left(\frac{\partial Y_{r,j}}{\partial X_{r,s}}\right)\\
+&=\sum_{j} Z_{r,j}\left(W^T \right)_{j,s}\\
+&=\langle Z_{r*} W^T_{*s} \rangle \\
+\implies \frac{\partial l}{\partial Y}\frac{\partial Y}{\partial X} &=ZW^T
+\end{aligned} \tag3
+$$
+
+#### The jocobian matrices with respect to $b$
+Clearly, 
+$$
+\frac{\partial Y}{\partial b}=
+=C
+\overbrace{
+    \begin{cases}
+\left[
+\begin{array}{cccc}
+\mathbf 1_{N,1} & 0 & \dots & 0 \\
+0 & \mathbf 1_{N,1} & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & \mathbf 1_{N,1}
+\end{array}
+\right]
+\end{cases}
+}^{C}
+$$
+Hence, if $k=(j-1)N+i$,
+$$
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial b}\right)_{k}=
+\langle Z_{*j}, \mathbf 1_N \rangle=\sum_{t} Z_{t,j} \quad \text{for } j=1,2,\dots, C  \tag 4
+$$
+
+### Gradient of the convolution layer
+- About what is the convolution layer, please see the [website](http://cs231n.github.io/convolutional-networks/).
+- The following is concentrate the computation of the backward gradient computation of the convolution layer.
+
+Let $\frac{\partial l}{\partial Y}$ be a $N\times F\times H'\times W'$ martix, $\frac{\partial Y}{\partial W}$ be a $F\times C\times HH\times WW$ martix, $b$ be a $F$ array. If we somehow view $\frac{\partial l}{\partial Y}=Z$ and $Y$ as 1-D array in certain order, we have
+$$
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{f,c,hh,ww}
+=\sum_{n,r,i,j}Z_{n,r,i,j}\frac{\partial Y_{n,r,i,j}}{\partial w_{f,c,hh,ww}}
+$$
+By the process of convolution we know, 
+$$
+\begin{aligned}git
+\frac{\partial Y_{n,r,i,j}}{\partial w_{f,c,hh,ww}}& =X_{n,c,iHH+hh,jWW+ww} \quad &\text{for } r=f \\
+\frac{\partial Y_{n,r,i,j}}{\partial w_{f,c,hh,ww}}& =0 \quad &\text{for } r\neq f  \tag 5
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\frac{\partial Y_{n,f,i,j}}{\partial X_{m,c,iHH+hh,jWW+ww}}&=W_{f,c,hh,ww} \quad &\text{for } m=n  \\
+\frac{\partial Y_{n,f,i,j}}{\partial X_{m,c,iHH+hh,jWW+ww}}&=0 \quad &\text{for } m\neq n \tag 6
+\end{aligned}
+$$
+Finally, we compute the gradient with respect to $W,X$ and $b$.
+#### The gradient with respect to $W$
+For fixed $i,j$, denote $\bar X^{i,j}=X_{*,*,iHH+hh,jWW+ww}$ and $\bar Z^{i,j}=Z_{*,*,i,j}$, we have 
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{f,c,hh,ww}
+&=\sum_{n,r,i,j}Z_{n,f,i,j}\frac{\partial Y_{n,f,i,j}}{\partial w_{r,c,hh,ww}} \\ 
+&=\sum_{i,j}\sum_{n}\bar Z^{i,j}_{n,f}\bar X^{i,j}_{n,c}\quad \text{by } (5)\\
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}\right)_{*,*,hh,ww}&=\sum_{i,j}(\bar Z^{i,j})^T (\bar X^{i,j}) \tag 7\\ 
+\end{aligned}
+$$
+
+#### The gradient with respect to $X$
+For fixed $iHH+hh$ and $jWW+ww$(i.e. for fixed $i,j,hh,ww$), denote $\bar X^{i,j}=X_{*,*,iHH+hh,jWW+ww}$ and $\bar W^{hh,ww}=W_{*,*,hh,ww}$, we have
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial X}\right)_{n,c,iHH+hh,jWW+ww}
+&=\sum_{n,f}Z_{n,f,i,j}\frac{\partial Y_{n,f,i,j}}{\partial X_{m,c,iHH+hh,jWW+ww}}\\
+&=\sum_{f}\bar Z^{i,j}_{n,f}\bar W^{hh,ww}_{f,c} \quad \text{by } (6)\\
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial X}\right)_{*,*,iHH+hh,jWW+ww}&=(\bar Z^{i,j}) (\bar W^{hh,ww}) \tag 8\\ 
+\end{aligned}
+$$
+
+#### The gradient with respect to $b$
+For fixed $f$, 
+
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial b}\right)_{f}
+&=\sum_{n,i,j,r}Z_{n,r,i,j}\frac{\partial Y_{n,r,i,j}}{\partial b_{f}}\\
+&=\sum_{n,i,j}Z_{n,f,i,j}\frac{\partial Y_{n,f,i,j}}{\partial b_{f}} \\
+&=\sum_{n,i,j}Z_{n,f,i,j} 1 \\
+ \tag 9
+\end{aligned}
+$$
+
+```python
+def conv_backward_naive(dout, cache):
+    """
+    A naive implementation of the backward pass for a convolutional layer.
+
+    Inputs:
+    - dout: Upstream derivatives.
+    - cache: A tuple of (x, w, b, conv_param) as in conv_forward_naive
+
+    Returns a tuple of:
+    - dx: Gradient with respect to x
+    - dw: Gradient with respect to w
+    - db: Gradient with respect to b
+    """
+    dx, dw, db = None, None, None
+    ###########################################################################
+    # TODO: Implement the convolutional backward pass.                        #
+    ###########################################################################
+    # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+
+    # pass
+    # print(dout.shape)
+    
+    N,F,H_pi,W_pi=dout.shape
+    x, w, b, conv_param=cache
+    pad=conv_param['pad']
+    stride=conv_param['stride']
+    # stride=conv_param
+    dw=np.zeros_like(w)
+    dx=np.zeros_like(x)
+    db=np.zeros_like(b)
+    N,C,H,W=x.shape
+    F,C,HH,WW=w.shape
+
+    x_pad=np.zeros((N,C,H+2*pad,W+2*pad))
+    dx_pad=np.zeros_like(x_pad)
+    x_pad[:,:,pad:H+pad,pad:W+pad]=x
+    for hh in range(HH):
+        for ww in range(WW):
+            a=np.zeros((F,C))
+            for i in range(H_pi):
+                for j in range(W_pi):
+                    i_s=i*stride
+                    j_s=j*stride
+                    x_temp=x_pad[:,:,i_s:HH+i_s,j_s:j_s+WW]
+                    a+=dout[:,:,i,j].T.dot(x_temp[:,:,hh,ww])
+                    dx_pad[:,:,i_s+hh,j_s+ww]+=dout[:,:,i,j].dot(w[:,:,hh,ww])
+            dw[:,:,hh,ww]=a
+    dx=dx_pad[:,:,pad:H+pad,pad:W+pad]
+    db=np.sum(dout,axis=(0,2,3))
+    # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+    ###########################################################################
+    #                             END OF YOUR CODE                            #
+    ###########################################################################
+    return dx, dw, db
+```
+
+### The max pool layer
+- Please see [website](http://cs231n.github.io/convolutional-networks/) to follow what is max pool layer.
+- Mainly to write out the gradient in math form. 
+
+Similar to assumptions of the convolutional layer. $Y$ is the output after going through max pool layer.
+
+
+By the max pool process, if $X_{n,c,iHH+hh,jWW+ww}=\max\limits_{a,b=\text{filter size}}(X_{n,c,iHH+a,jWW+b})$
+$$
+\frac{\partial Y_{n,c,i,j}}{\partial X_{n,c,iHH+hh,jWW+ww}}=1
+$$
+
+If $hh$ and $ww$ is the indexs corresponding the maximum occuring in the resulting filter matrix,
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial X}\right)_{n,c,iHH+hh,jWW+ww}
+&=Z_{n,c,i,j}\frac{\partial Y_{n,c,i,j}}{\partial X_{n,c,iHH+hh,jWW+ww}} \tag {10}\\
+&=Z_{n,c,i,j}
+\end{aligned}
+$$
+
+Otherwise, 
+$$
+\begin{aligned}
+\left(\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial X}\right)_{n,c,iHH+hh,jWW+ww}
+&=Z_{n,c,i,j}\frac{\partial Y_{n,c,i,j}}{\partial X_{n,c,iHH+hh,jWW+ww}}  \tag {11}\\
+&=0
+\end{aligned}
+$$
+
+Here is the python code:
+```python
+def max_pool_backward_naive(dout, cache):
+    """
+    A naive implementation of the backward pass for a max-pooling layer.
+
+    Inputs:
+    - dout: Upstream derivatives
+    - cache: A tuple of (x, pool_param) as in the forward pass.
+
+    Returns:
+    - dx: Gradient with respect to x
+    """
+    dx = None
+    ###########################################################################
+    # TODO: Implement the max-pooling backward pass                           #
+    ###########################################################################
+    # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+    x, pool_param=cache
+    stride=pool_param['stride']
+    pool_height=pool_param['pool_height']
+    pool_width=pool_param['pool_width']
+    N,C,H,W=x.shape
+    N, C, H_pi, W_pi=dout.shape
+    stride=pool_param['stride']
+    pool_height=pool_param['pool_height']
+    pool_width=pool_param['pool_width']
+    H_pi = int( 1 + (H - pool_height) / stride)
+
+    W_pi =int( 1 + (W - pool_width) / stride)
+    dx=np.zeros((N,C,H,W))
+    max_flag=np.zeros((N,C,H_pi,W_pi))
+    # print(H_pi,W_pi)
+    for i in range(H_pi):
+        for j in range(W_pi):
+            # np.amax(a) 
+            i_s=i*stride
+            j_s=j*stride
+            x_temp=x[:,:,i_s:pool_width+i_s,j_s:j_s+pool_height]
+            x_temp_max_3=np.amax(x_temp,axis=3)
+            x_temp_max_2=np.amax(x_temp,axis=2)
+            r=np.argmax(x_temp_max_3,axis=2)
+            s=np.argmax(x_temp_max_2,axis=2)
+            idx1=(np.arange(N)).reshape(N,1)
+            idx2=(np.arange(C)).reshape(1,C)
+            dx[idx1,idx2,i_s+r,j_s+s]=dout[idx1,idx2,i,j]
+
+
+    # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
+    ###########################################################################
+    #                             END OF YOUR CODE                            #
+    ###########################################################################
+    # a=np.zeros((2,3,4))
+    # b=[[0,0,0] ,[0,0,1]]
+    # print(b[1][2])
+    # a[[[0],[1]],[[0,1,2]],b]+=1
+    # print(a)
+    # print(a[1,2,1])
+    return dx
+
+```

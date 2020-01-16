@@ -1,0 +1,419 @@
+## CS231n-Gradient of SVM and softmax
+
+- This is the notes (mainly focus on needed math) while completed Stanford CS231n [assignment1](http://cs231n.github.io/assignments2019/assignment1).
+
+- I omitted most prerequisite definitions and knowledge, so if it is difficult to follow, please first take a look of [course videos](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) and [notes](http://cs231n.github.io/).
+
+- The related lecture note is on the [website1](http://cs231n.github.io/linear-classify/).
+
+- My codes are not tidy enough, so the following python codes are captured from [website1](https://zhuanlan.zhihu.com/p/30965514) and [website2](https://zhuanlan.zhihu.com/p/31008163).
+
+### SVM 
+SVM loss function $L$
+Let $x_i=(x_{i,0},\dots,x_{i,D})^T$ be i-th row of $X$, which is $N\times D$ matrix, and $w_j=(w_{0,j},\dots,w_{D,j})^T$ be j-th column of $W$,a $D\times C$ matrix.
+$$
+\begin{aligned}
+L_i &=\sum\limits_{j \neq y_i} \left[ \max \left(0,w_j^Tx_i-w^T_{y_i}x_i \right)+\Delta \right] 
+\\
+L &=\frac{1}{N}\sum_{i} L_i
+\end{aligned}
+$$
+where $\Delta$ is a margin and $L$ is the loss function which we want to minimize.
+
+First, finding minimum requires its negative gradient direction which we mainly calculate in the following.
+$$
+\begin{aligned}
+\nabla_{w_j}L_i &=\mathbf{1}(w_j^Tx_i-w^T_{y_i}x_i+\Delta>0)x_i \quad \forall j\neq y_i
+\\
+\nabla_{w_{y_i}}L_i &=-\sum_{k\neq j}\mathbf{1}(w_k^Tx_i-w^T_{y_i}x_i+\Delta>0)x_i \quad \text{for } y_i=j,k\neq j
+\\
+\nabla_{w_{j}}L &=\frac{1}{N}\left(\sum_{i} \mathbf{1}(w_j^Tx_i-w^T_{y_i}x_i+\Delta>0)x_i-\sum_{\{i| y_i=j\}}\sum_{k \neq j}\mathbf{1}(w_k^Tx_i-w^T_{y_i}x_i+\Delta>0)x_i\right)\\
+&=\frac{1}{N}\sum_{i} a_{i,j}x_i
+\end{aligned} 
+$$
+
+Hence, the gradient of L is
+$$
+\begin{aligned}
+\frac{dL}{dW} &=\left(
+    \begin{matrix}
+    \nabla_{w_0}L,&\nabla_{w_1}L, & \cdots, & \nabla_{w_C}L \tag1
+    \end{matrix}
+    \right)
+\end{aligned}
+$$
+
+Here, we recall some linear algebra, the following $X_i$ are the row vectors. 
+$$
+\left(\begin{matrix} 
+a_1,a_2,a_3\\
+b_1,b_2,b_3
+\end{matrix}\right)
+\left(\begin{matrix} X_1 \\
+X_2 \\
+X_3\end{matrix} \right)=
+\left(
+\begin{matrix}
+\sum_{r} a_r X_r \\
+\sum_{r} b_r X_r
+\end{matrix}
+\right)
+$$
+Therefore, (1) can be represented as 
+$$
+\left(\frac{dL}{dW}\right)^T=
+\left(
+    \begin{matrix}
+    \nabla_{w_0}L \\
+    \nabla_{w_1}L \\
+    \vdots \\
+    \nabla_{w_C}L
+    \end{matrix}
+\right)
+=\frac{1}{N}AX
+$$
+where 
+$$A_{ij}=\mathbf{1}(w_j^Tx_i-w^T_{y_i}x_i+\Delta>0)-\mathbf 1(y_i=j)\left(\sum_{k\neq j}\mathbf{1}(w_k^Tx_i-w^T_{y_i}x_i+\Delta>0)\right)$$
+The following is the code how to caculate $\frac{dL}{dW}$
+```python 
+def svm_loss_vectorized(W, X, y, reg):
+  """
+  Structured SVM loss function, vectorized implementation.
+
+  Inputs and outputs are the same as svm_loss_naive.
+  """
+  
+  loss = 0.0
+  dW = np.zeros(W.shape) # initialize the gradient as zero
+
+  #############################################################################
+  # TODO:                                                                     #
+  # Implement a vectorized version of the structured SVM loss, storing the    #
+  # result in loss.                                                           #
+  #############################################################################
+  scores = X.dot(W)
+  correct_class_score = scores[np.arange(X.shape[0]),y]
+  correct_class_score = np.reshape(correct_class_score, (X.shape[0], -1))
+  margin = scores - correct_class_score +1
+  margin = np.maximum(0, margin)
+  margin[np.arange(X.shape[0]),y] = 0
+  loss = np.sum(margin) / X.shape[0]
+  loss += 0.5 * reg * np.sum(W * W)
+  print(loss)
+  #############################################################################
+  #                             END OF YOUR CODE                              #
+  #############################################################################
+
+
+  #############################################################################
+  # TODO:                                                                     #
+  # Implement a vectorized version of the gradient for the structured SVM     #
+  # loss, storing the result in dW.                                           #
+  #                                                                           #
+  # Hint: Instead of computing the gradient from scratch, it may be easier    #
+  # to reuse some of the intermediate values that you used to compute the     #
+  # loss.                                                                     #
+  #############################################################################
+  margin[margin > 0] = 1
+  row_sum = np.sum(margin, axis=1)                  # 1 by N
+  margin[np.arange(X.shape[0]), y] = -row_sum  
+  dW += np.dot(X.T, margin)/X.shape[0] + reg * W     # D by C
+  print(dW)
+  #############################################################################
+  #                             END OF YOUR CODE                              #
+  #############################################################################
+
+  return loss, dW
+
+```
+
+### Softmax
+Softmax loss function L
+$$
+\begin{aligned}
+L_i &=-\log\left(\frac{\exp(w_{y_i}^Tx_i)}{\sum_{j} \exp(w_j^Tx_i)}\right)
+\\
+&=\log\left(\sum_{j} \exp(w_j^Tx_i)\right) -w_{y_i}^Tx_i
+\end{aligned}
+$$
+Now, we try to calculate $\nabla_{w_j} L$
+$$
+\begin{aligned}
+\nabla_{w_j} L_i&=\frac{\exp(w_j^Tx_i)}{\sum_{j} \exp(w_j^Tx_i)}x_i \quad \text{for } \quad j\neq y_i
+\\
+\nabla_{w_j} L_i&=\frac{\exp(w_j^Tx_i)}{\sum_{j} \exp(w_j^Tx_i)}x_i-x_i  \quad \text{for } \quad j= y_i
+\end{aligned}
+$$
+Combined above two equations, we conclude that 
+$$
+\begin{aligned}
+\nabla_{w_j} L&=\frac{1}{N}\sum_{i} 
+\left( 
+    \frac{\exp(w_j^Tx_i)}{\sum_{j}\exp(w_j^Tx_i)} -\mathbf 1(y_i=j)
+\right) x_i
+\end{aligned}
+$$
+Similarly, we got 
+$$
+\left(\frac{dL}{dX}\right)^T=
+\left(
+\begin{matrix}
+\nabla_{w_0} L\\
+\vdots \\
+\nabla_{w_C} L
+\end{matrix}
+\right)=
+\frac{1}{N}AX
+$$
+where 
+$$
+A_{ij}=\sum_{i} 
+\left( 
+    \frac{\exp(w_j^Tx_i)}{\sum_{j}\exp(w_j^Tx_i)} -\mathbf 1(y_i=j)
+\right)
+$$
+
+The following is the code how to calculate $\nabla_{w_j} L$
+
+```python
+def softmax_loss_vectorized(W, X, y, reg):
+  """
+  Softmax loss function, vectorized version.
+
+  Inputs and outputs are the same as softmax_loss_naive.
+  """
+  # Initialize the loss and gradient to zero.
+  loss = 0.0
+  dW = np.zeros_like(W)
+
+  #############################################################################
+  # TODO: Compute the softmax loss and its gradient using no explicit loops.  #
+  # Store the loss in loss and the gradient in dW. If you are not careful     #
+  # here, it is easy to run into numeric instability. Don't forget the        #
+  # regularization!                                                           #
+  #############################################################################
+  num_train = X.shape[0]
+  num_class = W.shape[1]
+  scores = X.dot(W)  #N*C
+  p = np.zeros_like(W)
+  scores_max = np.reshape(np.max(scores, axis=1), (num_train, 1))
+  p = np.exp(scores - scores_max) / np.sum(np.exp(scores - scores_max), axis=1, keepdims=True) # N*C
+  loss_selector = np.zeros_like(p) #N*C
+  loss_selector[np.arange(num_train),y] = 1.0
+  loss = - np.sum(loss_selector.dot(np.log(p.T))[0,:])
+  dW = -(loss_selector - p).T.dot(X)
+  dW = dW.T
+  loss /= num_train
+  loss += 0.5 * reg * np.sum(W * W)
+  dW /= num_train
+  dW += reg * W
+  #############################################################################
+  #                          END OF YOUR CODE                                 #
+  #############################################################################
+
+  return loss, dW
+
+```
+Now, we have known  $\frac{dL}{dW}$ of softmax loss function. How about $\frac{dL}{dX}$ ?
+
+$$
+\begin{aligned}
+\nabla_{x_i} L&= \frac{1}{N}\left(\sum_{j}\frac{\exp(w_jx_i)}{\sum_{j} \exp(w_jx_i)}w_j-w_{y_i} \right)
+\end{aligned} \tag2
+$$
+Here, we recall some linear algebra, the following $X_i$ are the row vectors. 
+$$
+\left(\begin{matrix} 
+a_1,a_2,a_3-1\\
+b_1,b_2,b_3
+\end{matrix}\right)
+\left(\begin{matrix} X_1 \\
+X_2 \\
+X_3\end{matrix} \right)=
+\left(
+\begin{matrix}
+(\sum_{r} a_r X_r) - X_3\\
+\sum_{r} b_r X_r
+\end{matrix}
+\right) \tag 3
+$$
+
+Therefore, comparing (2) and (3), we get
+$$
+\frac{dL}{dX}=
+\left(
+\begin{matrix}
+\nabla_{x_1} L \\
+\nabla_{x_2} L \\
+\vdots \\
+\nabla_{x_N} L
+\end{matrix}
+\right)
+=\frac{1}{N}AW^T
+$$
+where 
+$$
+\begin{aligned}
+A_{i,j}&=\frac{\exp(w_j^Tx_i)}{\sum_{j} \exp(w_jx_i)}
+ \quad \text{for} \quad y_i\neq j \\
+A_{i,j}&=\frac{\exp(w_j^Tx_i)}{\sum_{j} \exp(w_jx_i)}-1
+ \quad \text{for} \quad y_i= j
+\end{aligned}
+$$
+
+```python
+#-------------------------
+# when y_i=j , delta_{i,j}=-1
+scores = X.dot(W1) + b1
+R1 = np.maximum(scores, 0)
+scores = R1.dot(W2) + b2  #N*C
+
+exp_scores = np.exp(scores)
+row_sum = exp_scores.sum(axis=1).reshape((N, 1))
+#norm_scores=scalar matrix A
+norm_scores = exp_scores / row_sum 
+delta3[np.arange(N), y] -= 1
+delta3 += A
+#-------------------------
+
+```
+
+Full code to be seen as following:
+```python 
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+class TwoLayerNet(object):
+  """
+  A two-layer fully-connected neural network. The net has an input dimension of
+  N, a hidden layer dimension of H, and performs classification over C classes.
+  We train the network with a softmax loss function and L2 regularization on the
+  weight matrices. The network uses a ReLU nonlinearity after the first fully
+  connected layer.
+
+  In other words, the network has the following architecture:
+
+  input - fully connected layer - ReLU - fully connected layer - softmax
+
+  The outputs of the second fully-connected layer are the scores for each class.
+  """
+
+  def __init__(self, input_size, hidden_size, output_size, std=1e-4):
+    """
+    Initialize the model. Weights are initialized to small random values and
+    biases are initialized to zero. Weights and biases are stored in the
+    variable self.params, which is a dictionary with the following keys:
+
+    W1: First layer weights; has shape (D, H)
+    b1: First layer biases; has shape (H,)
+    W2: Second layer weights; has shape (H, C)
+    b2: Second layer biases; has shape (C,)
+
+    Inputs:
+    - input_size: The dimension D of the input data.
+    - hidden_size: The number of neurons H in the hidden layer.
+    - output_size: The number of classes C.
+    """
+    self.params = {}
+    self.params['W1'] = std * np.random.randn(input_size, hidden_size)
+    self.params['b1'] = np.zeros(hidden_size)
+    self.params['W2'] = std * np.random.randn(hidden_size, output_size)
+    self.params['b2'] = np.zeros(output_size)
+
+  def loss(self, X, y=None, reg=0.0):
+    """
+    Compute the loss and gradients for a two layer fully connected neural
+    network.
+
+    Inputs:
+    - X: Input data of shape (N, D). Each X[i] is a training sample.
+    - y: Vector of training labels. y[i] is the label for X[i], and each y[i] is
+      an integer in the range 0 <= y[i] < C. This parameter is optional; if it
+      is not passed then we only return scores, and if it is passed then we
+      instead return the loss and gradients.
+    - reg: Regularization strength.
+
+    Returns:
+    If y is None, return a matrix scores of shape (N, C) where scores[i, c] is
+    the score for class c on input X[i].
+
+    If y is not None, instead return a tuple of:
+    - loss: Loss (data loss and regularization loss) for this batch of training
+      samples.
+    - grads: Dictionary mapping parameter names to gradients of those parameters
+      with respect to the loss function; has the same keys as self.params.
+    """
+    # Unpack variables from the params dictionary
+    W1, b1 = self.params['W1'], self.params['b1']
+    W2, b2 = self.params['W2'], self.params['b2']
+    N, D = X.shape
+
+    # Compute the forward pass
+    scores = None
+    #############################################################################
+    # TODO: Perform the forward pass, computing the class scores for the input. #
+    # Store the result in the scores variable, which should be an array of      #
+    # shape (N, C).                                                             #
+    #############################################################################
+    scores = X.dot(W1) + b1
+    R1 = np.maximum(scores, 0)
+    scores = R1.dot(W2) + b2  #N*C
+    #############################################################################
+    #                              END OF YOUR CODE                             #
+    #############################################################################
+    
+    # If the targets are not given then jump out, we're done
+    if y is None:
+      return scores
+
+    # Compute the loss
+    loss = None
+    #############################################################################
+    # TODO: Finish the forward pass, and compute the loss. This should include  #
+    # both the data loss and L2 regularization for W1 and W2. Store the result  #
+    # in the variable loss, which should be a scalar. Use the Softmax           #
+    # classifier loss. So that your results match ours, multiply the            #
+    # regularization loss by 0.5                                                #
+    #############################################################################
+    exp_scores = np.exp(scores)
+    row_sum = exp_scores.sum(axis=1).reshape((N, 1))
+    #norm_scores=scalar matrix A
+    norm_scores = exp_scores / row_sum 
+    data_loss = -1.0/N * np.log(norm_scores[np.arange(N), y]).sum()
+    reg_loss = 0.5 * reg * (np.sum(W1*W1) + np.sum(W2*W2))
+    loss = data_loss + reg_loss
+    #############################################################################
+    #                              END OF YOUR CODE                             #
+    #############################################################################
+
+    # Backward pass: compute gradients
+    grads = {}
+    #############################################################################
+    # TODO: Compute the backward pass, computing the derivatives of the weights #
+    # and biases. Store the results in the grads dictionary. For example,       #
+    # grads['W1'] should store the gradient on W1, and be a matrix of same size #
+    #############################################################################
+    delta3 = np.zeros_like(norm_scores)    #delta3 = dloss / dz3
+    #-------------------------
+    # when y_i=j 
+    # a{i,j}=a{i,j}-1
+    delta3[np.arange(N), y] -= 1
+    delta3 += norm_scores
+    #-------------------------
+    grads['W2'] = R1.T.dot(delta3) / N + reg * W2
+    grads['b2'] = np.ones(N).dot(delta3) / N
+
+    da2_dz2 = np.zeros_like(R1)
+    da2_dz2[R1>0] = 1
+    delta2 = delta3.dot(W2.T) * da2_dz2
+    grads['W1'] = X.T.dot(delta2) / N + reg * W1
+    grads['b1'] = np.ones(N).dot(delta2) / N
+    #############################################################################
+    #                              END OF YOUR CODE          #
+    #############################################################################
+
+    return loss, grads
+
+```
