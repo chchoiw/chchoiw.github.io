@@ -239,7 +239,7 @@ function create_xml($public_dt,$status,$notice_str,$dt)
   </SpecialNotice>
 ```
 
-1. write xml
+3. write xml
 ```php
 function wt_xml_file($xml)
 {
