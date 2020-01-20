@@ -5,15 +5,15 @@ permalink: /posts/notes/smg_window_live_mail/
 ---
 
 
-# SMG Window live mail set internal account
+
 
 
 * copy all folder to local computer
 ```
 C:\Users\chchoi\AppData\Local\Microsoft\Windows Live Mail
 ```
-* if account cannot be connected again, try rename folder
 
+* if account cannot be connected again, try rename folder
 ```
 C:\Users\chchoi\AppData\Local\Microsoft\Windows Live Mail
 ```
@@ -30,8 +30,8 @@ C:\Users\chchoi\AppData\Local\Microsoft\Windows Live Mail
 pop3.smg.net 110
 smtp.smg.net 25
 ```
-![](/images/window_live_mail/1.png)
-![](/images/window_live_mail/2.png)
+![](/images/window_live_mail_png/1.png)
+![](/images/window_live_mail_png/2.png)
 
 * only copy inbox respect to the same account, for example:
 ```
