@@ -38,7 +38,6 @@ $new_ary=$array1+$array2;
 ```
 3. merge
 ```php
-
 $arr12 = array_merge($arr1, $arr2); 
 ```
 
@@ -192,7 +191,6 @@ isset($_POST["i"])
 ## xml
 
 1. gen_xml
-
 ```php
 function create_xml($public_dt,$status,$notice_str,$dt)
 {
@@ -229,8 +227,7 @@ function create_xml($public_dt,$status,$notice_str,$dt)
     return $xml;
 }
 ```
-
-```code
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <SpecialNotice>
   <System>
