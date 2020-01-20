@@ -222,7 +222,7 @@ function create_xml($public_dt,$status,$notice_str,$dt)
 ```
 
 2. output:
-```xml
+```
   <SpecialNotice>
     <System>
       <SysAuthor>AMO</SysAuthor>
