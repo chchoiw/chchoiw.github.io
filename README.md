@@ -16,7 +16,7 @@
 ``` 
 - mathjax fix ```CDATA```
   [ref](https://groups.google.com/forum/#!topic/mathjax-users/AS6swTZzyWY)
-add _inclue/footer/custom.html
+add ```_inclue/footer/custom.html```
 ```javascript
      <script type="text/x-mathjax-config">
      MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
@@ -49,4 +49,16 @@ window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 
 ```
 
-- update link color: _variable.scss ($link-color  )
+- update link color: ```/_sass_/_variable.scss ($link-color  )```
+
+- synatax font-size: 
+goto the path ```/_sass_/_syntax.scss``` and revise the block to 
+
+```css
+  .highlight {
+    margin: 0;
+    font-family: $monospace;
+    font-size: $type-size-5;
+    line-height: 1.8;
+  }
+```
