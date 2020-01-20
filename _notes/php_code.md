@@ -189,8 +189,7 @@ isset($_POST["i"])
 ```
 
 ## xml
-
-1. gen_xml
+gen_xml
 ```php
 function create_xml($public_dt,$status,$notice_str,$dt)
 {
@@ -220,9 +219,8 @@ function create_xml($public_dt,$status,$notice_str,$dt)
     return $xml;
 }
 ```
-
-2. output:
-```
+output:
+```xml
   <SpecialNotice>
     <System>
       <SysAuthor>AMO</SysAuthor>
@@ -238,8 +236,7 @@ function create_xml($public_dt,$status,$notice_str,$dt)
     </Custom>
   </SpecialNotice>
 ```
-
-3. write xml
+write xml
 ```php
 function wt_xml_file($xml)
 {
