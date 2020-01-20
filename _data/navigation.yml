@@ -23,7 +23,9 @@ main:
   - title: "Blogs(Category)"
     # url: /year-archive/
     url: /categories/
-    
+  - title: "Notes"
+    # url: /year-archive/
+    url: /notes/    
 #   - title: "Contact"
 #     url: /contact/  
     
