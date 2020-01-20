@@ -202,26 +202,19 @@ function create_xml($public_dt,$status,$notice_str,$dt)
     $xmlRoot = $domtree->createElement("SpecialNotice");
     /* append it to the document created */
     $xmlRoot = $domtree->appendChild($xmlRoot);
-
     $system = $domtree->createElement("System");
     $system = $xmlRoot->appendChild($system);
-
     /* you should enclose the following two lines in a cicle */
     $system->appendChild($domtree->createElement("SysAuthor",'AMO'));
     $system->appendChild($domtree->createElement('SysPubdate',$public_dt));
-
     $system->appendChild($domtree->createElement('SysLanguage','3'));
-
-
     $Custom = $domtree->createElement("Custom");
     $Custom = $xmlRoot->appendChild($Custom);
     $WarmNotice = $domtree->createElement("WarmNotice");
     $WarmNotice = $Custom->appendChild($WarmNotice);
     $WarmNotice->appendChild($domtree->createElement("Status",$status));
     $WarmNotice->appendChild($domtree->createElement('Description',$notice_str));
-
     $WarmNotice->appendChild($domtree->createElement('IssuedAt',$dt));
-
     /* get the xml printed */
     $xml=$domtree->saveXML();
     return $xml;
