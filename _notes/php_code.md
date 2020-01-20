@@ -18,8 +18,6 @@ permalink: /posts/notes/php_code/
 - [insert DB](#insert-db)
 
 
-#PHP CODE
-
 ## Basic
 ### Array
 1. new array
@@ -230,7 +228,8 @@ output:
     <Custom>
       <WarmNotice>
         <Status>0</Status>
-        <Description>In the next few hours, an area of thunderstorm may affect MIA. Please pay attention to the message issued by AMC.</Description>
+        <Description>In the next few hours, an area of thunderstorm may affect MIA. Please pay attention to the message issued by AMC.
+        </Description>
         <IssuedAt>2019-08-28 08:42 GMT</IssuedAt>
       </WarmNotice>
     </Custom>
@@ -240,7 +239,8 @@ write xml
 ```php
 function wt_xml_file($xml)
 {
-    $myxmlfile = fopen("/datacenter/products/cmae/warnings/e_aeronotice.xml", "w+") or die("Unable to open file!");
+    $myxmlfile = fopen("/datacenter/products/cmae/warnings/e_aeronotice.xml", "w+") \
+    or die("Unable to open file!");
     fwrite($myxmlfile, $xml);
     fclose($myxmlfile);
     $myxmlfile = fopen("output/xml.txt", "w+") or die("Unable to open file!");
