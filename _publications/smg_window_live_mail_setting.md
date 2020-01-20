@@ -1,6 +1,6 @@
 ---
 title: 'SMG replace computer setting'
-date: 2017-07-26
+date: 2020-01-20
 permalink: /posts/notes/smg_setting/
 ---
 
