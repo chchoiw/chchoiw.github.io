@@ -89,7 +89,6 @@ suff=os.path.splitext(base_suff)[1]
 # then filename=*.xml
 for filename in os.listdir(directory):
     if filename.endswith(".xml"):
-
 ```
 
 3. wirte a file
@@ -97,19 +96,16 @@ for filename in os.listdir(directory):
 with open(directory+base+"_respond.txt","w+") as f:
     f.write(output)
 f.close()
-
 # write a file with utf8
 # display traditional chinese which NOT includes '氹'
 with codecs.open(wt_sms_path, 'wb',encoding='utf8') as f:
     f.write(output)
 f.close()
-
 # write a file with anscii
 # display traditional chinese which includes '氹'
 with codecs.open(wt_sms_path, 'wb',encoding='big5hkscs') as f:
     f.write(output)
 f.close()
-
 # write a file with anscii
 # display traditional chinese which NOT includes '氹'
 with codecs.open(wt_sms_path, 'wb',encoding='Big5') as f:
@@ -120,8 +116,6 @@ f.close()
 ```python
 with open('a', 'w') as a, open('b', 'w') as b:
     do_something()
-
-
 with codecs.open(path, 'wb',encoding='big5hkscs') as f, codecs.open(path2, 'wb',encoding='big5hkscs') as f2:
     f.write(output)
 f.close()
@@ -134,7 +128,6 @@ np.max(ary)
 ```
 ## Read and write xml
 ref:[lxm](https://lxml.de/tutorial.html)
-
 String read as xml
 ```python
 respond_xml=etree.fromstring(respond_xml_str)
@@ -143,7 +136,6 @@ respond_xml=etree.fromstring(respond_xml_str)
 Generate Simple xml
 ```python
 from lxml import etree
-
 root= etree.Element('jds')
 account= etree.SubElement(root,'account')
 '''
@@ -185,7 +177,6 @@ Wite to file with coding utf8
 import codecs
 with codecs.open(name_file, 'wb',encoding='utf8') as xml:
     xml.write("%s" %xml_str)
-
 xml.close()  
 ```
 Output:
@@ -199,7 +190,6 @@ Output:
 		</msg_send>
 	</account>
 </jds>
-
 ```
 Read xml as obj
 ```python
@@ -241,9 +231,7 @@ respond_ary=json.loads(a)
 import os
 import datetime
 import time
-
 file_uptime_epoch=int(os.path.getmtime(file_name))
-
 now_second_epoch=(datetime.datetime.utcnow()- \
     datetime.datetime(1970,1,1)).total_seconds()
 # or 
@@ -308,10 +296,8 @@ date_array= [datetime.datetime.strftime(i, "%Y-%m-%d %H:%M:%S") for i in table_s
 old_stdout = sys.stdout
 log_dt=now_dt.strftime('%Y%m%d%H%M')
 log_path="%s/log_test/check_alert_%s.txt" %(workdir,log_dt)
-
 log_file = open(log_path,"w+")
 sys.stdout = log_file
-
 # at the end of file , back to origion setting
 sys.stdout = old_stdout
 log_file.close()
@@ -322,7 +308,6 @@ log_file.close()
 ```python
 import MySQLdb as db
 import sqlalchemy
-
 def connect_db(config_dict,sql):
     try:
         db_connection = db.connect(host=config_dict["host"], \
@@ -659,8 +644,6 @@ def error_str():
 try:
     # your code
 except :
-
-
     exc_type, exc_value, exc_traceback = sys.exc_info()
     error_str="\n"
     for item in traceback.format_exception(exc_type, exc_value,exc_traceback):
@@ -730,7 +713,6 @@ ref: pws04
 from mpl_toolkits.basemap import Basemap
 lat_0=22.16
 lon_0=113.57
-
 llcrnrlon, llcrnrlat, urcrnrlon, urcrnrlat=106,16,121,24
 map = Basemap(projection='merc', \
             lon_0=lon_0, \
