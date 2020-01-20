@@ -223,24 +223,24 @@ function create_xml($public_dt,$status,$notice_str,$dt)
 
 2. output:
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<SpecialNotice>
-  <System>
-    <SysAuthor>AMO</SysAuthor>
-    <SysPubdate>2019-08-28 08:42 +0000</SysPubdate>
-    <SysLanguage>3</SysLanguage>
-  </System>
-  <Custom>
-    <WarmNotice>
-      <Status>0</Status>
-      <Description>In the next few hours, an area of thunderstorm may affect MIA. Please pay attention to the message issued by AMC.</Description>
-      <IssuedAt>2019-08-28 08:42 GMT</IssuedAt>
-    </WarmNotice>
-  </Custom>
-</SpecialNotice>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <SpecialNotice>
+    <System>
+      <SysAuthor>AMO</SysAuthor>
+      <SysPubdate>2019-08-28 08:42 +0000</SysPubdate>
+      <SysLanguage>3</SysLanguage>
+    </System>
+    <Custom>
+      <WarmNotice>
+        <Status>0</Status>
+        <Description>In the next few hours, an area of thunderstorm may affect MIA. Please pay attention to the message issued by AMC.</Description>
+        <IssuedAt>2019-08-28 08:42 GMT</IssuedAt>
+      </WarmNotice>
+    </Custom>
+  </SpecialNotice>
 ```
 
-3. write xml
+1. write xml
 ```php
 function wt_xml_file($xml)
 {
