@@ -244,14 +244,11 @@ function create_xml($public_dt,$status,$notice_str,$dt)
 function wt_xml_file($xml)
 {
     $myxmlfile = fopen("/datacenter/products/cmae/warnings/e_aeronotice.xml", "w+") or die("Unable to open file!");
-
     fwrite($myxmlfile, $xml);
     fclose($myxmlfile);
-
     $myxmlfile = fopen("output/xml.txt", "w+") or die("Unable to open file!");
     fwrite($myxmlfile, $xml);
     fclose($myxmlfile);
-
     $log_dt=gmdate("Ymd");
     $log_file="log/log_xml_".$log_dt.".txt";
     if (file_exists($log_file))
