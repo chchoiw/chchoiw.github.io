@@ -126,6 +126,8 @@ import numpy as np
 ary=[np.nan,1]
 np.max(ary)
 ```
+
+
 ## Read and write xml
 ref:[lxm](https://lxml.de/tutorial.html)
 String read as xml
@@ -225,7 +227,6 @@ respond_ary=json.loads(a)
 ```
 
 ## Datetime and seconds since ecoph
-
 1. get file updated time: seconds since epoch 
 ```python
 import os
@@ -239,13 +240,11 @@ now_second_epoch=(datetime.datetime.utcnow()- \
 now_second_epoch=(now_second_epoch//(n*60))*n*60
 now_second_epoch=time.time()
 ``` 
-
 2. timestamp transfer to datetime
 ```python
 dt=datetime.datetime.utcfromtimestamp(file_uptime_epoch)
 dt=dt+ datetime.timedelta( hours=8)
 ```
-
 3. common code:
 ```python 
 now_dt=datetime.datetime.utcnow()+ datetime.timedelta( hours=8)
@@ -253,8 +252,6 @@ now_dt=now_dt.replace(second=0,microsecond=0)
 dt_str=datetime.datetime.strftime(datetime.datetime.utcnow()+ \
                                     datetime.timedelta( hours=8),"%Y-%m-%d %H:%M:00")
 ```
-
-
 4. get year/monthe/day/hour/minutes from datetime 
 ```python
 now_dt=datetime.datetime.utcnow()+ datetime.timedelta( hours=8)
@@ -304,7 +301,7 @@ log_file.close()
 ```
 
 ## Read DB to df
-1. read db to df 
+1. read db to df
 ```python
 import MySQLdb as db
 import sqlalchemy
@@ -317,7 +314,6 @@ def connect_db(config_dict,sql):
                                     charset='utf8')
         awsMon_db = pd.read_sql(sql, con=db_connection )
         logic=True
-        
         if awsMon_db.shape[0]==0:
             logic=False
     except :
@@ -369,7 +365,7 @@ def insert_db(insert_db,alert_df):
 ## Dictionary Skills
 
 1. Copy Dictionary
-```pythons
+```python
 type_dic=dict(filename_msg_dic)
 ```
 
@@ -411,14 +407,12 @@ df = pd.DataFrame()
 df = pd.DataFrame(columns=['datetime','filename','message'])
 ```
 
-
 2. Drop Column of DataFrame
 ```python
 merge_df=merge_df.drop(['INSERT_TIME_GAP_x', 'CHECK_FLAG_x','UPDATE_DATETIME',"ID"], axis=1)   
 ```
 
 3. Rename Column of DataFrame
-
 ```python
 station_df.rename(columns={'gps_z': 'BaseLevel'}, inplace=True)
 # or
@@ -556,7 +550,6 @@ from email import Encoders
 from HTMLParser import HTMLParser
 import re
 from tabulate import tabulate
-
 class MLStripper(HTMLParser):
     def __init__(self):
         self.reset()
@@ -565,15 +558,11 @@ class MLStripper(HTMLParser):
         self.fed.append(d)
     def get_data(self):
         return ''.join(self.fed)
-
 def strip_tags(html):
     s = MLStripper()
     s.feed(html)
     return s.get_data()
-
-
-def sd_email(email_dict,receivers_ary):
-    
+def sd_email(email_dict,receivers_ary):  
     htmlmsgtext=email_dict['htmlmsgtext']
     receivers=receivers_ary
     fromaddr=email_dict['fromaddr']
@@ -583,17 +572,13 @@ def sd_email(email_dict,receivers_ary):
     try:
         msgtext = htmlmsgtext.replace('</br>',"\r").replace('<br />',"\r").replace('</p>',"\r")
         msgtext = strip_tags(msgtext)
-
         msg = MIMEMultipart()
         msg.preamble = 'This is a multi-part message in MIME format.\n'
         msg.epilogue = ''
-
         body = MIMEMultipart('alternative')
         body.attach(MIMEText(msgtext))
         body.attach(MIMEText(htmlmsgtext, 'html', 'utf-8'))
         msg.attach(body)
-
-
         if 'attachments' in globals() and len('attachments') > 0:
             for filename in attachments:
                 f = filename
@@ -610,7 +595,6 @@ def sd_email(email_dict,receivers_ary):
         msg.add_header('Reply-To', replyto)
         msg.add_header('Accept-Language', 'zh-TW')
         msg.add_header('Accept-Language', 'ISO-8859-1,utf-8')
-
         server = smtplib.SMTP(host)
     #    server = smtplib.SMTP()
     #    server.connect(host)
@@ -625,11 +609,11 @@ def sd_email(email_dict,receivers_ary):
             print 'ERROR: email NOT sent'
     except:
         print ('Email NOT sent to %s successfully. %s ERR: %s %s %s ', 'one of the receivers', 'tete', str(sys.exc_info()[0]), str(sys.exc_info()[1]), str(sys.exc_info()[2]) )
-
 ```
 
 
 ## Try and Except Error:
+0. define a function call ```error_str()```
 ```python
 import traceback
 def error_str():
@@ -733,7 +717,6 @@ map.drawmapboundary(fill_color='#e0f8f7')
 
 
 3. draw circle of distance into map
-
 ```python
 radius_deg=i*1./(111.0*math.cos(math.radians(lat_0)))
 map.tissot(lon_0,lat_0,radius_deg,50,facecolor='white',alpha=0.2,linewidth=1.55, linestyle='-',zorder=1) 
@@ -749,7 +732,6 @@ map.plot(x,y,marker='o',markersize=10,\
 ```
 
 5. draw arrow
-
 ```python
 # arrow located at x_c, y_c
 plt.annotate("", xy=(x_c, y_c), xytext=(x[i], y[i]),arrowprops=dict(arrowstyle='-> ,head_length=0.4,head_width=0.2', color=track_color,linewidth=2),fontsize=10,zorder=10)
