@@ -1,4 +1,8 @@
-
+---
+title: 'SMG Window live mail set internal account'
+date: 2017-07-26
+permalink: /posts/notes/smg_window_live_mail/
+---
 
 
 # SMG Window live mail set internal account
