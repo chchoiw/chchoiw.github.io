@@ -227,7 +227,7 @@ function create_xml($public_dt,$status,$notice_str,$dt)
     return $xml;
 }
 ```
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <SpecialNotice>
   <System>
@@ -246,7 +246,6 @@ function create_xml($public_dt,$status,$notice_str,$dt)
 ```
 
 2. write xml
-
 ```php
 function wt_xml_file($xml)
 {
