@@ -1,12 +1,12 @@
 ---
-title: 'SMG Window live mail set internal account'
+title: 'SMG replace computer setting'
 date: 2017-07-26
-permalink: /posts/notes/smg_window_live_mail/
+permalink: /posts/notes/smg_setting/
 ---
 
 
 
-
+# Window Live Mail
 
 * copy all folder to local computer
 ```
@@ -38,3 +38,16 @@ smtp.smg.net 25
 C:\Users\chchoi\AppData\Local\Microsoft\Windows Live Mail\smg_internal\Inbox
 ```
 here smg_ineternal is my account name
+
+# Data Disk Connection
+* [Download](/files/smg_replace_computer/dir_connect.vbs)
+* click```window+r``` open ```cmd```
+* key in
+```
+shell:startup
+```
+* copy ```dir_connect.vbs``` to 
+```
+C:\Users\chchoi\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
+then will run it again for starting the computer.
