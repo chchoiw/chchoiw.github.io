@@ -17,7 +17,7 @@ permalink: /posts/notes/bash_code/
 
 # Bash Code
 ## show update time
-- stat -c "%y %n": %y get the seconds since epoch
+- ```stat -c "%y %n"```:``` %y``` get the seconds since epoch
 
 ```bash
 date -r gen_sms.py +"%Y-%m-%d %H:%M"
@@ -57,9 +57,6 @@ ssh user@host
 
 2. copy file
 ref: [link](https://unix.stackexchange.com/questions/115560/use-scp-to-transfer-a-file-from-local-directory-x-to-remote-directory-y)
-
-
-
 ```bash
 # local to remote
 scp -P 2222 file.ext username@domain:~/ 
