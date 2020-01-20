@@ -20,6 +20,7 @@ permalink: /posts/notes/python_code/
   - [Try and Except Error:](#try-and-except-error)
   - [Subprocess-Run Command and get responds](#subprocess-run-command-and-get-responds)
   - [Matplotlib](#matplotlib)
+  - [Install pytorch in windows:](#install-pytorch-in-windows)
 
 # Useful import
 
@@ -760,4 +761,17 @@ the_table = plt.table(cellText=cellText,\
                         colWidths=colWidths,\
                         colLabels=None,loc='bottom',\
                         bbox=[0.0, -0.52, 0.99, 0.45])
+```
+
+## Install pytorch in windows:
+0. [Reference](https://stackoverflow.com/questions/47754749/how-to-install-pytorch-in-windows/56172755)
+1. Install PyTorch (without CUDA) using
+```
+conda install pytorch-cpu -c pytorch 
+pip3 install torchvision
+```
+2. Install PyTorch (CUDA 9.1) using
+```
+conda install pytorch cuda91 -c pytorch 
+pip3 install torchvision
 ```
