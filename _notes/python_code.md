@@ -130,12 +130,12 @@ np.max(ary)
 
 ## Read and write xml
 ref:[lxm](https://lxml.de/tutorial.html)
-1. String read as xml
+String read as xml
 ```python
 respond_xml=etree.fromstring(respond_xml_str)
 ```
 
-2. Generate Simple xml
+Generate Simple xml
 ```python
 from lxml import etree
 root= etree.Element('jds')
@@ -152,7 +152,7 @@ Output:
     <account acid="hutchison">
 </jds>
 ```
-3. Adding subelement "msg_send" under "account"
+Moreover, adding subelement "msg_send" under "account"
 
 ```python
 msg_send = etree.SubElement(account,'msg_send')
@@ -160,21 +160,21 @@ account.append(msg_send)
 ```
 
 
-4. Adding Text in tag:
+Adding Text in tag:
 ```python
 language=etree.SubElement(msg_send,'language')
 language.text='C'
 msg_send.append(language)
 ```
 
-5. XML to string
+XML to string
 ```python
 xml_str = etree.tostring(root,encoding="UTF-8", \
                         pretty_print=True,\
                         doctype='<!DOCTYPE jds SYSTEM "/home/httpd/html/dtd/jds2.dtd">',\
                         xml_declaration=True)
 ```
-6. Wite to file with coding utf8
+Wite to file with coding utf8
 ```python
 import codecs
 with codecs.open(name_file, 'wb',encoding='utf8') as xml:
@@ -193,7 +193,7 @@ Output:
 	</account>
 </jds>
 ```
-7. Read xml as obj
+Read xml as obj
 ```python
 import untangle
 # pip install untangle
