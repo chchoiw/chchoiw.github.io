@@ -21,15 +21,13 @@ main:
     url: /year-archive/
     # url: /categories/        
   - title: "Blogs(Category)"
-    # url: /year-archive/
     url: /categories/
-  - title: "Notes"
-    # url: /year-archive/
-    url: /publications/  
+  
+  # - title: "Publications"
+  #   url: /publications/  
 #   - title: "Contact"
 #     url: /contact/  
   - title: "Notes"
-    # url: /year-archive/
     url: /notes/      
   # - title: "Guide"
     # url: /markdown/

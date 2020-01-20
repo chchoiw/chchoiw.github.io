@@ -62,3 +62,45 @@ goto the path ```/_sass_/_syntax.scss``` and revise the block to
     line-height: 1.8;
   }
 ```
+
+- Add Category ```Notes``` 
+  1. Create a folder ```_notes```
+  2. add the following code to ```_config.yml``` 
+  ```
+    notes:
+    output: true
+    permalink: /:collection/:path/
+  ```
+  ```
+    # _notes
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  ```
+  3. add a new document ```_post/notes.md``` or [download](/post/notes.md) 
+  ```markdown
+  ---
+  layout: archive
+  title: "Notes"
+  permalink: /notes/
+  author_profile: true
+  ---
+
+  {% include base_path %}
+
+  {% for post in site.notes reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+  ```
+  4. finally, add ```_data/navigation.yml```
+  ```
+  - title: "Notes"
+    url: /notes/     
+  ```

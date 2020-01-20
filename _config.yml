@@ -251,7 +251,6 @@ defaults:
       comments: true
       share: true
       related: true
-      # testingg
 
 # Sass/SCSS
 sass:
