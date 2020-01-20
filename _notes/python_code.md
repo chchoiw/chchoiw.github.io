@@ -25,12 +25,9 @@ permalink: /posts/notes/python_code/
 
 1. common
 ```python
-# -*- coding: utf-8 -*-
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
-
-# sysmtem command
 import os
 import subprocess
 from glob import glob
@@ -39,21 +36,19 @@ import pandas as pd
 import numpy as np
 import datetime
 import time
-# timezone
+
 import pytz 
-# SQL
+
 import MySQLdb as db
-# df insert/append to db
+
 import sqlalchemy
-# XML
+
 from lxml import etree
 import untangle
 # json
 import json
-# write txt with different encoding
 import codecs
 from tabulate import tabulate
-# math
 from math import sin, cos, sqrt, atan2, radians
 ```
 2. matplotlib
