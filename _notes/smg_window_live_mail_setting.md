@@ -25,9 +25,9 @@ and open ```Window Live Mail``` app again
 C:\Users\chchoi\AppData\Local\Microsoft\Windows Live Mail
 ```
 
-* copy contact to the following file:
+* copy [Contacts](https://drive.google.com/open?id=1Nr7wa7KxlBhi_hD2GECxOVD4fTcMKsrK) and replace the following location:
 ```
-C:\Users\chchoi\AppData\Local\Microsoft\Windows Live\contact
+C:\Users\chchoi\AppData\Local\Microsoft\Windows Live\Contacts
 ```
 
 * reset account 
