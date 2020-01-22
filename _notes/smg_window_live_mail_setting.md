@@ -25,6 +25,11 @@ and open ```Window Live Mail``` app again
 C:\Users\chchoi\AppData\Local\Microsoft\Windows Live Mail
 ```
 
+* copy contact to the following file:
+```
+C:\Users\chchoi\AppData\Local\Microsoft\Windows Live\contact
+```
+
 * reset account 
 ```
 pop3.smg.net 110
