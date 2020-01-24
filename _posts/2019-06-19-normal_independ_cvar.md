@@ -46,7 +46,7 @@ $$
 - $x_{(i)}$是從小到大排序後第$i$項
 -  ${Z_1, \cdots, Z_n}$ be i.i.d. $N(0, 1)$ and also take their order statistics $Z_{(1)}<\cdots<Z_{(n)} $
 - $m_i$是$E(Z_{(i)})$
-- $V$ 是Covarience of $Z_{(i)},Z_{(j)}$,即$V_{ij} = E[(Z_{(i)} −m_i)(Z_{(j)} − m_j )]$
+- $V$ 是 covariance of $Z_{(i)},Z_{(j)}$,即$V_{ij} = E[(Z_{(i)} −m_i)(Z_{(j)} − m_j )]$
 -  $C := (m'V^{−1}V^{−1}m)^{1/2}$
 - $a=\frac{m'V^{-1}}{C}$
 
