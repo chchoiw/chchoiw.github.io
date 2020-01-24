@@ -19,20 +19,22 @@ category:
 # Naive Bayes Algorithm
 
 - Basically, this is my studying from [NTCU open course](http://ocw.nctu.edu.tw/index.php) - [Machine Learning](http://ocw.nctu.edu.tw/course_detail.php?bgid=1&gid=1&nid=563&page=1). I  take the key points for my references.
+
+
 ## Bayes' Rule
 Assume that $\{B_i, i=1,\dots,n\}$ is a partition of $S$ such that $P(B_i)>0 \text{ for }  i=1,2,...,k$. Then
 
 $$
-\begin{aligned\*}
+\begin{aligned}
 P(B_j|A)  &= \frac{P(A|B_j)P(B_j)}{P(A)}\\
 &=\frac{P(A|B_j)P(B_j)}{\sum_{i=1}^kP(A|B_i)P(B_i)}
-\end{aligned\*}
+\end{aligned}
 $$
 
 ## The Bayes' Classifier
 
 $$
-P(C_i|x)=max_{k} p(C_k|x)
+P(C_i|x)=\max\limits_{k} p(C_k|x)
 $$
 
 * For choose $i$ such that $P(C_i \vert x)$ is maximum is irrelevant with the value of $P(x)$.
@@ -67,17 +69,14 @@ $$
 
 ## python code
 - This is from [website](https://www.datacamp.com/community/tutorials/naive-bayes-scikit-learn)
-
 ```python 
 weather=['Sunny','Sunny','Overcast','Rainy','Rainy','Rainy','Overcast','Sunny','Sunny',
 'Rainy','Sunny','Overcast','Overcast','Rainy']
 temp=['Hot','Hot','Hot','Mild','Cool','Cool','Cool','Mild','Cool','Mild','Mild','Mild','Hot','Mild']
-
 play=['No','No','Yes','Yes','Yes','No','Yes','No','Yes','Yes','Yes','Yes','Yes','No']
 ```
 
 - Encoding Features
-
 ```python
 # Import LabelEncoder
 from sklearn import preprocessing
@@ -87,7 +86,6 @@ le = preprocessing.LabelEncoder()
 weather_encoded=le.fit_transform(weather)
 print weather_encoded
 ```
-
 ```python 
 temp_encoded=le.fit_transform(temp)
 label=le.fit_transform(play)
@@ -100,13 +98,10 @@ print features
 ```python 
 #Import Gaussian Naive Bayes model
 from sklearn.naive_bayes import GaussianNB
-
 #Create a Gaussian Classifier
 model = GaussianNB()
-
 # Train the model using the training sets
 model.fit(features,label)
-
 #Predict Output
 predicted= model.predict([[0,2]]) # 0:Overcast, 2:Mild
 print "Predicted Value:", predicted
