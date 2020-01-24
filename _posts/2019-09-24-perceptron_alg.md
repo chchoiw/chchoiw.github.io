@@ -139,7 +139,8 @@ $$
 $$
 
 which $\alpha_i >0$ means that $\langle x_i,y_i \rangle$ has been misclassified.
- - Training data only appear in the algorithm through the entries of the Gram matrix
+
+- Training data only appear in the algorithm through the entries of the Gram matrix
 
 $$
 G_{ij}=\langle x_i, x_j \rangle
