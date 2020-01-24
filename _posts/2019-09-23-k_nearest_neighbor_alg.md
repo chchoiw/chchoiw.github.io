@@ -38,9 +38,7 @@ $Z$ is empty set for start
 ***for*** all $x \in X$ (in random order)
 <br>
 ***find*** $x' \in Z$ s.t.
-
 $$ \left\Vert x-x' \right\Vert=\text{min}_{x_j \in Z} \left\Vert x-x_j \right\Vert $$
-
 ***Until*** $Z$ does not change.
 
 5. python 
