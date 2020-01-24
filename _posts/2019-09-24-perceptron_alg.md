@@ -130,6 +130,7 @@ $$
 ***Until*** no mistakes made within the for loop 
 <br>
 ***Return*** :$(\alpha, b)$
+<br>
 Remark:
 - The number of updates: 
 - 
