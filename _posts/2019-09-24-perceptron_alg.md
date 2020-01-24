@@ -112,7 +112,9 @@ y_i(\langle w_{k},x_i \rangle +b_{k})=y_i\left(\sum\limits_{i=1}^l \alpha_i y_i 
 $$
 
 Repeat
-for i= 1 to l 
+<br>
+for i= 1 to l
+<br> 
 if $y_i\left(\sum\limits_{i=1}^l \alpha_i y_i \langle w_i,x_i \rangle +b_k \right) \leq 0$, then
 
 $$
@@ -123,8 +125,10 @@ b_{i}  &\leftarrow  b_{i}  + y_iR^2 \\
 $$
 
 end if
+<br>
 Until no mistakes made within the for loop 
-Reutrn :$(\alpha, b)$
+<br>
+Return :$(\alpha, b)$
 Remark:
 - The number of updates: 
 - 
