@@ -184,7 +184,7 @@ $$
 \end{aligned}
 $$
 
-$H_0 :\beta_1=\beta_2=\cdots=\beta_n=0$
+$$H_0 :\beta_1=\beta_2=\cdots=\beta_n=0$$
 
 在已知$H_0$下，
 
