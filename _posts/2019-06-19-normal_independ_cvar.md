@@ -98,9 +98,9 @@ $H_0  :e_t= ae_{t-1}+v_t, a=0$
 
 Since $d$ is approximately equal to
 
-$$2(1 −  {{\hat {\rho }}}),$$
+$$ 2(1 −  \hat {\rho }),$$
 
-where ${ {\hat {\rho }}}$  is the sample autocorrelation of the residuals, $d = 2$ indicates no autocorrelation.
+where $\hat {\rho }$  is the sample autocorrelation of the residuals, $d = 2$ indicates no autocorrelation.
 
 A rule of thumb is that test statistic values in the **range of 1.5 to 2.5** are relatively normal.
 
