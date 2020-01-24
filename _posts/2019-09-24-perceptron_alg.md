@@ -53,10 +53,11 @@ $$
 # Perceptron Algorithm (Primal From)
 An on-line and mistake-driven produce 
 
-Repeat
+```Repeat```
 <br>
-***for*** i =1 to l 
-***if*** $y_i(\langle w_{k},x_i \rangle +b_k) \leq 0$, then 
+```for``` i =1 to l 
+<br>
+```if``` $y_i(\langle w_{k},x_i \rangle +b_k) \leq 0$, then 
 
 $$
 \begin{aligned}
@@ -66,13 +67,13 @@ k & \leftarrow k+1
 \end{aligned}
 $$
 
-***end if***
+```end if```
 <br>
-***Until*** no mistakes made within the for loop 
+```Until``` no mistakes made within the for loop 
 <br>
-***return***: $k,(w_k,b_k)$
+```return```: $k,(w_k,b_k)$
 
-***Remark***:
+```Remark```:
 
 $$
 y_i(\langle w_{k+1},x_i \rangle +b_{k+1})=
@@ -111,11 +112,11 @@ $$
 y_i(\langle w_{k},x_i \rangle +b_{k})=y_i\left(\sum\limits_{i=1}^l \alpha_i y_i \langle w_i,x_i \rangle +b_k \right)
 $$
 
-***Repeat***
+```Repeat```
 <br>
-***for*** i= 1 to l
+```for``` i= 1 to l
 <br> 
-***if*** $y_i\left(\sum\limits_{i=1}^l \alpha_i y_i \langle w_i,x_i \rangle +b_k \right) \leq 0$, then
+```if``` $y_i\left(\sum\limits_{i=1}^l \alpha_i y_i \langle w_i,x_i \rangle +b_k \right) \leq 0$, then
 
 $$
 \begin{aligned}
@@ -124,9 +125,9 @@ b_{i}  &\leftarrow  b_{i}  + y_iR^2 \\
 \end{aligned}
 $$
 
-***end if***
+```end if```
 <br>
-***Until*** no mistakes made within the for loop 
+```Until``` no mistakes made within the for loop 
 <br>
 Return :$(\alpha, b)$
 Remark:
