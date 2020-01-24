@@ -175,7 +175,7 @@ If $\hat x$ satisfies $g(\hat x) \leq 0,\alpha\geq 0 \implies \alpha^Tg(\hat x) 
 The last inequality holds if and only if 
 
 \begin{equation}
-\alpha^Tg(\hat x) = 0 \tag2 . \label{eq:hold_eq}
+\alpha^Tg(\hat x) = 0 . \label{eq:hold_eq}
 \end{equation}
 
 Hence, taking sup on the left side while the right side takes inf
@@ -185,7 +185,7 @@ $$
 $$
 
 The above holds for corollary 1.
-If $x^*,\alpha^*,\beta^*$ satisfiy $f(x^*)=\theta(\alpha^*,\beta^*)$, by corollary 1, 
+If $x^\*,\alpha^\*,\beta^\*$ satisfiy $f(x^\*)=\theta(\alpha^\*,\beta^\*)$, by corollary 1, 
 
 $$f(x^*)=\theta(\alpha^*,\beta^*)=\max\limits_{\alpha,\beta}\min\limits_{x \in \Omega} \mathcal{L}(x,\alpha,\beta)$$
 
@@ -193,7 +193,7 @@ is the feasible solution.
 Therefore, $\eqref{eq:hold_eq}$ implies
 
 $$
-\alpha^_ \bot g(x^_) \iff \alpha*i^* g*i(x^*)=0 \quad \forall i
+\alpha^*_* \bot g(x^*) \iff \alpha_*_i^* g_i(x^*)=0 \quad \forall i
 $$
 
 This proves corollary 2.
@@ -222,7 +222,7 @@ $$
 \begin{aligned}
 \mathcal L (x,\alpha,\beta) &= p^Tx+\alpha*1^T(b-Ax)+\alpha_2^T(-x)\\
 &= (p-A^T\alpha_1-\alpha_2)x+\alpha_1^Tb \\
-\frac{\partial \mathcal L (x,\alpha,\beta)}{\partial x} \bigg\vert*{x=\bar x} &=p-A^T\alpha_1-\alpha_2 =0
+\frac{\partial \mathcal L (x,\alpha,\beta)}{\partial x} \bigg\vert_{x=\bar x} &=p-A^T\alpha_1-\alpha_2 =0
 \\
 \end{aligned}
 $$
@@ -275,13 +275,13 @@ $$A^TAx=A^Tb$$
 
 always has a solution.
 <br>
-Using LP Duality
-Primal: 
-$$\mathbf 0^Tx$ s.t. $A^TAx=A^Tb$$
+Using LP Duality Primal: 
+
+$$\mathbf 0^Tx\quad \text{s.t.} \quad A^TAx=A^Tb$$
 
 Dual: 
 
-$$b^TA\alpha$ s.t. $(A^TA)^T\alpha=0$$
+$$b^TA\alpha\quad \text{s.t.} \quad (A^TA)^T\alpha=0$$
 
 Clearly, $\alpha=0$ is the solution of Dual problem which equal to minimum of primal problem. Hence, dual has solution implies primal has solution which $A^TAx=A^Tb$ alwasy has a solution.
 
@@ -297,5 +297,5 @@ with strictly convex assumption, we have
 Dual QP
 
 $$
-\max -\frac{1}{2}(p^T+\alpha^TA)Q^{-1}(A^T\alpha +p)-\alpha^Tb\quad \text{s.t.}\quad \alpha \geq 0
+\max \{-\frac{1}{2}(p^T+\alpha^TA)Q^{-1}(A^T\alpha +p)-\alpha^Tb \}\quad \text{s.t.}\quad \alpha \geq 0
 $$
