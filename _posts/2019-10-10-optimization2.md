@@ -185,7 +185,7 @@ $$
 $$
 
 The above holds for corollary 1.
-If $x^\*,\alpha^\*,\beta^\*$ satisfiy $f(x^\*)=\theta(\alpha^\*,\beta^\*)$, by [corollary 1](#corollary-1), 
+If $x^\*,\alpha^\*,\beta^\*$ satisfiy $f(x^\*)=\theta(\alpha^\*,\beta^\*)$, by [$\text{corollary 1}$](#corollary-1), 
 
 $$f(x^*)=\theta(\alpha^*,\beta^*)=\max\limits_{\alpha,\beta}\min\limits_{x \in \Omega} \mathcal{L}(x,\alpha,\beta)$$
 
@@ -196,7 +196,7 @@ $$
 \alpha^*_i \bot g(x^*) \iff \alpha^*_i g_i(x^*)=0 \quad \forall i
 $$
 
-This proves [Corollary 2:](#corollary-2).
+This proves [$\text{corollary 2}$](#corollary-2).
 
 ## Dual Problem of Linear Program
 
