@@ -42,18 +42,14 @@ $$
 For any matrix $A\in \mathbb R^{m \times n}$ and any vector $b\in \mathbb R^n$, either
 
 \begin{equation}
-\mathcal{L}(w,b,\alpha)=\frac{1}{2}w^Tw+\alpha^T(\mathbf 1 -D(Aw+\mathbf 1 b)) \label{original}
-\end{equation}
-
-\begin{equation}
 Ax \leq 0, \quad b^Tx >0 \quad \text{has a solution} \label{1}
-end{equation}
+\end{equation}
 
 or
 
 \begin{equation}
 A\alpha=b \quad \alpha \geq 0 \quad \text{has a solution} \label{2}
-end{equation}
+\end{equation}
 
 From algebraic view, assume $\eqref{2}$ and $\eqref{1}$ holds,
 
@@ -157,7 +153,7 @@ $$
 
 ## Corollary 2:
 
-If $f(x^*)=\theta(\alpha^*, \beta^*)$ where $\alpha^* \geq 0$ and $g(x^*) \leq 0$, $h(x^*)=0$, then $x^*$ and $(\alpha^*, \beta^*)$ solve the primal and dual problem respectively.
+If $f(x^\*)=\theta(\alpha^\*, \beta^\*)$ where $\alpha^\* \geq 0$ and $g(x^\*) \leq 0$, $h(x^\*)=0$, then $x^\*$ and $(\alpha^\*, \beta^\*)$ solve the primal and dual problem respectively.
 In this case,
 
 $$
@@ -261,13 +257,24 @@ $$
 $$
 
 $$
-x^\* \in \arg\min\{\Vert Ax-b\Vert_2^2\} \iff A^TAx=A^Tb
+x^* \in \arg\min\{\Vert Ax-b\Vert_2^2\} \iff A^TAx=A^Tb
 $$
 
-Claim: $A^TAx=A^Tb$ always has a solution.
+Claim:
+
+$$A^TAx=A^Tb$$
+
+always has a solution.
+<br>
 Using LP Duality
-Primal: $\mathbf 0^Tx$ s.t. $A^TAx=A^Tb$
-Dual: $b^TA\alpha$ s.t. $(A^TA)^T\alpha=0$
+Primal: 
+
+$$\mathbf 0^Tx$ s.t. $A^TAx=A^Tb$$
+
+Dual: 
+
+$$b^TA\alpha$ s.t. $(A^TA)^T\alpha=0$$
+
 Clearly, $\alpha=0$ is the solution of Dual problem which equal to minimum of primal problem. Hence, dual has solution implies primal has solution which $A^TAx=A^Tb$ alwasy has a solution.
 
 ## Dual Problem of strictly Convex Quadratic Program
