@@ -76,7 +76,7 @@ $$
 
     $$L(\mu,\Sigma|X')=f(Vec(X')|1_n \otimes \mu,I_n \otimes \Sigma)=\prod_{i=1}^nf(x_i| \mu)$$
 
-    即不同的$f(x_i\vert\theta)$能獨立地相乘，都是因為定義了$Vec(X')$，使得相對應的 $1_n \otimes \mu$ 和 $I_n \otimes \Sigma$，然後運算過程中能拆成 $\prod_{i=1}^nf(x_i\vert \mu)$
+    即不同的$f(x_i\vert\theta)$能獨立地相乘，都是因為定義了$Vec(X')$，使得相對應的 $1_{n} \otimes \mu$ 和 $I_{n} \otimes \Sigma$，然後運算過程中能拆成 $\prod_{i=1}^n f(x_i\vert \mu)$
 
 ## 似然函數的最大值估計
 
