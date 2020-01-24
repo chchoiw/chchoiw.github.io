@@ -72,7 +72,7 @@ $$
 ***Until*** no mistakes made within the for loop 
 <br>
 ***return***: $k,(w_k,b_k)$
-
+<br>
 ***Remark***:
 
 $$
@@ -97,7 +97,7 @@ $$
 The number of mistakes made by the on-line perceptron algorithm on $S$ is almost $\left(\frac{2R}{r}\right)^2$
 
 
-Remark:
+***Remark***:
 - the value of $\eta$ is irreverent.
 
 # Perceptron Algorithm(Dual Form)
@@ -130,8 +130,9 @@ $$
 ***Until*** no mistakes made within the for loop 
 <br>
 ***Return*** :$(\alpha, b)$
+
 <br>
-Remark:
+***Remark***:
 - The number of updates: 
 - 
 $$
