@@ -9,7 +9,7 @@ category:
 ---
 
 
-- [Optimization](#Optimization)
+- [Optijmization](#Optimization)
   - [Optimization Examples in Machine Learning](#Optimization-Examples-in-Machine-Learning)
   - [Least-square Problem](#Least-square-Problem)
   - [Quadratic Function(Standard Form)](#Quadratic-FunctionStandard-Form)
