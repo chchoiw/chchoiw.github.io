@@ -153,17 +153,14 @@ $$
 
 ## Corollary 2:
 
-\begin{theorem}[Prime numbers]
 If $f(x^\*)=\theta(\alpha^\*, \beta^\*)$ where $\alpha^\* \geq 0$ and $g(x^\*) \leq 0$, $h(x^\*)=0$, then $x^\*$ and $(\alpha^\*, \beta^\*)$ solve the primal and dual problem respectively.
-<br>
 In this case,
 
 $$
 \alpha^* \bot g(x^*) \iff \alpha_i^* g_i(x^*)=0 \quad \forall i
 $$
-\end{theorem}
 
-proof:
+***proof:***
 
 $$
 \mathcal{L}(x,\alpha,\beta)=f(x)+\alpha^Tg(x)+\beta^Th(x)
@@ -188,7 +185,7 @@ $$
 $$
 
 The above holds for corollary 1.
-If $x^\*,\alpha^\*,\beta^\*$ satisfiy $f(x^\*)=\theta(\alpha^\*,\beta^\*)$, by corollary 1, 
+If $x^\*,\alpha^\*,\beta^\*$ satisfiy $f(x^\*)=\theta(\alpha^\*,\beta^\*)$, by [corollary 1](#corollary-1), 
 
 $$f(x^*)=\theta(\alpha^*,\beta^*)=\max\limits_{\alpha,\beta}\min\limits_{x \in \Omega} \mathcal{L}(x,\alpha,\beta)$$
 
@@ -199,7 +196,7 @@ $$
 \alpha^*_i \bot g(x^*) \iff \alpha^*_i^* g_i(x^*)=0 \quad \forall i
 $$
 
-This proves corollary 2.
+This proves [Corollary 2:](#corollary-2).
 
 ## Dual Problem of Linear Program
 
