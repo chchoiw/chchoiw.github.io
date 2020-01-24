@@ -27,20 +27,28 @@ category:
 ref:[澳門統計局](https://www.dsec.gov.mo/elearning/knowledge/123)
 
 ## 價格指數
+
 $$PI_{n,k}=\frac{P_{n,k}}{p_{n-1,k}} $$
+
 其中$k$是類型,$n$是時期
 <!-- \frac{\sum P_{n-2}Q_{n-1}}{\sum P_{n-2}Q_{n-2}} -->
 ## 總價
+
 $$V_{n,k}=P_{n,k}Q_{n,k}$$
 
 
 ## 計算短物量
+
 $$SQ_{n}=\sum_{k} SQ_{n,k}= \sum_{k} P_{n-1,k}Q_{n,k}=\sum_{k} \frac{V_{n,k}}{PI_{n,k}}$$
+
 其中，
+
 $$SQ_{n,k}=P_{n-1,k}Q_{n,k}$$
+
 是某一 $k$ 類在 $n$ 時期的短期物量。
 
 ## 計算短期物量指數
+
 $$SQI_{n,k}= \frac{ P_{n-1,k}Q_{n,k}}
 {P_{n-1,k}Q_{n-1,k}}
  =\frac{\frac{V_{n,k}}{PI_{n,k}} }
@@ -56,17 +64,22 @@ $$SQI_{n}= \frac{\sum\limits_{k} P_{n-1,k}Q_{n,k}}
  $$
 
 ## 環比物量指數
+
 $$ RI_{n,k}=\frac{ P_{n-1,k}Q_{n,k}}{ P_{n-1,k}Q_{n-1,k}}   \frac{P_{n-2,k}Q_{n-1,k}}{ P_{n-2,k}Q_{n-2,k}} ...\frac{ P_{0,k}Q_{1,k}}{ P_{0,k}Q_{0,k}}
 = \frac{\frac{V_{n,k}}{PI_{n,k}} }{ V_{n-1,k}}
 \frac{\frac{V_{n-1,k}}{PI_{n-1,k}} }{ V_{n-2,k}}
 \frac{\frac{V_{1,k}}{PI_{1,k}} }{ V_{0,k}}
 =\frac{Q_{1,k}}{Q_{0,k}}
 $$
+
 $$ RI_{n}=\frac{\sum\limits_{k} P_{n-1}Q_{n}}{\sum\limits_{k} P_{n-1}Q_{n-1}}   \frac{\sum\limits_{k} P_{n-2}Q_{n-1}}{\sum\limits_{k} P_{n-2}Q_{n-2}} ...\frac{\sum\limits_{k} P_{0}Q_{1}}{\sum\limits_{k} P_{0}Q_{0}}$$
+
 值得注意的是
+
 $$ RI_{n}=SQI_{n}\times SQI_{n-1}\times... \times SQI_{0}$$
 
 ## 環比物量
+
 $$ RQ_{n,k}=RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
 
 $$ RQ_{n}=\sum\limits_{k} RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
