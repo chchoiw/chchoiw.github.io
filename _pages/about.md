@@ -13,7 +13,7 @@ I am a math graduated student who is working at Macao China. Here is the blog I 
 
 # Recent News
 * 2020-01
-  最近會學習<費曼物理講義>第二冊
+  複習高中物理
 * 2019-10
   學習[Machine Learning](/categories/#machine-learning)
 * 2019-04
