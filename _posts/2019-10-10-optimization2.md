@@ -162,6 +162,7 @@ $$
 \alpha^* \bot g(x^*) \iff \alpha_i^* g_i(x^*)=0 \quad \forall i
 $$
 \end{theorem}
+
 proof:
 
 $$
