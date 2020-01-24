@@ -15,7 +15,7 @@ I am a math graduated student who is working at Macao China. Here is the blog I 
 * 2020-01
   最近會學習<費曼物理講義>第二冊
 * 2019-10
-  學習Machine Learning
+  學習[Machine Learning](/categories/#machine-learning)
 * 2017-07
-  零基礎安裝WRF和LAPS兩個天氣模式，與怎樣轉換觀察值使它們能同化
+  零基礎安裝[WRF和LAPS](/categories/#numerical-weather-model)兩個天氣模式，與怎樣轉換觀察值使它們能同化，
 
