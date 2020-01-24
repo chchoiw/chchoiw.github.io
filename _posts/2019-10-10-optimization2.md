@@ -42,6 +42,10 @@ $$
 For any matrix $A\in \mathbb R^{m \times n}$ and any vector $b\in \mathbb R^n$, either
 
 \begin{equation}
+\mathcal{L}(w,b,\alpha)=\frac{1}{2}w^Tw+\alpha^T(\mathbf 1 -D(Aw+\mathbf 1 b)) \label{original}
+\end{equation}
+
+\begin{equation}
 Ax \leq 0, \quad b^Tx >0 \quad \text{has a solution} \label{1}
 end{equation}
 
