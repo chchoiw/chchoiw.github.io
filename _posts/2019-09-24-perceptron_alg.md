@@ -139,7 +139,6 @@ $$
 # Python Code
 The following code are from [website](https://towardsdatascience.com/an-introduction-to-perceptron-algorithm-40f2ab4e2099)
 - Import data
-
 ```python
 from sklearn import datasets
 import numpy as np
@@ -162,7 +161,6 @@ plt.xlabel('sepal length')
 plt.ylabel('sepal width')
 plt.legend()
 ```
-
 ```python
 # Update y into -1 and 1
 y=np.array([1 if i==1 else -1 for i in y])
