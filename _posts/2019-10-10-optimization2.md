@@ -51,11 +51,11 @@ or
 A\alpha=b \quad \alpha \geq 0 \quad \text{has a solution} \label{2}
 end{equation}
 
-From algebraic view, assume $\eqref(2)$ and $\eqref(1)$ holds,
+From algebraic view, assume $\eqref{2}$ and $\eqref{1}$ holds,
 
 and $$\alpha \geq 0 \implies Ax>0.$$ This leads contradiction.
 
-Form geometric view, (2) says that
+Form geometric view, $\eqref{2}$ says that
 
 $$
 \begin{aligned}
