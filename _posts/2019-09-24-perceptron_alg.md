@@ -54,6 +54,7 @@ $$
 An on-line and mistake-driven produce 
 
 Repeat
+<br>
 for i =1 to l 
 if $y_i(\langle w_{k},x_i \rangle +b_k) \leq 0$, then 
 
@@ -66,7 +67,9 @@ k & \leftarrow k+1
 $$
 
 end if
+<br>
 Until no mistakes made within the for loop 
+<br>
 return: $k,(w_k,b_k)$
 
 Remark:
