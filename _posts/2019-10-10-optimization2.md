@@ -248,9 +248,9 @@ which is the dual form.
 
 | Primal Constrains | Dual Variable  |
 | ----------------- | -------------- |
-| $Ax=\geq b$       | $\alpha\geq 0$ |
+| $Ax\geq b$       | $\alpha\geq 0$ |
 | $Ax= b$           | free           |
-| $Ax=\leq b$       | $\alpha\leq 0$ |
+| $Ax\leq b$       | $\alpha\leq 0$ |
 
 | Primal Variable | Dual Contrains      |
 | --------------- | ------------------- |
@@ -296,6 +296,7 @@ $$
 $$
 
 with strictly convex assumption, we have
+<br>
 Dual QP
 
 $$
