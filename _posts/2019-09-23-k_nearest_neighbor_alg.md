@@ -28,19 +28,20 @@ category:
 3. Classify $x_0$ to the same class with the majority within k-nearest neighbors.
 
 4. Be careful with scale with different attributes. We might need to normalize
-5. 
-$$
-\hat x_j=\frac{x_j-\mu_j}{\sigma_j}
-$$
+5. $\hat x_j=\frac{x_j-\mu_j}{\sigma_j}$
 
 4. Condensed Nearest Neighbors
 
 - $Z$ is empty set for start
 Repeat 
-&nbsp;&nbsp;&nbsp;&nbsp;for all $x \in X$ (in random order)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find $x' \in Z$ s.t.
+<br>
+for all $x \in X$ (in random order)
+<br>
+find $x' \in Z$ s.t.
+
         $$\left\Vert x-x' \right\Vert=\text{min}_{x_j \in Z} \left\Vert x-x_j \right\Vert$$
-Until $Z$ does not change
+
+Until $Z$ does not change.
 
 5. python 
 
