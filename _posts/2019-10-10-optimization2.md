@@ -153,13 +153,15 @@ $$
 
 ## Corollary 2:
 
+\begin{theorem}[Prime numbers]
 If $f(x^\*)=\theta(\alpha^\*, \beta^\*)$ where $\alpha^\* \geq 0$ and $g(x^\*) \leq 0$, $h(x^\*)=0$, then $x^\*$ and $(\alpha^\*, \beta^\*)$ solve the primal and dual problem respectively.
+<br>
 In this case,
 
 $$
-\alpha^*_* \bot g(x^*) \iff \alpha_i^* g_i(x^*)=0 \quad \forall i
+\alpha^* \bot g(x^*) \iff \alpha_i^* g_i(x^*)=0 \quad \forall i
 $$
-
+\end{theorem}
 proof:
 
 $$
