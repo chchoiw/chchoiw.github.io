@@ -57,7 +57,6 @@ names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'Class']
 # Read dataset to pandas dataframe
 dataset = pd.read_csv(url, names=names)
 ```
-
 ```python
 dataset.head()
 X = dataset.iloc[:, :-1].values
