@@ -28,9 +28,11 @@ category:
   
 # 一元簡單線性迴歸
 令 
+
 $$
 \hat y_i=\beta_0-\beta_i x_i
 $$
+
 最小二法是選出$\beta_0,\beta_1$使得$Q$最小。
 
 $$
@@ -61,6 +63,7 @@ l_{yy} &=\sum(y_i -\bar y)^2 =\sum y_i^2 -n\bar y^2 =\sum x_i^2- \frac{1}{n} \le
 $$
 
 其中改寫$\beta_0,\beta_1$
+
 $$
 \begin{aligned}
 \hat \beta_1 &=\sum \left( \frac{x_i-\bar x}{l_{xx}}\right)y_i \\
@@ -78,6 +81,7 @@ $$
 
 
 # 多元線性迴歸
+
 $$
 C = 
 \begin{bmatrix} 
@@ -116,12 +120,14 @@ $$Y=C\beta+\varepsilon $$
 
 ## 最小二乘法
 ## $\beta$的估計
+
 $$
 Q(\beta)=\sum_{t=1}^n \varepsilon_t^2=\sum_{t=1}^n( y_t - \hat y_t)^2=\sum_{t=1}^n[ y_t - (\beta_0+\beta_1 x_{t1}+\cdots+\beta_mx_{tm})]^2
 $$
 
 **最小二乘法是**取$\beta_i$使得$Q$達到最小。
 從這個方法可得出以下結果
+
 $$
 \begin{aligned}
 \widehat{\beta} &=(C'C)^{-1}C'Y \\
@@ -131,12 +137,13 @@ Q(\hat \beta) &= \hat \varepsilon' \varepsilon
 \end{aligned}
 $$
 
-## $\hat \sigma$的估計
+## $\hat \sigma$ 的估計
 利用最大似然原理，仍可得出$\beta$最大似然估計仍為$\hat \beta$,$\sigma$的估計是
 
 $$\hat \sigma^2=\frac{1}{n}\sum_{t=1}^n[ y_t - (\beta_0+\beta_1 x_{t1}+\cdots+\beta_mx_{tm})]^2=\frac{1}{n}Q(\beta)$$
 
 但因$\hat \sigma$不是無偏估計量，通常取
+
 $$
 s^2=\frac{1}{n-m-1}Q(\beta)
 $$
@@ -150,6 +157,7 @@ U &=(\bar Y-\hat Y)'(\bar Y-\hat Y)=\sum(\hat y_i-\bar y_i)^2 \\
 E(y) &= (Y-\bar Y)'(Y-\bar Y)=\sum( y_i-\bar y_i)^2=U+Q
 \end{aligned}
 $$
+
 其中
 - $U$為所建立迴歸式的$X$所引起
 - $Q$為隨機誤差所引起
@@ -168,28 +176,35 @@ $$
 ## 回歸方程的顯著性檢驗
 
 已知：
+
 $$
 \begin{aligned}
 \hat \beta &\sim \beta N_{m+1}(\beta,\sigma^2(C'C)^{-1})\\
 \frac{1}{\sigma^2} Q &\sim \chi_{n-m-1}^2
 \end{aligned}
 $$
+
 $H_0 :\beta_1=\beta_2=\cdots=\beta_n=0$
 
 在已知$H_0$下，
+
 $$
 \frac{1}{\sigma^2} U \sim \chi_{m}^2
 $$
+
 所以，
+
 $$
 F=\frac{U/m}{Q/n-m-1}
 $$
 
 如果
 
-$
-F >F_\alpha \text{ or } p <\alpha
-$，則否定$H_0$。
+$$
+F >F_\alpha \text{ or } p <\alpha，
+$$
+
+則否定$H_0$。
 
 
 ## 額外平方和
@@ -200,6 +215,7 @@ $P_i=U-U(i)=Q(i)-Q$
 
 在台灣的定義中，
 $\text{SSR}=U,\quad \text{SSE}=Q$
+
 $$
 \begin{aligned}
 \text{SSR}(x_1| x_2,x_3) 
@@ -211,16 +227,21 @@ $$
 &=\text{SSE}(x_3)-\text{SSE}(x_1 ,x_2,x_3)
 \end{aligned}
 $$
+
 有關更詳細的資料，請參閱 [link](http://web.ncyu.edu.tw/~lanjc/lesson/C7/class/ch07-AN.pdf)。
 
 ## 判定係數
+
 $$R^2=1-\frac{Q}{U+Q}=\frac{U}{T}$$
+
 這裏 $T=U+Q=\sum(y_i-\bar y_i)^2$ 是總偏差平方和。
 - 判定係數$R$的分子$U$為所建立迴歸式的$X$所引起
 - $R$越大，即$X$能解釋$Y$的能力越強
 
 ## 修定判定係數
+
 $$R^2_{\text{adj}}=1-\frac{Q/\text{df}Q}{T/\text{df}T}$$
+
 這裏 $\text{df}Q,\text{df}T$分別是$Q$和$T$的自由度。
 
 這主要是修正因樣本量太小而變大的$R$。
@@ -251,12 +272,16 @@ $$R^2_{\text{adj}}=1-\frac{Q/\text{df}Q}{T/\text{df}T}$$
 
 ## 偏判定係數
 在已知$x_1,x_2$的情況下，引入$x_3$，其判定係數的定義是
+
 $$R^2_{x_3|x_1,x_2}=\frac{\text{SSR}(x_3|x_1,x_2)}{\text{SSE}(x_1,x_2)} $$
+
 分子可以想像為因為引入$x_3$而造成殘差增加量，分母就是只有$x_1,x_2$的殘差。
 這個比就是增加量和原本相比，它增加的幅度。
 
 ## 回歸系數的顯著性檢驗
+
 $$H^{(i)}_0:\beta_i=0 \quad (i=1,2,\cdots,m)$$
+
 在$H_0$下，
 
 $$\begin{align}
