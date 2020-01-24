@@ -34,8 +34,9 @@ $$
 $$
 
 ## Shapiro-Wilk
-- Wiki: [link](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)
-- Another academic pdf [link](https://math.mit.edu/~rmd/465/shapiro.pdf)
+Reference:
+* Wiki: [link](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)
+* Another academic pdf [link](https://math.mit.edu/~rmd/465/shapiro.pdf)
 
 $$
 W=\frac{(\sum a_i x_{(i)})^2}{\sum(x_i-\bar x)^2}
@@ -94,7 +95,7 @@ $$
 d=\frac{\sum_{t=2}^T (e_t-e_{t-1})^2}{\sum_{t=1}^T e^2_t}
 $$
 
-$H_0  :e_t= ae_{t-1}+v_t, a=0$ 
+$$H_0  :e_t= ae_{t-1}+v_t, a=0$$
 
 Since $d$ is approximately equal to
 
