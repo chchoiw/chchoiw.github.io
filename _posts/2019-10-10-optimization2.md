@@ -193,7 +193,7 @@ is the feasible solution.
 Therefore, $\eqref{eq:hold_eq}$ implies
 
 $$
-\alpha^*_i \bot g(x^*) \iff \alpha^*_i^* g_i(x^*)=0 \quad \forall i
+\alpha^*_i \bot g(x^*) \iff \alpha^*_i g_i(x^*)=0 \quad \forall i
 $$
 
 This proves [Corollary 2:](#corollary-2).
