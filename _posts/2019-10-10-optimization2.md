@@ -114,7 +114,7 @@ $$
 where $\alpha, \beta\geq 0$
 
 - If $f(x),g(x)$ are convex and $h(x)$ is linear, then $\mathcal{L}$ is convex.
-- For fixed $\alpha \geq 0$, if $\bar x \in \texxt{argmin}(\mathcal{L(x,\alpha,\beta) \vert x \in \mathbb R^n})$, then
+- For fixed $\alpha \geq 0$, if $\bar x \in \text{argmin}(\mathcal{L(x,\alpha,\beta) \vert x \in \mathbb R^n})$, then
 
 $$
 \frac{\partial \mathcal L (x,\alpha,\beta)}{\partial x} \bigg\vert_{x=\bar x} =\nabla f(\bar x)+\bar \alpha^T \nabla g(\bar x)+\bar \beta^T \nabla h(\bar x) =0
