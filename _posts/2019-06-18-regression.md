@@ -168,7 +168,7 @@ $$
 2. 獨立性
 3. 變異數同質性
 
-這個請參閱另一篇[BLOG](/posts/2019/06/normal_independ_cvar/)
+這個請參閱另一篇[BLOG](https://chchoiw.github.io/posts/2019/06/normal_independ_cvar/)
 ## 離群值檢定
 - 標準化殘差
 
