@@ -1,4 +1,16 @@
-## CS231n-Gradient of SVM and softmax
+---
+title: 'CS231n-Gradient of SVM and softmax'
+date: 2019-11-12
+permalink: /posts/2019/11/231n_gradient1/
+tags:
+  - CS231n
+  - Gradient of SVM
+  - Gradient of softmax
+category:
+  - Machine Learning
+---
+
+<!-- # CS231n-Gradient of SVM and softmax -->
 
 - This is the notes (mainly focus on needed math) while completed Stanford CS231n [assignment1](http://cs231n.github.io/assignments2019/assignment1).
 
@@ -8,7 +20,7 @@
 
 - My codes are not tidy enough, so the following python codes are captured from [website1](https://zhuanlan.zhihu.com/p/30965514) and [website2](https://zhuanlan.zhihu.com/p/31008163).
 
-### SVM 
+## SVM 
 SVM loss function $L$
 Let $x_i=(x_{i,0},\dots,x_{i,D})^T$ be i-th row of $X$, which is $N\times D$ matrix, and $w_j=(w_{0,j},\dots,w_{D,j})^T$ be j-th column of $W$,a $D\times C$ matrix.
 $$
@@ -86,11 +98,11 @@ def svm_loss_vectorized(W, X, y, reg):
   loss = 0.0
   dW = np.zeros(W.shape) # initialize the gradient as zero
 
-  #############################################################################
+  #######################################
   # TODO:                                                                     #
   # Implement a vectorized version of the structured SVM loss, storing the    #
   # result in loss.                                                           #
-  #############################################################################
+  #######################################
   scores = X.dot(W)
   correct_class_score = scores[np.arange(X.shape[0]),y]
   correct_class_score = np.reshape(correct_class_score, (X.shape[0], -1))
@@ -100,12 +112,12 @@ def svm_loss_vectorized(W, X, y, reg):
   loss = np.sum(margin) / X.shape[0]
   loss += 0.5 * reg * np.sum(W * W)
   print(loss)
-  #############################################################################
+  #######################################
   #                             END OF YOUR CODE                              #
-  #############################################################################
+  #######################################
 
 
-  #############################################################################
+  #######################################
   # TODO:                                                                     #
   # Implement a vectorized version of the gradient for the structured SVM     #
   # loss, storing the result in dW.                                           #
@@ -113,21 +125,21 @@ def svm_loss_vectorized(W, X, y, reg):
   # Hint: Instead of computing the gradient from scratch, it may be easier    #
   # to reuse some of the intermediate values that you used to compute the     #
   # loss.                                                                     #
-  #############################################################################
+  #######################################
   margin[margin > 0] = 1
   row_sum = np.sum(margin, axis=1)                  # 1 by N
   margin[np.arange(X.shape[0]), y] = -row_sum  
   dW += np.dot(X.T, margin)/X.shape[0] + reg * W     # D by C
   print(dW)
-  #############################################################################
+  #######################################
   #                             END OF YOUR CODE                              #
-  #############################################################################
+  #######################################
 
   return loss, dW
 
 ```
 
-### Softmax
+## Softmax
 Softmax loss function L
 $$
 \begin{aligned}
@@ -186,12 +198,12 @@ def softmax_loss_vectorized(W, X, y, reg):
   loss = 0.0
   dW = np.zeros_like(W)
 
-  #############################################################################
+  #######################################
   # TODO: Compute the softmax loss and its gradient using no explicit loops.  #
   # Store the loss in loss and the gradient in dW. If you are not careful     #
   # here, it is easy to run into numeric instability. Don't forget the        #
   # regularization!                                                           #
-  #############################################################################
+  #######################################
   num_train = X.shape[0]
   num_class = W.shape[1]
   scores = X.dot(W)  #N*C
@@ -207,9 +219,9 @@ def softmax_loss_vectorized(W, X, y, reg):
   loss += 0.5 * reg * np.sum(W * W)
   dW /= num_train
   dW += reg * W
-  #############################################################################
+  #######################################
   #                          END OF YOUR CODE                                 #
-  #############################################################################
+  #######################################
 
   return loss, dW
 
@@ -352,17 +364,17 @@ class TwoLayerNet(object):
 
     # Compute the forward pass
     scores = None
-    #############################################################################
+    #######################################
     # TODO: Perform the forward pass, computing the class scores for the input. #
     # Store the result in the scores variable, which should be an array of      #
     # shape (N, C).                                                             #
-    #############################################################################
+    #######################################
     scores = X.dot(W1) + b1
     R1 = np.maximum(scores, 0)
     scores = R1.dot(W2) + b2  #N*C
-    #############################################################################
+    #######################################
     #                              END OF YOUR CODE                             #
-    #############################################################################
+    #######################################
     
     # If the targets are not given then jump out, we're done
     if y is None:
@@ -370,13 +382,13 @@ class TwoLayerNet(object):
 
     # Compute the loss
     loss = None
-    #############################################################################
+    #######################################
     # TODO: Finish the forward pass, and compute the loss. This should include  #
     # both the data loss and L2 regularization for W1 and W2. Store the result  #
     # in the variable loss, which should be a scalar. Use the Softmax           #
     # classifier loss. So that your results match ours, multiply the            #
     # regularization loss by 0.5                                                #
-    #############################################################################
+    #######################################
     exp_scores = np.exp(scores)
     row_sum = exp_scores.sum(axis=1).reshape((N, 1))
     #norm_scores=scalar matrix A
@@ -384,17 +396,17 @@ class TwoLayerNet(object):
     data_loss = -1.0/N * np.log(norm_scores[np.arange(N), y]).sum()
     reg_loss = 0.5 * reg * (np.sum(W1*W1) + np.sum(W2*W2))
     loss = data_loss + reg_loss
-    #############################################################################
+    #######################################
     #                              END OF YOUR CODE                             #
-    #############################################################################
+    #######################################
 
     # Backward pass: compute gradients
     grads = {}
-    #############################################################################
+    #######################################
     # TODO: Compute the backward pass, computing the derivatives of the weights #
     # and biases. Store the results in the grads dictionary. For example,       #
     # grads['W1'] should store the gradient on W1, and be a matrix of same size #
-    #############################################################################
+    #######################################
     delta3 = np.zeros_like(norm_scores)    #delta3 = dloss / dz3
     #-------------------------
     # when y_i=j 
@@ -410,9 +422,9 @@ class TwoLayerNet(object):
     delta2 = delta3.dot(W2.T) * da2_dz2
     grads['W1'] = X.T.dot(delta2) / N + reg * W1
     grads['b1'] = np.ones(N).dot(delta2) / N
-    #############################################################################
+    #######################################
     #                              END OF YOUR CODE          #
-    #############################################################################
+    #######################################
 
     return loss, grads
 

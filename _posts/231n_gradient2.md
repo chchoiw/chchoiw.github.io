@@ -1,4 +1,17 @@
-## CS231n-Gradient of Affine, Convolution and Max Pool layer
+---
+title: 'CS231n-Gradient of Affine, Convolution and Max Pool layer
+'
+date: 2019-12-12
+permalink: /posts/2019/11/231n_gradient2/
+tags:
+  - CS231n
+  - Gradient of Affine Layer
+  - Gradient of Convolution Layer
+  - Gradient of Max Pool Layer
+category:
+  - Machine Learning
+---
+<!-- # CS231n-Gradient of Affine, Convolution and Max Pool layer -->
 
 - This is the notes (mainly focus on needed math) while completed Stanford CS231n [assignment2](http://cs231n.github.io/assignments2019/assignment2).
 
@@ -7,14 +20,14 @@
 - The related lecture note is on the [website1](http://cs231n.github.io/convolutional-networks/).
 
 
-### The gradient of affine layers
+## The gradient of affine layers
 s
 Let $X$ be a $N \times D$, $W$ be a $D\times C$ and $D$ be a $1\times C$ matrices. 
 $$Y=XW+b$$ 
 Let $l: \mathbb R^{N\times C} \rightarrow \R$ be the loss function, and the jacobian matrix of function $l$ is 
 $$ \frac{\partial l}{\partial Y}=Z \quad \text{where }Z\text{ is a } N\times C \text{ matrix}$$ Now, we consider the composition function $l(Y(W))$ and calculate its jocobian matrices with respect to $W,X$ and $b$.
 
-#### The jocobian matrix with respect to $W$
+## The jocobian matrix with respect to $W$
 By chain rule we know that 
 $$
 \frac{\partial l}{\partial W}=\frac{\partial l}{\partial Y}\frac{\partial Y}{\partial W}
@@ -126,7 +139,7 @@ $$
 \end{aligned} \tag 2
 $$
 
-#### The jocobian matrix with respect to $X$
+## The jocobian matrix with respect to $X$
 On the other hand, if we stretch rows of $Y,Z$ and $X$ first and concatenate them as 1-D array, then we get
 $$
 \frac{\partial Y }{\partial X}
@@ -164,7 +177,7 @@ $$
 \end{aligned} \tag3
 $$
 
-#### The jocobian matrices with respect to $b$
+## The jocobian matrices with respect to $b$
 Clearly, 
 $$
 \frac{\partial Y}{\partial b}=
@@ -188,7 +201,7 @@ $$
 \langle Z_{*j}, \mathbf 1_N \rangle=\sum_{t} Z_{t,j} \quad \text{for } j=1,2,\dots, C  \tag 4
 $$
 
-### Gradient of the convolution layer
+## Gradient of the convolution layer
 - About what is the convolution layer, please see the [website](http://cs231n.github.io/convolutional-networks/).
 - The following is concentrate the computation of the backward gradient computation of the convolution layer.
 
@@ -212,7 +225,7 @@ $$
 \end{aligned}
 $$
 Finally, we compute the gradient with respect to $W,X$ and $b$.
-#### The gradient with respect to $W$
+## The gradient with respect to $W$
 For fixed $i,j$, denote $\bar X^{i,j}=X_{*,*,iHH+hh,jWW+ww}$ and $\bar Z^{i,j}=Z_{*,*,i,j}$, we have 
 $$
 \begin{aligned}
@@ -223,7 +236,7 @@ $$
 \end{aligned}
 $$
 
-#### The gradient with respect to $X$
+## The gradient with respect to $X$
 For fixed $iHH+hh$ and $jWW+ww$(i.e. for fixed $i,j,hh,ww$), denote $\bar X^{i,j}=X_{*,*,iHH+hh,jWW+ww}$ and $\bar W^{hh,ww}=W_{*,*,hh,ww}$, we have
 $$
 \begin{aligned}
@@ -234,7 +247,7 @@ $$
 \end{aligned}
 $$
 
-#### The gradient with respect to $b$
+## The gradient with respect to $b$
 For fixed $f$, 
 
 $$
@@ -262,9 +275,9 @@ def conv_backward_naive(dout, cache):
     - db: Gradient with respect to b
     """
     dx, dw, db = None, None, None
-    ###########################################################################
+    ######################################
     # TODO: Implement the convolutional backward pass.                        #
-    ###########################################################################
+    ######################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
     # pass
@@ -298,13 +311,13 @@ def conv_backward_naive(dout, cache):
     dx=dx_pad[:,:,pad:H+pad,pad:W+pad]
     db=np.sum(dout,axis=(0,2,3))
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-    ###########################################################################
+    ######################################
     #                             END OF YOUR CODE                            #
-    ###########################################################################
+    ######################################
     return dx, dw, db
 ```
 
-### The max pool layer
+## The max pool layer
 - Please see [website](http://cs231n.github.io/convolutional-networks/) to follow what is max pool layer.
 - Mainly to write out the gradient in math form. 
 
@@ -348,9 +361,9 @@ def max_pool_backward_naive(dout, cache):
     - dx: Gradient with respect to x
     """
     dx = None
-    ###########################################################################
+    ######################################
     # TODO: Implement the max-pooling backward pass                           #
-    ###########################################################################
+    ######################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
     x, pool_param=cache
     stride=pool_param['stride']
@@ -383,9 +396,9 @@ def max_pool_backward_naive(dout, cache):
 
 
     # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-    ###########################################################################
+    ######################################
     #                             END OF YOUR CODE                            #
-    ###########################################################################
+    ######################################
     # a=np.zeros((2,3,4))
     # b=[[0,0,0] ,[0,0,1]]
     # print(b[1][2])
