@@ -13,6 +13,8 @@ I am a math graduated student who is working at Macao China. Here is the blog I 
 
 # Recent News
 * 2020-01
+  學習[博物館相關知識][/categories/#museum]
+* 2020-01
   複習[高中物理](/categories/#high-school-physics)
 * 2019-10
   學習[Machine Learning](/categories/#machine-learning)
