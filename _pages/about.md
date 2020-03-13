@@ -9,6 +9,8 @@ redirect_from:
 ---
 
 I am a math graduated student who is working at Macao China. Here is the blog I take a record what I have studied.
+<br>
+email: chchoiw@gmail.com
 
 
 # Recent News
