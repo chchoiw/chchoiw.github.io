@@ -1,6 +1,6 @@
 ---
 title: '陳列、展出與展覽'
-date: 2020-03-09
+date: 2020-03-13
 permalink: /posts/2020/03/museum_exhibit/
 tags:
   - Museum Exhibition
