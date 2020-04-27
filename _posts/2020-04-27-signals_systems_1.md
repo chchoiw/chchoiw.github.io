@@ -52,7 +52,3 @@ $$
 y[n]=\sum\limits_{k=-\infty}^{\infty}h[k]x[n-k]
 $$
 
-```mermaid
-graph LR
-A("x[n]") --> B("LTI h[n]") -->C("y[n]")
-```
