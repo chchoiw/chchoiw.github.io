@@ -172,3 +172,6 @@ then
 $$
 y[n]=\text{Re}\{ H(\omega_0) e^{j\omega_0 n } \}
 $$
+
+Remark:
+CT LTI Systems and Convolution is similar, just replace $\sum$ to $\int$.
