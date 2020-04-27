@@ -71,3 +71,35 @@ graph LR
 A("x[n]") --> B("LTI h[n]") 
 B-->C("y[n]")
 ```
+
+## properties of convolution sum
+1. Commutativity
+
+$$
+(x*h)[n]=(h*n)[n]
+$$
+
+2. Associativity
+
+$$
+(x*(h_1*h_2))[n]=((x*h_1)*h_2)[n]
+$$
+
+3. Distributivity
+
+$$
+(x*(h_1+h_2))[n]=(x*h_1)[n]+(x*h_2)[n]
+$$
+
+4. Shift property
+let $\hat x [n]=x[n-n_0]$
+
+$$
+(\hat x * h)[n]=(x*h)[n-n_0]
+$$
+
+5. Identity
+
+$$
+(x*\delta)[n]=x[n]
+$$
