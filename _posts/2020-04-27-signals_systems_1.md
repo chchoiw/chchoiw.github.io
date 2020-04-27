@@ -16,23 +16,23 @@ category:
 
 ```mermaid
 graph LR
-x\[n\] --> System S --> y\[n\]
+x"["n"]" --> System S --> y"["n"]"
 ```
 
 ```mermaid
 graph LR
-r[n] --> System S --> s[n]
+r"["n"]" --> System S --> s"["n"]"
 ```
 
 ```mermaid
 graph LR
-x[n]+r[n] --> System S --> y[n]+s[n]
+x"["n"]"+r"["n"]" --> System S --> y"["n"]"+s"["n"]"
 ```
 
 1. Time-invaiant:
 ```mermaid
 graph LR
-x[n-n_0] --> System S --> y[n-n_0]
+x"["n-n_0"]" --> System S --> y"["n-n_0"]"
 ```
 
 ## convolution sum 
@@ -66,5 +66,5 @@ $$
 
 ```mermaid
 graph LR
-x[n] --> LTI h[n] --> y[n]
+x"["n"]" --> LTI h"["n"]" --> y"["n"]"
 ```
