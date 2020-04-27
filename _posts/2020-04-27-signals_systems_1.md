@@ -104,10 +104,24 @@ $$
 (x*\delta)[n]=x[n]
 $$
 
-# Causal System
+### Causal System
 - Def: An LTI shstem is causal iff 
   
-  $$
-  h[n]=0 \quad \text{if } \quad n<0
-  $$
+$$
+h[n]=0 \quad \text{if } \quad n<0
+$$
 
+### Memoryless System
+- Def: An LTI shstem is memoryless iff 
+  
+$$
+h[n]=c\delta[n]
+$$
+
+
+### Stable System
+- Def: An LTI shstem is stable iff 
+
+$$
+\sum\limits_{n=-\infty}^{\infty} |h[n]} < \infty
+$$
