@@ -140,14 +140,27 @@ Hence,
 
 $$
 \begin{aligned}
-\text{Re}{y[n]}&=\text{Re}{(x*h)[n]}=(x_R*h)[n] \\
-\text{Im}{y[n]}&=\text{Im}{(x*h)[n]}=(x_I*h)[n]
+\text{Re}\{y[n]\}&=\text{Re}\{(x*h)[n]\}=(x_R*h)[n] \\
+\text{Im}\{y[n]\}&=\text{Im}\{(x*h)[n]\}=(x_I*h)[n]
 \end{aligned}
 $$
 
 Example:
-If $x[n]=\exp(j \omega_0 n)$,then
+If $x[n]=e^{j \omega_0 n}$,then
 
 $$
-y[n]=\sum\limits_{k=-\infty}^{\infty} h[k] =\exp(j \omega_0 n)
+y[n]=\sum\limits_{k=-\infty}^{\infty} h[k]e^{j \omega_0 (n-k)}
+=\sum\limits_{k=-\infty}^{\infty} h[k] e^{j \omega_0 (n)}e^{j \omega_0 (-k)}
+$$
+
+Say, 
+
+$$
+H(\omega_0)=\sum\limits_{k=-\infty}^{\infty} h[k] e^{-j \omega_0 (k)}
+$$
+
+then,
+
+$$
+y[n]=H(\omega_0)e^{j \omega_0 (n)}
 $$
