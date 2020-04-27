@@ -8,6 +8,13 @@ category:
   - Signals and Systems
 ---
 
+
+# LTI Systems
+- A LTI system is a linear time-invartent system, that is 
+```mermaid
+graph LR
+Start --> Stop
+```
 # convolution sum 
 
 \begin{equation}\label{convolution}
@@ -15,6 +22,7 @@ y[n]=\sum\limits_{k=-\infty}^{\infty}x[k]h[n-k]
 \end{equation}
 
 # unit pluse signal $\delta[n]$
+
 $$
 \delta[n]=\Bigg\{
 \begin{aligned}
