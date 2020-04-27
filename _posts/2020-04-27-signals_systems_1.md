@@ -19,21 +19,9 @@ graph LR
 A("xn") --> B(System S) -->C("yn")
 ```
 
-```mermaid
-graph LR
-A("r[n]") --> B(System S) -->C("s[n]")
-```
-
-```mermaid
-graph LR
-A("x[n]+r[n]") --> B(System S) -->C("y[n]+s[n]")
-```
 
 1. Time-invaiant:
-```mermaid
-graph LR
-A("x[n-n_0]") --> B(System S) -->C("y[n-n_0]")
-```
+
 
 ## convolution sum 
 
