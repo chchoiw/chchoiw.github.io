@@ -10,7 +10,7 @@ category:
 
 
 # LTI Systems
-- A LTI system is a linear time-invaiant system, that is 
+- An LTI system is a linear time-invaiant system, that is 
 
 1. Linear:
 ```mermaid
@@ -73,33 +73,41 @@ B-->C("y[n]")
 ```
 
 ## properties of convolution sum
-1. Commutativity
+- Commutativity
 
 $$
 (x*h)[n]=(h*n)[n]
 $$
 
-2. Associativity
+- Associativity
 
 $$
 (x*(h_1*h_2))[n]=((x*h_1)*h_2)[n]
 $$
 
-3. Distributivity
+- Distributivity
 
 $$
 (x*(h_1+h_2))[n]=(x*h_1)[n]+(x*h_2)[n]
 $$
 
-4. Shift property
+- Shift property
 let $\hat x [n]=x[n-n_0]$
 
 $$
 (\hat x * h)[n]=(x*h)[n-n_0]
 $$
 
-5. Identity
+- Identity
 
 $$
 (x*\delta)[n]=x[n]
 $$
+
+# Causal System
+- Def: An LTI shstem is causal iff 
+  
+  $$
+  h[n]=0 \quad \text{if } \quad n<0
+  $$
+
