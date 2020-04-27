@@ -11,7 +11,8 @@ category:
 
 # LTI Systems
 - A LTI system is a linear time-invaiant system, that is 
-    1. Linear:
+
+1. Linear:
 ```mermaid
 graph LR
 x[n] --> System S -> y[n]
