@@ -8,6 +8,20 @@ category:
   - Signals and Systems
 ---
 
+- [LTI Systems](#lti-systems)
+  - [convolution sum](#convolution-sum)
+  - [unit pluse signal $\delta[n]$](#unit-pluse-signal-math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmi%ce%b4mimo-stretchy%22false%22mominmimo-stretchy%22false%22momrowannotation-encoding%22applicationx-tex%22deltanannotationsemanticsmath%ce%b4n)
+  - [LTI system and convolution sum](#lti-system-and-convolution-sum)
+  - [properties of convolution sum](#properties-of-convolution-sum)
+    - [Causal System](#causal-system)
+    - [Memoryless System](#memoryless-system)
+    - [Stable System](#stable-system)
+  - [Complex Eigenfunctions](#complex-eigenfunctions)
+
+- This is the notes while studing [ECE 2200 Signals and Information](https://www.youtube.com/watch?v=pKBiM809pHg&list=PLbRC1c7YJfgBuWDCFI8kVYfdd_GnOkKmm).
+
+- Also, another source I go through is [PDF](https://pages.jh.edu/~bcooper8/sigma_files/courses/214/signalsandsystemsnotes.pdf)
+
 
 # LTI Systems
 - An LTI system is a linear time-invaiant system, that is 
