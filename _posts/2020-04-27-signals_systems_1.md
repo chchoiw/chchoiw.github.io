@@ -39,7 +39,7 @@ B-->C("y[n-n0]")
 ## convolution sum 
 
 \begin{equation}\label{convolution}
-y[n]=\sum\limits_{k=-\infty}^{\infty}x[k]h[n-k]
+y[n]=\sum\limits_{k=-\infty}^{\infty}x[k]h[n-k]\triangleq (h*x)[n]
 \end{equation}
 
 ## unit pluse signal $\delta[n]$
@@ -65,6 +65,7 @@ $$
 y[n]=\sum\limits_{k=-\infty}^{\infty}h[k]x[n-k]
 $$
 
+We will represent this LTI system as following digram:
 ```mermaid
 graph LR
 A("x[n]") --> B("LTI h[n]") 
