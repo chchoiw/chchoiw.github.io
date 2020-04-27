@@ -16,7 +16,7 @@ category:
 
 ```mermaid
 graph LR
-x[n] --> System S --> y[n]
+x\[n\] --> System S --> y\[n\]
 ```
 
 ```mermaid
