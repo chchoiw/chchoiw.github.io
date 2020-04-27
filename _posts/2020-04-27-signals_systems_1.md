@@ -16,7 +16,8 @@ category:
 
 ```mermaid
 graph LR
-A("xn")-->B("System S")-->C("yn")
+A("xn")-->B("System S")
+B-->C("yn")
 ```
 
 ```mermaid
