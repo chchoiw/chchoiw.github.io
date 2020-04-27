@@ -16,22 +16,28 @@ category:
 
 ```mermaid
 graph LR
-A("xn")-->B("System S")
-B-->C("yn")
+A("x[n]")-->B("System S")
+B-->C("y[n]")
 ```
 
 ```mermaid
 graph LR
-A("r[n]") --> B("System S") -->C("s[n]")
+A("r[n]") --> B("System S") 
+B-->C("s[n]")
 ```
 
 ```mermaid
 graph LR
-A("x[n]+r[n]") --> B("System S") -->C("y[n]+s[n]")
+A("x[n]+r[n]") --> B("System S") 
+B-->C("y[n]+s[n]")
 ```
 
 1. Time-invaiant:
-
+```mermaid
+graph LR
+A("x[n-n0]") --> B("System S") 
+B-->C("y[n-n0]")
+```
 
 ## convolution sum 
 
@@ -64,5 +70,6 @@ $$
 
 ```mermaid
 graph LR
-A("x[n]") --> B("LTI h[n]") -->C("y[n]")
+A("x[n]") --> B("LTI h[n]") 
+B-->C("y[n]")
 ```
