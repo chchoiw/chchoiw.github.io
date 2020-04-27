@@ -15,9 +15,9 @@ y[n]=\sum\limits_{k=-\infty}^{\infty}x[k]h[n-k]
 \end{equation}
 
 $$
-\delta[n]=
+\delta[n]=\Bigg\{
 \begin{aligned}
-   &0 &\text{when} &n=0 \\
+   &1 &\text{when} &n=0 \\
    &0 &\text{when} &n\neq 0   
 \end{aligned}
 $$
