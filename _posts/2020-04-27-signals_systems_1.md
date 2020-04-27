@@ -16,7 +16,7 @@ category:
 
 ```mermaid
 graph LR
-A("x[n]") --> B(System S) -->C("y[n]")
+A("xn") --> B(System S) -->C("yn")
 ```
 
 ```mermaid
