@@ -166,7 +166,7 @@ y[n]=H(\omega_0)e^{j \omega_0 (n)}
 $$
 
 Example:
-If $x[n]=\cos(\omgea_0 n)=\text{Re}\{e^{j\omega_0 n }\}$,
+If $x[n]=\cos(\omega_0 n)=\text{Re}\{e^{j\omega_0 n }\}$,
 then
 
 $$
