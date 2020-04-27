@@ -123,5 +123,5 @@ $$
 - Def: An LTI shstem is stable iff 
 
 $$
-\sum\limits_{n=-\infty}^{\infty} |h[n]} < \infty
+\sum\limits_{n=-\infty}^{\infty} |h[n]| < \infty
 $$
