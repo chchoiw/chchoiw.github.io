@@ -17,15 +17,9 @@ category:
 ```mermaid
 graph LR
 x[n] --> System S -> y[n]
-```
 
-```mermaid
-graph LR
 r[n] --> System S -> s[n]
-```
 
-```mermaid
-graph LR
 x[n]+r[n] --> System S -> y[n]+s[n]
 ```
 
