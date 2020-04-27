@@ -10,18 +10,34 @@ category:
 
 
 # LTI Systems
-- A LTI system is a linear time-invartent system, that is 
+- A LTI system is a linear time-invaiant system, that is 
+    1. Linear:
 ```mermaid
 graph LR
-$x[n]$ --> System S -> $y[n]$
+x[n] --> System S -> y[n]
 ```
-# convolution sum 
+```mermaid
+graph LR
+r[n] --> System S -> s[n]
+```
+```mermaid
+graph LR
+x[n]+r[n] --> System S -> y[n]+s[n]
+```
+
+2. Time-invaiant:
+```mermaid
+graph LR
+x[n-n_0] --> System S -> y[n-n_0]
+```
+
+## convolution sum 
 
 \begin{equation}\label{convolution}
 y[n]=\sum\limits_{k=-\infty}^{\infty}x[k]h[n-k]
 \end{equation}
 
-# unit pluse signal $\delta[n]$
+## unit pluse signal $\delta[n]$
 
 $$
 \delta[n]=\Bigg\{
@@ -34,3 +50,17 @@ $$
 \begin{equation}\label{convolution identity}
 x[n]=\sum\limits_{k=-\infty}^{\infty}x[k]\delta[n-k]
 \end{equation}
+
+
+## LTI system and convolution sum
+
+Let $h[n]=y[n], x[n]=\delta[n]$, then $y[n]$ can be written as a convolution sum:
+
+$$
+y[n]=\sum\limits_{k=-\infty}^{\infty}h[k]x[n-k]
+$$
+
+```mermaid
+graph LR
+x[n] --> LTI h[n] -> y[n]
+```
