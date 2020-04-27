@@ -125,3 +125,22 @@ $$
 $$
 \sum\limits_{n=-\infty}^{\infty} |h[n]| < \infty
 $$
+
+## Complex Eigenfunctions
+
+$$
+x[n]=x_R[n]+jx_I[n]
+$$
+
+$$
+y[n]=\sum\limits_{k=-\infty}^{\infty}x_R[k]h[n-k] +j \sum\limits_{k=-\infty}^{\infty}x_I[k]h[n-k]
+$$
+
+Hence,
+
+$$
+\begin{aligned}
+\text{Re}{y[n]}&=\text{Re}{(x*h)[n]}=(x_R*h)[n] \\
+\text{Im}{y[n]}&=\text{Im}{(x*h)[n]}=(x_I*h)[n]
+\end{aligned}
+$$
