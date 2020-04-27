@@ -14,10 +14,15 @@ category:
 y[n]=\sum\limits_{k=-\infty}^{\infty}x[k]h[n-k]
 \end{equation}
 
+# unit pluse signal $\delta[n]$
 $$
 \delta[n]=\Bigg\{
 \begin{aligned}
-   &1 &\text{when} &n=0 \\
-   &0 &\text{when} &n\neq 0   
+   &1 &\text{when} \quad &n=0 \\
+   &0 &\text{when} \quad &n\neq 0   
 \end{aligned}
 $$
+
+\begin{equation}\label{convolution identity}
+x[n]=\sum\limits_{k=-\infty}^{\infty}x[k]\delta[n-k]
+\end{equation}
