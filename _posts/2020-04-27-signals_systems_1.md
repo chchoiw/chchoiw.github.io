@@ -14,14 +14,7 @@ category:
 
 1. Linear:
 
-```mermaid
-graph LR
-x[n] --> System S -> y[n]
 
-r[n] --> System S -> s[n]
-
-x[n]+r[n] --> System S -> y[n]+s[n]
-```
 
 1. Time-invaiant:
 ```mermaid
