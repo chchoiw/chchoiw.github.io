@@ -13,7 +13,7 @@ category:
 - A LTI system is a linear time-invartent system, that is 
 ```mermaid
 graph LR
-Start --> Stop
+$x[n]$ --> System S -> $y[n]$
 ```
 # convolution sum 
 
