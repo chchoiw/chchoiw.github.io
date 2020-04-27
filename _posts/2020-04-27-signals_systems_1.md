@@ -144,3 +144,10 @@ $$
 \text{Im}{y[n]}&=\text{Im}{(x*h)[n]}=(x_I*h)[n]
 \end{aligned}
 $$
+
+Example:
+If $x[n]=\exp(j \omega_0 n)$,then
+
+$$
+y[n]=\sum\limits_{k=-\infty}^{\infty} h[k] =\exp(j \omega_0 n)
+$$
