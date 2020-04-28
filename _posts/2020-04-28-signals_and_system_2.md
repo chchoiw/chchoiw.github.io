@@ -1,7 +1,7 @@
 ---
-title: 'DT LTI Systems and Convolution '
+title: 'CT Fourier Transform'
 date: 2020-04-27
-permalink: /posts/2020/04/signals_systems1/
+permalink: /posts/2020/04/signals_systems2/
 tags:
   - CT Fourier Transform
 category:
