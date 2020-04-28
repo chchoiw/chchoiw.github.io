@@ -92,7 +92,7 @@ $$
 
 <div style="text-align:center" id="image2"><img src="/images/signal/signal2.PNG" /><br>圖 2</div>
 
-Remark:by $\eqref(Fourier6)$
+Remark:by $\eqref{Fourier6}$
 
 $$
 X^{*}(\omega)=(\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt)^*=\int_{-\infty}^{\infty}x(t) e^{jk\omega_0 t}dt=X(-\omega)
@@ -106,3 +106,16 @@ X(\omega)=1
 $$
 
 2. 
+$$x(t)=\Bigg\{
+    \begin{aligned}
+    &1 \quad &\t \in [-T_1,T_1] \\
+    &0 \quad &\text{otherwise}
+    \end{aligned}
+$$
+
+$$
+ \begin{aligned}
+X(\omega)&=\int_{-T_1}^{T_1}e^(-j\omega t) dt=\frac{1}{j\omega}(e^{j\omega T_1}-e^{-j\omega T_1})\\
+&=2T_1\frac{1}{\omega T_1}\sin(\omega T_1)=2T_1\sinc(\frac{\omega T_1}{\pi})
+ \end{aligned}
+ $$
