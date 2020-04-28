@@ -242,3 +242,31 @@ $$
 $$
 F^{-1}( \frac{1}{2\pi}(X*Z)(\omega))=x(t)y(t)
 $$
+
+Example:
+
+$$
+x(t)=[1+km(t)]cos(\omega_c t)
+$$
+
+where $cos(\omega_c t) is called carrier signal, $m(t)$ is called message signal and $k$ is called the modulation index.
+
+$$
+F(cos(\omega_c t))=\pi(\delta(\omega-\omega_c)+\delta(\omega+\omega_c))=X(\omega)
+$$
+
+$$
+\begin{aligned}
+F(m(t)cos(\omega_c t))&=\int_{-\infty}^{\infty}M(\xi)X(omega-\xi)d\xi \\
+&=\int_{-\infty}^{\infty}M(\xi)\pi(\delta(\omega-\omega_c-\xi)+\delta(\omega+\omega_c-\xi)) d\xi \\
+&=1/2\bigg\{ M(\omega-omega_c)+M(\omega-omega_c) \bigg\}
+$$
+\end{aligned}
+$$
+
+We conclude that 
+
+$$
+X(\omega)=\pi(\delta(\omega-\omega_c)+\delta(\omega+\omega_c))+\frac{k}{2} (M(\omega-\omega_c)+M(\omega+\omega_c))
+$$
+$$
