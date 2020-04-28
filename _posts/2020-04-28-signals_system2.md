@@ -213,7 +213,7 @@ $$
 - Differentiation
 
 $$
-F[\frac{d}{dt}x(t)]=j\omega X(\omega)
+F\bigg(\frac{d}{dt}x(t)\bigg)=j\omega X(\omega)
 $$
 
 ## Convolution Property and Frequency Response of LTI Systems
@@ -264,7 +264,7 @@ $$
 F(m(t)cos(\omega_c t))
 &=\int_{-\infty}^{\infty}M(\xi)X(omega-\xi)d\xi \\
 &=\int_{-\infty}^{\infty}M(\xi)\pi(\delta(\omega-\omega_c-\xi)+\delta(\omega+\omega_c-\xi)) d\xi \\
-&=1/2\bigg\{ M(\omega-omega_c)+M(\omega-omega_c) \bigg\}
+&=\frac{1}{2}\bigg\{ M(\omega-omega_c)+M(\omega-omega_c) \bigg\}
 \end{aligned}
 $$
 
