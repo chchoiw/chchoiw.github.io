@@ -113,7 +113,7 @@ $$x(t)=\Bigg\{
     \end{aligned}
 $$
 
-<div style="text-align:center" id="image3"><img src="/images/signal/signal3.png" /><br>圖 2</div>
+<div style="text-align:center" id="image3"><img src="/images/signal/signal3.png" /><br>圖 3</div>
 
 $$
  \begin{aligned}
