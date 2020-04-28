@@ -148,9 +148,9 @@ Therefore, it is reasonable to consider
 $$
 \begin{aligned}
 X(\omega)=
-&\int_{-\infty}^{infty}x(t)e^{-j\omega t}dt \\
-&=\int_{-\infty}^{infty}\sum_{k=-\infty}^{\infty}X_k e^{jk\omega_0 t} e^{-j\omega t} dt \\
-&=\sum_{k=-\infty}^{\infty}X_k \int_{-\infty}^{infty}e^{jk\omega_0 t}e^{-j\omega t} dt \\
+&\int_{-\infty}^{\infty}x(t)e^{-j\omega t}dt \\
+&=\int_{-\infty}^{\infty}\sum_{k=-\infty}^{\infty}X_k e^{jk\omega_0 t} e^{-j\omega t} dt \\
+&=\sum_{k=-\infty}^{\infty}X_k \int_{-\infty}^{\infty}e^{jk\omega_0 t}e^{-j\omega t} dt \\
 &=\sum_{k=-\infty}^{\infty}X_k\delta(\omega-k\omega_0)
 \end{aligned}
 $$
@@ -167,8 +167,8 @@ We directly compute $X(\omega)$ as following:
 
 $$
 \begin{aligned}
-X(\omega)&=\int_{-\infty}^{infty}\sum_{k=-\infty}^{\infty}\delta(t-k)e^{-j\omega t}dt \\
-&=\sum_{k=-\infty}^{\infty}\int_{-\infty}^{infty}\delta(t-k)e^{-j\omega t}dt \\
+X(\omega)&=\int_{-\infty}^{\infty}\sum_{k=-\infty}^{\infty}\delta(t-k)e^{-j\omega t}dt \\
+&=\sum_{k=-\infty}^{\infty}\int_{-\infty}^{\infty}\delta(t-k)e^{-j\omega t}dt \\
 &=\sum_{k=-\infty}^{\infty}e^{-j\omega k}dt 
 \end{aligned}
 $$
