@@ -134,13 +134,13 @@ $$
 which is not exist in the general cases. However, if we consider Fourier series expression $x(t)$, which is 
 
 $$
-x(t)=\sum_{-\infty}^{\infty}X_k e^{jk\omega_0 t}
+x(t)=\sum_{k=-\infty}^{\infty}X_k e^{jk\omega_0 t}
 $$
 
 and look at the fact that when $x(t)=e^{j\omega_0 t}$, its Fourier transformation $X(\omega)$
 
 $$
-X(\omega)=\int_{-\infty}^{infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omega)=2\pi\delta(\omega-\omgea_0)
+X(\omega)=\int_{-\infty}^{\infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omega)=2\pi\delta(\omega-\omgea_0)
 $$
 
 Therefore, it is reasonable to consider
@@ -152,5 +152,5 @@ X(\omega)=
 &=\int_{-\infty}^{infty}\sum_{-\infty}^{\infty}X_k e^{jk\omega_0 t} e^{-j\omega t} dt \\
 &=\sum_{-\infty}^{\infty}X_k \int_{-\infty}^{infty}e^{jk\omega_0 t}e^{-j\omega t} dt \\
 &=\sum_{-\infty}^{\infty}X_k\delta(\omega-k\omgea_0)
-\begin{end}
+\end{aligned}
 $$
