@@ -244,7 +244,7 @@ F^{-1}( \frac{1}{2\pi}(X*Z)(\omega))=x(t)y(t)
 $$
 
 Example:
-
+d
 $$
 x(t)=[1+km(t)]cos(\omega_c t)
 $$
