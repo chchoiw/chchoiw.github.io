@@ -186,34 +186,38 @@ We prefer the last method one.
 
 $$
 \begin{aligned}
-F(x(t))&=\int_{-\infty}^{\infty}x(t)e^{-j\omega t} X(\omega) dt\\
-F^{-1}(X(\omega) )=\int_{-\infty}^{\infty}X(\omega)e^{j\omega t} X(\omega) d\omega=x(t)
+F(x(t))&=\int_{-\infty}^{\infty}x(t)e^{-j\omega t} X(\omega) dt \\
+F^{-1}(X(\omega) )&=\int_{-\infty}^{\infty}X(\omega)e^{j\omega t} X(\omega) d\omega=x(t)
 \end{aligned}
 $$
 
-1. Linearity
+- Linearity
 
 $$
 F(x(t)+ay(t))=X(t)+aY(t)
 $$
 
-2. Time Shifting
+- Time Shifting
 
 $$
 F(x(t-t_0))=e^{j\omega t_0}X(\omega)
 $$
 
-3. Time Scaling
+- Time Scaling
 If $a\neq 0$
 
 $$
 F(x(at))=\frac{1}{ \vert a \vert }X(\frac{\omega}{a})
 $$
 
-4. Differentiation
+- Differentiation
 
 $$
 F[\frac{d}{dt}x(t)]=j\omega X(\omega)
 $$
 
-## COnvolution Property and Frequency Response of LTI Systems
+## Convolution Property and Frequency Response of LTI Systems
+
+$$
+F( (x*y)(t) )=X(\omega)H(\omega)
+$$
