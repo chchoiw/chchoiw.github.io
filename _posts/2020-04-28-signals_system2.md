@@ -108,7 +108,7 @@ $$
 2. 
 $$x(t)=\Bigg\{
     \begin{aligned}
-    &1 \quad &\t \in [-T_1,T_1] \\
+    &1 \quad &t \in [-T_1,T_1] \\
     &0 \quad &\text{otherwise}
     \end{aligned}
 $$
@@ -116,8 +116,35 @@ $$
 <div style="text-align:center" id="image3"><img src="/images/signal/signal3.png" /><br>圖 3</div>
 
 $$
- \begin{aligned}
+\begin{aligned}
 X(\omega)&=\int_{-T_1}^{T_1}e^(-j\omega t) dt=\frac{1}{j\omega}(e^{j\omega T_1}-e^{-j\omega T_1})\\
-&=2T_1\frac{1}{\omega T_1}\sin(\omega T_1)=2T_1\sinc(\frac{\omega T_1}{\pi})
- \end{aligned}
- $$
+&=2T_1\frac{1}{\omega T_1}\sin(\omega T_1)=2T_1\text{sinc}(\frac{\omega T_1}{\pi})
+\end{aligned}
+$$
+
+
+# Fourier Transform for periodic signals
+
+If $x(t)$ is $T_0$-periodic, then its Fourier transform is
+
+$$
+X(\omega)=\int_{-\infty}^{infty}x(t)e^{-j\omega t} dt
+$$
+
+which is not exist in the general cases. However, if we consider Fourier series expression $x(t)$, which is 
+
+$$
+x(t)=\sum_{-\infty}^{\infty}X_k e^{jk\omega_0 t}
+$$
+
+and look at the fact that when $x(t)=e^{j\omega_0 t}$, its Fourier transformation $X(\omega)$
+
+$$
+X(\omega)=\int_{-\infty}^{infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omgea)=2\pi\delta(\omega-\omgea_0)
+$$
+
+Therefore, it is reasonable to consider
+
+$$
+X(\omega)=\int
+$$
