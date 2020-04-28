@@ -82,7 +82,7 @@ $$
 $$
 
 
-<div style="text-align:center" id="image1"><img src="/images/signal/signal1.PNG" /><br>圖 1</div>
+<div style="text-align:center" id="image1"><img src="/images/signal/signal1.png" /><br>圖 1</div>
 
 
 $$
@@ -90,7 +90,7 @@ $$
 $$
 
 
-<div style="text-align:center" id="image2"><img src="/images/signal/signal2.PNG" /><br>圖 2</div>
+<div style="text-align:center" id="image2"><img src="/images/signal/signal2.png" /><br>圖 2</div>
 
 Remark:by $\eqref{Fourier6}$
 
@@ -112,6 +112,8 @@ $$x(t)=\Bigg\{
     &0 \quad &\text{otherwise}
     \end{aligned}
 $$
+
+<div style="text-align:center" id="image3"><img src="/images/signal/signal3.png" /><br>圖 2</div>
 
 $$
  \begin{aligned}
