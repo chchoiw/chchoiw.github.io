@@ -249,7 +249,11 @@ $$
 x(t)=[1+km(t)]cos(\omega_c t)
 $$
 
-where $cos(\omega_c t) is called carrier signal, $m(t)$ is called message signal and $k$ is called the modulation index.
+where $cos(\omega_c t) is called carrier signal, $m(t)$ is called message signal and $k$ is called the modulation index. Assume message singal is banedlimiited by $\omega_m \ll \omega_c$
+
+
+<div style="text-align:center" id="image4"><img src="/images/signal/signal5.png" /><br>圖 5</div>
+
 
 $$
 F(cos(\omega_c t))=\pi(\delta(\omega-\omega_c)+\delta(\omega+\omega_c))=X(\omega)
