@@ -28,9 +28,9 @@ X_k=\frac{1}{T_0}\int_{-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-jk\omega_0 t}dt
 
 Define the complex-valued function $X(\omega)$ by
 
-$$
+\begin{equation} \label{def_X}
 X(\omega)=\int_{-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-j\omega t}dt 
-$$
+\begin{equation} \label{Fourier2}
 
 Hence,
 
@@ -50,13 +50,59 @@ x(t)=\sum\limits_{k=-\infty}^{\infty} \frac{\omega_0}{2\pi}X(k\omega_0)e^{jk\ome
 =\frac{1}{2\pi}\int_{-\infty }^{\infty}X(\omega) e^{jk\omega t}d\omega 
 \end{equation}
 
-and $\eqref{Fourier2}$ becomes
+and $\eqref{def_X}$ becomes
 
 \begin{equation}\label{Fourier6}
-X_k=\frac{1}{T_0}\int_{-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-jk\omega_0 t}dt 
+X(\omega)=\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt 
 \end{equation}
 
 ## $X(\omega) meaning$
 
 In fact, the Fourier transform $X(\omega)$ describes the frequency content of the signal $x(t)$. Usually using the magnitude spectrum and the phase spectrum to show.
 
+Example:
+
+$$
+x(t)=e^{-3t}u(t)
+$$
+
+According $\eqref{Fourier6}$,
+
+\begin{aligned}
+X(\omega)
+&=\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt  \\
+&=\int_{0}^{\infty}e^{-3t} e^{-jk\omega_0 t}dt  \\
+&=\frac{-1}{3+j\omega}e^{-(3+j\omega)t}\Bigg\vert_{0}^{\infty} \\
+&=\frac{-1}{3+j\omega}
+\end{aligned}
+
+Hence,
+$$
+\vert X(\omega)\vert =\frac{1}{\sqrt{9+\omega^2}}
+$$
+
+
+<div style="text-align:center" id="image1"><img src="/images/signal/signal1.PNG" /><br>圖 1</div>
+
+
+$$
+\text{phase}(X(\omega) )=\tan^{-2}(\frac{\omega}{3})
+$$
+
+
+<div style="text-align:center" id="image2"><img src="/images/signal/signal2.PNG" /><br>圖 2</div>
+
+Remark:by $\eqref(Fourier6)$
+
+$$
+X^{*}(\omega)=(\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt)^*=\int_{-\infty}^{\infty}x(t) e^{jk\omega_0 t}dt=X(-\omega)
+$$
+
+## Examples:
+1. $x(t)=\delta(t)$, by shifting property
+
+$$
+X(\omega)=1
+$$
+
+2. 
