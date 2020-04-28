@@ -140,7 +140,7 @@ $$
 and look at the fact that when $x(t)=e^{j\omega_0 t}$, its Fourier transformation $X(\omega)$
 
 $$
-X(\omega)=\int_{-\infty}^{\infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omega)=2\pi\delta(\omega-\omgea_0)
+X(\omega)=\int_{-\infty}^{\infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omega)=2\pi\delta(\omega-\omega_0)
 $$
 
 Therefore, it is reasonable to consider
