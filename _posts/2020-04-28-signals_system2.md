@@ -218,6 +218,27 @@ $$
 
 ## Convolution Property and Frequency Response of LTI Systems
 
+- modulation / frequency shifting 
+  
+$$
+F(e^{j\omega_0 t}x(t))=X(\omega-\omega_0)
+$$
+
+
+- Convolution 
+  
 $$
 F( (x*y)(t) )=X(\omega)H(\omega)
+$$
+
+- Freqyency-Domain Convolution
+- 
+$$
+F( x(t)y(t) )=\frac{1}{2\pi}(X*Z)(\omega)
+$$
+
+- Inverse Freqyency-Domain Convolution
+- 
+$$
+F^{-1}( \frac{1}{2\pi}(X*Z)(\omega))=x(t)y(t)
 $$
