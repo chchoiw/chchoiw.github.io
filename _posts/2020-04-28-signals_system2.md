@@ -23,13 +23,13 @@ x(t)=\sum\limits_{k=-\infty}^{\infty}X_k e^{jk\omega_0 t}
 \end{equation}
 
 \begin{equation} \label{Fourier2}
-X_k=\frac{1}{T_0}\int\limits_{k=-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-jk\omega_0 t}dt 
+X_k=\frac{1}{T_0}\int\limits_{-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-jk\omega_0 t}dt 
 \end{equation}
 
 Define the complex-valued function $X(\omega)$ by
 
 $$
-X(\omega)=\int\limits_{k=-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-j\omega t}dt 
+X(\omega)=\int\limits_{-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-j\omega t}dt 
 $$
 
 Hence,
@@ -42,12 +42,12 @@ X_k=\frac{1}{T_0}X(k\omgea_0)=\frac{\omega_0}{2\pi}X(k\omgea_0)
 x(t)=\sum\limits_{k=-\infty}^{\infty} \frac{\omega_0}{2\pi}X(k\omgea_0)e^{jk\omega_0 t}
 \end{equation}
 
-Considering $T_0 \leftarrow \infty$, that is, $\omgea_0 \leftarrow 0$
+Considering $T_0 \rightarrow \infty$, that is, $\omgea_0 \rightarrow 0$
 
 
 \begin{equation}\label{Fourier5}
 x(t)=\sum\limits_{k=-\infty}^{\infty} \frac{\omega_0}{2\pi}X(k\omgea_0)e^{jk\omega_0 t}
-=\frac{1}{2\pi}\int\limits_{k=-\infty }^{\infty}X(\omgea) e^{jk\omega t}d\omgea 
+=\frac{1}{2\pi}\int\limits_{-\infty }^{\infty}X(\omega) e^{jk\omega t}d\omega 
 \end{equation}
 
 and $\eqref{Fourier2}$ becomes
