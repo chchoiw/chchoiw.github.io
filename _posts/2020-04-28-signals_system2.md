@@ -146,13 +146,13 @@ $$
 Therefore, it is reasonable to consider
 
 $$
-\begin{aligned}
-X(\omega)=
-&\int_{-\infty}^{\infty}x(t)e^{-j\omega t}dt \\
+\begin{align} \label{FourierSeries_X}
+X(\omega)
+&=\int_{-\infty}^{\infty}x(t)e^{-j\omega t}dt \\
 &=\int_{-\infty}^{\infty}\sum_{k=-\infty}^{\infty}X_k e^{jk\omega_0 t} e^{-j\omega t} dt \\
 &=\sum_{k=-\infty}^{\infty}X_k \int_{-\infty}^{\infty}e^{jk\omega_0 t}e^{-j\omega t} dt \\
 &=\sum_{k=-\infty}^{\infty}X_k\delta(\omega-k\omega_0)
-\end{aligned}
+\end{align}
 $$
 
 <div style="text-align:center" id="image4"><img src="/images/signal/signal4.png" /><br>圖 4</div>
@@ -169,6 +169,18 @@ $$
 \begin{aligned}
 X(\omega)&=\int_{-\infty}^{\infty}\sum_{k=-\infty}^{\infty}\delta(t-k)e^{-j\omega t}dt \\
 &=\sum_{k=-\infty}^{\infty}\int_{-\infty}^{\infty}\delta(t-k)e^{-j\omega t}dt \\
-&=\sum_{k=-\infty}^{\infty}e^{-j\omega k}dt 
+&=\sum_{k=-\infty}^{\infty}e^{-j\omega k}
 \end{aligned}
 $$
+
+Other approaches is to get the Fourier Series Data of $x(t)$. Clearly,
+$\omega_0=2\pi, X_k=1$, by  $\eqref{FourierSeries_X}$
+
+$$
+X(\omega)=\sum_{k=-\infty}^{\infty}2\pi\delta(\omega-k2\pi)
+$$
+
+We prefer the last method one.
+
+## Properties of the Fourier Transform
+
