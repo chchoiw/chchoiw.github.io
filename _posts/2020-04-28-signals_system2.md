@@ -117,7 +117,7 @@ $$
 
 $$
 \begin{aligned}
-X(\omega)&=\int_{-T_1}^{T_1}e^(-j\omega t) dt=\frac{1}{j\omega}(e^{j\omega T_1}-e^{-j\omega T_1})\\
+X(\omega)&=\int_{-T_1}^{T_1}e^{(-j\omega t) }dt=\frac{1}{j\omega}(e^{j\omega T_1}-e^{-j\omega T_1})\\
 &=2T_1\frac{1}{\omega T_1}\sin(\omega T_1)=2T_1\text{sinc}(\frac{\omega T_1}{\pi})
 \end{aligned}
 $$
@@ -128,7 +128,7 @@ $$
 If $x(t)$ is $T_0$-periodic, then its Fourier transform is
 
 $$
-X(\omega)=\int_{-\infty}^{infty}x(t)e^{-j\omega t} dt
+X(\omega)=\int_{-\infty}^{\infty}x(t)e^{-j\omega t} dt
 $$
 
 which is not exist in the general cases. However, if we consider Fourier series expression $x(t)$, which is 
