@@ -257,7 +257,8 @@ $$
 
 $$
 \begin{aligned}
-F(m(t)cos(\omega_c t))&=\int_{-\infty}^{\infty}M(\xi)X(omega-\xi)d\xi \\
+F(m(t)cos(\omega_c t))
+&=\int_{-\infty}^{\infty}M(\xi)X(omega-\xi)d\xi \\
 &=\int_{-\infty}^{\infty}M(\xi)\pi(\delta(\omega-\omega_c-\xi)+\delta(\omega+\omega_c-\xi)) d\xi \\
 &=1/2\bigg\{ M(\omega-omega_c)+M(\omega-omega_c) \bigg\}
 $$
