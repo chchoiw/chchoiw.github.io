@@ -275,3 +275,19 @@ X(\omega)=\pi(\delta(\omega-\omega_c)+\delta(\omega+\omega_c))+\frac{k}{2} (M(\o
 $$
 
 <div style="text-align:center" id="image6"><img src="/images/signal/signal6.png" /><br>圖 6</div>
+
+## Parseval's Theorem
+
+$$
+\int_{-\infty}^{\infty} x^2(t)dt=\frac{1}{2\pi}\int_{-\infty}^{\infty}\vert X(\omega)\vert^2 d\omega
+$$
+
+## Duality Property
+If $x(t)$ has Fourier Transform $X(\omega)$
+
+$$
+F(X(t)=2\pi x(-\omega)
+$$
+
+## Offical 420.214 CT Fourier Transform Table
+<div style="text-align:center" id="image7"><img src="/images/signal/signal7.png" /><br>圖 7</div>
