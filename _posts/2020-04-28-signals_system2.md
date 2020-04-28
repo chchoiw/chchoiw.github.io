@@ -184,3 +184,36 @@ We prefer the last method one.
 
 ## Properties of the Fourier Transform
 
+$$
+\begin{aligned}
+F(x(t))&=\int_{-\infty}^{\infty}x(t)e^{-j\omega t} X(\omega) dt\\
+F^{-1}(X(\omega) )=\int_{-\infty}^{\infty}X(\omega)e^{j\omega t} X(\omega) d\omega=x(t)
+\end{aligned}
+$$
+
+1. Linearity
+
+$$
+F(x(t)+ay(t))=X(t)+aY(t)
+$$
+
+2. Time Shifting
+
+$$
+F(x(t-t_0))=e^{j\omega t_0}X(\omega)
+$$
+
+3. Time Scaling
+If $a\neq 0$
+
+$$
+F(x(at))=\frac{1}{ \vert a \vert }X(\frac{\omega}{a})
+$$
+
+4. Differentiation
+
+$$
+F[\frac{d}{dt}x(t)]=j\omega X(\omega)
+$$
+
+## COnvolution Property and Frequency Response of LTI Systems
