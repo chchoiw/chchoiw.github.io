@@ -146,5 +146,11 @@ $$
 Therefore, it is reasonable to consider
 
 $$
-X(\omega)=\int
+\begin{aligned}
+X(\omega)=
+&\int_{-\infty}^{infty}x(t)e^{-j\omega t}dt \\
+&=\int_{-\infty}^{infty}\sum_{-\infty}^{\infty}X_k e^{jk\omega_0 t}dt \\
+&=\sum_{-\infty}^{\infty}X_k \int_{-\infty}^{infty}e^{jk\omega_0 t}e^{-j\omega t} dt \\
+&=\sum_{-\infty}^{\infty}X_k\delta(\omega-k\omgea_0)
+\begin{end}
 $$
