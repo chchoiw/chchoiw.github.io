@@ -30,7 +30,7 @@ Define the complex-valued function $X(\omega)$ by
 
 \begin{equation} \label{def_X}
 X(\omega)=\int_{-\frac{T_0}{2} }^{\frac{T_0}{2}}x(t) e^{-j\omega t}dt 
-\begin{equation} \label{Fourier2}
+\end{equation}
 
 Hence,
 
@@ -140,7 +140,7 @@ $$
 and look at the fact that when $x(t)=e^{j\omega_0 t}$, its Fourier transformation $X(\omega)$
 
 $$
-X(\omega)=\int_{-\infty}^{infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omgea)=2\pi\delta(\omega-\omgea_0)
+X(\omega)=\int_{-\infty}^{infty}e^{j\omega_0 t}e^{-j\omega t} dt =2\pi\delta(\omega_0-\omega)=2\pi\delta(\omega-\omgea_0)
 $$
 
 Therefore, it is reasonable to consider
