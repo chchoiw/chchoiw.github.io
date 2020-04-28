@@ -244,12 +244,12 @@ F^{-1}( \frac{1}{2\pi}(X*Z)(\omega))=x(t)y(t)
 $$
 
 Example:
-d
+
 $$
 x(t)=[1+km(t)]cos(\omega_c t)
 $$
 
-where $cos(\omega_c t) is called carrier signal, $m(t)$ is called message signal and $k$ is called the modulation index. Assume message singal is banedlimiited by $\omega_m \ll \omega_c$
+where $cos(\omega_c t)$ is called carrier signal, $m(t)$ is called message signal and $k$ is called the modulation index. Assume message singal is banedlimiited by $\omega_m \ll \omega_c$
 
 
 <div style="text-align:center" id="image5"><img src="/images/signal/signal5.png" /><br>圖 5</div>
@@ -262,9 +262,9 @@ $$
 $$
 \begin{aligned}
 F(m(t)cos(\omega_c t))
-&=\int_{-\infty}^{\infty}M(\xi)X(omega-\xi)d\xi \\
+&=\int_{-\infty}^{\infty}M(\xi)X(\omega-\xi)d\xi \\
 &=\int_{-\infty}^{\infty}M(\xi)\pi(\delta(\omega-\omega_c-\xi)+\delta(\omega+\omega_c-\xi)) d\xi \\
-&=\frac{1}{2}\bigg\{ M(\omega-omega_c)+M(\omega-omega_c) \bigg\}
+&=\frac{1}{2}\bigg\{ M(\omega-\omega_c)+M(\omega-\omega_c) \bigg\}
 \end{aligned}
 $$
 
@@ -286,7 +286,7 @@ $$
 If $x(t)$ has Fourier Transform $X(\omega)$
 
 $$
-F(X(t)=2\pi x(-\omega)
+F(X(t))=2\pi x(-\omega)
 $$
 
 ## Offical 420.214 CT Fourier Transform Table
