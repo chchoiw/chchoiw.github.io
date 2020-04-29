@@ -3,7 +3,7 @@ title: 'CT Fourier Transformm'
 date: 2020-04-28
 permalink: /posts/2020/04/signals_systems2/
 tags:
-  - CT Fourier Transformm
+  - CT Fourier Transform
 category:
   - Signals and Systems
 ---
