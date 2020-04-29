@@ -176,8 +176,28 @@ X(\omega)&=\int_{-\infty}^{\infty}\sum_{k=-\infty}^{\infty}\delta(t-k)e^{-j\omeg
 \end{aligned}
 $$
 
-Other approaches is to get the Fourier Series Data of $x(t)$. Clearly,
-$\omega_0=2\pi, X_k=1$, by  $\eqref{FourierSeries_X}$
+Other approaches is to get the Fourier Series Data of $x(t)$. First, observing that 
+$x(t)$ has period $1$, which implies $\omega_0=2\pi$.
+
+
+According $\eqref{Fourier2}$, 
+
+$$
+\begin{aligned}
+X_n&=\inf_{-1/2}^{1/2} \sum\delta(t-k) e^{-j n \omega t} dt\\
+&=\inf_{-1/2}^{1/2} \delta(t) e^{-j n \omega t} dt \\
+&=\inf_{-\infty}^{\infty} \delta(t) e^{-j n \omega t} dt \\
+&=e^{-j n \omega 0}=1
+\end{aligned}
+$$
+
+Finally, the Fourier seriers data of $x(t)$ is
+
+$$
+x(t)=\sum_{k=-\infty}^{\infty}e^{-jk2\pi t}
+$$
+
+We have compute the Fourier transform of Fourier series in general, so by $\eqref{FourierSeries_X}$,
 
 $$
 X(\omega)=\sum_{k=-\infty}^{\infty}2\pi\delta(\omega-k2\pi)
