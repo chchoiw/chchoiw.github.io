@@ -32,7 +32,7 @@ $\delta(t)$ has the following properties:
 # Unit-step function
 
 - $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau$
-- $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau$
+- $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau=\int_{0}^{\infty}u(\tau)\delta(t-\tau)d\tau=\int_{0}^{\infty}u(t-\tau)\delta(\tau)d\tau$
 
 # CT Fourier Transform
 If $x(t)$ is $T_0$-periodic, $x(t)$ can be written as 
