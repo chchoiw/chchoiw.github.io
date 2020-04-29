@@ -15,7 +15,9 @@ category:
 - Also, another source I go through is [PDF](https://pages.jh.edu/~bcooper8/sigma_files/courses/214/signalsandsystemsnotes.pdf)
 
 
-# Unit impluse 
+# Unit impulse signal
+
+Roughly,we can recognize unit impulse as 1 at 0 , 0 otherwise. 
 
 $\delta(t)$ has the following properties:
 
@@ -30,6 +32,8 @@ $\delta(t)$ has the following properties:
 - $\delta(t)=\int_{-\infty}^{\infty} e^{jt\omega} d\omega$
 
 # Unit-step function
+
+Roughly, we can recognize unit-step impulse as $u(t)=1 \quad t\leq 0$ , 0 otherwise. 
 
 - $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau$
 - $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau=\int_{0}^{\infty}u(\tau)\delta(t-\tau)d\tau=\int_{0}^{\infty}u(t-\tau)\delta(\tau)d\tau$
