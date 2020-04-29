@@ -29,6 +29,11 @@ $\delta(t)$ has the following properties:
 - $\int_{-\infty}^{\infty}\delta(\tau) \delta(t-\tau)d\tau=\delta(t)$
 - $\delta(t)=\int_{-\infty}^{\infty} e^{jt\omega} d\omega$
 
+# Unit-step function
+
+- $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau$
+- $u(t)=\int_{0}^{\infty}\delta(t-\tau)d\tau$
+
 # CT Fourier Transform
 If $x(t)$ is $T_0$-periodic, $x(t)$ can be written as 
 
