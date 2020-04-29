@@ -259,6 +259,19 @@ $$
 F\bigg(\frac{d}{dt}x(t)\bigg)=j\omega X(\omega)
 $$
 
+- Integration
+
+$$
+F\bigg(\int_{-\infty}^{t} x(\tau)d\tau \bigg)=\frac{1}{j\omega} X(\omega)+\pi X(0)\delta(\omega)
+$$
+
+Example:
+by integration property,
+
+$$
+F(u(t))=\frac{1}{jw}+\pi\delta(\omega)
+$$
+
 ## Convolution Property and Frequency Response of LTI Systems
 
 - modulation / frequency shifting 
