@@ -149,12 +149,12 @@ $$
 Therefore, it is reasonable to consider
 
 $$
-\begin{align} \label{FourierSeries_X}
+\begin{align} 
 X(\omega)
 &=\int_{-\infty}^{\infty}x(t)e^{-j\omega t}dt \\
 &=\int_{-\infty}^{\infty}\sum_{k=-\infty}^{\infty}X_k e^{jk\omega_0 t} e^{-j\omega t} dt \\
 &=\sum_{k=-\infty}^{\infty}X_k \int_{-\infty}^{\infty}e^{jk\omega_0 t}e^{-j\omega t} dt \\
-&=\sum_{k=-\infty}^{\infty}X_k\delta(\omega-k\omega_0)
+&=\sum_{k=-\infty}^{\infty}2\pi X_k\delta(\omega-k\omega_0) \label{FourierSeries_X}
 \end{align}
 $$
 
