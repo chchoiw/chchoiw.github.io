@@ -184,8 +184,9 @@ According $\eqref{Fourier2}$,
 
 $$
 \begin{aligned}
-X_n&=\int_{-1/2}^{1/2} \sum\delta(t-k) e^{-j n \omega t} dt\\
-&=\int_{-1/2}^{1/2} \delta(t) e^{-j n \omega t} dt \\
+X_n&=\int_{-1/2}^{1/2} \sum_{k=-\infty}^{\infty} \delta(t-k) e^{-j n \omega t} dt\\
+&=\int_{-1/2}^{1/2} \delta(t) e^{-j n \omega t} dt 
+\quad \text{ since only \delt(t-0) has nonzero value in [-1/2,1/2]} \\
 &=\int_{-\infty}^{\infty} \delta(t) e^{-j n \omega t} dt \\
 &=e^{-j n \omega 0}=1
 \end{aligned}
