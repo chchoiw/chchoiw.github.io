@@ -15,6 +15,18 @@ category:
 - Also, another source I go through is [PDF](https://pages.jh.edu/~bcooper8/sigma_files/courses/214/signalsandsystemsnotes.pdf)
 
 
+# Unit impluse 
+
+$\delta(t)$ has the following properties:
+
+- $\int_{-\infty}^{\infty}x(t)\delta(t)dt=x(0)=\frac{x(0^{+})+x(0^{-})}{2}$
+- $\int_{-\infty}^{\infty} \delta(t) dt=1$
+- $\delta(t)=0 \quad \forall t\neq 0$
+- $z(t)\delta(t)=z(0)\delta(t)$
+- $\int_{-\infty}^{\infty} x(t) \delta(t-t_0)=x(t_0)$
+- $\int_{-\infty}^{\infty} x(t) \delta(at)=\frac{1}{ \vert a\vert }x(0) \quad \forall a neq 0$
+- $\delta(at)=\frac{1}{ \vert a\vert }\delta(t) \quad \forall a neq 0$
+
 # CT Fourier Transform
 If $x(t)$ is $T_0$-periodic, $x(t)$ can be written as 
 
