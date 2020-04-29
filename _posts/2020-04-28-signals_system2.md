@@ -26,6 +26,8 @@ $\delta(t)$ has the following properties:
 - $\int_{-\infty}^{\infty} x(t) \delta(t-t_0)=x(t_0)$
 - $\int_{-\infty}^{\infty} x(t) \delta(at)=\frac{1}{ \vert a\vert }x(0) \quad \forall a neq 0$
 - $\delta(at)=\frac{1}{ \vert a\vert }\delta(t) \quad \forall a neq 0$
+- $\int_{-\infty}^{\infty}\delta(\tau) \delta(t-\tau)d\tau=\delta(t)$
+- $\delta(t)=\int_{-\infty}^{\infty} e^{jt\omega} d\omega$
 
 # CT Fourier Transform
 If $x(t)$ is $T_0$-periodic, $x(t)$ can be written as 
