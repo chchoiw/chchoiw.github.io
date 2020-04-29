@@ -90,10 +90,10 @@ According $\eqref{Fourier6}$,
 $$
 \begin{aligned}
 X(\omega)
-&=\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt  \\
-&=\int_{0}^{\infty}e^{-3t} e^{-jk\omega_0 t}dt  \\
+&=\int_{-\infty}^{\infty}x(t) e^{-j\omega_0 t}dt  \\
+&=\int_{0}^{\infty}e^{-3t} e^{-j\omega_0 t}dt  \\
 &=\frac{-1}{3+j\omega}e^{-(3+j\omega)t}\Bigg\vert_{0}^{\infty} \\
-&=\frac{-1}{3+j\omega}
+&=\frac{1}{3+j\omega}
 \end{aligned}
 $$
 
