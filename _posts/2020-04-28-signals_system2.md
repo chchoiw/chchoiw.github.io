@@ -184,9 +184,9 @@ According $\eqref{Fourier2}$,
 
 $$
 \begin{aligned}
-X_n&=\inf_{-1/2}^{1/2} \sum\delta(t-k) e^{-j n \omega t} dt\\
-&=\inf_{-1/2}^{1/2} \delta(t) e^{-j n \omega t} dt \\
-&=\inf_{-\infty}^{\infty} \delta(t) e^{-j n \omega t} dt \\
+X_n&=\int_{-1/2}^{1/2} \sum\delta(t-k) e^{-j n \omega t} dt\\
+&=\int_{-1/2}^{1/2} \delta(t) e^{-j n \omega t} dt \\
+&=\int_{-\infty}^{\infty} \delta(t) e^{-j n \omega t} dt \\
 &=e^{-j n \omega 0}=1
 \end{aligned}
 $$
@@ -255,13 +255,13 @@ F( (x*y)(t) )=X(\omega)H(\omega)
 $$
 
 - Freqyency-Domain Convolution
-- 
+
 $$
 F( x(t)y(t) )=\frac{1}{2\pi}(X*Z)(\omega)
 $$
 
 - Inverse Freqyency-Domain Convolution
-- 
+
 $$
 F^{-1}( \frac{1}{2\pi}(X*Z)(\omega))=x(t)y(t)
 $$
