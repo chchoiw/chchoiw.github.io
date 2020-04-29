@@ -229,8 +229,8 @@ We prefer the last method one.
 
 $$
 \begin{aligned}
-F(x(t))&=\int_{-\infty}^{\infty}x(t)e^{-j\omega t} X(\omega) dt \\
-F^{-1}(X(\omega) )&=\int_{-\infty}^{\infty}X(\omega)e^{j\omega t} X(\omega) d\omega=x(t)
+F(x(t))&=\int_{-\infty}^{\infty}x(t)e^{-j\omega t}  dt \\
+F^{-1}(X(\omega) )&=\frac{1}{2\pi}\int_{-\infty}^{\infty}X(\omega)e^{j\omega t} d\omega=x(t)
 \end{aligned}
 $$
 
