@@ -56,7 +56,7 @@ and $\eqref{def_X}$ becomes
 X(\omega)=\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt 
 \end{equation}
 
-## $X(\omega) meaning$
+## $X(\omega)$ meaning
 
 In fact, the Fourier transform $X(\omega)$ describes the frequency content of the signal $x(t)$. Usually using the magnitude spectrum and the phase spectrum to show.
 
@@ -68,6 +68,7 @@ $$
 
 According $\eqref{Fourier6}$,
 
+$$
 \begin{aligned}
 X(\omega)
 &=\int_{-\infty}^{\infty}x(t) e^{-jk\omega_0 t}dt  \\
@@ -75,8 +76,10 @@ X(\omega)
 &=\frac{-1}{3+j\omega}e^{-(3+j\omega)t}\Bigg\vert_{0}^{\infty} \\
 &=\frac{-1}{3+j\omega}
 \end{aligned}
+$$
 
 Hence,
+
 $$
 \vert X(\omega)\vert =\frac{1}{\sqrt{9+\omega^2}}
 $$
