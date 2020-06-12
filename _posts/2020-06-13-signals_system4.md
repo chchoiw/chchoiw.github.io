@@ -28,7 +28,7 @@ m &=K_a A_m \quad \text{and by } \eqref{am1} \label{m_index_1}\\
 $$
 
 $$
-P=P_0+P_{USB}+P_{LSB}=P_C+frac{m^2}{4} P_C+frac{m^2}{4} P_C=(\1+frac{m^2}{2})P_C
+P=P_0+P_{USB}+P_{LSB}=P_C+\frac{m^2}{4} P_C+\frac{m^2}{4} P_C=(1+\frac{m^2}{2})P_C
 $$
 
 # DSB-SC
