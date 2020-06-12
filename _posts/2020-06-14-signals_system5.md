@@ -48,13 +48,13 @@ p_T(t)=\sum_{n=-\infty}^{\infty}P_n \e^{jn2\p f_s t}
 其中 
 
 $$
-P_n=\frac{1}{T}\int_{\frac{-T_s}{2}}^{\frac{T_s}{2}}\e^{-jn2\p f_s t}dt=\frac{1}{n\pi}\sin(n\pi f_s\tau)=f_s\tau \frac{\sin(n\pi f_s \tau)}{n\pi f_s \tau}
+P_n=\frac{1}{T}\int_{\frac{-T_s}{2}}^{\frac{T_s}{2}}e^{-jn2\pi f_s t}dt=\frac{1}{n\pi}\sin(n\pi f_s\tau)=f_s\tau \frac{\sin(n\pi f_s \tau)}{n\pi f_s \tau}
 $$
 
 - 原信號$s(t)$取樣後$s_s(t)$為
 
 $$
-s_s(t)=s(t)p_{T}(t)=\sum_{n=-\infty}^{\infty}s(t)P_n \e^{jn2\p f_s t}
+s_s(t)=s(t)p_{T}(t)=\sum_{n=-\infty}^{\infty}s(t)P_n e^{jn2\pi f_s t}
 $$
 
 - $s_s(t)$的頻譜$S_s(f)$
