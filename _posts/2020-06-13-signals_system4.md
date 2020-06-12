@@ -1,5 +1,5 @@
 ---
-title: 'AM'
+title: '振幅調變'
 date: 2020-06-13
 permalink: /posts/2020/06/signals_systems4/
 tags:
