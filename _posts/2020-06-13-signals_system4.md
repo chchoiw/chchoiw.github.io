@@ -18,5 +18,5 @@ category:
 \end{equation}
 
 \begin{equation} \label{am1}
-\phi_{AM}(t)=A_c[1+K_a s(t)]cos(2\pi f_c t)\quad fc>>f_m \text{ and  }|K_a s(t)|<1
+\phi_{AM}(t)=A_c[1+K_a s(t)]cos(2\pi f_c t)\quad \text{where }fc \gg f_m \text{  and  }|K_a s(t)|<1
 \end{equation}
