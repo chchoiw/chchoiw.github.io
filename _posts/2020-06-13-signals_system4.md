@@ -86,7 +86,7 @@ $$
 \Phi(f)=\frac{1}{2}(S(f-f_c)+f(f+f_c))
 \end{equation}
 
-<div style="text-align:center" id="image5_1"><img src="/images/signal/signal12_2.PNG" /><br>圖 5.1: $\phi_{DSB-SC}(t)$的頻譜</div>
+<div style="text-align:center" id="image5_1"><img src="/images/signal/signal12_1.png" /><br>圖 5.1: $\phi_{DSB-SC}(t)$的頻譜</div>
 
 ## 解調
 
