@@ -11,7 +11,7 @@ category:
 
 # DSB-LC
 
-<div style="text-align:center" id="image1"><img src="/images/singal/signal9.PNG" /><br>圖 1:DSB-LC過程</div>
+<div style="text-align:center" id="image1"><img src="/images/signal/signal9.PNG" /><br>圖 1:DSB-LC過程</div>
 
 ## 調變
 - 以下是載波$\phi_{AM}(t)$
@@ -22,7 +22,7 @@ category:
 
 - $\phi_{AM}(t)$的頻譜
 
-<div style="text-align:center" id="image2"><img src="/images/singal/signal10.PNG" /><br>圖 2:$\phi_{AM}(t)$的頻譜</div>
+<div style="text-align:center" id="image2"><img src="/images/signal/signal10.PNG" /><br>圖 2:$\phi_{AM}(t)$的頻譜</div>
 
 - $m$是調變百分比
 
@@ -44,7 +44,7 @@ $$
 ## 調解
 - 用二極體和R-C電壓去檢測載波的包線-> $(1+K_a)s(t)$->$s(t)$
 
-<div style="text-align:center" id="image3"><img src="/images/singal/signal8.PNG" /><br>圖 3:檢測載波的包線</div>
+<div style="text-align:center" id="image3"><img src="/images/signal/signal8.PNG" /><br>圖 3:檢測載波的包線</div>
 
 ## 優點
 1. 解調電路簡單
@@ -54,7 +54,7 @@ $$
 
 # DSB-SC
 
-<div style="text-align:center" id="image4"><img src="/images/singal/signal11.PNG" /><br>圖 4: DSB-SC過程</div>
+<div style="text-align:center" id="image4"><img src="/images/signal/signal11.PNG" /><br>圖 4: DSB-SC過程</div>
 
 - 調變：載波$\phi_{DSB-SC}(t)$
 
@@ -79,7 +79,7 @@ $$
   1.以$2f_c,-2f_c$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{4}$
   2. 以$0$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{2}$。這個剛好是原頻譜的$\frac{1}{2}$倍
 
-<div style="text-align:center" id="image5"><img src="/images/singal/signal11.PNG" /><br>圖 5: $\phi_{DSB-SC}(t),\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
+<div style="text-align:center" id="image5"><img src="/images/signal/signal11.PNG" /><br>圖 5: $\phi_{DSB-SC}(t),\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
 
 - 因為$2f_c$是比較高頻的, 先過濾, 就會得到原頻譜的$\frac{1}{2}$倍
 
@@ -114,7 +114,7 @@ $$
 ## 調變
 - 取DSB-SC$\phi_{DSB-SC}$,頻率$> f_c$的上半部
 
-<div style="text-align:center" id="image6"><img src="/images/singal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上半部</div>
+<div style="text-align:center" id="image6"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上半部</div>
 
 $$
 \phi_{SSB}(t)=\frac{1}{2}(s(t)\cos(2\pi f_ct))-\hat s(t)\sin(2\pi f_ct))
@@ -138,7 +138,7 @@ $$
 s_0(t)=\phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{4}s(t)
 $$
 
-<div style="text-align:center" id="image7"><img src="/images/singal/signal13.PNG" /><br>圖 5: $\phi_{SSB}(t)$ 解頻</div>
+<div style="text-align:center" id="image7"><img src="/images/signal/signal13.PNG" /><br>圖 5: $\phi_{SSB}(t)$ 解頻</div>
 
 ## 優點
 - 只用$f_m$頻寬
@@ -151,7 +151,7 @@ s_0(t)=\frac{1}{4}A_m\cos(2\pi (f_m-\Delta f) t-\Delta \theta)
 $$
 
 2. 在DSB-SC, $\Delta \theta \neq 0,\Delta f=0$只會導致振幅衰減, 但是SSB會導致相角的偏差而導致失真, 所以在影像資料就不能使用,但可用在語音通訊
-3. 當$\Delta \theta 0 ,\Delta f\neq 0$,
+3. 當$\Delta \theta =0 ,\Delta f\neq 0$,
 
 $$\cos(2\pi (f_m-\Delta f) t-\Delta \theta)=\cos(2\pi (f_m) t)\cos(2\pi (\Delta f) t)$$
 
