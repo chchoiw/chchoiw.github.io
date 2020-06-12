@@ -88,7 +88,7 @@ $$
 
 ## 解調
 
-- $\phi_{DSB-SC}(t)$乘以$cos(2\pi f_c t)$得以下
+- $\phi_{DSB-SC}(t)$乘以$\cos(2\pi f_c t)$得以下
 
 $$
 \phi_{DSB-SC}(t)\cos(2\pi f_c t)=\frac{1}{2}(s(t)+\cos(4\pi f_c t))
