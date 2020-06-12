@@ -155,7 +155,7 @@ $$
 s_0(t)=\phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{4}s(t)
 $$
 
-<div style="text-align:center" id="image7"><img src="/images/signal/signal13.PNG" /><br>圖 5: $\phi_{SSB}(t)$ 解頻</div>
+<div style="text-align:center" id="image7"><img src="/images/signal/signal14.PNG" /><br>圖 5: $\phi_{SSB}(t)$ 解頻</div>
 
 ## 優點
 - 只用$f_m$頻寬
