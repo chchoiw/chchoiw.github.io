@@ -140,7 +140,7 @@ $$
 $$
 
 
-其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=-j S(f) \text{sgin}(f)$
+其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=\text{sgin}(f)j S(f) $
 
 - $$ \Phi_{SSB}(f)$$的頻譜是以$f_c$為中心, 向右平移$f_m$, 大小為原來的$\frac{1}{4}$, 再與$f=0$對稱得到$-f_m$的部分
 
