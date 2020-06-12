@@ -9,15 +9,16 @@ category:
 ---
 
 # 參考
-- 這是閱讀書本[<通訊原理與應用>(作者藍國桐)](http://findbook.tw/book/9789572122990/basic).
+- 這是閱讀書本[<通訊原理與應用>](http://findbook.tw/book/9789572122990/basic),作者藍國桐。
 
 在以下的過程當中，假設
 
-\begin{equation} \label(singal)
+\begin{equation} \label{singal}
 s(t)=A_m \cos(2\pi f_m t),
 \end{equation} 
 
 雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref(signal)$的和。
+<hr>
 # DSB-LC
 
 <div style="text-align:center" id="image1"><img src="/images/signal/signal9.PNG" /><br>圖 1:DSB-LC過程</div>
