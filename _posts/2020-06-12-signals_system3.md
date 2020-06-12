@@ -1,5 +1,5 @@
 ---
-title: 'CT Fourier Transformm'
+title: '通訊基本概念'
 date: 2020-06-12
 permalink: /posts/2020/06/signals_systems2/
 tags:
