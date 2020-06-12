@@ -37,8 +37,8 @@ s(t)=A_m \cos(2\pi f_m t),
 
 $$
 \begin{align} 
-m &=K_a A_m \quad \text{and by } \eqref{am1} \label{m_index_1}\\
-\frac{\phi_{\max}}{\phi_{\min}}&=\frac{A_c(1+m)}{A_c(1-m)} \\
+m &=K_a A_m  \label{m_index_1}\\
+\text{and by } \eqref{am1} \quad \frac{\phi_{\max}}{\phi_{\min}}&=\frac{A_c(1+m)}{A_c(1-m)} \\
  m&=\frac{\phi_{\max}+\phi_{\min}}{\phi_{\max}-\phi_{\min}} \label{m_index_2}
 \end{align}
 $$
@@ -74,6 +74,8 @@ $$
 
 - 載波$\phi_{DSB-SC}(t)$的頻譜會以$f_c,-f_c$為中心, 向左向右平移$f_m$,頻譜強度變為0.5, 表達式為以下
 
+<div style="text-align:center" id="image5_1"><img src="/images/signal/signal12_2.PNG" /><br>圖 5.1: $\phi_{DSB-SC}(t)$的頻譜</div>
+
 \begin{equation} \label{ft_shift1}
 \Phi(f)=\frac{1}{2}(S(f-f_c)+f(f+f_c))
 \end{equation}
@@ -90,7 +92,7 @@ $$
   1.以$2f_c,-2f_c$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{4}$
   2. 以$0$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{2}$。這個剛好是原頻譜的$\frac{1}{2}$倍
 
-<div style="text-align:center" id="image5"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t),\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
+<div style="text-align:center" id="image5_2"><img src="/images/signal/signal12_2.PNG" /><br>圖 5.2: $\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
 
 - 因為$2f_c$是比較高頻的, 先過濾, 就會得到原頻譜的$\frac{1}{2}$倍
 
@@ -98,7 +100,7 @@ $$
 - DSB-SC比起DSB-LC減少載波功率的浪費
 
 ## 缺點
-- 頻寬由$f_m$變成$2f_{m}$,但因為$s(t)是實數, 所以對於$f=0$對稱
+- 頻寬由$f_m$變成$2f_{m}$,但因為$s(t)$是實數, 所以對於$f=0$對稱
 - 當解調器的相位$\phi$, 即$\phi_{DSB-SC}(t)$解調時乘以$\cos(2\pi f_c t+\phi)$, 再濾高頻,會得
 
 $$
