@@ -83,7 +83,7 @@ $$
 
 ## 解調
 
-- 乘以$cos(2\pi f_c t)$得以下
+- $\phi_{DSB-SC}(t)$乘以$cos(2\pi f_c t)$得以下
 
 $$
 \phi_{DSB-SC}(t)\cos(2\pi f_c t)=\frac{1}{2}(s(t)+\cos(4\pi f_c t))
@@ -93,7 +93,7 @@ $$
   1.以$2f_c,-2f_c$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{4}$
   2. 以$0$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{2}$。這個剛好是原頻譜的$\frac{1}{2}$倍
 
-<div style="text-align:center" id="image5_2"><img src="/images/signal/signal12_2.PNG" /><br>圖 5.2: $\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
+<div style="text-align:center" id="image5_2"><img src="/images/signal/signal12_2.png" /><br>圖 5.2: $\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
 
 - 因為$2f_c$是比較高頻的, 先過濾, 就會得到原頻譜的$\frac{1}{2}$倍
 
@@ -109,7 +109,7 @@ s_0(t)=\frac{1}{2}s(t)\cos(\phi)
 $$
 
 從上式可見, 當$\phi=0$時, $s_0(t)=0$,稱為同調波器的正交空效應
-- 若解調器的振𣿴器的頻率$f_c'-f_c=\Delta f$,
+- 若解調器的振𣿴器的頻率$f_c'$,它與$f_c$的差為$\Delta f$, 那麽用上述方法解調出來的$s_0(t)$會是
 
 $$
 s_0(t)=\frac{1}{2}s(t)\cos(2\pi \Delta f t)
@@ -134,11 +134,12 @@ $$
 \phi_{SSB}(t)=\frac{1}{2}(s(t)\cos(2\pi f_ct))-\hat s(t)\sin(2\pi f_ct))
 $$
 
-<div style="text-align:center" id="image6"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上旁波帶</div>
 
 其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=-j S(f) \text{sgin}(f)$
 
 - $$ \Phi_{SSB}(f)$$的頻譜是以$f_c$為中心, 向右平移$f_m$, 大小為原來的$\frac{1}{4}$, 再與$f=0$對稱得到$-f_m$的部分
+
+<div style="text-align:center" id="image6"><img src="/images/signal/signal13.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上旁波帶</div>
 
 ## 解調
 
