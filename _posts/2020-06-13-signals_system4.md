@@ -78,3 +78,17 @@ $$
 從上式可見, $s_0(t)$會有失真, 通常$\Delta f\leq 30\text{HZ}$是可以接受的
 
 - 綜合可見，這個DSB-SC需要更複雜的同步解調系統
+
+# DSB-SSB
+
+## 調變
+- 取DSB-SC$\phi_{DSB-SC}$,頻率$> f_c$的上半部
+
+$$
+\phi_{SSB}(t)=\frac{1}{2}(s(t)\cos(2\pi f_ct))-\hat s(t)\sin(2\pi f_ct))
+$$
+
+其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=-j S(f) \text{sgin}(f)$
+
+
+## 解調
