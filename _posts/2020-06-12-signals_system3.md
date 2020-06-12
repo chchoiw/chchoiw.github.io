@@ -1,7 +1,7 @@
 ---
 title: '通訊基本概念'
 date: 2020-06-12
-permalink: /posts/2020/06/signals_systems2/
+permalink: /posts/2020/06/signals_systems3/
 tags:
   - 基本概念
 category:
