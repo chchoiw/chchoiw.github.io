@@ -17,7 +17,7 @@ category:
 s(t)=A_m \cos(2\pi f_m t),
 \end{equation} 
 
-雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref(signal)$的和。
+雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref{signal}$的和。
 <hr>
 # DSB-LC
 
