@@ -11,13 +11,18 @@ category:
 # 參考
 - 這是閱讀書本<[通訊原理與應用](http://findbook.tw/book/9789572122990/basic)>,作者藍國桐。
 
-在以下的過程當中，假設
+# 定義
+
+1. 在以下的過程當中，假設調變信號$s(t)$是
 
 \begin{equation} \label{singal}
 s(t)=A_m \cos(2\pi f_m t),
 \end{equation} 
 
-雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref{signal}$的和。
+雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref{signal}$的和。它的Fourier Transform, 稱為頻譜或$S(t)=\mathcal{F}(s(t))$
+
+2. 在調變後的結果會以$\phi(t)$表示, 它的Fourier Transform, 稱為頻譜或$\Phi(t)=\mathcal{F}(\phi(t))$
+3. 解調後的信號會以$s_0(t)$表示
 <hr>
 # DSB-LC
 
