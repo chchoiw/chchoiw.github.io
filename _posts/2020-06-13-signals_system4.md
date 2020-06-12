@@ -8,6 +8,8 @@ category:
   - Signals and Systems
 ---
 
+
+
 # 參考
 - 這是閱讀書本<[通訊原理與應用](http://findbook.tw/book/9789572122990/basic)>,作者藍國桐。
 
@@ -15,7 +17,7 @@ category:
 
 - 在以下的過程當中，假設調變信號$s(t)$是
 
-\begin{equation} \label{singal}
+\begin{equation} \label{signal}
 s(t)=A_m \cos(2\pi f_m t),
 \end{equation} 
 
