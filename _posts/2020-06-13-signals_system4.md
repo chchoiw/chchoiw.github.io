@@ -95,8 +95,8 @@ $$
 $$
 
 - $\phi_{DSB-SC}(t)$的頻譜：
-1.以$2f_c,-2f_c$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{4}$
-2. 以$0$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{2}$。這個剛好是原頻譜的$\frac{1}{2}$倍
+  * 以$2f_c,-2f_c$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{4}$
+  * 以$0$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{2}$。這個剛好是原頻譜的$\frac{1}{2}$倍
 
 <div style="text-align:center" id="image5_2"><img src="/images/signal/signal12_2.png" /><br>圖 5.2: $\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
 
