@@ -122,7 +122,9 @@ $$
 $$
 s_0(t)=\frac{1}{2}s(t)\cos(2\pi \Delta f t+\Delta \theta)
 $$
+
 <hr>
+
 # DSB-SSB
 
 ## 調變
