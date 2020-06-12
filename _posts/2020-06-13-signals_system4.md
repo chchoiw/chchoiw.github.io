@@ -23,7 +23,7 @@ $$
 \begin{align} 
 m &=K_a A_m \quad \text{and by } \eqref{am1} \label{m_index_1}\\
 \frac{\phi_{\max}}{\phi_{\min}}&=\frac{A_c(1+m)}{A_c(1-m)} \\
- m=\frac{\phi_{\max}+\phi_{\min}}{\phi_{\max}-\phi_{\min}} \label{m_index_2}
+ m&=\frac{\phi_{\max}+\phi_{\min}}{\phi_{\max}-\phi_{\min}} \label{m_index_2}
 \end{align}
 $$
 
