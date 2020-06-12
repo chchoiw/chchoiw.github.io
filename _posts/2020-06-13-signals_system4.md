@@ -150,5 +150,9 @@ $$
 s_0(t)=\frac{1}{4}A_m\cos(2\pi (f_m-\Delta f) t-\Delta \theta)
 $$
 
-2. 在DSB-SC, $\Delta \theat \neq 0,\Delta f=0$只會導致振幅衰減, 但是SSB會導致相角的偏差而導致失真, 所以在影像資料就不能使用,但可用在語音通訊
-3. $\Delta \theat 0 ,\Delta f\neq 0$,$\cos(2\pi (f_m-\Delta f) t-\Delta \theta)=\cos(2\pi (f_m) t)\cos(2\pi (\Delta f) t)$,若$\Delta f=kf_m$,唐老鴨反應
+2. 在DSB-SC, $\Delta \theta \neq 0,\Delta f=0$只會導致振幅衰減, 但是SSB會導致相角的偏差而導致失真, 所以在影像資料就不能使用,但可用在語音通訊
+3. 當$\Delta \theta 0 ,\Delta f\neq 0$,
+
+$$\cos(2\pi (f_m-\Delta f) t-\Delta \theta)=\cos(2\pi (f_m) t)\cos(2\pi (\Delta f) t)$$
+
+若$\Delta f \	\propto f_m$,這只是音調較高或較低,這失真引起老鴨反應。
