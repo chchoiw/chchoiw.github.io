@@ -8,7 +8,16 @@ category:
   - Signals and Systems
 ---
 
+# 參考
+- 這是閱讀書本[<通訊原理與應用>(作者藍國桐)](http://findbook.tw/book/9789572122990/basic).
 
+在以下的過程當中，假設
+
+\begin{equation} \label(singal)
+s(t)=A_m \cos(2\pi f_m t),
+\end{equation} 
+
+雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref(signal)$的和。
 # DSB-LC
 
 <div style="text-align:center" id="image1"><img src="/images/signal/signal9.PNG" /><br>圖 1:DSB-LC過程</div>
@@ -52,7 +61,7 @@ $$
 ## 缺點
 1. 欲傳達的訊息包含在旁波帶之內$P_{USB}+P_{LSB}$, AM信號的功率卻集中在載波$P_C$, 形同功率的浪費
 2. 頻寛是$2f_m$
-
+<hr>
 # DSB-SC
 
 <div style="text-align:center" id="image4"><img src="/images/signal/signal11.PNG" /><br>圖 4: DSB-SC過程</div>
@@ -63,7 +72,8 @@ $$
 \phi_{DSB-SC}(t)=s(t)\cos(2\pi f_c t)
 \end{equation}
 
-- 乘以$cos(2\pi f_ct)$,頻譜會以$f_c,-f_c$為中心, 向左向右平移$f_m$,頻譜強度變為0.5, 表達式為以下
+- 載波$\phi_{DSB-SC}(t)$的頻譜會以$f_c,-f_c$為中心, 向左向右平移$f_m$,頻譜強度變為0.5, 表達式為以下
+
 \begin{equation} \label{ft_shift1}
 \Phi(f)=\frac{1}{2}(S(f-f_c)+f(f+f_c))
 \end{equation}
@@ -109,7 +119,7 @@ $$
 $$
 s_0(t)=\frac{1}{2}s(t)\cos(2\pi \Delta f t+\Delta \theta)
 $$
-
+<hr>
 # DSB-SSB
 
 ## 調變
