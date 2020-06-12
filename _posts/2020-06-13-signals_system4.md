@@ -24,7 +24,7 @@ category:
 
 <div style="text-align:center" id="image2"><img src="/images/signal/signal10.PNG" /><br>圖 2:$\phi_{AM}(t)$的頻譜</div>
 
-- $m$是調變百分比
+- 調變百分比$m$
 
 $$
 \begin{align} 
@@ -34,11 +34,11 @@ m &=K_a A_m \quad \text{and by } \eqref{am1} \label{m_index_1}\\
 \end{align}
 $$
 
+- AM總功率$P$、載波功率$P_C$和上旁波帶功率$P_{USB}$
+
 $$
 P=P_C+P_{USB}+P_{LSB}=P_C+\frac{m^2}{4} P_C+\frac{m^2}{4} P_C=(1+\frac{m^2}{2})P_C
 $$
-
-上式$P_C$是載波功率, $P$是AM總功率
 
 
 ## 調解
@@ -50,7 +50,8 @@ $$
 1. 解調電路簡單
 
 ## 缺點
-1. 欲傳達的訊息包含在旁波帶之內, AM信號的功率卻集中在載波, 形同功率的浪費
+1. 欲傳達的訊息包含在旁波帶之內$P_{USB}+P_{LSB}$, AM信號的功率卻集中在載波$P_C$, 形同功率的浪費
+2. 頻寛是$2f_m$
 
 # DSB-SC
 
@@ -79,7 +80,7 @@ $$
   1.以$2f_c,-2f_c$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{4}$
   2. 以$0$為中心, 向左向右平移$f_m$, 大小為原來的$\frac{1}{2}$。這個剛好是原頻譜的$\frac{1}{2}$倍
 
-<div style="text-align:center" id="image5"><img src="/images/signal/signal11.PNG" /><br>圖 5: $\phi_{DSB-SC}(t),\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
+<div style="text-align:center" id="image5"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t),\phi_{DSB-SC}(t)\cos(2\pi f_c t)$的頻譜</div>
 
 - 因為$2f_c$是比較高頻的, 先過濾, 就會得到原頻譜的$\frac{1}{2}$倍
 
@@ -112,9 +113,9 @@ $$
 # DSB-SSB
 
 ## 調變
-- 取DSB-SC$\phi_{DSB-SC}$,頻率$> f_c$的上半部
+- 取DSB-SC$\phi_{DSB-SC}$,頻率$> f_c$的上旁波帶
 
-<div style="text-align:center" id="image6"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上半部</div>
+<div style="text-align:center" id="image6"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上旁波帶</div>
 
 $$
 \phi_{SSB}(t)=\frac{1}{2}(s(t)\cos(2\pi f_ct))-\hat s(t)\sin(2\pi f_ct))
