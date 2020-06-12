@@ -1,5 +1,5 @@
 ---
-title: 'CT Fourier Transformm'
+title: 'CT Fourier Transform'
 date: 2020-04-28
 permalink: /posts/2020/04/signals_systems2/
 tags:
