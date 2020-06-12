@@ -148,13 +148,13 @@ $$
 
 ## 解調
 
-1. 乘以$\cos(2\pi f_ct)$
+* 乘以$\cos(2\pi f_ct)$
 
 $$
 \phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{2}(0.5s(t)(1+\cos(2\pi f_c t))-0.5\hat s(t)\sin(2\pi f_c t))
 $$
 
-2. 過濾高頻$2f_c$,得到以下
+* 過濾高頻$2f_c$,得到以下
 
 $$
 s_0(t)=\frac{1}{4}s(t)
@@ -166,14 +166,14 @@ $$
 - 只用$f_m$頻寬
 
 ## 缺點
-1. 同DSB-SC一樣定義$\Delta f , \Delta \theta$,假如$s(t)=A_m\cos(2\pi f_m t)$,那麽調解出來的$s_0(t)$
+- 同DSB-SC一樣定義$\Delta f , \Delta \theta$,假如$s(t)=A_m\cos(2\pi f_m t)$,那麽調解出來的$s_0(t)$
 
 $$
 s_0(t)=\frac{1}{4}A_m\cos(2\pi (f_m-\Delta f) t-\Delta \theta)
 $$
 
-2. 在DSB-SC, $\Delta \theta \neq 0,\Delta f=0$只會導致振幅衰減, 但是SSB會導致相角的偏差而導致失真, 所以在影像資料就不能使用,但可用在語音通訊
-3. 當$\Delta \theta =0 ,\Delta f\neq 0$,
+- 在DSB-SC, $\Delta \theta \neq 0,\Delta f=0$只會導致振幅衰減, 但是SSB會導致相角的偏差而導致失真, 所以在影像資料就不能使用,但可用在語音通訊
+- 當$\Delta \theta =0 ,\Delta f\neq 0$,
 
 $$\cos(2\pi (f_m-\Delta f) t-\Delta \theta)=\cos(2\pi (f_m) t)\cos(2\pi (\Delta f) t)$$
 
