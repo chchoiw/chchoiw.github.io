@@ -75,11 +75,11 @@ $$
 
 - 載波$\phi_{DSB-SC}(t)$的頻譜會以$f_c,-f_c$為中心, 向左向右平移$f_m$,頻譜強度變為0.5, 表達式為以下
 
-<div style="text-align:center" id="image5_1"><img src="/images/signal/signal12_2.PNG" /><br>圖 5.1: $\phi_{DSB-SC}(t)$的頻譜</div>
-
 \begin{equation} \label{ft_shift1}
 \Phi(f)=\frac{1}{2}(S(f-f_c)+f(f+f_c))
 \end{equation}
+
+<div style="text-align:center" id="image5_1"><img src="/images/signal/signal12_2.PNG" /><br>圖 5.1: $\phi_{DSB-SC}(t)$的頻譜</div>
 
 ## 解調
 
@@ -128,11 +128,11 @@ $$
 ## 調變
 - 取DSB-SC$\phi_{DSB-SC}$,頻率$> f_c$的上旁波帶
 
-<div style="text-align:center" id="image6"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上旁波帶</div>
-
 $$
 \phi_{SSB}(t)=\frac{1}{2}(s(t)\cos(2\pi f_ct))-\hat s(t)\sin(2\pi f_ct))
 $$
+
+<div style="text-align:center" id="image6"><img src="/images/signal/signal12.PNG" /><br>圖 5: $\phi_{DSB-SC}(t)$ 上旁波帶</div>
 
 其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=-j S(f) \text{sgin}(f)$
 
