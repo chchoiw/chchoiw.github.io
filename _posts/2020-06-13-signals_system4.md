@@ -31,14 +31,14 @@ m &=K_a A_m \quad \text{and by } \eqref{am1} \label{m_index_1}\\
 $$
 
 $$
-P=P_0+P_{USB}+P_{LSB}=P_C+\frac{m^2}{4} P_C+\frac{m^2}{4} P_C=(1+\frac{m^2}{2})P_C
+P=P_C+P_{USB}+P_{LSB}=P_C+\frac{m^2}{4} P_C+\frac{m^2}{4} P_C=(1+\frac{m^2}{2})P_C
 $$
 
 上式$P_C$是載波功率, $P$是AM總功率
 
 
 ## 調解
-- 用二極體和R-C電壓去檢測載波的包線-> $(1+Ka)s(t)$->$s(t)$
+- 用二極體和R-C電壓去檢測載波的包線-> $(1+K_a)s(t)$->$s(t)$
 
 ## 優點
 1. 解調電路簡單
