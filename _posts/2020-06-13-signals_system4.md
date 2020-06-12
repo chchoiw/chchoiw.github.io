@@ -140,7 +140,7 @@ $$
 $$
 
 
-其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=\text{sgin}(f)j S(f) $
+其中$\hat s(t)$是$\mathcal{F}^{-1}\hat S(f)$ ,$S(f)=-\text{sgin}(f)j S(f) $
 
 - $$ \Phi_{SSB}(f)$$的頻譜是以$f_c$為中心, 向右平移$f_m$, 大小為原來的$\frac{1}{4}$, 再與$f=0$對稱得到$-f_m$的部分
 
@@ -151,13 +151,13 @@ $$
 1. 乘以$\cos(2\pi f_ct)$
 
 $$
-\phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{2}(0.5s(t)(1+\cos(2\pi f_c t))-0.5\hat s(t)(1+\sin(2\pi f_c t)))
+\phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{2}(0.5s(t)(1+\cos(2\pi f_c t))-0.5\hat s(t)\sin(2\pi f_c t))
 $$
 
 2. 過濾高頻$2f_c$,得到以下
 
 $$
-s_0(t)=\phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{4}s(t)
+s_0(t)=\frac{1}{4}s(t)
 $$
 
 <div style="text-align:center" id="image7"><img src="/images/signal/signal14.PNG" /><br>圖 5: $\phi_{SSB}(t)$ 解頻</div>
