@@ -36,9 +36,9 @@ category:
 s(t)=A_m \cos(2\pi f_m t),
 \end{equation} 
 
-雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref{signal}$的和。它的Fourier Transform, 稱為頻譜或$S(t)=\mathcal{F}(s(t))$
+雖然是這樣定義，但經Fourier Series，任何週期波都可以表達成$\eqref{signal}$的和。它的[Fourier Transform](/posts/2020/06/signals_systems2/), 稱為頻譜或$S(t)=\mathcal{F}(s(t))$
 
-- 在調變後的結果會以$\phi(t)$表示, 它的Fourier Transform, 稱為頻譜或$\Phi(t)=\mathcal{F}(\phi(t))$
+- 在調變後的結果會以$\phi(t)$表示, 它的[Fourier Transform](/posts/2020/06/signals_systems2/), 稱為頻譜或$\Phi(t)=\mathcal{F}(\phi(t))$
 - 解調後的信號會以$s_0(t)$表示
 <hr>
 # DSB-LC
