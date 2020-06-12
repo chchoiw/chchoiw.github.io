@@ -3,7 +3,8 @@ title: '脈波調變'
 date: 2020-06-14
 permalink: /posts/2020/06/signals_systems5/
 tags:
-  - PAM,PCM
+  - PAM
+  - PCM
 category:
   - Signals and Systems
 ---
