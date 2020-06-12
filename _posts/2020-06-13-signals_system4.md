@@ -65,19 +65,23 @@ $$
 - 當解調器的相位$\phi$, 即$\phi_{DSB-SC}(t)$解調時乘以$\cos(2\pi f_c t+\phi)$, 再濾高頻,會得
 
 $$
-s_0(t)=\frac{1}{2}s(t)cos(\phi)
+s_0(t)=\frac{1}{2}s(t)\cos(\phi)
 $$
 
 從上式可見, 當$\phi=0$時, $s_0(t)=0$,稱為同調波器的正交空效應
 - 若解調器的振𣿴器的頻率$f_c'-f_c=\Delta f$,
 
 $$
-s_0(t)=\frac{1}{2}s(t)cos(2\pi \Delta f t)
+s_0(t)=\frac{1}{2}s(t)\cos(2\pi \Delta f t)
 $$
 
 從上式可見, $s_0(t)$會有失真, 通常$\Delta f\leq 30\text{HZ}$是可以接受的
 
 - 綜合可見，這個DSB-SC需要更複雜的同步解調系統
+
+$$
+s_0(t)=\frac{1}{2}s(t)\cos(2\pi \Delta f t+\Delta \theta)
+$$
 
 # DSB-SSB
 
@@ -100,9 +104,21 @@ $$
 \phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{2}(0.5s(t)(1+\cos(2\pi f_c t))-0.5\hat s(t)(1+\sin(2\pi f_c t)))
 $$
 
-2. 過濾高頻
+2. 過濾高頻$2f_c$,得到以下
 
 $$
 s_0(t)=\phi_{SSB}(t)\cos(2\pi f_ct))=\frac{1}{4}s(t)
 $$
 
+## 優點
+- 只用$f_m$頻寬
+
+## 缺點
+1. 同DSB-SC一樣定義$\Delta f , \Delta \theta$,假如$s(t)=A_m\cos(2\pi f_m t)$,那麽調解出來的$s_0(t)$
+
+$$
+s_0(t)=\frac{1}{4}A_m\cos(2\pi (f_m-\Delta f) t-\Delta \theta)
+$$
+
+2. 在DSB-SC, $\Delta \theat \neq 0,\Delta f=0$只會導致振幅衰減, 但是SSB會導致相角的偏差而導致失真, 所以在影像資料就不能使用,但可用在語音通訊
+3. $\Delta \theat 0 ,\Delta f\neq 0$,$\cos(2\pi (f_m-\Delta f) t-\Delta \theta)=\cos(2\pi (f_m) t)\cos(2\pi (\Delta f) t)$,若$\Delta f=kf_m$,唐老鴨反應
