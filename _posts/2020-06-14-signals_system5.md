@@ -50,3 +50,20 @@ p_T(t)=\sum_{n=-\infty}^{\infty}P_n \e^{jn2\p f_s t}
 $$
 P_n=\frac{1}{T}\int_{\frac{-T_s}{2}}^{\frac{T_s}{2}}\e^{-jn2\p f_s t}dt=\frac{1}{n\pi}\sin(n\pi f_s\tau)=f_s\tau \frac{\sin(n\pi f_s \tau)}{n\pi f_s \tau}
 $$
+
+- 原信號$s(t)$取樣後$s_s(t)$為
+
+$$
+s_s(t)=s(t)p_{T}(t)=\sum_{n=-\infty}^{\infty}s(t)P_n \e^{jn2\p f_s t}
+$$
+
+- $s_s(t)$的頻譜$S_s(f)$
+
+$$
+S_s(f)=P_0 S(f)+\sum_{n=-\infty,n\neq 0 }^{\infty}P_n S(f-nf_s)
+$$
+
+其中$P_0=\frac{\tau}{T_s}$
+
+# 取樣定理
+以$s(t)$
