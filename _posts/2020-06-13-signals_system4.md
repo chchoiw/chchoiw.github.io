@@ -20,3 +20,8 @@ category:
 \begin{equation} \label{am1}
 \phi_{AM}(t)=A_c[1+K_a s(t)]cos(2\pi f_c t)\quad \text{where }fc \gg f_m \text{  and  }|K_a s(t)|<1
 \end{equation}
+
+
+\begin{equation} \label{m_index}
+m=K_a A_m \quad \text{and by } \eqref{am1} \frac{\phi_{\max}}{\phi_{\min}}=\frac{A_c(1+m)}{A_c(1-m)}
+\end{equation}
