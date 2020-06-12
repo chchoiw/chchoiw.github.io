@@ -8,14 +8,6 @@ category:
   - Signals and Systems
 ---
 
-\begin{equation} \label{shift1}
-\phi(t)=s(t)cos(2\pi f_ct)
-\end{equation}
-
-
-\begin{equation} \label{ft_shift1}
-\phi(f)=\frac{1}{2}(S(f-f_c)+f(f+f_c))
-\end{equation}
 
 # DSB_LC
 - 用R-C電壓去檢測載波的包線-> $(1+Ka)s(t)$->$s(t)$
@@ -41,3 +33,21 @@ $$
 
 # DSB-SC
 
+- 調變：載波$\phi_{DSB-SC}(t)$
+
+\begin{equation} \label{shift1}
+\phi_{DSB-SC}(t)=s(t)\cos(2\pi f_c t)
+\end{equation}
+
+- 乘以$cos(2\pi f_ct)$,頻譜會以$f_c,-f_c$為中心, 向左向右平移$f_m$,頻譜強度變為0.5, 表達式為以下
+\begin{equation} \label{ft_shift1}
+\Phi(f)=\frac{1}{2}(S(f-f_c)+f(f+f_c))
+\end{equation}
+
+## 解調
+
+- 乘以$cos(2\pi f_c t)$得以下
+
+$$
+\phi_{DSB-SC}(t)\cos(2\pi f_c t)=\frac{1}{2}(s(t)+\cos(4\pi f_c t))
+$$
