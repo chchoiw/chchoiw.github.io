@@ -57,7 +57,7 @@ $$
 
 
 ## 調解
-- 用二極體和R-C電壓去檢測載波的包線-> $(1+K_a)s(t)$->$s(t)$
+- 用二極體和R-C電壓去檢測載波$(1+K_a)s(t)$的包線,即是$s(t)$
 
 <div style="text-align:center" id="image3"><img src="/images/signal/signal8.PNG" /><br>圖 3:檢測載波的包線</div>
 
