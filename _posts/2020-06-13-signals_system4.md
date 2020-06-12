@@ -133,7 +133,7 @@ $$
 # DSB-SSB
 
 ## 調變
-- 取DSB-SC$\phi_{DSB-SC}$,頻率$> f_c$的上旁波帶
+- 取DSB-SC頻譜$\Phi_{DSB-SC} (f)$中,$f> f_c$的上旁波帶
 
 $$
 \phi_{SSB}(t)=\frac{1}{2}(s(t)\cos(2\pi f_ct))-\hat s(t)\sin(2\pi f_ct))
