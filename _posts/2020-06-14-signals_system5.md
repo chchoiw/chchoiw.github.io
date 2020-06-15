@@ -49,11 +49,14 @@ S_{\text(int)}(f)=\mathcal{F}(s_{\text(int)})=f_s\sum_{n=-\infty}^{\infty}S(f-nf
 
 ## 實際上可利用$p_T (t-nT_s)$
 
-<div style="text-align:center" id="image0-8"><img src="/images/signal/signal27.png" /></div>
+
 
 \begin{equation} \label{pT_fs}
 p_T(t)=\sum_{n=-\infty}^{\infty}P_n e^{jn2\pi f_s t}
 \end{equation}
+
+<div style="text-align:center" id="image0-8"><img src="/images/signal/signal27.png" /></div>
+<div style="text-align:center" id="image0-5"><img src="/images/signal/signal28.png" /></div>
 
 其中 
 
@@ -69,6 +72,8 @@ $$
 
 <div style="text-align:center" id="image0-3"><img src="/images/signal/signal25.png" /></div>
 
+
+
 - $s_s(t)$的頻譜$S_s(f)$
 
 $$
@@ -80,7 +85,7 @@ $$
 
 <div style="text-align:center" id="image0-4"><img src="/images/signal/signal26.png" /></div>
 
-<div style="text-align:center" id="image0-5"><img src="/images/signal/signal28.png" /></div>
+
 
 <div style="text-align:center" id="image0-6"><img src="/images/signal/signal29.png" /></div>
 
