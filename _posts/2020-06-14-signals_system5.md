@@ -91,11 +91,13 @@ $$
 <div style="text-align:center" id="image3"><img src="/images/signal/signal17.png" /><br>圖 3:中繼站還原用的等化器</div>
 
 # PCM
-<div style="text-align:center" id="image4"><img src="/images/signal/signal18.png" /><br>圖 4:PCM過程</div>
+<div style="text-align:center" id="image4"><img src="/images/signal/signal21.png" /><br>圖 4:PCM過程</div>
 
 - 基頻信號經過取樣、量化和編三個程序, 稱為A/D轉換。
 <div style="text-align:center" id="image5"><img src="/images/signal/signal19.png" /><br>圖 5:取樣和量化</div>
 <div style="text-align:center" id="image6"><img src="/images/signal/signal20.png" /><br>圖 6:編碼</div>
+- 量化過程可能對振幅少的信號不利, 會使用壓縮器, 使振幅不大的部分擴大振幅, 而振幅大的不再擴大。而在接收端需要和壓縮器完全相反的伸張器
+- <div style="text-align:center" id="image6"><img src="/images/signal/signal20.png" /><br>圖 6:編碼</div>
 - $\phi_{PCM}(t)$必須先經過量化器再加以解碼, 因為藉由量化可以消除因傳輸通道而得到的雜訊
 - 解碼後可得到PAM信號, 再濾波器對PAM信號作平滑化動作之後可得基頻信號$s(t)$
   
