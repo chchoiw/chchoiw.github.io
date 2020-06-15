@@ -43,7 +43,7 @@ S_{\text(int)}(f)=\mathcal{F}(s_{\text(int)})=f_s\sum_{n=-\infty}^{\infty}S(f-nf
 ## 實際上可利用$p_T (t-nT_s)$
 
 \begin{equation} \label{pT_fs}
-p_T(t)=\sum_{n=-\infty}^{\infty}P_n \e^{jn2\p f_s t}
+p_T(t)=\sum_{n=-\infty}^{\infty}P_n e^{jn2\pi f_s t}
 \end{equation}
 
 其中 
@@ -100,5 +100,21 @@ $$
 - $\phi_{PCM}(t)$必須先經過量化器再加以解碼, 因為藉由量化可以消除因傳輸通道而得到的雜訊
 - 解碼後可得到PAM信號, 再濾波器對PAM信號作平滑化動作之後可得基頻信號$s(t)$
   
+## 優點
+
+- 能在中繼站再生信號
+- 調變和解調電路都是數位，高可靠和穩定
+- 可用有效的編碼方式
+- 編碼可減少雜訊和干擾
+- 價格低、容易多工、容易交換和低雜訊處理
+
+## 缺點
+- PCM系統複雜性較其他系統來的高
+- 主要操作問題是類比和數位的轉換
+- PCM系統需要很多等級的同步
+  - 時脈(CLOCK RATE)的同步
+  - 框(FRAME SYNCHRONIZATION)同步
+- 比類比調数需要更大的頻寬
+
 
 
