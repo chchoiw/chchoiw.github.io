@@ -86,9 +86,8 @@ $$
 - 中繼站能重新產生脈波或修正成平頂式,這使重現存在雜訊的信息有很大優勢
 - 它的數學式為$s_s(t)*q(t)$
 - 它的頻譜為$S_s(f)Q(f))$, 比較$S_s(f)$, 已扭曲
-- 所以要得到$s_s(t)$的頻譜$S_s(f)$, 必須將$S_s(f)Q(f))$乘以$Q^{-1}(f)$用來校正,這個校正系統叫作等化器
-
 <div style="text-align:center" id="image2"><img src="/images/signal/signal16.png" /><br>圖 2:某通道對脈波信號的頻率響應</div>
+- 所以要得到$s_s(t)$的頻譜$S_s(f)$, 必須將$S_s(f)Q(f))$乘以$Q^{-1}(f)$用來校正,這個校正系統叫作等化器
 <div style="text-align:center" id="image3"><img src="/images/signal/signal17.png" /><br>圖 3:中繼站還原用的等化器</div>
 
 # PCM
