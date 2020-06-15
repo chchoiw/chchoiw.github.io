@@ -30,9 +30,14 @@ s(t)=A_m \cos(2\pi f_m t),
 # 取樣程序
 
 ## 理論上可利用$\delta (t-nT_s)$
+
+
 \begin{equation}\label{ins_sampling}
 s_{\text(int)}=\sum_{n=-\infty}^{\infty}s(t)\delta(t-nT_s)
 \end{equation}
+
+<div style="text-align:center" id="image0-1"><img src="/images/signal/signal23.png" /></div>
+
 
 - 它的頻譜
   
@@ -40,7 +45,11 @@ s_{\text(int)}=\sum_{n=-\infty}^{\infty}s(t)\delta(t-nT_s)
 S_{\text(int)}(f)=\mathcal{F}(s_{\text(int)})=f_s\sum_{n=-\infty}^{\infty}S(f-nf_s)
 \end{equation}
 
+<div style="text-align:center" id="image0-2"><img src="/images/signal/signal24.png" /></div>
+
 ## 實際上可利用$p_T (t-nT_s)$
+
+<div style="text-align:center" id="image0-8"><img src="/images/signal/signal27.png" /></div>
 
 \begin{equation} \label{pT_fs}
 p_T(t)=\sum_{n=-\infty}^{\infty}P_n e^{jn2\pi f_s t}
@@ -58,6 +67,8 @@ $$
 s_s(t)=s(t)p_{T}(t)=\sum_{n=-\infty}^{\infty}s(t)P_n e^{jn2\pi f_s t}
 $$
 
+<div style="text-align:center" id="image0-3"><img src="/images/signal/signal25.png" /></div>
+
 - $s_s(t)$的頻譜$S_s(f)$
 
 $$
@@ -65,6 +76,15 @@ S_s(f)=P_0 S(f)+\sum_{n=-\infty,n\neq 0 }^{\infty}P_n S(f-nf_s)
 $$
 
 其中$P_0=\frac{\tau}{T_s}$
+
+
+<div style="text-align:center" id="image0-4"><img src="/images/signal/signal26.png" /></div>
+
+<div style="text-align:center" id="image0-5"><img src="/images/signal/signal28.png" /></div>
+
+<div style="text-align:center" id="image0-6"><img src="/images/signal/signal29.png" /></div>
+
+<div style="text-align:center" id="image0-7"><img src="/images/signal/signal30.png" /></div>
 
 # 取樣定理
 以$s(t)$代表一頻寬有限的信號，並以$f_m$代表頻寬。如果隔$T_s$移取樣一次,只要
