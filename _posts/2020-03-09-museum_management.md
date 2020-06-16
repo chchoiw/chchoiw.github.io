@@ -1,7 +1,7 @@
 ---
 title: '博物館管理'
 date: 2020-03-09
-permalink: /posts/2020/03/museum_edc/
+permalink: /posts/2020/03/museum_management/
 tags:
   - Museum Management
 category:

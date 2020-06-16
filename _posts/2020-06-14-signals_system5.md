@@ -55,14 +55,16 @@ S_{\text(int)}(f)=\mathcal{F}(s_{\text(int)})=f_s\sum_{n=-\infty}^{\infty}S(f-nf
 p_T(t)=\sum_{n=-\infty}^{\infty}P_n e^{jn2\pi f_s t}
 \end{equation}
 
-<div style="text-align:center" id="image0-8"><img src="/images/signal/signal27.png" /></div>
-<div style="text-align:center" id="image0-5"><img src="/images/signal/signal28.png" /></div>
+
 
 其中 
 
 $$
 P_n=\frac{1}{T}\int_{\frac{-T_s}{2}}^{\frac{T_s}{2}}e^{-jn2\pi f_s t}dt=\frac{1}{n\pi}\sin(n\pi f_s\tau)=f_s\tau \frac{\sin(n\pi f_s \tau)}{n\pi f_s \tau}
 $$
+
+<div style="text-align:center" id="image0-8"><img src="/images/signal/signal27.png" /></div>
+<div style="text-align:center" id="image0-5"><img src="/images/signal/signal28.png" /></div>
 
 - 原信號$s(t)$取樣後$s_s(t)$為
 
