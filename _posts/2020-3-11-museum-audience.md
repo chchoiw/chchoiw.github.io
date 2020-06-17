@@ -31,7 +31,7 @@ category:
 # 來源
 - 這篇文章主要是記錄[博物館管理](https://unesdoc.unesco.org/ark:/48223/pf0000141067_chi)一些重點筆記
 
-mes_mind_1
+# 概括圖
 <div style="text-align:center" id="image1"><img src="/images/meseum/mes_mind_1.png" /></div>
 
 # 觀眾服務
