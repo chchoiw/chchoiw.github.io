@@ -1,5 +1,5 @@
 ---
-title: '博物館功能背景下的教育'
+title: '博物館綜合實用觀點'
 date: 2020-06-23
 permalink: /posts/2020/06/museum_practice/
 tags:
