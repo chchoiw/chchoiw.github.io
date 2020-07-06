@@ -40,3 +40,7 @@ $$
 上圖中, 前半段是用<span style="color:red">ppi</span>,後半段是用<span style="color:red">dpi</span>。雖然查閱資料,dpi與ppi是普遍可互通, 但對於初接觸這些概念的人, 會很容易混淆。
 
 
+-  [直流電路中的電感](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_3_6_ResistanceInductance.html)
+<div style="text-align:center" id="image7"><img src="/images/meseum/error/7.png" /></div>
+
+如上圖所示, 當電感與電源斷開後,$V_L$的正負號會相反。
