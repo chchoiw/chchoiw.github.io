@@ -9,14 +9,20 @@ category:
 ---
 
 1. [運算放大器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_17_1_OpAmpLab.html)
+
+* 在這個減法放大器, 需要$\frac{R_1}{R_3}=\frac{R_2}{R_4}$,才能有減法的特性
+<div style="text-align:center" id="image2"><img src="/images/meseum/error/2.png" /><br>圖 1</div>
+$$
+V_\text{out}=k(V_1-V_2), \quad \text{here } k=\frac{R_1}{R_3}=\frac{R_2}{R_4}
+$$
+
+
+
+
+* 在這個加法放在器的電路中, 正負兩極相反了, 並且電阻需要有一定的關係$R_5=R_6$才會有
 <div style="text-align:center" id="image1"><img src="/images/meseum/error/1.png" /><br>圖 1</div>
-* 在這個加法放在器的電路中, 正負兩極相反了, 並且電阻需要有一定的關係
-
-
-  $$R_5=kR_6$$
   
-  才會有
-  
-  $$
-    V_\text{out}=-k(V_1+V_2)
-  $$
+$$
+V_\text{out}=-k(V_1+V_2), \quad \text{here } k=\frac{R_7}{R_5}=\frac{R_6}{R_5}
+$$
+
