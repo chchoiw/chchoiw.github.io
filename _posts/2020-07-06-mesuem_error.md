@@ -39,3 +39,7 @@ category:
 -  [直流電路中的電感](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_3_6_ResistanceInductance.html)
     <div style="text-align:center" id="image7"><img src="/images/meseum/error/7.png" /></div>
     如上圖所示, 當電感與電源斷開後,$V_L$的正負號會相反。
+
+- [澳門的電台](http://www.cmm.gov.mo/chi/exhibition/secondfloor/broadcasting.html)
+    <div style="text-align:center" id="image3"><img src="/images/meseum/error/3.png" /></div>
+    如上圖所示, 是一個死連結。
