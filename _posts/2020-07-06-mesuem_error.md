@@ -1,5 +1,5 @@
 ---
-title: '澳門通訊博物館網頁的一些錯處'
+title: '澳門通訊博物館網頁的一些疑惑'
 date: 2020-06-23
 permalink: /posts/2020/07/museum_error/
 tags:
