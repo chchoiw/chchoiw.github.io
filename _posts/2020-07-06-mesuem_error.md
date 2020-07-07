@@ -19,6 +19,7 @@ category:
 
   * 在這個加法放在器的電路中 
   <div style="text-align:center" id="image1"><img src="/images/meseum/error/1.png" /></div>
+  
     * 正負兩極相反了,原因請參考[Op Amps Positive Feedback](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l21.pdf)  
     * 並且電阻需要有一定的關係$R_5=R_6$才會有
 
