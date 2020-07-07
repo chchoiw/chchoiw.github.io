@@ -20,11 +20,14 @@ category:
   - 在這個加法放在器的電路中 
     1. 正負兩極相反了,原因請參考[Op Amps Positive Feedback](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l21.pdf)  
     2. 並且電阻需要有一定的關係$R_5=R_6$才會有
-    <div style="text-align:center" id="image1"><img src="/images/meseum/error/1.png" /></div>
 
     $$
     V_\text{out}=-k(V_1+V_2), \quad \text{here } k=\frac{R_7}{R_5}=\frac{R_6}{R_5}
     $$
+    
+    <div style="text-align:center" id="image1"><img src="/images/meseum/error/1.png" /></div>
+
+
 
 ## 模/數轉換器和數/模轉換器展區
 -  [模/數轉換器和數/模轉換器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/ADConverter.html)
