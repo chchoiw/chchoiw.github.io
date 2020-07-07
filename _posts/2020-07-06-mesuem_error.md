@@ -8,7 +8,8 @@ category:
   - Museum
 ---
 
-- [運算放大器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_17_1_OpAmpLab.html)
+## 運算放大器展區
+[運算放大器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_17_1_OpAmpLab.html)
   * 在這個減法放大器, 需要$\frac{R_1}{R_3}=\frac{R_2}{R_4}$,才能有減法的特性([Reference](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l20.pdf))
   <div style="text-align:center" id="image2"><img src="/images/meseum/error/2.png" /></div>
 
@@ -25,21 +26,24 @@ category:
     V_\text{out}=-k(V_1+V_2), \quad \text{here } k=\frac{R_7}{R_5}=\frac{R_6}{R_5}
     $$
 
+## 模/數轉換器和數/模轉換器展區
 -  [模/數轉換器和數/模轉換器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/ADConverter.html)
     <div style="text-align:center" id="image2"><img src="/images/meseum/error/5.png" /></div>
     <hr>
     上圖$2n,216$應分別是$2^n,2^{16}$。因為第一次看時, 本身沒有基礎會真的認為此處的$2n$就是$2\times n$,會引致誤會。
 
+## 解像
 -  [解像](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_7_5_Resolution.html)
     <div style="text-align:center" id="image6"><img src="/images/meseum/error/6.png" /></div>
     <hr>
     上圖中, 前半段是用<span style="color:red">ppi</span>,後半段是用<span style="color:red">dpi</span>。雖然查閱資料,dpi與ppi是普遍可互通, 但對於初接觸這些概念的人, 會很容易混淆。
 
-
+## 直流電路中的電感
 -  [直流電路中的電感](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_3_6_ResistanceInductance.html)
     <div style="text-align:center" id="image7"><img src="/images/meseum/error/7.png" /></div>
     如上圖所示, 當電感與電源斷開後,$V_L$的正負號會相反。
 
+## 澳門的電台
 - [澳門的電台](http://www.cmm.gov.mo/chi/exhibition/secondfloor/broadcasting.html)
     <div style="text-align:center" id="image3"><img src="/images/meseum/error/3.png" /></div>
     如上圖所示, 是一個死連結。
