@@ -19,7 +19,7 @@ category:
   V_\text{out}=k(V_2-V_1)， \quad \text{here }\quad k=\frac{R_3}{R_1}=\frac{R_4}{R_2}
   $$
 
-  <div style="text-align:center" width="400px" id="image2"><img src="/images/meseum/error/2.png" /></div>
+  <div style="text-align:center ; width:'400px'" id="image2"><img src="/images/meseum/error/2.png" /></div>
 
   - 在這個加法放在器的電路中 
     1. 正負兩極相反了，原因請參考[Op Amps Positive Feedback](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l21.pdf)  
@@ -35,7 +35,9 @@ category:
 
 ## 模/數轉換器和數/模轉換器展區
 -  [模/數轉換器和數/模轉換器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/ADConverter.html)
-    <div style="text-align:center" width="400px" id="image2"><img src="/images/meseum/error/5.png" /></div>
+> 模 / 數轉換器以及數/模轉換器的性能主要由解析度及速度決定。
+轉換器的解析度常以位元 (Bit) 表示。模 / 數轉換器的解析度是指它能把模擬輸入的範圍分解成多少個等份或階數 (電平)，一個n位元的模 / 數轉換器有1 / 2n的解析度。例如，一個16位元模 / 數轉換器的解析度為1 / 65536 (216 = 65536)。如果測量的電壓範圍為10 V，則此電壓範圍可解析至10 V / 65536 = 0.153 mV的精度。  
+    <div style="text-align:center; width:'400px'"  id="image2"><img src="/images/meseum/error/5.png" /></div>
     <hr>
     上圖$2n，216$應分別是$2^n，2^{16}$。當初第一次看時，本身沒有基礎概念認為此處的$2n$就是$2\times n$，實際上應是$2^n$。
 
