@@ -13,7 +13,7 @@ category:
 
 ## 運算放大器展區
 [運算放大器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_17_1_OpAmpLab.html)
-  - 在這個減法放大器， 需要$\frac{R_1}{R_3}=\frac{R_2}{R_4}$，才能有減法的特性，原因請參考[Operational Amplifier Circuits](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l20.pdf))
+  - 在這個減法放大器， 需要$\frac{R_1}{R_3}=\frac{R_2}{R_4}$，才能有減法的特性，原因請參考[Operational Amplifier Circuits](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l20.pdf)
 
   $$
   V_\text{out}=k(V_2-V_1)， \quad \text{here }\quad k=\frac{R_3}{R_1}=\frac{R_4}{R_2}
