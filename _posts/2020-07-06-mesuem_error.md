@@ -26,7 +26,7 @@ category:
     2. 並且電阻需要有一定的關係$R_5=R_6$才會有
 
     $$
-    V_\text{out}=-k(V_1+V_2)， \quad \text{here } \quadk=\frac{R_7}{R_8}=\frac{R_6}{R_5}
+    V_\text{out}=-k(V_1+V_2)， \quad \text{here } \quad k=\frac{R_7}{R_8}=\frac{R_6}{R_5}
     $$
 
     <div style="text-align:center" id="image1"><img src="/images/meseum/error/1.png" /></div>
