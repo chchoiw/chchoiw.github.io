@@ -42,7 +42,7 @@ category:
 
 ## 解像
 -  [解像](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_7_5_Resolution.html)
-    <div style="text-align:center; width:800px" id="image6"><img src="/images/meseum/error/6.png" /></div>
+    <div style="text-align:center; width:800px" id="image6"><img style="border: 1px solid grey;" src="/images/meseum/error/6.png" /></div>
     <hr>
     上圖中，前半段是用<span style="color:red">ppi</span>，後半段是用<span style="color:red">dpi</span>。特意翻查資料，發現通俗來說，dpi與ppi是普遍可互通。當初第一次看時，會想這個dpi前文沒有提起過，是指ppi，還是dpi就是ppi？
 
@@ -53,5 +53,5 @@ category:
 
 ## 澳門的電台
 - [澳門的電台](http://www.cmm.gov.mo/chi/exhibition/secondfloor/broadcasting.html)
-    <div style="text-align:center ; width:800px" id="image3"><img src="/images/meseum/error/3.png" /></div>
+    <div style="text-align:center ; width:800px" id="image3"><img style="border: 1px solid grey;" src="/images/meseum/error/3.png" /></div>
     如上圖所示，是一個死連結。
