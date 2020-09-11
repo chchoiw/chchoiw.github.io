@@ -19,7 +19,7 @@ category:
   V_\text{out}=k(V_2-V_1)， \quad \text{here }\quad k=\frac{R_3}{R_1}=\frac{R_4}{R_2}
   $$
 
-  <div style="text-align:center ; width:400px" id="image2"><img src="/images/meseum/error/2.png" /></div>
+  <div style="text-align:center ; width:400px;margin:auto;" id="image2"><img src="/images/meseum/error/2.png" /></div>
 
   - 在這個加法放在器的電路中 
     1. 正負兩極相反了，原因請參考[Op Amps Positive Feedback](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l21.pdf)  
@@ -29,7 +29,7 @@ category:
     V_\text{out}=-k(V_1+V_2)， \quad \text{here } \quad k=\frac{R_7}{R_8}=\frac{R_6}{R_5}
     $$
 
-    <div style="text-align:center; width:400px" id="image1"><img src="/images/meseum/error/1.png" /></div>
+  <div style="text-align:center; width:400px;margin:auto;" id="image1"><img src="/images/meseum/error/1.png" /></div>
 
 
 
@@ -48,7 +48,7 @@ category:
 
 ## 直流電路中的電感
 -  [直流電路中的電感](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_3_6_ResistanceInductance.html)
-    <div style="text-align:center ; width:800px" id="image7"><img src="/images/meseum/error/7.png" /></div>
+    <div style="text-align:center ; width:400px;margin:auto;" id="image7"><img src="/images/meseum/error/7.png" /></div>
     如上圖所示，當電感與電源斷開後，$V_L$的正負號會相反。
 
 ## 澳門的電台
