@@ -13,7 +13,7 @@ category:
 
 ## 運算放大器展區
 [運算放大器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_17_1_OpAmpLab.html)
-  - 在這個減法放大器， 需要$\frac{R_1}{R_3}=\frac{R_2}{R_4}$，才能有減法的特性([Reference](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l20.pdf))
+  - 在這個減法放大器， 需要$\frac{R_1}{R_3}=\frac{R_2}{R_4}$，才能有減法的特性，原因請參考[Operational Amplifier Circuits](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/6002_l20.pdf))
 
   $$
   V_\text{out}=k(V_2-V_1)， \quad \text{here }\quad k=\frac{R_3}{R_1}=\frac{R_4}{R_2}
@@ -49,7 +49,7 @@ category:
 ## 直流電路中的電感
 -  [直流電路中的電感](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_3_6_ResistanceInductance.html)
     <div style="text-align:center ; width:400px;margin:auto;" id="image7"><img src="/images/meseum/error/7.png" /></div>
-    如上圖所示，當電感與電源斷開後，$V_L$的正負號會相反。
+    如上圖所示，當電感與電源斷開後，$V_L$的正負號會相反。某一方面，圖三和圖四的$V_L$方向是同向的，但這一個是放能，一個是儲能，理應是不同方向的。
 
 ## 澳門的電台
 - [澳門的電台](http://www.cmm.gov.mo/chi/exhibition/secondfloor/broadcasting.html)
