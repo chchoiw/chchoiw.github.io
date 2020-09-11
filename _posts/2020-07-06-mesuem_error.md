@@ -36,7 +36,7 @@ category:
 ## 模/數轉換器和數/模轉換器展區
 -  [模/數轉換器和數/模轉換器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/ADConverter.html)
 
-    <div style="text-align:center; width:800px"  id="image2"><img src="/images/meseum/error/5.png" /></div>
+    <div style="text-align:center; width:800px"  id="image2"><img style="border: 1px solid grey;" src="/images/meseum/error/5.png" /></div>
     <hr>
     上圖$2n，216$應分別是$2^n，2^{16}$。當初第一次看時，本身沒有基礎概念認為此處的$2n$就是$2\times n$，實際上應是$2^n$。
 
