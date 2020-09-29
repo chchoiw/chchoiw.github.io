@@ -10,6 +10,9 @@ redirect_from:
 
 I am a math graduated student who is working at Macao China. Here is the blog I take a record what I have studied.
 <br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mw5EkzD5Fu4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 email: chchoiw@gmail.com
 
 
