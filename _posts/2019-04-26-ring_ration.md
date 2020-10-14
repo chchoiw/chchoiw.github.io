@@ -97,8 +97,9 @@ $$ RQ_{n}=\sum\limits_{k} RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
 ----
 例子:
 香港統計局:2018第4季GDP
-[web link](https://www.statistics.gov.hk/pub/B10300012018QQ04B0100.pdf)
-[local link](pdf/hk_gdp_2018_4.pdf)
+-[web link](https://www.statistics.gov.hk/pub/B10300012018QQ04B0100.pdf),
+-[local link](pdf/hk_gdp_2018_4.pdf)
+
 1. 表 3 各組成部分在本地生產總值的按年實質變動百分率中所佔的比率:
     根據解釋38中,表中數據是:
         $$實際年增長率_{n,k} \times (n-1) 時期 k 類所佔百分比$$
@@ -108,8 +109,6 @@ $$ RQ_{n}=\sum\limits_{k} RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
     表4(乙)數據=8.9
     表4(丙)的上一年百分比=415294/622549=0.667
     所以表3=8.9%*0.639=5.9%
-
-<br>
 
 2. 表2 瀏覽解釋34-37,期中37說明了
     a. 表4(丙)經過[X-12自迴歸-求和-移動平均]剔除季節性效應
