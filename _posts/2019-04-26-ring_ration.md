@@ -128,11 +128,11 @@ $$ RQ_{n}=\sum\limits_{k} RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
 - [百度百科](https://baike.baidu.com/item/%E6%8B%89%E6%B0%8F%E6%8C%87%E6%95%B0)
 - 拉氏物量指數
 
-$$\text{L_I}=\frac{\sum P_0Q_1}{\sum P_0Q_0}$$
+$$L_1=\frac{\sum P_0Q_1}{\sum P_0Q_0}$$
 
 - 拉氏物價指數
 
-$$\text{L_p}=\frac{\sum P_1Q_0}{\sum P_0Q_0}$$
+$$L_2=\frac{\sum P_1Q_0}{\sum P_0Q_0}$$
 
 - 拉氏指數通常指**拉氏物價指數**
 
@@ -140,11 +140,11 @@ $$\text{L_p}=\frac{\sum P_1Q_0}{\sum P_0Q_0}$$
 - [百度百科](https://baike.baidu.com/item/%E5%B8%95%E6%B0%8F%E6%8C%87%E6%95%B0)
 - 帕氏物量指數
 
-$$\text{P_I}=\frac{\sum P_1Q_1}{\sum P_1Q_0}$$
+$$P_1=\frac{\sum P_1Q_1}{\sum P_1Q_0}$$
 
 - 帕氏物價指數
    
-$$\text{P_I}=\frac{\sum P_1Q_1}{\sum P_0Q_1}$$
+$$P_2=\frac{\sum P_1Q_1}{\sum P_0Q_1}$$
 
 # 拉氏與帕氏的差別
 - 拉氏的權數(物價權數:Q; 物量權數:P)固定在基期。
@@ -157,14 +157,14 @@ $$\text{P_I}=\frac{\sum P_1Q_1}{\sum P_0Q_1}$$
 ## 質量指數
 反映質量指(價格)標綜合變動，則指標化指標是質量(價格)指標  
 
-  $$\text{P_1}=\frac{\sum P_1Q_X}{\sum P_0Q_X} $$
+  $$P=\frac{\sum P_1Q_X}{\sum P_0Q_X} $$
   
 - 當$X=0$(即權數在基期)時,它是拉氏
 - 當$X=1$(即權數在報告期)時,它是帕氏
 
 ## 數量指數
 反映數量指標綜合變動，則指標化指標是數量指標  
-  $$\text{P_2}=\frac{\sum P_XQ_1}{\sum P_XQ_0} $$
+  $$Q=\frac{\sum P_XQ_1}{\sum P_XQ_0} $$
 
 - 當$X=0$(即權數在基期)時,它是拉氏
 - 當$X=1$(即權數在報告期)時,它是帕氏
