@@ -11,33 +11,35 @@ category:
 
 <!-- code_chunk_output -->
 
-* [Ref:](#ref)
-* [甚麼是統計學？](#甚麼是統計學)
-* [統計學的意義](#統計學的意義)
-* [統計學分類](#統計學分類)
-	* [敘述統計學(descriptive statistics)](#敘述統計學descriptive-statistics)
-	* [推論統計學(inference Statistics)](#推論統計學inference-statistics)
-		* [有母數統計學](#有母數統計學)
-		* [無母數統計學](#無母數統計學)
-	* [應用統計學](#應用統計學)
-		* [數理統計學](#數理統計學)
-		* [應用統計學](#應用統計學-1)
-* [變量](#變量)
-	* [依可數不可數來區分](#依可數不可數來區分)
-		* [連續變項(continuous variable)](#連續變項continuous-variable)
-		* [間斷變項(discrete variable)](#間斷變項discrete-variable)
-	* [根據 1951 年 Stevens 之分類](#根據-1951-年-stevens-之分類)
-		* [名義變項(nominal variable)](#名義變項nominal-variable)
-		* [次序變項(ordinal variable)](#次序變項ordinal-variable)
-		* [等距變項(interval variable)](#等距變項interval-variable)
-		* [比率變項(ratio variable)](#比率變項ratio-variable)
-	* [以描述表達觀點區分：](#以描述表達觀點區分)
-		* [量的變項(quantitative variable)](#量的變項quantitative-variable)
-		* [質的變項(qualitative variable)](#質的變項qualitative-variable)
-		* [社會學變項(sociological variable)](#社會學變項sociological-variable)
-		* [心理學變項(psychological variable)](#心理學變項psychological-variable)
-* [統計特徵量](#統計特徵量)
-	* [集中量數/集中趨勢量數](#集中量數集中趨勢量數)
+- [Ref:](#ref)
+- [甚麼是統計學？](#甚麼是統計學)
+- [統計學的意義](#統計學的意義)
+- [統計學分類](#統計學分類)
+	- [敘述統計學(descriptive statistics)](#敘述統計學descriptive-statistics)
+	- [推論統計學(inference Statistics)](#推論統計學inference-statistics)
+		- [有母數統計學](#有母數統計學)
+		- [無母數統計學](#無母數統計學)
+	- [應用統計學](#應用統計學)
+		- [數理統計學](#數理統計學)
+		- [應用統計學](#應用統計學-1)
+- [變量](#變量)
+	- [依可數不可數來區分](#依可數不可數來區分)
+		- [連續變項(continuous variable)](#連續變項continuous-variable)
+		- [間斷變項(discrete variable)](#間斷變項discrete-variable)
+	- [根據 1951 年 Stevens 之分類](#根據-1951-年-stevens-之分類)
+		- [名義變項(nominal variable)](#名義變項nominal-variable)
+		- [次序變項(ordinal variable)](#次序變項ordinal-variable)
+		- [等距變項(interval variable)](#等距變項interval-variable)
+		- [比率變項(ratio variable)](#比率變項ratio-variable)
+	- [以描述表達觀點區分：](#以描述表達觀點區分)
+		- [量的變項(quantitative variable)](#量的變項quantitative-variable)
+		- [質的變項(qualitative variable)](#質的變項qualitative-variable)
+		- [社會學變項(sociological variable)](#社會學變項sociological-variable)
+		- [心理學變項(psychological variable)](#心理學變項psychological-variable)
+- [統計特徵量](#統計特徵量)
+	- [集中量數/集中趨勢量數](#集中量數集中趨勢量數)
+- [偏度](#偏度)
+- [峰度](#峰度)
 
 <!-- /code_chunk_output -->
 
@@ -132,4 +134,27 @@ category:
 - 因其能夠代表該群體特性的平均水準，故通稱為平均數
 - 居有簡化作用、代表作用和比較作用
 
+
+# 偏度
+-[wiki](https://zh.wikipedia.org/zh-hant/%E5%81%8F%E5%BA%A6)
+
+
+<div style="text-align:center" id="image1"><img src="/images/stat/mu_3.png" /></div>
+
+- 負偏態或左偏態：偏度<0，平均值左側的橫軸更長，分布的主體集中在右側。
+- 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分布的主體集中在左側。
+
+$$
+g=frac{m_4}{m_2^2}-3=\frac{\sum_\limits_{i=1}^n (x-\bar x)^3}{(sum_\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3}}}
+$$
+
+# 峰度
+- [wiki](https://zh.wikipedia.org/wiki/%E5%B3%B0%E5%BA%A6)
+- 如果超值峰度为正，称为尖峰态（leptokurtic）。如果超值峰度为负，称为低峰态（platykurtic）。
+
+$$
+g=frac{m_4}{m_2^2}-3=\frac{\sum_\limits_{i=1}^n (x-\bar x)^4}{(sum_\limits_{i=1}^n (x-\bar x)^2)^2}-3
+$$
+
+- "減3"是為了讓正態分布的峰度為0
 
