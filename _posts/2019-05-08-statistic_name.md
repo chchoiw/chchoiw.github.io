@@ -7,9 +7,6 @@ tags:
 category:
   - Statistic
 ---
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
 
 - [Ref:](#ref)
 - [甚麼是統計學？](#甚麼是統計學)
@@ -40,8 +37,6 @@ category:
 	- [集中量數/集中趨勢量數](#集中量數集中趨勢量數)
 - [偏度](#偏度)
 - [峰度](#峰度)
-
-<!-- /code_chunk_output -->
 
 
 # Ref:
