@@ -7,6 +7,7 @@ tags:
 category:
   - Statistic
 ---
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
@@ -91,15 +92,21 @@ $$ RQ_{n,k}=RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
 $$ RQ_{n}=\sum\limits_{k} RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
 
 ## 總結：
-> - 在統計表中，基本上不會給出數量$Q$,也不會給出價格指標$PI$,所以在**環比物量**統計表中是無法自己計算的。
-> - 另外,通常**實際GDP增長**是指環比的值的上升幅度。
+
+- 在統計表中，基本上不會給出數量$Q$,也不會給出價格指標$PI$,所以在**環比物量**統計表中是無法自己計算的。
+- 另外,通常**實際GDP增長**是
+  
+  $$
+  \text{實際GDP增長}=\frac{\sum P_0Q_1}{\sum P_0Q0}
+  $$
+
 
 ----
 例子:
 香港統計局:2018第4季GDP
 
--[web link](https://www.statistics.gov.hk/pub/B10300012018QQ04B0100.pdf),
--[local link](pdf/hk_gdp_2018_4.pdf)
+- [web link](https://www.statistics.gov.hk/pub/B10300012018QQ04B0100.pdf),
+- [local link](pdf/hk_gdp_2018_4.pdf)
 
 1. 表 3 各組成部分在本地生產總值的按年實質變動百分率中所佔的比率:
 根據解釋38中,表中數據是: 
@@ -116,3 +123,48 @@ $$ RQ_{n}=\sum\limits_{k} RI_{n,k} \times P_{0,k} \times Q_{0,k}$$
 2. 表2 瀏覽解釋34-37,期中37說明了
 - 表4(丙)經過[X-12自迴歸-求和-移動平均]剔除季節性效應
 - 計算對上季度比較的變動百分率
+
+# 拉氏指數
+- [百度百科](https://baike.baidu.com/item/%E6%8B%89%E6%B0%8F%E6%8C%87%E6%95%B0)
+- 拉氏物量指数
+
+$$\text{L_I}=\frac{\sum P_0Q_1}{\sum P_0Q_0}$$
+
+- 拉氏物價指数
+
+$$\text{L_p}=\frac{\sum P_1Q_0}{\sum P_0Q_0}$$
+
+- 拉氏指數通常指**拉氏物價指数**
+
+# 帕氏指數
+- [百度百科](https://baike.baidu.com/item/%E5%B8%95%E6%B0%8F%E6%8C%87%E6%95%B0)
+- 帕氏物量指数
+
+$$\text{P_I}=\frac{\sum P_1Q_1}{\sum P_1Q_0}$$
+
+- 帕氏物價指数
+   
+$$\text{P_I}=\frac{\sum P_1Q_1}{\sum P_0Q_1}$$
+
+# 拉氏與帕氏的差別
+- 拉氏的權數(物價權數:Q; 物量權數:P)固定在基期。
+- 帕氏的權數(物價權數:Q; 物量權數:P)固定在報告期
+- 拉氏與帕氏指數多指價格指數
+
+# 指標
+- 指标归纳起来有数量指标和质量指标
+- 
+## 質量指數
+反映质量指(價格)标综合变动，则指标化指标是质量(價格)指标  
+
+  $$\text{P_1}=\frac{\sum P_1Q_X}{\sum P_0Q_X} $$
+  
+- 當$X=0$(即權數在基期)時,它是拉氏
+- 當$X=1$(即權數在報告期)時,它是帕氏
+
+## 數量指數
+反映数量指标综合变动，则指标化指标是数量指标  
+  $$\text{P_2}=\frac{\sum P_XQ_1}{\sum P_XQ_0} $$
+
+- 當$X=0$(即權數在基期)時,它是拉氏
+- 當$X=1$(即權數在報告期)時,它是帕氏
