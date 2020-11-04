@@ -131,7 +131,7 @@ category:
 
 
 # 偏度
--[wiki](https://zh.wikipedia.org/zh-hant/%E5%81%8F%E5%BA%A6)
+- [wiki](https://zh.wikipedia.org/zh-hant/%E5%81%8F%E5%BA%A6)
 
 
 <div style="text-align:center" id="image1"><img src="/images/stat/mu_3.png" /></div>
