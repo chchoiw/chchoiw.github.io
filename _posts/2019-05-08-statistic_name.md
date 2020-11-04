@@ -140,7 +140,7 @@ category:
 - 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分布的主體集中在左側。
 
 $$
-g=frac{m_4}{m_2^2}-3=\frac{\sum_\limits_{i=1}^n (x-\bar x)^3}{(sum_\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3}}}
+g=\frac{m_4}{m_2^2}-3=\frac{\sum_\limits_{i=1}^n (x-\bar x)^3}{(\sum_\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3}}}
 $$
 
 # 峰度
@@ -148,7 +148,7 @@ $$
 - 如果超值峰度为正，称为尖峰态（leptokurtic）。如果超值峰度为负，称为低峰态（platykurtic）。
 
 $$
-g=frac{m_4}{m_2^2}-3=\frac{\sum_\limits_{i=1}^n (x-\bar x)^4}{(sum_\limits_{i=1}^n (x-\bar x)^2)^2}-3
+g=\frac{m_4}{m_2^2}-3=\frac{\sum_\limits_{i=1}^n (x-\bar x)^4} {(\sum_\limits_{i=1}^n (x-\bar x)^2)^2}-3
 $$
 
 - "減3"是為了讓正態分布的峰度為0
