@@ -140,7 +140,7 @@ category:
 - 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分布的主體集中在左側。
 
 $$
-g=\frac{m_4}{m_2^2}-3=\frac{\sum\limits_{i=1}^n (x-\bar x)^3}{(\sum\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3} } }
+g=\frac{m_3}{m_2^\frac{3}{2}}=\frac{\sum\limits_{i=1}^n (x-\bar x)^3}{(\sum\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3} } }
 $$
 
 # 峰度
