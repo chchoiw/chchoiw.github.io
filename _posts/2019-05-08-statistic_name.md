@@ -137,8 +137,8 @@ category:
 
 <div style="text-align:center" id="image1"><img src="/images/stat/mu_3.png" /></div>
 
-- 負偏態或左偏態：偏度<0，平均值左側的橫軸更長，分布的主體集中在右側。
-- 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分布的主體集中在左側。
+- 負偏態或左偏態：偏度<0，平均值左側的橫軸更長，分佈的主體集中在右側。
+- 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分佈的主體集中在左側。
 
 $$
 g=\frac{m_3}{m_2^\frac{3}{2}}=\frac{\sum\limits_{i=1}^n (x-\bar x)^3}{(\sum\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3} } }
@@ -146,13 +146,13 @@ $$
 
 # 峰度
 - [wiki](https://zh.wikipedia.org/wiki/%E5%B3%B0%E5%BA%A6)
-- 如果超值峰度为正，称为尖峰态（leptokurtic）。如果超值峰度为负，称为低峰态（platykurtic）。
+- 如果超值峰度為正，稱為尖峰態（leptokurtic）。如果超值峰度為負，稱為低峰態（platykurtic）。
 
 $$
 g=\frac{m_4}{m_2^2}-3=\frac{\sum\limits_{i=1}^n (x-\bar x)^4} {(\sum\limits_{i=1}^n (x-\bar x)^2 )^2}-3
 $$
 
-- "減3"是為了讓正態分布的峰度為0
+- "減3"是為了讓正態分佈的峰度為0
 
 # 相對分散度
 - 若有兩組資料而欲比較其相對分散程度時,會使用相對分散度來對比
