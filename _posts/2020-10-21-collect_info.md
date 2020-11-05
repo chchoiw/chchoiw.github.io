@@ -1,9 +1,9 @@
 ---
-title: '統計測試2'
-date: 2019-05-07
+title: '統計表圖和基礎分布'
+date: 2020-10-20
 permalink: /posts/2020/10/statistic_data_collection/
 tags:
-  - statistics test
+  - statistics 
 category:
   - Statistic
 ---
