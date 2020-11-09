@@ -18,10 +18,9 @@ email: chchoiw@gmail.com
 <hr>
 
 # Recent News
-* 2020-07
-  - 學習[After Effect](https://www.adobe.com/products/aftereffects.html), 做了一些作品
-    - [跳起的金屬環](https://www.youtube.com/watch?v=wzE2IL6-0Fg)
-    - [自我介紹](https://www.youtube.com/watch?v=mt6sZ5BXZuM)
+* 2020-07 學習[After Effect](https://www.adobe.com/products/aftereffects.html), 做了一些作品
+  - [跳起的金屬環](https://www.youtube.com/watch?v=wzE2IL6-0Fg)
+  - [自我介紹](https://www.youtube.com/watch?v=mt6sZ5BXZuM)
 * 2020-04
   學習[Signals and Systems](/categories/#signals-and-systems)
 * 2020-03
