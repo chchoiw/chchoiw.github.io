@@ -3,7 +3,7 @@ title: '澳門通訊博物館活動'
 date: 2020-11-09
 permalink: /posts/2020/11/museum_event/
 tags:
-  - Museum
+  - Museum event
 category:
   - Museum
 ---
