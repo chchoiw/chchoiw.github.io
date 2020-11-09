@@ -11,13 +11,17 @@ redirect_from:
 I am a math graduated student who is working at Macao China. Here is the blog I take a record what I have studied.
 <hr>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mt6sZ5BXZuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mt6sZ5BXZuM?version=3&vq=hd1080" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <hr>
 email: chchoiw@gmail.com
 <hr>
 
 # Recent News
+* 2020-07
+  - 學習[After Effect](https://www.adobe.com/products/aftereffects.html), 做了一些作品
+    - [跳起的金屬環](https://www.youtube.com/embed/wzE2IL6-0Fg?version=3&vq=hd1080)
+    - [自我介紹](https://www.youtube.com/embed/mt6sZ5BXZuM?version=3&vq=hd1080)
 * 2020-04
   學習[Signals and Systems](/categories/#signals-and-systems)
 * 2020-03
