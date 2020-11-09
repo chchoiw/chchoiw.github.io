@@ -9,7 +9,7 @@ category:
 ---
 
 
-- 因為準備澳門[通訊博物館](http://www.cmm.gov.mo/chi/main.html)的考試，瀏覽了它的網頁並嘗試了解它的內容，當中在查找中發現一些活動，並做了一些簡單的統計。
+- 因為準備澳門[通訊博物館](http://www.cmm.gov.mo/chi/main.html)的考試，瀏覽了它的網頁並嘗試了解它的內容，當中在查找中發現一些[活動](http://www.cmm.gov.mo/chi/activities/activities.html)，並做了一些簡單的統計。
 
 ## 博物館常見活動
 
