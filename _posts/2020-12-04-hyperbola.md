@@ -103,14 +103,14 @@ H_1 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarro
 \left(
 \begin{matrix}
 x  \\
-y  \\
+y 
 \end{matrix} 
 \right)  
 &\rightarrow  
 \left(
 \begin{matrix}
 x-\frac{a_1+a_2}{2}  \\
-y-\frac{b_1+b_2}{2}  \\
+y-\frac{b_1+b_2}{2}  
 \end{matrix} 
 \right)   
 &\rightarrow 
@@ -118,14 +118,14 @@ A(\theta)
 \left(
 \begin{matrix}
 x-\frac{a_1+a_2}{2}  \\
-y-\frac{b_1+b_2}{2}  \\
+y-\frac{b_1+b_2}{2}  
 \end{matrix} 
 \right)  
 =
 \left(
 \begin{matrix}
 x'  \\
-y'  \\
+y'  
 \end{matrix} 
 \right)
 \end{aligned}
@@ -149,16 +149,34 @@ $$
 
 現在已找到$H_1$以$(x',y')$表示的一般式, 那麽$H_2$呢？
 
-想像一下, $H_2$平移$-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2})$, 即是等價於
+想像一下, $H_2$平移$-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2})$, 即是等價於<br>
 $H_3:$焦點是$(a_2-\frac{a_1+a_2}{2},b_2-\frac{b_1+b_2}{2}),(a_3-\frac{a_1+a_2}{2},b_3-\frac{b_1+b_2}{2})$
+
 
 $$
 \begin{aligned}
 H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
-H_3 \text{順時針旋轉}\theta \\
+H_3 &\rightarrow \text{順時針旋轉}\theta \\
+H_3 &\rightarrow 
+A(\theta)
+\left(
+\begin{matrix}
+x-\frac{a_1+a_2}{2}  \\
+y-\frac{b_1+b_2}{2}  \\
+\end{matrix} 
+\right)  
+=
+\left(
+\begin{matrix}
+x'  \\
+y'  \\
+\end{matrix} 
+\right)
 \end{aligned}
 $$
 
+
+$H_3$以$x,y$表示的新的一般式$A^2x^2+Bxy+Cy^2+Dx+Ey+F=0$可根據$\eqref{A},\eqref{B},\eqref{C},\eqref{D},\eqref{E},\eqref{F}$得出
 只要求出新的$H_3$以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$
 
 $$
