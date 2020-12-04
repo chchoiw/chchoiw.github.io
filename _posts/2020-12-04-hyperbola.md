@@ -80,6 +80,11 @@ $$
 ## 兩條雙曲線同時平移旋轉
 
 
+$H_1$:設 $(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$
+$H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_2$
+
+$H_1 \rightarrow -(\frac{a1+a2}{2},\frac{b1+b2}{2}) \rightarrow \text{逆時針旋轉}\theta  $
+
 $$
 \overrightarrow{x_m}=\overrightarrow{x}-
 \begin{aligned}
