@@ -99,7 +99,7 @@ $H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲的兩個焦點, 然後曲線上到兩�
 
 $$
 \begin{aligned}
-H_1 &\rightarrow -(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
+H_1 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
 \left(
 \begin{matrix}
 x  \\
@@ -121,6 +121,13 @@ x-\frac{a_1+a_2}{2}  \\
 y-\frac{b_1+b_2}{2}  \\
 \end{matrix} 
 \right)  
+=
+\left(
+\begin{matrix}
+x'  \\
+y'  \\
+\end{matrix} 
+\right)
 \end{aligned}
 $$
 
@@ -143,21 +150,7 @@ $$
 
 ## 一般式和旋轉後一般式的關係
 
-令順時針旋轉$\theta$的矩陣是
-
-$$
-\begin{align}
-\label{rotation}
-A(\theta) = \left(
-\begin{matrix}
-\cos(\theta) & -\sin(\theta)  \\
--\sin(\theta)  & \cos(\theta)  \\
-\end{matrix} 
-\right)
-\end{align}
-$$
-
-和參考[旋轉後的係數](),假設
+參考[旋轉後的係數](),假設
 
 
 $$
