@@ -62,15 +62,19 @@ $$
 
 令 fff
 
-\begin{equation}
+
+
+$$
+\begin{aligned}
 \label{rotation}
-A(\theta) = 
+A(\theta) = \left(
 \begin{matrix}
 \cos(\theta) & -\sin(\theta)  \\
 -\sin(\theta)  & \cos(\theta)  \\
-\end{matrix}
-\end{equation}
-
+\end{matrix} 
+\right)
+\end{aligned}
+$$
 和
 
 $$
