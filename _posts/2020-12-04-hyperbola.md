@@ -17,7 +17,7 @@ $$
 \Bigg\vert \sqrt{(x-a_1)^2+(y-b_1)^2}-\sqrt{ (x-a_1)^2+(y-b_1)^2}\Big\vert & =d_1\\
 \sqrt{(x-a_1)^2+(y-b_1)^2}&= \pm d_1 +\sqrt{(x-a_2)^2+(y-b_2)^2} \\
 (x-a_1)^2+(y-b_1)^2 &= \left( \pm d_1 +\sqrt{(x-a_2)^2+(y-b_2)^2 } \right) ^2\\
-2(a_2-a_1)x+2(b_2-b_1)y+a_1^2+b_1^2-d_1^2-a_2^2-b_2^2 &= d_1^2 +2d \sqrt{(x-a_2)^2+(y-b_2)}
+2(a_2-a_1)x+2(b_2-b_1)y+a_1^2+b_1^2-d_1^2-a_2^2-b_2^2 &= d_1^2 +2d_1 \sqrt{(x-a_2)^2+(y-b_2)}
 \end{aligned}
 $$
 
@@ -27,7 +27,7 @@ $$
 \begin{align}
 U&=2(a_2-a_1) \label{U}\\
 S&=2(b_2-b_1) \label{S}\\
-T&=a_1^2+b_1^2d_1^2-a_2^2-b_2^2 \label{T}
+T&=a_1^2+b_1^2+d_1^2-a_2^2-b_2^2 \label{T}
 \end{align}
 $$
 
@@ -42,7 +42,7 @@ U^2x^2+S^2y^2 +T^2+2USxy +2UTx +2STy+T^2 &= 4d_1^2\left( (x-a_2)^2+(y-b_2)^2 \ri
 $$
 
 \begin{equation}
-(U^2-4d^2)x^2+(S^2-4d^2)y^2 +2USxy+(2UT+8 d_1 a_2^2)x+(2ST+8 d_1 b_2^2)y +(T^2-4d_1a_2^2-4d_1b_2^2)=0 \label{general_form}
+(U^2-4d_1^2)x^2+(S^2-4d_1^2)y^2 +2USxy+(2UT+8 d_1 a_2^2)x+(2ST+8 d_1 b_2^2)y +(T^2-4d_1a_2^2-4d_1b_2^2)=0 \label{general_form}
 \end{equation}
 
 所以，若$(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$,根據$\eqref{U},\eqref{S},\eqref{T}$定義下的$U,S,T$,
@@ -50,9 +50,9 @@ $$
 
 $$
 \begin{align}
-A&=(U^2-4d^2) \label{A}\\
+A&=(U^2-4d_1^2) \label{A}\\
 B&=2US \label{B}\\
-C&=(S^2-4d^2)  \label{C}\\
+C&=(S^2-4d_1^2)  \label{C}\\
 D&=(2UT+8 d_1 a_2^2)  \label{D}\\
 E&=(2ST+8 d_1 b_2^2) \label{E}\\
 F&= (T^2-4d_1a_2^2-4d_1b_2^2) \label{F}\\
@@ -111,7 +111,7 @@ $$
 
 以$\eqref{x'->x}$代入$\eqref{general_form}$
 
-得出新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y+F'=0$
+得出新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$
 
 $$
 \begin{align}
