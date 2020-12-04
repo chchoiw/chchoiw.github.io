@@ -240,7 +240,7 @@ $$
 
 $$
 \begin{align}
-R&=\frac{A'(a^2)}/{b^2}+C' \\
+R&=\frac{A'(a^2)}{b^2}+C' \\
 V&=F'+A'a^2\\
 k_4&=R^2-\frac{a^2B'^2}{b^2}\\
 k_3&=\frac{2E'R-2B'D'a^2}{b^2}\\
