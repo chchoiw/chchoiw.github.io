@@ -134,7 +134,7 @@ $$
 那麽以$x',y'$表達$H_1$是
 
 $$
-\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1
 $$
 
 其中
@@ -143,11 +143,23 @@ $$
 \begin{aligned}
 c^2&=\frac{(a_1-a_2)^2+(b_1-b_2)^2 }{4}\\
 a&=\frac{d_1}{2}\\
-b&=\sqrt(c^2-a^2)
+b&=\sqrt{c^2-a^2}
 \end{aligned}
 $$
 
 現在已找到$H_1$以$(x',y')$表示的一般式, 那麽$H_2$呢？
+
+想像一下, $H_2$平移$-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2})$, 即是等價於
+$H_3:$焦點是$(a_2-\frac{a_1+a_2}{2},b_2-\frac{b_1+b_2}{2}),(a_3-\frac{a_1+a_2}{2},b_3-\frac{b_1+b_2}{2})$
+
+$$
+\begin{aligned}
+H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
+H_3 \text{順時針旋轉}\theta \\
+\end{aligned}
+$$
+
+只要求出新的$H_3$以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$
 
 $$
 \overrightarrow{x_m}=\overrightarrow{x}-
