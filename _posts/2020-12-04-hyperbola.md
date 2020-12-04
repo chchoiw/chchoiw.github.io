@@ -77,6 +77,20 @@ $$
 $$
 
 
+令順時針旋轉$\theta$的矩陣是
+
+$$
+\begin{align}
+\label{rotation}
+A(\theta) = \left(
+\begin{matrix}
+\cos(\theta) & -\sin(\theta)  \\
+-\sin(\theta)  & \cos(\theta)  \\
+\end{matrix} 
+\right)
+\end{align}
+$$
+
 ## 兩條雙曲線同時平移旋轉
 
 
@@ -100,12 +114,7 @@ y-\frac{b_1+b_2}{2}  \\
 \end{matrix} 
 \right)   
 &\rightarrow 
-\left(
-\begin{matrix}
-\cos(\theta) & -\sin(\theta)  \\
--\sin(\theta)  & \cos(\theta)  \\
-\end{matrix} 
-\right)
+A(\theta)
 \left(
 \begin{matrix}
 x-\frac{a_1+a_2}{2}  \\
