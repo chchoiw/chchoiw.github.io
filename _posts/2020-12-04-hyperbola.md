@@ -61,7 +61,7 @@ $$
 
 ## 由任意一般式,到典型的雙曲線$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$
 
-在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再逆時針旋轉一個角度$\theta$,就應該得到
+在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再順時針旋轉一個角度$\theta$,就應該得到
 
 $$
 \frac{x^2}{a^2}-\frac{y^2}{b^2}=1
@@ -83,7 +83,37 @@ $$
 $H_1$:設 $(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$
 $H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_2$
 
-$H_1 \rightarrow -(\frac{a1+a2}{2},\frac{b1+b2}{2}) \rightarrow \text{逆時針旋轉}\theta  $
+$$
+\begin{aligned}
+H_1 &\rightarrow -(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
+\left(
+\begin{matrix}
+x  \\
+y  \\
+\end{matrix} 
+\right)  
+&\rightarrow  
+\left(
+\begin{matrix}
+x-\frac{a_1+a_2}{2}  \\
+y-\frac{b_1+b_2}{2}  \\
+\end{matrix} 
+\right)   
+&\rightarrow 
+\left(
+\begin{matrix}
+\cos(\theta) & -\sin(\theta)  \\
+-\sin(\theta)  & \cos(\theta)  \\
+\end{matrix} 
+\right)
+\left(
+\begin{matrix}
+x-\frac{a_1+a_2}{2}  \\
+y-\frac{b_1+b_2}{2}  \\
+\end{matrix} 
+\right)  
+\end{aligned}
+$$
 
 $$
 \overrightarrow{x_m}=\overrightarrow{x}-
