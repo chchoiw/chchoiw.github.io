@@ -37,9 +37,12 @@ $$
 (Ux+Sy+T) &= 2d_1 \sqrt{(x-a_2)^2+(y-b_2)} \\
 (Ux+Sy+T)^2 &= ( 2d_1 \sqrt{(x-a_2)^2+(y-b_2)^2  } )^2 \\
 U^2x^2+S^2y^2 +T^2+2USxy +2UTx +2STy+T^2 &= 4d_1^2\left( (x-a_2)^2+(y-b_2)^2 \right) \\
-(U^2-4d^2)x^2+(S^2-4d^2)y^2 +2USxy+(2UT+8 d_1 a_2^2)x+(2ST+8 d_1 b_2^2)y +(T^2-4d_1a_2^2-4d_1b_2^2)&=0
 \end{aligned}
 $$
+
+\begin{equation}
+(U^2-4d^2)x^2+(S^2-4d^2)y^2 +2USxy+(2UT+8 d_1 a_2^2)x+(2ST+8 d_1 b_2^2)y +(T^2-4d_1a_2^2-4d_1b_2^2)=0 \label{general_form}
+\end{equation}
 
 所以，若$(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$,根據$\eqref{U},\eqref{S},\eqref{T}$定義下的$U,S,T$,
 那麽它的一般式$A^2+Bxy+Cy^2+Dx+E+F=0$ 的係數是以下
