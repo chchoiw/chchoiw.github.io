@@ -25,6 +25,7 @@ $$
 
 $$
 \begin{align}
+\label{U_S_T}
 U&=2(a_2-a_1) \\
 S&=2(b_2-b_1) \\
 T&=a_1^2+b_1^2d_1^2-a_2^2-b_2^2
@@ -41,18 +42,20 @@ U^2x^2+S^2y^2 +T^2+2USxy +2UTx +2STy+T^2 &= 4d_1^2\left( (x-a_2)^2+(y-b_2)^2 \ri
 \end{aligned}
 $$
 
-所以，若$(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$,
+所以，若$(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$,根據$\eqref{chain_rule}$定義下的$U,S,T$,
 那麽它的一般式$A^2+Bxy+Cy^2+Dx+E+F=0$ 的係數是以下
 
 $$
-\begin{aligned}
+
+\begin{align}
+\label{coff1}
 A&=(U^2-4d^2) \\
 B&=2US \\
 C&=(S^2-4d^2)\\
 D&=(2UT+8 d_1 a_2^2) \\
 E&=(2ST+8 d_1 b_2^2) \\
 F&= (T^2-4d_1a_2^2-4d_1b_2^2) \\
-\end{aligned}
+\end{align}
 $$
 
 令 fff
