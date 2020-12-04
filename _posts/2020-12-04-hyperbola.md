@@ -1,3 +1,4 @@
+---
 title: '兩條雙曲線的交點'
 date: 2020-12-04
 permalink: /posts/2020/12/hyperbola/
@@ -54,7 +55,7 @@ F&= (T^2-4d_1a_2^2-4d_1b_2^2) \\
 \end{aligned}
 $$
 
-令 
+令 fff
 
 \begin{equation*}
 A(\theta) = 
