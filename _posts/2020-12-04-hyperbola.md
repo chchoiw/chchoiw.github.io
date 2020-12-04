@@ -94,31 +94,37 @@ $$
 ## 兩條雙曲線同時平移旋轉
 
 
-$H_1$:設 $(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$<br>
-$H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_2$
+$H_1$:設 $(a_1,b_1), (a_2,b_2)$是雙曲線的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$<br>
+$H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲線的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_2$
 
 $$
 \begin{aligned}
 H_1 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
 \left(
 \begin{matrix}
-x  \\
-y 
+x_\text{orig}  \\
+y_\text{orig} 
 \end{matrix} 
 \right)  
 &\rightarrow  
 \left(
 \begin{matrix}
-x-\frac{a_1+a_2}{2}  \\
-y-\frac{b_1+b_2}{2}  
+x_\text{orig}-\frac{a_1+a_2}{2}  \\
+y_\text{orig}-\frac{b_1+b_2}{2}  
+\end{matrix} 
+\right)  
+=\left(
+\begin{matrix}
+x  \\
+y
 \end{matrix} 
 \right)   
 &\rightarrow 
 A(\theta)
 \left(
 \begin{matrix}
-x-\frac{a_1+a_2}{2}  \\
-y-\frac{b_1+b_2}{2}  
+x  \\
+y  
 \end{matrix} 
 \right)  
 =
@@ -161,8 +167,8 @@ H_3 &\rightarrow
 A(\theta)
 \left(
 \begin{matrix}
-x-\frac{a_1+a_2}{2}  \\
-y-\frac{b_1+b_2}{2}  \\
+x  \\
+y  \\
 \end{matrix} 
 \right)  
 =
