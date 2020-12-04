@@ -222,6 +222,12 @@ $$
 
 
 
+## 求交點
+$$
+\begin{aligned}
+H_1 &: \frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1 \\
+H_2 &: A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0
+\end{aligned}$$
 
 
 
