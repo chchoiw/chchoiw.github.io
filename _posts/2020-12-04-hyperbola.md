@@ -104,12 +104,12 @@ $$
 
 $$
 \begin{align}
-\overrightarrow{x}&=A(\theta) \overrightarrow{x'} \label(x'->x)\\
-\overrightarrow{x'}&=A(-\theta) \overrightarrow{x}  \label(x->x')\\
+\overrightarrow{x}&=A(\theta) \overrightarrow{x'} \label{x'->x}\\
+\overrightarrow{x'}&=A(-\theta) \overrightarrow{x}  \label{x->x'}\\
 \end{align}
 $$
 
-以$\label(x'->x)$代入$\eqref{general_form}$
+以$\eqref{x'->x}$代入$\eqref{general_form}$
 
 得出新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y+F'=0$
 
