@@ -65,7 +65,7 @@ $$
 
 
 $$
-\begin{aligned}
+\begin{align}
 \label{rotation}
 A(\theta) = \left(
 \begin{matrix}
@@ -73,7 +73,7 @@ A(\theta) = \left(
 -\sin(\theta)  & \cos(\theta)  \\
 \end{matrix} 
 \right)
-\end{aligned}
+\end{align}
 $$
 和
 
