@@ -16,7 +16,7 @@ $$
 \begin{aligned}
 \Bigg\vert \sqrt{(x-a_1)^2+(y-b_1)^2}-\sqrt{ (x-a_1)^2+(y-b_1)^2}\Big\vert & =d_1\\
 \sqrt{(x-a_1)^2+(y-b_1)^2}&= \pm d_1 +\sqrt{(x-a_2)^2+(y-b_2)^2} \\
-(x-a_1)^2+(y-b_1)^2 &= (\pm d_1 +\sqrt{(x-a_2)^2+(y-b_2)^2) } ^2\\
+(x-a_1)^2+(y-b_1)^2 &= \Bigg\left( \pm d_1 +\sqrt{(x-a_2)^2+(y-b_2)^2 } \Bigg\right) ^2\\
 2(a_2-a_1)x+2(b_2-b_1)y+a_1^2+b_1^2-d_1^2-a_2^2-b_2^2 &= d_1^2 +2d \sqrt{(x-a_2)^2+(y-b_2)}
 \end{aligned}
 $$
@@ -79,7 +79,13 @@ $$
 $$
 \begin{align}
 \label{rotation_eq}
-A(\theta) = \left(
+\left(
+\begin{matrix}
+x   \\
+y  \\
+\end{matrix} 
+\right)
+= \left(
 \begin{matrix}
 \cos(\theta) & -\sin(\theta)  \\
 -\sin(\theta)  & \cos(\theta)  \\
@@ -87,8 +93,8 @@ A(\theta) = \left(
 \right)
 \left(
 \begin{matrix}
-x   \\
-y  \\
+x'   \\
+y'  \\
 \end{matrix} 
 \right)
 \end{align}
