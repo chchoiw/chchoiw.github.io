@@ -227,9 +227,24 @@ $$
 \begin{aligned}
 H_1 &: \frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1 \\
 H_2 &: A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0
-\end{aligned}$$
+\end{aligned}
+$$
 
+會得出 $a_4y^4+a_3y^3+a_2y^2+a_1y^1+a_0=0$, 只需要求出$a_4,a_3,a_2,a_1,a_0$就能透過四次求解公式得出交點
 
+$$
+\begin{align}
+R=\frac{A'(a^2)}/{b^2}+C'
+V=F'+A'a^2
+a_4=R^2-\frac{a^2B'^2}{b^2}
+a_3=\frac{2E'R-2B'D'a^2}{b^2}
+a_2=E'^2+2R*V-\frac{(aD')^2}/{b^2} -(aB')^2
+a_1=2E'V-2B'D'a^2
+a_0=V^2-D'^2a^2
+\end{align}
+$$
+
+## 再次逆時針旋轉和平移得出真實交點
 
 
 
