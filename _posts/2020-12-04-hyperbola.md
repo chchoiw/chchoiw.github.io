@@ -49,7 +49,6 @@ $$
 那麽它的一般式$A^2+Bxy+Cy^2+Dx+E+F=0$ 的係數是以下
 
 $$
-
 \begin{align}
 A&=(U^2-4d^2) \label{A}\\
 B&=2US \label{B}\\
@@ -60,9 +59,7 @@ F&= (T^2-4d_1a_2^2-4d_1b_2^2) \label{F}\\
 \end{align}
 $$
 
-令 fff
-
-
+令順時針旋轉$\theta$的矩陣是
 
 $$
 \begin{align}
@@ -75,13 +72,46 @@ A(\theta) = \left(
 \right)
 \end{align}
 $$
-和
+
+和參考[旋轉後的係數](),假設
+
 
 $$
-x=A(\theta) x'
+\begin{align}
+\label{rotation_eq}
+A(\theta) = \left(
+\begin{matrix}
+\cos(\theta) & -\sin(\theta)  \\
+-\sin(\theta)  & \cos(\theta)  \\
+\end{matrix} 
+\right)
+\left(
+\begin{matrix}
+x   \\
+y  \\
+\end{matrix} 
+\right)
+\end{align}
 $$
 
-參考[旋轉後的係數]()
+以下等式代入$\eqref{general_form}$
+
+$$
+\va*{x}=A(\theta) \va*{x'} 
+$$
+
+得
+
+$$
+\begin{align}
+A&=(U^2-4d^2) \label{A'}\\
+B&=2US \label{B'}\\
+C&=(S^2-4d^2)  \label{C'}\\
+D&=(2UT+8 d_1 a_2^2)  \label{D'}\\
+E&=(2ST+8 d_1 b_2^2) \label{E'}\\
+F&= (T^2-4d_1a_2^2-4d_1b_2^2) \label{F'}\\
+\end{align}
+$$
 
 
 
