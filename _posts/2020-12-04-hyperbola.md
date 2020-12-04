@@ -34,9 +34,9 @@ $$k_4y'^4+k_3y'^3+k_2y'^2+k_1y'+k_0=0,$$
 
 $$
 \begin{align}
-R&=\frac{A'(a^2)}{b^2}+C' \\
+\text{若令} \quad R&=\frac{A'(a^2)}{b^2}+C' \\
 V&=F'+A'a^2\\
-k_4&=R^2-\frac{a^2B'^2}{b^2}\\
+\text{則} \quad k_4&=R^2-\frac{a^2B'^2}{b^2}\\
 k_3&=\frac{2E'R-2B'D'a^2}{b^2}\\
 k_2&=E'^2+2R*V-\frac{(aD')^2}{b^2} -(aB')^2\\
 k_1&=2E'V-2B'D'a^2\\
