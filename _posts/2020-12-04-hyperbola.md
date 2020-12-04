@@ -177,77 +177,52 @@ $$
 
 
 $H_3$以$x,y$表示的新的一般式$A^2x^2+Bxy+Cy^2+Dx+Ey+F=0$可根據$\eqref{A},\eqref{B},\eqref{C},\eqref{D},\eqref{E},\eqref{F}$得出
-只要求出新的$H_3$以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$
+只要求出新的$H_3$以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$即可
 
+
+因為
 $$
-\overrightarrow{x_m}=\overrightarrow{x}-
 \begin{aligned}
-A(\theta) = \left(
+T=\left(
 \begin{matrix}
-x -frac{a_1+a_2}{2} \\
-y -frac{b_1+b_2}{2}  \\
+A &\frac{B}{2} &\frac{D}{2} \\
+\frac{B}{2} & C&\frac{E}{2} \\
+\frac{D}{2}  &\frac{E}{2}&F
 \end{matrix} 
 \right)
 \end{aligned}
 $$
 
-$$
-\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
-$$
-
-
-## 一般式和旋轉後一般式的關係
-
-參考[旋轉後的係數](),假設
+可將
 
 
 $$
-\begin{align}
-\label{rotation_eq}
-\left(
+0=A^2+Bxy+Cy^2+Dx+Ey+F=\overrightarrow{x^T}T\overrightarrow{x}
+$$
+
+$$
+0=\overrightarrow{x^T}T\overrightarrow{x}=\overrightarrow{x'^}^T (A(\theta))^T T A(\theta)\overrightarrow{x'}
+$$
+
+
+
+那麽得出
+
+$$
+\begin{aligned}
+(A(\theta))^T T A(\theta)=\left(
 \begin{matrix}
-x   \\
-y  \\
+A' &\frac{B'}{2} &\frac{D'}{2} \\
+\frac{B'}{2} & C'&\frac{E'}{2} \\
+\frac{D'}{2}  &\frac{E'}{2}&F'
 \end{matrix} 
 \right)
-= \left(
-\begin{matrix}
-\cos(\theta) & -\sin(\theta)  \\
--\sin(\theta)  & \cos(\theta)  \\
-\end{matrix} 
-\right)
-\left(
-\begin{matrix}
-x'   \\
-y'  \\
-\end{matrix} 
-\right)
-\end{align}
+\end{aligned}
 $$
 
-或者
 
-$$
-\begin{align}
-\overrightarrow{x}&=A(\theta) \overrightarrow{x'} \label{x'->x}\\
-\overrightarrow{x'}&=A(-\theta) \overrightarrow{x}  \label{x->x'}\\
-\end{align}
-$$
 
-以$\eqref{x'->x}$代入$\eqref{general_form}$
 
-得出新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$
-
-$$
-\begin{align}
-A&=(U^2-4d^2) \label{A'}\\
-B&=2US \label{B'}\\
-C&=(S^2-4d^2)  \label{C'}\\
-D&=(2UT+8 d_1 a_2^2)  \label{D'}\\
-E&=(2ST+8 d_1 b_2^2) \label{E'}\\
-F&= (T^2-4d_1a_2^2-4d_1b_2^2) \label{F'}\\
-\end{align}
-$$
 
 
 
