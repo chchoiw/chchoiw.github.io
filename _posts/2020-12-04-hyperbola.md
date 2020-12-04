@@ -110,8 +110,8 @@ $$
 
 $$
 \begin{align}
-H_1 &: A1'^2x'^2+B1'x'y'+C1'y'^2+D1'x'+E1'y'+F1'=0 \label{H11}\\
-H_2 &: A2'^2x'^2+B2'x'y'+C2'y'^2+D2'x'+E2'y'+F2'=0\label{H22}
+H_1 &: A1^2x'^2+B1xy'+C1y^2+D1x+E1y+F1=0 \label{H11}\\
+H_2 &: A2^2x'^2+B2xy'+C2y^2+D2x+E2y+F2=0\label{H22}
 \end{align}
 $$
 
@@ -161,34 +161,36 @@ A(\theta) = \left(
 \end{align}
 $$
 
+令$(x,y)$平移後的坐標是$(x_m,y_m)$,$(x,y)$平移再旋轉後的坐標是$(x',y')$
+
 $$
 \begin{aligned}
 H_1 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
 \left(
 \begin{matrix}
-x_\text{orig}  \\
-y_\text{orig} 
+x  \\
+y
 \end{matrix} 
 \right)  
 &\rightarrow  
 \left(
 \begin{matrix}
-x_\text{orig}-\frac{a_1+a_2}{2}  \\
-y_\text{orig}-\frac{b_1+b_2}{2}  
+x-\frac{a_1+a_2}{2}  \\
+y-\frac{b_1+b_2}{2}  
 \end{matrix} 
 \right)  
 =\left(
 \begin{matrix}
-x  \\
-y
+x_m  \\
+y_m
 \end{matrix} 
 \right)   
 &\rightarrow 
 A(\theta)
 \left(
 \begin{matrix}
-x  \\
-y  
+x_m  \\
+y_m
 \end{matrix} 
 \right)  
 =
@@ -217,7 +219,7 @@ b&=\sqrt{c^2-a^2}
 \end{aligned}
 $$
 
-現在已找到$H_1$以$(x',y')$表示的一般式, 那麽$H_2$呢？
+現在已找到$H_1$以$(x',y')$表示$\eqref{H1}$, 那麽$H_2$在同樣的平移旋轉以坐標$(x',y')$表示的一般式呢？
 
 想像一下, $H_2$平移$-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2})$, 即是等價於<br>
 
@@ -227,13 +229,13 @@ $H_3:$焦點是$(a_2-\frac{a_1+a_2}{2},b_2-\frac{b_1+b_2}{2}),(a_3-\frac{a_1+a_2
 $$
 \begin{aligned}
 H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
-H_3 &\rightarrow \text{順時針旋轉}\theta \\
+H_3(\text{已經是坐標} (x_m,y_m)) &\rightarrow \text{順時針旋轉}\theta \\
 H_3 &\rightarrow 
 A(\theta)
 \left(
 \begin{matrix}
-x  \\
-y  \\
+x_m  \\
+y_m  \\
 \end{matrix} 
 \right)  
 =
@@ -247,7 +249,7 @@ y'  \\
 $$
 
 
-$H_3$以$x,y$表示的新的一般式$A^2x^2+Bxy+Cy^2+Dx+Ey+F=0$可根據$\eqref{A},\eqref{B},\eqref{C},\eqref{D},\eqref{E},\eqref{F}$得出
+$H_3$以$x_m,y_m$表示的新的一般式可根據$\eqref{A},\eqref{B},\eqref{C},\eqref{D},\eqref{E},\eqref{F}$得出<br>
 只要求出新的$H_3$以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$即可
 
 若使
@@ -268,11 +270,11 @@ $$
 
 
 $$
-0=A^2+Bxy+Cy^2+Dx+Ey+F=\overrightarrow{x^T}T\overrightarrow{x}
+0=Ax_m^2+Bx_my_m+Cy_m^2+Dx_m+Ey_m+F=\overrightarrow{x_m^T}T\overrightarrow{x_m}
 $$
 
 $$
-0=\overrightarrow{x^T} T \overrightarrow{x}=\overrightarrow{x'}^T (A(\theta))^T T A(\theta)\overrightarrow{x'}
+0=\overrightarrow{x_m^T} T \overrightarrow{x_m}=\overrightarrow{x'}^T (A(\theta))^T T A(\theta)\overrightarrow{x'}
 $$
 
 
@@ -299,13 +301,14 @@ $$
 
 
 $$
-\overrightarrow{x_0}=A(\theta)\overrightarrow{x'_0}
+\overrightarrow{x_{m,0}}=A(\theta)\overrightarrow{x'_0}
 $$
 
 
 $$
 \begin{aligned}
-\text{交點}&=\overrightarrow{x_0}+\left(
+\text{交點}&=\overrightarrow{x}\\
+&=\overrightarrow{x_{m,0}}+\left(
 \begin{matrix}
 \frac{a_1+a_2}{2} \\
 \frac{b_1+b_2}{2} 
