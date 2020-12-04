@@ -46,7 +46,7 @@ $$
 \end{equation}
 
 所以，若$(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$,根據$\eqref{U},\eqref{S},\eqref{T}$定義下的$U,S,T$,
-那麽它的一般式$A^2+Bxy+Cy^2+Dx+E+F=0$ 的係數是以下
+那麽它的一般式$A^2+Bxy+Cy^2+Dx+Ey+F=0$ 的係數是以下
 
 $$
 \begin{align}
@@ -100,13 +100,18 @@ y'  \\
 \end{align}
 $$
 
-以下等式代入$\eqref{general_form}$
+或者
 
 $$
-\va*{x}=A(\theta) \va*{x'} 
+\begin{align}
+\overrightarrow{x}&=A(\theta) \overrightarrow{x'} \label(x'->x)\\
+\overrightarrow{x'}&=A(-\theta) \overrightarrow{x}  \label(x->x')\\
+\end{align}
 $$
 
-得
+以$\label(x'->x)$代入$\eqref{general_form}$
+
+得出新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y+F'=0$
 
 $$
 \begin{align}
