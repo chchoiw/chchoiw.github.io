@@ -201,7 +201,7 @@ $$
 $$
 
 $$
-0=\overrightarrow{x^T}T\overrightarrow{x}=\overrightarrow{x'^}^T (A(\theta))^T T A(\theta)\overrightarrow{x'}
+0=\overrightarrow{x^T} T \overrightarrow{x}=\overrightarrow{x'}^T (A(\theta))^T T A(\theta)\overrightarrow{x'}
 $$
 
 
