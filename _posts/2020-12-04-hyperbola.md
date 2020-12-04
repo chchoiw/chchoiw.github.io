@@ -61,13 +61,14 @@ $$
 
 令 fff
 
-\begin{equation*}
+\begin{equation}
+\label{rotation}
 A(\theta) = 
-\begin{pmatrix}
+\begin{matrix}
 \cos(\theta) & -\sin(\theta)  \\
 -\sin(\theta)  & \cos(\theta)  \\
-\end{pmatrix}
-\end{equation*}
+\end{matrix}
+\end{equation}
 
 和
 
