@@ -67,7 +67,7 @@ $$
 \frac{x^2}{a^2}-\frac{y^2}{b^2}=1
 $$
 
-這個$theta$是甚麽?
+這個$\theta$是甚麽?
 
 $$
 \begin{aligned}
