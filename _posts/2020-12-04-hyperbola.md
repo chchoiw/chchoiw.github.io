@@ -9,7 +9,7 @@ category:
 ---
 
 
-# Introduction
+## 從焦點和距離差到一般式
 設 $(a_1,b_1), (a_2,b_2)$是雙曲的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$
 那麽
 $$
@@ -58,6 +58,46 @@ E&=(2ST+8 d_1 b_2^2) \label{E}\\
 F&= (T^2-4d_1a_2^2-4d_1b_2^2) \label{F}\\
 \end{align}
 $$
+
+## 由任意一般式,到典型的雙曲線$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$
+
+在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再逆時針旋轉一個角度$\theta$,就應該得到
+
+$$
+\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+$$
+
+這個$theta$是甚麽?
+
+$$
+\begin{aligned}
+\text{兩焦點斜率}&=\frac{a1-a2}{b1-b2} \\
+\theta&=\text{arctan}(\text{兩焦點斜率})
+\end{aligned}
+$$
+
+
+## 兩條雙曲線同時平移旋轉
+
+
+$$
+\overrightarrow{x_m}=\overrightarrow{x}-
+\begin{aligned}
+A(\theta) = \left(
+\begin{matrix}
+x -frac{a_1+a_2}{2} \\
+y -frac{b_1+b_2}{2}  \\
+\end{matrix} 
+\right)
+\end{aligned}
+$$
+
+$$
+\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+$$
+
+
+## 一般式和旋轉後一般式的關係
 
 令順時針旋轉$\theta$的矩陣是
 
@@ -127,6 +167,3 @@ $$
 
 
 
-$$
-\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
-$$
