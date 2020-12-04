@@ -31,6 +31,7 @@ T&=a_1^2+b_1^2d_1^2-a_2^2-b_2^2 \label{T}
 \end{align}
 $$
 
+則上述等式可轉化為
 
 $$
 \begin{aligned}
