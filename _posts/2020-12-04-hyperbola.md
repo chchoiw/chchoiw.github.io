@@ -245,6 +245,27 @@ a_0=V^2-D'^2a^2
 $$
 
 ## 再次逆時針旋轉和平移得出真實交點
+假設$x'_0$是$H_1,H_2$以$(x',y')$表示的解
 
 
+$$
+\overrightarrow{x_0}=A(\theta)\overrightarrow{x'_0}
+$$
 
+
+$$
+\begin{aligned}
+\text{交點}&=\overrightarrow{x_0}+\left(
+\begin{matrix}
+\frac{a_1+a_2}{2} \\
+\frac{b_1+b_2}{2} 
+\end{matrix} 
+\right)\\
+&=A(\theta)\overrightarrow{x'_0}+\left(
+\begin{matrix}
+\frac{a_1+a_2}{2} \\
+\frac{b_1+b_2}{2} 
+\end{matrix} 
+\right)
+\end{aligned}
+$$
