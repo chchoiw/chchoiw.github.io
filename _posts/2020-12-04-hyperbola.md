@@ -165,7 +165,7 @@ $$
 
 $$
 \begin{aligned}
-H_1 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
+H_1 &\rightarrow \text{平移}(-\frac{a_1+a_2}{2},-\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
 \left(
 \begin{matrix}
 x  \\
@@ -229,7 +229,7 @@ $H_3:$焦點是$(a_2-\frac{a_1+a_2}{2},b_2-\frac{b_1+b_2}{2}),(a_3-\frac{a_1+a_2
 $$
 \begin{aligned}
 H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
-H_3(\text{已經是坐標} (x_m,y_m)) &\rightarrow \text{順時針旋轉}\theta \\
+H_3&\rightarrow \text{順時針旋轉}\theta \\
 H_3 &\rightarrow 
 A(\theta)
 \left(
