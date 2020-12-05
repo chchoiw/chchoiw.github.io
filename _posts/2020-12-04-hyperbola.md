@@ -14,7 +14,7 @@ category:
 $H_1$:設 $(a_1,b_1), (a_2,b_2)$是雙曲線的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$<br>
 $H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲線的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_2$
 
-但因為計算繁複, 所以先假設以下特殊的雙曲線, 再推導到以述的一般情況
+但因為計算繁複, 所以先假設以下特殊的雙曲線, 再推導到上述的一般情況
 
 $$
 \begin{align}
@@ -244,7 +244,7 @@ $H_3:$焦點是$(a_2-\frac{a_1+a_2}{2},b_2-\frac{b_1+b_2}{2}),(a_3-\frac{a_1+a_2
 $$
 \begin{aligned}
 H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{逆時針旋轉}\theta \\
-H_3&\rightarrow \text{順時針旋轉}\theta \\
+H_3&\rightarrow \text{逆時針旋轉}\theta \\
 H_3 &\rightarrow 
 A(-\theta)
 \left(
