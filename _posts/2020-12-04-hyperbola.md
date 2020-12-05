@@ -161,7 +161,7 @@ A(\theta) = \left(
 \end{align}
 $$
 
-令$(x,y)$平移後的坐標是$(x_m,y_m)$,$(x,y)$平移再旋轉後的坐標是$(x',y')$
+令$(x,y)$平移後的坐標是$(x_m,y_m)$,$(x_m,y_m)$旋轉後的坐標是$(x',y')$
 
 $$
 \begin{aligned}
