@@ -132,6 +132,13 @@ $$
 \end{aligned}
 $$
 
+值得注意的是這個$\theta$是$\overrightarrow{x_m}$逆時針旋轉到$\overrightarrow{x'}$,以式子表達即是
+
+\begin{equation}
+\label{rotation}
+\overrightarrow{x}=A(-\theta) \overrightarrow{x_m}
+\end{equation }
+
 所以我們想得到$\eqref{H11} \rightarrow \eqref{H1}$是需要2個步驟
 1. 平移
 2. 順時針旋轉
@@ -250,7 +257,7 @@ $$
 
 
 $H_3$以$x_m,y_m$表示的新的一般式可根據$\eqref{A},\eqref{B},\eqref{C},\eqref{D},\eqref{E},\eqref{F}$得出<br>
-只要求出新的$H_3$以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$即可
+只要求出新的$H_3$旋轉後以$x',y'$表示的新的一般式$A'^2x'^2+B'x'y'+C'y'^2+D'x'+E'y'+F'=0$即可
 
 若使
 
