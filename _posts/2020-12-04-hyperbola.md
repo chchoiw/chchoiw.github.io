@@ -134,10 +134,12 @@ $$
 
 值得注意的是這個$\theta$是$\overrightarrow{x_m}$逆時針旋轉到$\overrightarrow{x'}$,以式子表達即是
 
-\begin{equation}
-\label{rotation}
-\overrightarrow{x}=A(-\theta) \overrightarrow{x_m}
-\end{equation }
+$$
+\begin{align}
+& \overrightarrow{x'}&=A(-\theta) \overrightarrow{x_m} \label{rotation1}\\
+\text{or } &\overrightarrow{x_m}&=A(\theta) \overrightarrow{x'} \label{rotation2}
+\end{align}
+$$
 
 所以我們想得到$\eqref{H11} \rightarrow \eqref{H1}$是需要2個步驟
 1. 平移
