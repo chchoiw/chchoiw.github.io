@@ -132,7 +132,24 @@ $$
 \end{aligned}
 $$
 
-值得注意的是這個$\theta$是$\overrightarrow{x_m}$逆時針旋轉到$\overrightarrow{x'}$,以式子表達即是
+
+值得注意的是這個$\theta$是$\overrightarrow{x_m}$逆時針旋轉到$\overrightarrow{x'}$
+
+若令順時針旋轉$\alpha$的矩陣是
+
+$$
+\begin{align}
+\label{rotation}
+A(\alpha) = \left(
+\begin{matrix}
+\cos(\alpha) & -\sin(\alpha)  \\
+\sin(\alpha)  & \cos(\alpha)  \\
+\end{matrix} 
+\right)
+\end{align}
+$$
+
+那麽兩坐標可以寫成
 
 $$
 \begin{align}
@@ -156,19 +173,7 @@ $$
 $H_1$:設 $(a_1,b_1), (a_2,b_2)$是雙曲線的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_1$<br>
 $H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲線的兩個焦點, 然後曲線上到兩焦點絕對距離差是$d_2$
 
-令順時針旋轉$\theta$的矩陣是
 
-$$
-\begin{align}
-\label{rotation}
-A(\theta) = \left(
-\begin{matrix}
-\cos(\theta) & -\sin(\theta)  \\
-\sin(\theta)  & \cos(\theta)  \\
-\end{matrix} 
-\right)
-\end{align}
-$$
 
 令$(x,y)$平移後的坐標是$(x_m,y_m)$,$(x_m,y_m)$旋轉後的坐標是$(x',y')$
 
