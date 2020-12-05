@@ -117,7 +117,7 @@ $$
 
 已經很$\eqref{H11},\eqref{H22}$接近$\eqref{H1},\eqref{H2}$,但與$\eqref{H11}$比較,$\eqref{H1}$是更簡化的情況, 所以考慮進一步簡化雙曲線$H_1$<br>
 
-在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再順時針旋轉一個角度$\theta$,就應該得到
+在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再逆時針旋轉一個角度$\theta$,就應該得到
 
 $$
 \frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1
@@ -133,7 +133,8 @@ $$
 $$
 
 
-值得注意的是這個$\theta$是$\overrightarrow{x_m}$逆時針旋轉到$\overrightarrow{x'}$
+值得注意的是這個$\theta$是$\overrightarrow{x_m}$逆時針旋轉$\theta$到$\overrightarrow{x'}$, 或者$\overrightarrow{x'}$順時針旋轉$\theta$到$\overrightarrow{x_m}$
+
 
 若令順時針旋轉$\alpha$的矩陣是
 
@@ -160,7 +161,7 @@ $$
 
 所以我們想得到$\eqref{H11} \rightarrow \eqref{H1}$是需要2個步驟
 1. 平移
-2. 順時針旋轉
+2. 逆時針旋轉
    
 
 
@@ -179,7 +180,7 @@ $H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲線的兩個焦點, 然後曲線上到�
 
 $$
 \begin{aligned}
-H_1 &\rightarrow \text{平移}(-\frac{a_1+a_2}{2},-\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
+H_1 &\rightarrow \text{平移}(-\frac{a_1+a_2}{2},-\frac{b_1+b_2}{2}) &\rightarrow \text{逆時針旋轉}\theta \\
 \left(
 \begin{matrix}
 x  \\
@@ -200,7 +201,7 @@ y_m
 \end{matrix} 
 \right)   
 &\rightarrow 
-A(\theta)
+A(-\theta)
 \left(
 \begin{matrix}
 x_m  \\
@@ -242,10 +243,10 @@ $H_3:$焦點是$(a_2-\frac{a_1+a_2}{2},b_2-\frac{b_1+b_2}{2}),(a_3-\frac{a_1+a_2
 
 $$
 \begin{aligned}
-H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{順時針旋轉}\theta \\
+H_2 &\rightarrow \text{平移}-(\frac{a_1+a_2}{2},\frac{b_1+b_2}{2}) &\rightarrow \text{逆時針旋轉}\theta \\
 H_3&\rightarrow \text{順時針旋轉}\theta \\
 H_3 &\rightarrow 
-A(\theta)
+A(-\theta)
 \left(
 \begin{matrix}
 x_m  \\
@@ -313,6 +314,7 @@ $$
 ## 再次逆時針旋轉和平移得出真實交點
 假設$\overrightarrow{x'_0}$是$H_1,H_2$以$(x',y')$表示的解
 
+根據$\eqref{rotation2}$
 
 $$
 \overrightarrow{x_{m,0}}=A(\theta)\overrightarrow{x'_0}
