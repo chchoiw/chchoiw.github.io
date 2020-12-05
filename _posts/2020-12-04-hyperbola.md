@@ -154,8 +154,8 @@ $$
 
 $$
 \begin{align}
-& \overrightarrow{x'}&=A(-\theta) \overrightarrow{x_m} \label{rotation1}\\
-\text{or } &\overrightarrow{x_m}&=A(\theta) \overrightarrow{x'} \label{rotation2}
+ \overrightarrow{x'}&=A(-\theta) \overrightarrow{x_m} \label{rotation1}\\
+\text{or } \quad \overrightarrow{x_m}&=A(\theta) \overrightarrow{x'} \label{rotation2}
 \end{align}
 $$
 
@@ -179,7 +179,7 @@ $H_2$:設 $(a_2,b_2), (a_3,b_3)$是雙曲線的兩個焦點, 然後曲線上到�
 令$(x,y)$平移後的坐標是$(x_m,y_m)$,$(x_m,y_m)$旋轉後的坐標是$(x',y')$
 
 $$
-\begin{aligned}
+\begin{matrix}
 H_1 &\rightarrow \text{平移}(-\frac{a_1+a_2}{2},-\frac{b_1+b_2}{2}) &\rightarrow \text{逆時針旋轉}\theta \\
 \left(
 \begin{matrix}
@@ -215,7 +215,7 @@ x'  \\
 y'  
 \end{matrix} 
 \right)
-\end{aligned}
+\end{matrix}
 $$
 
 那麽以$x',y'$表達$H_1$是
