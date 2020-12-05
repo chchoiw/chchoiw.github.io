@@ -106,12 +106,12 @@ $$
 
 ## 由任意一般式$A^2+Bxy+Cy^2+Dx+Ey+F=0$,到典型的雙曲線$\frac{x^2}{a^2}-\frac{y^2}{b^2}=1$
 
-現在
+現在, 從已知焦點和距離差,可根據$\eqref{A},\eqref{A},\eqref{B},\eqref{C},\eqref{D},\eqref{E},\eqref{F}$得出$H_1,H_2$的一般式
 
 $$
 \begin{align}
-H_1 &: A1^2x'^2+B1xy'+C1y^2+D1x+E1y+F1=0 \label{H11}\\
-H_2 &: A2^2x'^2+B2xy'+C2y^2+D2x+E2y+F2=0\label{H22}
+H_1 &: A_1^2x^2+B_1xy+C_1y^2+D_1x+E_1y+F_1=0 \label{H11}\\
+H_2 &: A_2^2x^2+B_2xy+C_2y^2+D_2x+E_2y+F_2=0\label{H22}
 \end{align}
 $$
 
