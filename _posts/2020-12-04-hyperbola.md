@@ -115,7 +115,7 @@ H_2 &: A_2^2x^2+B_2xy+C_2y^2+D_2x+E_2y+F_2=0\label{H22}
 \end{align}
 $$
 
-已經很$\eqref{H11},\eqref{H22}$接近$\eqref{H1},\eqref{H2}$,但與$\eqref{H11}$比較,$\eqref{H1}$是更簡化的情況, 所以考慮進一步簡化雙曲線$H_1$<br>
+$\eqref{H11},\eqref{H22}$已經很接近$\eqref{H1},\eqref{H2}$,但與$\eqref{H11}$比較,$\eqref{H1}$是更簡化的情況, 所以考慮進一步簡化雙曲線$H_1$<br>
 
 在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再逆時針旋轉一個角度$\theta$,就應該得到
 
