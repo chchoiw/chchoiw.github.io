@@ -120,7 +120,7 @@ $$
 在直覺上,將雙曲線圖型反向平移兩焦點連線的中點, 再順時針旋轉一個角度$\theta$,就應該得到
 
 $$
-\frac{x^2}{a^2}-\frac{y^2}{b^2}=1
+\frac{x'^2}{a^2}-\frac{y'^2}{b^2}=1
 $$
 
 這個$\theta$是甚麽?
@@ -155,7 +155,7 @@ $$
 A(\theta) = \left(
 \begin{matrix}
 \cos(\theta) & -\sin(\theta)  \\
--\sin(\theta)  & \cos(\theta)  \\
+\sin(\theta)  & \cos(\theta)  \\
 \end{matrix} 
 \right)
 \end{align}
