@@ -51,7 +51,3 @@ category:
     <div style="text-align:center ; width:400px;margin:auto;" id="image7"><img src="/images/meseum/error/7.png" /></div>
     如上圖所示，當電感與電源斷開後，$V_L$的正負號會相反。某一方面，圖三和圖四的$V_L$方向是同向的，但這一個是放能，一個是儲能，理應是不同方向的。
 
-## 澳門的電台
-- [澳門的電台](http://www.cmm.gov.mo/chi/exhibition/secondfloor/broadcasting.html)
-    <div style="text-align:center ; width:800px" id="image3"><img style="border: 1px solid grey;" src="/images/meseum/error/3.png" /></div>
-    如上圖所示，是一個死連結。
