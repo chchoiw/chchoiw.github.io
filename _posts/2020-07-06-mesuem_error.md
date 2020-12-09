@@ -36,13 +36,13 @@ category:
 ## 模/數轉換器和數/模轉換器展區
 -  [模/數轉換器和數/模轉換器展區](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/ADConverter.html)
 
-    <div style="text-align:center; width:350px"  id="image2"><img style="border: 1px solid grey;" src="/images/meseum/error/5.png" /></div>
+    <div style="text-align:center; width:350px;margin:auto;"  id="image2"><img style="border: 1px solid grey;" src="/images/meseum/error/5.png" /></div>
     <hr>
     上圖$2n，216$應分別是$2^n，2^{16}$。當初第一次看時，本身沒有基礎概念認為此處的$2n$就是$2\times n$，實際上應是$2^n$。
 
 ## 解像
 -  [解像](http://www.cmm.gov.mo/chi/exhibition/secondfloor/MoreInfo/2_7_5_Resolution.html)
-    <div style="text-align:center; width:350px" id="image6"><img style="border: 1px solid grey;padding-left:15px;" src="/images/meseum/error/6.png" /></div>
+    <div style="text-align:center; width:350px;margin:auto;" id="image6"><img style="border: 1px solid grey;padding-left:15px;" src="/images/meseum/error/6.png" /></div>
     <hr>
     上圖中，前半段是用<span style="color:red">ppi</span>，後半段是用<span style="color:red">dpi</span>。特意翻查資料，發現通俗來說，dpi與ppi是普遍可互通。當初第一次看時，會想這個dpi前文沒有提起過，是指ppi，還是dpi就是ppi？
 
