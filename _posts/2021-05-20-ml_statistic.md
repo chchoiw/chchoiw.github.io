@@ -1,5 +1,5 @@
 ---
-title: '綜合複習'
+title: '綜合統計複習'
 date: 2021-05-21
 permalink: /posts/2021/05/stat_3/
 tags:
