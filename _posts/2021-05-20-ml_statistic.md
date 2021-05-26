@@ -69,7 +69,7 @@ category:
     p=\text{Pr}\{x<x_p \}
   $$
 
-- 所以當$p<=\alpha$，即拒絕域$\{x<x_p\} \subseteq \bar W$
+- 所以當$p<=\alpha$，即拒絕域$\big\{x<x_p\big\} \subseteq \bar W$
   
 ## 一些很好的知識點網站
 
