@@ -1,6 +1,6 @@
 ---
-title: ''
-date: 2020-12-04
+title: '綜合複習'
+date: 2021-05-21
 permalink: /posts/2021/05/stat_3/
 tags:
   - regression
