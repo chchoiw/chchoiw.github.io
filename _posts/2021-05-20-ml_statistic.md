@@ -62,14 +62,14 @@ category:
 - 應用了小概率原理
 - 不同的問題需要使用不同的檢驗統計量
 - 定義拒絕域$\bar W$，通常與$H_1$的$\leq,\geq$ 方向相同，暫時假設 $H_1 : x < 110  $，下面沿用這個$H_1$。
-- $\alpha$顯著水平是一個概率值，$ \text{Pr} \left{x \in \bar W \right}=\alpha $，此時$\bar W=\left{ x<x_\alpha \right} $。$\alpha$亦表示原假設爲真時，拒絕原假設的概率。
+- $\alpha$顯著水平是一個概率值，$ \text{Pr} \{x \in \bar W \}=\alpha $，此時$\bar W=\{ x<x_\alpha \} $。$\alpha$亦表示原假設爲真時，拒絕原假設的概率。
 - p-value:落在與樣本計算出來的參數界限值$x_p$與$\bar W$的同方向的一邊的概率。用數學式表示則是
   
   $$
     p=\text{Pr}\{x<x_p \}
   $$
 
-- 所以當$p<=\alpha$，即拒絕域$\left{x<x_p\right} \subseteq\bar W$
+- 所以當$p<=\alpha$，即拒絕域$\{x<x_p\} \subseteq \bar W$
   
 ## 一些很好的知識點網站
 
