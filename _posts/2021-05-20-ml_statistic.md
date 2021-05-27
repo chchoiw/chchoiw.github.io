@@ -65,6 +65,12 @@ $$
 
 $$f(k,n,p)= \text{Pr}(X=k)=\tbinom {n}{k}(1-p)^{n-k}p^{k} $$
 
+- 平均值和變異數
+
+$$
+\text{E}(X)=np,\quad \text{var}(X)=np(1-p)
+$$
+
 
 ## 幾何分佈
 - [wiki](https://zh.wikipedia.org/wiki/%E5%B9%BE%E4%BD%95%E5%88%86%E4%BD%88)
