@@ -57,6 +57,7 @@ $$
 $$
 \text{CV}=\frac{\sigma}{\mu}
 $$
+
 # 一些基本的分佈
 ## 二次項分布
 - [wiki](https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%A0%85%E5%88%86%E4%BD%88)
