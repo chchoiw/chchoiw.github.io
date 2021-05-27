@@ -71,6 +71,12 @@ $$f(k,n,p)= \text{Pr}(X=k)=\tbinom {n}{k}(1-p)^{n-k}p^{k} $$
 
 $$ \text{Pr}(X=k)= (1-p)^{k-1}p $$
 
+- 平均值和變異數
+
+$$
+\text{E}(X)=\frac{1}{p},\quad \text{var}(X)=\frac{1-p}{p^2}
+$$
+
 
 ## 超幾何分佈
 [wiki](https://zh.wikipedia.org/wiki/%E8%B6%85%E5%87%A0%E4%BD%95%E5%88%86%E5%B8%83)
@@ -80,6 +86,11 @@ $$ \text{Pr}(X=k)= (1-p)^{k-1}p $$
 
 $$ f(k;n,K,N)=\frac{\tbinom {K}{k} \tbinom {N-K}{n-k} }{\tbinom {N}{n} }$$
 
+- 平均值和變異數
+
+$$
+\text{E}(X)=n\frac{K}{N},\quad \text{var}(X)=n\frac{K(N-K)(N-n)}{N^2(N-1)}
+$$
 
 上式可如此理解：$\tbinom {N}{n}$ 表示所有在 $N$個樣本中抽出$n$個的方法數目。$\tbinom {K}{k}$表示在$K$個樣本中，抽出$k$個的方法數目，即組合數，又稱二項式係數。剩下來的樣本都是及格的，而及格的樣本有$N-K$個，剩下的抽法便有$\tbinom {N-K}{n-k}$種。
 
