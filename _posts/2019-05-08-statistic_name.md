@@ -33,11 +33,6 @@ category:
 		- [質的變項(qualitative variable)](#質的變項qualitative-variable)
 		- [社會學變項(sociological variable)](#社會學變項sociological-variable)
 		- [心理學變項(psychological variable)](#心理學變項psychological-variable)
-- [統計特徵量](#統計特徵量)
-	- [集中量數/集中趨勢量數](#集中量數集中趨勢量數)
-- [偏度](#偏度)
-- [峰度](#峰度)
-- [相對分散度](#相對分散度)
 
 
 # Ref:
@@ -121,42 +116,3 @@ category:
 ### 心理學變項(psychological variable)
 個體內在不可直接觀察的變項，通常是個人的意見、態度與行為。
 
-# 統計特徵量
-- 用來表達所有資料中意涵訊息的特徵，以凸顯資料所代表的意義，讓使用該資料之研究者或讀者能夠掌握分析方向
-- 分四大類：集中量數、差異量數、偏態與峰度。
-
-## 集中量數/集中趨勢量數
-- 指一群體中之個體的某一特性，有其共同的趨勢存在，此一共同趨勢之量數即稱之集中趨勢量數
-- 因其能夠代表該群體特性的平均水準，故通稱為平均數
-- 居有簡化作用、代表作用和比較作用
-
-
-# 偏度
-- [wiki](https://zh.wikipedia.org/zh-hant/%E5%81%8F%E5%BA%A6)
-
-
-<div style="text-align:center" id="image1"><img src="/images/stat/mu_3.png" /></div>
-
-- 負偏態或左偏態：偏度<0，平均值左側的橫軸更長，分佈的主體集中在右側。
-- 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分佈的主體集中在左側。
-
-$$
-g=\frac{m_3}{m_2^\frac{3}{2}}=\frac{\sum\limits_{i=1}^n (x-\bar x)^3}{(\sum\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3} } }
-$$
-
-# 峰度
-- [wiki](https://zh.wikipedia.org/wiki/%E5%B3%B0%E5%BA%A6)
-- 如果超值峰度為正，稱為尖峰態（leptokurtic）。如果超值峰度為負，稱為低峰態（platykurtic）。
-
-$$
-g=\frac{m_4}{m_2^2}-3=\frac{\sum\limits_{i=1}^n (x-\bar x)^4} {(\sum\limits_{i=1}^n (x-\bar x)^2 )^2}-3
-$$
-
-- "減3"是為了讓正態分佈的峰度為0
-
-# 相對分散度
-- 若有兩組資料而欲比較其相對分散程度時,會使用相對分散度來對比
-
-$$
-\text{CV}=\frac{\sigma}{\mu}
-$$

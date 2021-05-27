@@ -8,19 +8,81 @@ category:
   - Statistic
 ---
 
-## 一些基本描述統計
+# 一些基本描述統計
 
-- 集中趨勢分析主要靠平均數、中數、衆數等統計指標來表示數據的集中趨勢。
-- 離中趨勢分析主要靠全距、四分差、平均差、方差、標準差等統計指標來研究數據的離中趨勢。
 
-- 峯
-  - 左偏：峯值<0，平均<中位<眾數，峯的位置在右邊。
-  - 右偏：峯值>0，眾數<中位<平均，峯的位置在左邊。
-  - 按圖分析
-  
-- 異衆比率$ \frac{\sigma}{\mu}$
+- [68–95–99.7原則](https://zh.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7%E5%8E%9F%E5%89%87) :
+  - 一個標準差=0.68
+  - 二個標準差=0.95
+  - 三個標準差=0.99
+# 統計特徵量
+- 用來表達所有資料中意涵訊息的特徵，以凸顯資料所代表的意義，讓使用該資料之研究者或讀者能夠掌握分析方向
+- 分四大類：集中量數、差異量數、偏態與峰度。
 
-## 線性迴歸和邏輯迴歸
+## 集中量數/集中趨勢量數
+- 指一群體中之個體的某一特性，有其共同的趨勢存在，此一共同趨勢之量數即稱之集中趨勢量數
+- 因其能夠代表該群體特性的平均水準，故通稱為平均數
+- 居有簡化作用、代表作用和比較作用
+
+
+## 偏度
+- [wiki](https://zh.wikipedia.org/zh-hant/%E5%81%8F%E5%BA%A6)
+
+
+<div style="text-align:center" id="image1"><img src="/images/stat/mu_3.png" /></div>
+
+- 負偏態或左偏態：偏度<0，平均值左側的橫軸更長，分佈的主體集中在右側。平均<中位<眾數，峯的位置在右邊。
+- 正偏態或右偏態：偏度>0，平均值右側的橫軸更長，分佈的主體集中在左側。眾數<中位<平均，峯的位置在左邊。
+
+$$
+g=\frac{m_3}{m_2^\frac{3}{2}}=\frac{\sum\limits_{i=1}^n (x-\bar x)^3}{(\sum\limits_{i=1}^n (x-\bar x)^2)^{\frac{2}{3} } }
+$$
+
+## 峰度
+- [wiki](https://zh.wikipedia.org/wiki/%E5%B3%B0%E5%BA%A6)
+- 如果超值峰度為正，稱為尖峰態（leptokurtic）。如果超值峰度為負，稱為低峰態（platykurtic）。
+
+$$
+g=\frac{m_4}{m_2^2}-3=\frac{\sum\limits_{i=1}^n (x-\bar x)^4} {(\sum\limits_{i=1}^n (x-\bar x)^2 )^2}-3
+$$
+
+- "減3"是為了讓正態分佈的峰度為0
+
+## 相對分散度
+- 若有兩組資料而欲比較其相對分散程度時,會使用相對分散度來對比
+
+$$
+\text{CV}=\frac{\sigma}{\mu}
+$$
+# 一些基本的分佈
+## 二次項
+## 泊松 
+# 抽樣
+- [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
+- 分類:
+  - 概率抽樣包括有簡單隨機抽樣、系統抽樣（等距抽樣）、分層抽樣（類型抽樣）、整群抽樣
+<div style="text-align:center ;width:500px;" id="image1"><img src="/images/stat/ns8q7pr6pn3243878n7r4snq41rn0372.jpg" /></div>	
+
+## 簡單隨機抽樣(simple random sampling)
+<div style="text-align:center;width:300px;" id="image2"><img src="/images/stat/Simple_random_sampling.png" /></div>
+
+在進行抽樣時不摻入任何人為因素。**母體的每一個體都有同等的機會被選中**，且每次抽選與此次之前的歷次抽選無關。在進行此方法時，通常將所觀察的母體內每一個體，加以編號$1-N$，接著隨機地從這$N$個號碼中抽出我們想要的$n$個號碼(即預定的樣本數)。其次找出母體號碼中與這$n$個隨機號碼相同的個體, 這就是選出的樣本。
+
+## 分層抽樣(stratified sampling)
+<div style="text-align:center;width:300px;" id="image3"><img src="/images/stat/Stratified_sampling.png" /></div>	
+
+調查的母體，可依某衡量標準，區分成若干個不重複的子母體，我們稱之為『層』，且**層與層之間有很大的變異性，層內的變異性較小**。在區分不同層後，再從每一層中利用簡單隨機抽樣抽出所須比例的樣本數，將所得各層樣本合起來即為樣本。此處的比例就是該層的個體總數佔母體的比例。
+
+## 系統抽樣(systematic sampling)
+<div style="text-align:center;width:500px;" id="image4"><img src="/images/stat/Systematic_sampling.png" /></div>	
+
+系統抽樣基本上是隻做一次簡單隨機抽樣後，就採取依固定間隔數抽出一樣本。一般而言，若母體為有限，可將母體依序編號$1,2,\cdots,N$，假設欲選取$n$個樣本，先決定區間間隔$k$，然後以簡單隨機抽樣從$1,2,\cdots,k$中選取一數，此數做為起點，依序每$k$個單位選取一樣本。通常k取為最接近$N/n$的整數。
+
+## 群集抽樣(cluster sampling)
+<div style="text-align:center;width:300px;" id="image5"><img src="/images/stat/muestreo_por_conglomerados.webp" /></div>	
+
+當母體的底冊的蒐集及編造極為困難或龐大，而在調查時又希望節省成本時，可採用此種抽樣。群集抽樣的方法就是將母體分成幾個群集(或部落、區域)，而**群集間的變異小，群集內的變異大**。再從這幾個群集中抽出數個群集進行抽樣或普查。有時群集抽樣又稱部落抽樣、叢聚抽樣。
+# 線性迴歸和邏輯迴歸
 - [百度百科](https://baike.baidu.com/item/logistic%E5%9B%9E%E5%BD%92)
 - [知乎參考](https://zhuanlan.zhihu.com/p/28408516)
 
@@ -29,17 +91,13 @@ category:
 
 - DW檢測：誤差項自相關或(序列相關)
 
-## 主成份分析(PCA)
 
--	變化過後的新的特徵，兩兩之間完全獨立
-- 新的特徵的方差就是其所對應的特徵值
-- 做PCA最好需要做標準化
 
 ## 最大似然  
 - 估計算
   - 無偏性、有效性、一致性
 邏輯迴歸中常用的篩選變量的方法有
-- **Wald test** 
+- **Wald test** : 	共线性時Wald检验不再有效
 - **一個似然比檢驗**
 
 
@@ -55,6 +113,10 @@ category:
 - 識別異常值
 - 数据标准化
 - 聚类法
+
+
+- 错误值（Wrong Value）的处理是在知识发掘处理的**数据清洗**階段。
+
 
 ## 統計顯著性
 
@@ -93,6 +155,11 @@ In linear least squares multiple regression with an estimated intercept term,   
 
 
 ## 主成分分析、因子分析等
+### 主成份分析(PCA)
+
+-	變化過後的新的特徵，兩兩之間完全獨立
+- 新的特徵的方差就是其所對應的特徵值
+- 做PCA最好需要做標準化
 - 主成分分析关注变量之间的相关关系
 - 因子分析关注维度的含义
 - 对应分析关注行变量和列变量两者的相关性。
