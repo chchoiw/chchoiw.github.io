@@ -62,14 +62,20 @@ category:
 - 應用了小概率原理
 - 不同的問題需要使用不同的檢驗統計量
 - 定義拒絕域$\bar W$，通常與$H_1$的$\leq,\geq$ 方向相同，暫時假設 $H_1 : x < 110  $，下面沿用這個$H_1$。
-- $\alpha$顯著水平是一個概率值，$ \text{Pr} \{x \in \bar W \}=\alpha $，此時$\bar W=\{ x<x_\alpha \} $。$\alpha$亦表示原假設爲真時，拒絕原假設的概率。
+- 顯著水平$\alpha$是一個概率值，
+  
+  $$ \text{Pr} \{x \in \bar W \}=\alpha $，此時$\bar W=\{ x<x_\alpha \} $$
+  
+- $\alpha$亦表示原假設爲真時，拒絕原假設的概率。
 - p-value:落在與樣本計算出來的參數界限值$x_p$與$\bar W$的同方向的一邊的概率。用數學式表示則是
   
   $$
     p=\text{Pr}\{x<x_p \}
   $$
 
-- 所以當$p<=\alpha$，即拒絕域$\{x<x_p\} \subseteq\bar W$
+- 所以當$p<=\alpha$，即拒絕域
+  
+  $$\{x<x_p\} \subseteq\bar W$$
   
 ## 一些很好的知識點網站
 
@@ -86,8 +92,11 @@ In linear least squares multiple regression with an estimated intercept term,   
 
 
 
-
-
+## 主成分分析、因子分析等
+- 主成分分析关注变量之间的相关关系
+- 因子分析关注维度的含义
+- 对应分析关注行变量和列变量两者的相关性。
+- 多维尺度分析关注行变量之间的相似性
 
 ## 時間序列
 
@@ -97,10 +106,6 @@ In linear least squares multiple regression with an estimated intercept term,   
 
 
 
-下哪种方法可以用于分析时间序列数据（ ）
+- 可以用于分析时间序列数据：差分法、移动平均值法(MA)和自回归法(AR)
 
-A.	差分法
-
-B.	移动平均值法(MA)
-
-C.	自回归法(AR)
+- 序列本身是非平稳的，通常我们有两种处理方式，一是进行差分，二是进行对数变换。
