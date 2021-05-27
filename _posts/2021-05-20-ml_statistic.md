@@ -106,13 +106,13 @@ $$
 ## possion分佈
 
 $$
-\text{Pr}(X=k)=\frac{\exp^{-\lambda}\lambda^k}{k!}
+\text{Pr}(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
 $$
 
 - 平均值和變異數
 
 $$
-\text{E}(X)=\lambda,\quad \text{var}(X)=n\lambda}
+\text{E}(X)=\lambda,\quad \text{var}(X)=n\lambda }
 $$
 
 - 在一個固定時間間隔，或固定範圍內，觀察某一特定事件發生的次數，會發生幾次是一個隨機變數。
