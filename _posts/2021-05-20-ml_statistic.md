@@ -75,7 +75,7 @@ $$
 $$
 \sum \sum 
 \frac{ 
-  (n_{i,j}- \frac{n_{ i \dot}n_{\dot j} }{n})
+  (n_{i,j}- \frac{n_{ i \dot}n_{\dot j} }{n})^2
   } 
   {
      \frac{n_{i \dot }n_{\dot j}}{n}
