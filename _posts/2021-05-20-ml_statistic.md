@@ -157,6 +157,12 @@ $$
 \text{Pr}(|X-E(X)|\geq b) \leq \frac{\text{Var}(X)}{b^2}
 $$
 
+或者
+
+
+$$
+\text{Pr}(|X-\mu|\geq k \sigma) \leq \frac{1}{k^2}
+$$
 
 
 # 抽樣
