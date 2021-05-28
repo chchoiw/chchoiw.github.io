@@ -153,7 +153,7 @@ $$
 ## 中央極限定理
 
 $$
-\frac{\bar X_n -\mu}{\frac{\sigma}{\sqrt{n}} } \leftarrow N(0,1)
+\frac{\bar X_n -\mu}{\frac{\sigma}{\sqrt{n}} } \rightarrow N(0,1)
 $$
 
 ## 柴比雪夫不等式
@@ -236,7 +236,7 @@ $$
 - 定義拒絕域$\bar W$，通常與$H_1$的$\leq,\geq$ 方向相同，暫時假設 $H_1 : x < 110  $，下面沿用這個$H_1$。
 - 顯著水平$\alpha$是一個概率值，
   
-  $$ \text{Pr} \{x \in \bar W \}=\alpha ，此時$\bar W=\{ x<x_\alpha \} $$
+  $$ \text{Pr} \{x \in \bar W \}=\alpha ，此時\bar W=\{ x<x_\alpha \} $$
   
 - $\alpha$亦表示原假設爲真時，拒絕原假設的概率。
 - p-value:落在與樣本計算出來的參數界限值$x_p$與$\bar W$的同方向的一邊的概率。用數學式表示則是
