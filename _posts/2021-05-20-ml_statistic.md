@@ -66,21 +66,10 @@ V_r=\frac{ (\sum f_i ) -f_m}{\sum f_i}
 $$
 
 - 分子是非眾數的頻數和
-- 分母是全部眾數的頻數和尸
+- 分母是全部眾數的頻數和
 
 
-## 列联表分析
-- [知乎參考](https://zhuanlan.zhihu.com/p/24552283)
 
-$$
-\sum \sum 
-\frac{ 
-  (n_{i,j}- \frac{n_{ i \cdot}n_{\cdot j} }{n})^2
-  } 
-  {
-     \frac{n_{i \cdot }n_{\cdot j}}{n}
-  }
-$$
 
 
 # 一些基本的分佈
@@ -158,6 +147,15 @@ $$
 - 這兩點性質滿足前面提到卜瓦松分配三個性質的(a)與(c)。當$p$很小時，這意謂接連兩次正面的機率非常非常地小，也就滿足(b)的性質。以上說明，當$n$很大而$p$很小時，二項隨機實驗的觀察機制非常類似卜瓦松隨機實驗，這也就是為什麼 Poisson(1837)得出可以用卜瓦松分配求得二項分配的近似機率值。 
   
 <hr>
+
+# 一些基本定理
+## 柴比雪夫不等式
+
+$$
+\text{Pr}(|X-E(X)|\geq b) \leq \frac{\text{Var}(X)}{b^2}
+$$
+
+
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
@@ -252,6 +250,19 @@ $$\text{Pr}(\text{置信距間})=1-\alpha$$
 
 # 卡方、F、T、正態和ANOVA等檢測
 
+## 列联表分析
+- [知乎參考](https://zhuanlan.zhihu.com/p/24552283)
+
+$$
+\sum \sum 
+\frac{ 
+  (n_{i,j}- \frac{n_{ i \cdot}n_{\cdot j} }{n})^2
+  } 
+  {
+     \frac{n_{i \cdot }n_{\cdot j}}{n}
+  }
+$$
+
 - [T、ANOVA、卡方檢驗和迴歸分別](https://www1.cgmh.org.tw/intr/intr2/ebmlink/doc/%E7%B5%B1%E8%A8%88%E6%95%99%E5%AD%B89411.pdf)
 
 ## 卡方
@@ -317,3 +328,6 @@ In linear least squares multiple regression with an estimated intercept term,   
 ARMA(p,q) 模型
 -	時間序列的自相關係數是拖尾的
 - 時間序列的偏相關係數是拖尾的
+
+AR（p）
+- 时间序列的偏相关系数是p阶截尾的
