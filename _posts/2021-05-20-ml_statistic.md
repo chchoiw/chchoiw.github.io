@@ -75,10 +75,10 @@ $$
 $$
 \sum \sum 
 \frac{ 
-  (n_{i,j}- \frac{n_{ i \dot}n_{\dot j} }{n})^2
+  (n_{i,j}- \frac{n_{ i \cdot}n_{\cdot j} }{n})^2
   } 
   {
-     \frac{n_{i \dot }n_{\dot j}}{n}
+     \frac{n_{i \cdot }n_{\cdot j}}{n}
   }
 $$
 
