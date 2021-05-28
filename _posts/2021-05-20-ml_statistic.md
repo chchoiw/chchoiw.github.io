@@ -75,10 +75,10 @@ $$
 $$
 \sum \sum 
 \frac{ 
-  (n_{i,j}- \frac{n_{i}n_{j} }{n})
+  (n_{i,j}- \frac{n_{ i \dot}n_{\dot j} }{n})
   } 
   {
-     \frac{n_{i}n_{j}}{n}
+     \frac{n_{i \dot }n_{\dot j}}{n}
   }
 $$
 
