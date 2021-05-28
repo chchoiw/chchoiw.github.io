@@ -75,11 +75,10 @@ $$
 $$
 \sum \sum 
 \frac{ 
-  n_{i,j}- 
-    n
+  n_{i,j}- \frac{n}{n}
   } 
   {
-    a
+    n_{i,j}- \frac{n}{n}
   }
 $$
 
