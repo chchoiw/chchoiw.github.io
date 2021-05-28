@@ -68,6 +68,16 @@ $$
 - 分子是非眾數的頻數和
 - 分母是全部眾數的頻數和尸
 
+
+## 列联表分析
+- [知乎參考](https://zhuanlan.zhihu.com/p/24552283)
+
+$$
+\sum \sum(\frac{ n_{i,j}- \frac{n_{i*}n_{*j}}{n} }{\frac{n_{i*} n_{*j}}/{n})
+
+$$
+
+
 # 一些基本的分佈
 ## 二次項分佈
 - [wiki](https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%A0%85%E5%88%86%E4%BD%88)
