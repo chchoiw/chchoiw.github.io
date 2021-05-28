@@ -73,8 +73,7 @@ $$
 - [知乎參考](https://zhuanlan.zhihu.com/p/24552283)
 
 $$
-\sum \sum \frac{( n_{i,j}- \frac{ n_{i\dot}n_{\dot j} }{n} )^2 } {\frac{n_{i\dot} n_{\dot j} }{n}
-
+\sum \sum \frac{ ( n_{i,j}- \frac{ n_{i\dot} n_{\dot j} }{n} )^2 } { \frac{ n_{i\dot} n_{\dot j} {n}}
 $$
 
 
