@@ -38,6 +38,9 @@ category:
 - 闭项集同时是频繁: 也就是它的支持度大于等于最小支持度阈值，那它就称为闭频繁项集
 
 
+# 分類
+- [ROC和AUC](https://easyai.tech/ai-definition/accuracy-precision-recall-f1-roc-auc/)
+
 # 数据挖掘
 - 分类
 - 回归
