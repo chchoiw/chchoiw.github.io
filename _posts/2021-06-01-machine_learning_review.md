@@ -45,3 +45,15 @@ category:
 #  岭回归和lasso回归
 
 - [講得很好的網頁](https://www.cnblogs.com/wuliytTaotao/p/10837533.html)
+
+
+# 聚類
+ 
+## 轮廓系数
+$s_i$接近1，则说明样本$i$聚类合理；
+$s_i$接近-1，则说明样本$i$更应该分类到另外的簇；
+若$s_i$近似为0，则说明样本$i$在两个簇的边界上。
+
+# SMOTE过采样算法
+
+- [參考](https://www.cnblogs.com/Determined22/p/5772538.html)
