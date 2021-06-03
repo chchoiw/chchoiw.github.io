@@ -40,6 +40,7 @@ category:
 
 # 分類
 - [ROC和AUC](https://easyai.tech/ai-definition/accuracy-precision-recall-f1-roc-auc/)
+- [ROC,KS曲線,Lift曲線和PR曲線](https://zhuanlan.zhihu.com/p/39435695)
 
 # 数据挖掘
 - 分类
@@ -53,9 +54,9 @@ category:
 # 聚類
  
 ## 轮廓系数
-$s_i$接近1，则说明样本$i$聚类合理；
-$s_i$接近-1，则说明样本$i$更应该分类到另外的簇；
-若$s_i$近似为0，则说明样本$i$在两个簇的边界上。
+- $s_i$接近1，则说明样本$i$聚类合理；
+- $s_i$接近-1，则说明样本$i$更应该分类到另外的簇；
+- 若$s_i$近似为0，则说明样本$i$在两个簇的边界上。
 
 # SMOTE过采样算法
 
