@@ -159,6 +159,9 @@ $$
 ## poisson分佈
 - [wiki](https://zh.wikipedia.org/wiki/%E5%8D%9C%E7%93%A6%E6%9D%BE%E5%88%86%E5%B8%83)
 - [二次分佈與Poisson](http://episte.math.ntu.edu.tw/articles/sm/sm_16_07_1/index.html)
+- [指數與Poisson](http://www.ruanyifeng.com/blog/2015/06/poisson-distribution.html)
+  
+
 $$
 \text{Pr}(X=k)=\frac{e^{-\lambda}\lambda^k}{k!}
 $$
