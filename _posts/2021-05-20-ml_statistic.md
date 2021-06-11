@@ -319,6 +319,8 @@ $$\text{Pr}(\text{置信距間})=1-\alpha$$
 # 線性迴歸和邏輯迴歸
 - [百度百科](https://baike.baidu.com/item/logistic%E5%9B%9E%E5%BD%92)
 - [知乎參考](https://zhuanlan.zhihu.com/p/28408516)
+- [一些例子](http://web.ncyu.edu.tw/~lanjc/lesson/C7/class/ch02-AN.pdf)
+
 
 - 多重線性識別方法：VIF、散點圖和相關係數矩陣
 - 多元線性迴歸中容易出現的問題是 正態分佈問題、異方差問題、異常值問題和共線性問題 

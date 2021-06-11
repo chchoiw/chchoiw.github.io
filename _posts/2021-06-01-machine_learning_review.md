@@ -12,7 +12,7 @@ category:
 # 前提
 
 - 這是根據[CDA](https://edu.cda.cn/my/course/2783)機器學習卷的問題和書本"統計學習方法"的一些基礎複習而記錄的一些點。
-
+- [簡單概念](https://buzzorange.com/techorange/2019/08/13/machine-learning-algorithm-collection/)
 
 # 決策樹
 ## ID3
@@ -37,15 +37,32 @@ category:
 - 閉項：它的直接超集的支持度计数都不等于它本身的支持度计数
 - 闭项集同时是频繁: 也就是它的支持度大于等于最小支持度阈值，那它就称为闭频繁项集
 
+##  防止決策樹OVERFITTING
+- [防止決策樹OVERFITTING](https://www.cnblogs.com/shayue/p/jue-ce-shu-fang-zhi-guo-ni-he.html)
+- 剪枝
+- 提前停止:限制樣樹的高度，分類指標決定要不要再走下一支線
+
 
 # 分類
 - [ROC和AUC](https://easyai.tech/ai-definition/accuracy-precision-recall-f1-roc-auc/)
 - [ROC,KS曲線,Lift曲線和PR曲線](https://zhuanlan.zhihu.com/p/39435695)
 
+
+# SVM
+
+
+- [Regularization](https://www.cnblogs.com/jianxinzhou/p/4083921.html):減少OVERFITTING，即減少變量的重要性。 
+- [Regularization 2](https://allen108108.github.io/blog/2019/10/22/L1%20,%20L2%20Regularization%20%E5%88%B0%E5%BA%95%E6%AD%A3%E5%89%87%E5%8C%96%E4%BA%86%E4%BB%80%E9%BA%BC%20_/)
+
 # 数据挖掘
 - 分类
 - 回归
 
+## 線性回歸和邏輯回歸的相同和分別
+- [線性回歸和邏輯回歸分別](https://tw.ec-europe.org/669098-what-is-the-difference-between-XGLTXI)
+  - 線性回歸假設因變量的高斯（或正態）分佈。 Logistic回歸假設因變量的二項式分佈。
+  - 線性回歸是關於在數據中擬合直線，而邏輯回歸是關於在數據中擬合曲線。
+  - 線性回歸是機器學習的回歸算法，而邏輯回歸是機器學習的分類算法。
 #  岭回归和lasso回归
 
 - [講得很好的網頁](https://www.cnblogs.com/wuliytTaotao/p/10837533.html)
@@ -61,3 +78,8 @@ category:
 # SMOTE过采样算法
 
 - [參考](https://www.cnblogs.com/Determined22/p/5772538.html)
+
+# Machine Learning 和 Deep Learning 分別
+- [知乎很好的解答](https://www.zhihu.com/question/41268372)
+
+
