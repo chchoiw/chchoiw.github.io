@@ -83,3 +83,13 @@ category:
 - [知乎很好的解答](https://www.zhihu.com/question/41268372)
 
 
+#  路徑BFS 與 DFS
+
+- [解釋很好的網站](https://zhuanlan.zhihu.com/p/346666812)
+
+# 數據取LOG
+
+- [知乎解答](https://www.zhihu.com/question/22012482)
+  - 1.We might want to see the data structure a little differently
+  - 2.We might want to reduce skew to assist in modeling 
+  - 3.We might want to straighten a nonlinear relationship in a scatterplot, so that we can model the relationship with simpler methods
