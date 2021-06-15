@@ -344,6 +344,7 @@ $$
 $$
 
 - [T、ANOVA、卡方檢驗和迴歸分別](https://www1.cgmh.org.tw/intr/intr2/ebmlink/doc/%E7%B5%B1%E8%A8%88%E6%95%99%E5%AD%B89411.pdf)
+- [12 種檢測與其例子](/images/machine_learning/twelveTest.pdf)
 
 ## 卡方
 
