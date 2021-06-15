@@ -75,6 +75,10 @@ category:
 - $s_i$接近-1，则说明样本$i$更应该分类到另外的簇；
 - 若$s_i$近似为0，则说明样本$i$在两个簇的边界上。
 
+##  Density-based clustering
+- [參考](https://cnls.lanl.gov/external/qbio2018/Slides/Cluster_Lab_June18/qBio_Clustering_Lecture.pdf)
+- non-globular cluster :非珠狀聚類
+
 # SMOTE过采样算法
 
 - [參考](https://www.cnblogs.com/Determined22/p/5772538.html)
