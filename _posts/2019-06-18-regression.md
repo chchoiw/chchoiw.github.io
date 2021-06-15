@@ -30,7 +30,7 @@ category:
 令 
 
 $$
-\hat y_i=\beta_0-\beta_i x_i
+\hat y_i=\beta_0+\beta_i x_i
 $$
 
 最小二法是選出$\beta_0,\beta_1$使得$Q$最小。
