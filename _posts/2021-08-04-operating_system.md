@@ -12,6 +12,7 @@ category:
 # 簡介
 - 這是我[自考](http://eea.gd.gov.cn/zxks/index.html)計算機科學與應用中操作系統(02326)的複習要點
 - 開始學習是使用[網上教學視頻](https://www.bilibili.com/video/BV1P4411z7cH?from=search&seid=3564874264541170958)
+- [複習視頻](https://www.bilibili.com/video/BV1ty4y177wU?p=1)
 - 完成課後習題(各章URL會在下面列舉)
 - 完成複習視頻(各章URL會在下面列舉)尸
 - [完成真題](https://drive.google.com/drive/folders/11Q28HN94vHKmIWU3VQynMXRGqgtvuueW?usp=sharing)
