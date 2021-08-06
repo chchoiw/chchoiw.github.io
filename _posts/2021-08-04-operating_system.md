@@ -46,6 +46,6 @@ category:
   
 
 ## 進程
-
+- 進程:<span style="color:blue">系統進行資源分配和調度的一個獨立單位</span>
 
 -- to be continuous
