@@ -111,7 +111,8 @@ category:
     B-->C[放進就緒隊列]
     ```
 
-
+## 線程
+- <span style="color:red">可以調度和分派的基本單位</span>
 
 
 
