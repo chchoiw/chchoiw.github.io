@@ -47,8 +47,8 @@ category:
   
 
 ## 進程
-- 進程:<span style="color:blue">系統進行資源分配和調度的一個獨立單位</span>
-- 進程是由<span style="color:blue">程序、數據和進程控制塊</span>組成
+- 進程:<span style="color:red">系統進行資源分配和調度的一個獨立單位</span>
+- 進程是由<span style="color:red">程序、數據和進程控制塊</span>組成
 - 進程和程序分別:程序是靜態,進程是動態
 - 
 
