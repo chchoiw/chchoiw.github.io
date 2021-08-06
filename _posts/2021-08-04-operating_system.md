@@ -89,7 +89,7 @@ category:
     ```mermaid
     graph LR
     A[找撤銷進程的PCB]-->B[進程所在隊列消去]
-    B-->C[𢸈銷它的子進程]
+    B-->C[撤銷它的子進程]
     C-->D[釋放占用的資源]
     D-->E[消去PCB]
     ```
