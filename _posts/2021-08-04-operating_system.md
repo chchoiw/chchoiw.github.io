@@ -210,4 +210,8 @@ $$
 \text{物理頁面號}=\text{字長}\times\text{字號}+\text{位號}
 $$
 
+- 轉換過程
+  - 始址寄存器和頁表長度寄存器
+
+
 -- to be continuous
