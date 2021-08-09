@@ -212,6 +212,10 @@ $$
 
 - 轉換過程
   - 始址寄存器和頁表長度寄存器
+  
+$$
+\text{物理地址}=\text{物理頁面號}\times\text{塊長}+\text{頁內地址}
+$$
 
 
 -- to be continuous
