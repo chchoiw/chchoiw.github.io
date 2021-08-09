@@ -166,5 +166,6 @@ category:
     - 基址寄存器和地址轉換綫路
 
 ##  分區管理
-- 
+- 固定分區:
+
 -- to be continuous
