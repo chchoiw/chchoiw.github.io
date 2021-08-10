@@ -248,7 +248,7 @@ $$
 graph LR
 P[頁號P]---D[頁內地址D]
 P--L{<頁表長度寄存器的值L}
-L--YES-->C[P'=B(頁表基址)+P]
+L--YES-->C[P'=B(頁表基址)#\plus P]
 C--查找-->T[TLB]
 T--組成-->G[T'|D]
 D-->G
