@@ -236,7 +236,7 @@ $$
 
 ```mermaid
 graph TD
-P[頁號P]--D[頁內地址D]
+P[頁號P]---D[頁內地址D]
 P--L{<頁表長度寄存器的值L}
 L--YES-->C[P'=B(頁表基址)+P]
 C--查找-->T[TLB]
