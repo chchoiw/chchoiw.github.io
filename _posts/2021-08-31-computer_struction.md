@@ -364,6 +364,12 @@ $$
 S(P_{n-1}\dotsP_0)=P_{n-1}\dots P_{n} P_{n-1}
 $$
 
+- 存儲分散
+
+$$
+m=2^{2p}+1 \quad \delta_1=2^p \quad \delta_2=1
+$$
+
 ## 累加和
 
 P（214）
