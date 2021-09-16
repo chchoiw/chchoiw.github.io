@@ -351,11 +351,18 @@ P280
 
 
 - 互連函數
-- shuffle
+- PM
   
   $$
-  S_{\pm i}(j)=j+2^i \quad \text{mod} N
+  \text{PM}_{\pm i}(j)=j+2^i \quad \text{mod} N
   $$
+
+
+- Shuffle
+
+$$
+S(P_{n-1}\dotsP_0)=P_{n-1}\dots P_{n} P_{n-1}
+$$
 
 ## 累加和
 
