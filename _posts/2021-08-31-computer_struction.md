@@ -361,13 +361,17 @@ P280
 - Shuffle
 
 $$
-S(P_{n-1}\dotsP_0)=P_{n-1}\dots P_{n} P_{n-1}
+S(P_{n-1}\dots P_0)=P_{n-1}\dots P_{n} P_{n-1}
 $$
 
 - 存儲分散
 
 $$
 m=2^{2p}+1 \quad \delta_1=2^p \quad \delta_2=1
+$$
+
+$$
+j=(a\delta_1+b\delta_2+c) \quad \text{mod} m \quad i=1
 $$
 
 ## 累加和
