@@ -374,6 +374,9 @@ $$
 j=(a\delta_1+b\delta_2+c) \quad \text{mod} \quad m \quad i=a
 $$
 
+
+其中, $A_{ab}$放在$A_{ij}$位置上。
+ 
 ## 累加和
 
 P（214）
