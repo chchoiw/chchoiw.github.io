@@ -371,12 +371,13 @@ $$
 
 
 $$
-\text{加速比}=\frac{\text{串聯用的時間}}{\text{流水用的時間}}
+\text{S_p}=\frac{\text{串聯用的時間}}{\text{流水用的時間}}
 $$
 
 
 $$
-\text{效率}=\frac{\text{設備使用的時間}}{\text{整個運行時間}}=\frac{\text{設備使用的時間}}{\text{時乘空的面積}}
+\text{效率}=\frac{\text{設備使用的時間}}{\text{整個運行時間}}=\frac{\text{設備使用的時間}}{\text{時乘空的面積}}=
+\frac{S_p}{\text{處理器數}}
 $$
 
 
