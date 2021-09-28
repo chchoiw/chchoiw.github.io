@@ -30,7 +30,7 @@ category:
 
 - 空隊列時
   
-```C
+```
 Q->font=head=Q->rear
 head->next=Null
 ```
