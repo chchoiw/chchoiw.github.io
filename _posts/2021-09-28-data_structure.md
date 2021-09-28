@@ -19,7 +19,13 @@ category:
 - 非空隊列時
   - font是出隊,非空隊列是有內容
   - rear是入隊,非空隊列是最後有內容的後一個位置
-
+- 元素個數:
+  
+  $$
+  n+\text{rear}-\text{font} \quad \text{(mod n)}
+  $$
+  
+  $n$為隊列長度
 ### 鏈隊列
 
 - 空隊列時
