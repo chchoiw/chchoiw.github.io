@@ -97,6 +97,7 @@ $$
 - 對稱
 
 $$  
+\Bigg\{
 \begin{array}{cccc}
 \mathbf 1_{N,1} & 0 & \dots & 0 \\
 0 & \mathbf 1_{N,1} & \dots & 0 \\
