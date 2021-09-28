@@ -61,13 +61,15 @@ head->next=Null
 
 # 第四章
 
+## 矩陣
+
 $$
 A_{m\times n}=
 \left[
 \begin{matrix}
-a_{00} &,\dots &,a_{0,n-1} \\
-\vdots &,\ddots &,\vdots \\
-a_{m-1,0}&,\dots &,a_{m-1,n-1}
+a_{00} &\dots &a_{0,n-1} \\
+\vdots &\ddots &\vdots \\
+a_{m-1,0}&\dots &a_{m-1,n-1}
 \end{matrix}
 \right]
 $$
