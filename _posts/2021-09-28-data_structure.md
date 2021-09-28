@@ -93,3 +93,16 @@ $$
   $$
     a_{00},a_{1,0},\dots,a_{m-1,n-1}
   $$
+
+- 對稱
+
+$$  
+\left{
+\begin{array}{cccc}
+\mathbf 1_{N,1} & 0 & \dots & 0 \\
+0 & \mathbf 1_{N,1} & \dots & 0 \\
+\vdots & \vdots &\ddots & \vdots \\
+0 & 0 & \dots & \mathbf 1_{N,1}
+\end{array}
+
+$$
