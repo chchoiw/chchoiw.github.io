@@ -99,10 +99,8 @@ $$
 $$  
 \Bigg\{
 \begin{array}{cccc}
-\mathbf 1_{N,1} & 0 & \dots & 0 \\
-0 & \mathbf 1_{N,1} & \dots & 0 \\
-\vdots & \vdots &\ddots & \vdots \\
-0 & 0 & \dots & \mathbf 1_{N,1}
+\frac{i(i+1)}{2}+j \quad & i\geq j  \\
+\frac{j(j+1)}{2}+i \quad & i<j
 \end{array}
 
 $$
