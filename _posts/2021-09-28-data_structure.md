@@ -102,5 +102,4 @@ $$
 \frac{i(i+1)}{2}+j \quad & i\geq j  \\
 \frac{j(j+1)}{2}+i \quad & i<j
 \end{array}
-
 $$
