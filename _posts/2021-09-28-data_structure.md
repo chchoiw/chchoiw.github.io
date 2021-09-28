@@ -55,3 +55,19 @@ head->next=Null
 - 總結兩個規則
 - ()集齊了,()內的符號退棧, 進棧到后綴中
 - 若下一個運算符號優先次序低於棧中, 先將運算棧中的全部運算符號退棧, 再將低優先次序的符號進棧
+
+
+
+
+# 第四章
+
+$$
+A_{m\times n}=
+\left[
+\begin{matrix}
+a_{00},\dots,a_{0,n-1} //
+\vdots,\ddots,\vdots //
+a_{m-1,0},\dots,a_{m-1,n-1}
+\end{matrix}
+\right]
+$$
