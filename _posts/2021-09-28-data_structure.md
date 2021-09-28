@@ -38,3 +38,6 @@ head->next=Null
 - 非空隊列時
   - font的指針指向head,但head沒有內容
   - rear的指針指向隊尾,p->rear->data是有內容的
+
+
+## 中綴表達和后綴表達
