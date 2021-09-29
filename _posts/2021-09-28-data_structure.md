@@ -97,7 +97,7 @@ $$
 - 對稱
 
 $$  
-\{
+\Bigg\{
 \begin{array}{cccc}
 \frac{i(i+1)}{2}+j \quad & i\geq j  \\
 \frac{j(j+1)}{2}+i \quad & i<j
@@ -134,7 +134,7 @@ $$
 
 $$
 \text{ltag}=
-\{
+\Bigg\{
 \begin{array}{cccc}
 0 \quad & \text{lchild指向左孩子}\\
 1 \quad & \text{lchild指向前趨}
@@ -143,7 +143,7 @@ $$
 
 $$
 \text{rtag}=
-\{
+\Bigg\{
 \begin{array}{cccc}
 0 \quad & \text{lchild指向右孩子}\\
 1 \quad & \text{lchild指向后繼}
