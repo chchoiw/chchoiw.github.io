@@ -97,7 +97,7 @@ $$
 - 對稱
 
 $$  
-\Bigg\{
+\left\{
 \begin{array}{cccc}
 \frac{i(i+1)}{2}+j \quad & i\geq j  \\
 \frac{j(j+1)}{2}+i \quad & i<j
@@ -130,5 +130,22 @@ $$
 
 - 線二叉樹
 
-|lchild       |  ltag     |   Data    | rtag      |rchild       |
+  |lchild       |  ltag     |   Data    | rtag      |rchild       |
 
+$$
+\text{ltag}
+\left\{
+\begin{array}{cccc}
+0 \quad & \text{lchild指向左孩子}
+1 \quad & \text{lchild指向前趨}
+\end{array}
+$$
+
+$$
+\text{rtag}
+\left\{
+\begin{array}{cccc}
+0 \quad & \text{lchild指向右孩子}
+1 \quad & \text{lchild指向后繼}
+\end{array}
+$$
