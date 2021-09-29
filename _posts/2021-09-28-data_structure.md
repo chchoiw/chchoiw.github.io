@@ -123,3 +123,12 @@ $$
 k=\lfloor\log n\rfloor +1  \quad \text{or} \quad k=\lceil \log (n+1) \rceil
 $$ 
 
+- 前序歷遍:根左右
+- 中序歷遍:左根右
+- 後序歷遍:左右根
+- 已知前序中序或中序後序確定二叉樹
+
+- 線二叉樹
+
+|lchild       |  ltag     |   Data    | rtag      |rchild       |
+
