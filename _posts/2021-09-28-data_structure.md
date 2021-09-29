@@ -133,19 +133,19 @@ $$
   |lchild       |  ltag     |   Data    | rtag      |rchild       |
 
 $$
-\text{ltag}
+\text{ltag}=
 \left\{
 \begin{array}{cccc}
-0 \quad & \text{lchild指向左孩子}
+0 \quad & \text{lchild指向左孩子}\\
 1 \quad & \text{lchild指向前趨}
 \end{array}
 $$
 
 $$
-\text{rtag}
+\text{rtag}=
 \left\{
 \begin{array}{cccc}
-0 \quad & \text{lchild指向右孩子}
+0 \quad & \text{lchild指向右孩子}\\
 1 \quad & \text{lchild指向后繼}
 \end{array}
 $$
