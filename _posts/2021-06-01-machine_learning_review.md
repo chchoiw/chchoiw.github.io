@@ -1,6 +1,6 @@
 ---
 title: '綜合機器學習複習'
-date: 2021-05-21
+date: 2021-06-21
 permalink: /posts/2021/06/ml_review/
 tags:
   - regression
