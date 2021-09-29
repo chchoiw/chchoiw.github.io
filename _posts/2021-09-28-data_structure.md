@@ -120,11 +120,6 @@ $$
 - 完全二叉樹:深度為$k$的二叉樹, 在前$k-1$層是滿樹,第$k$層的結點都在左邊。則有$n$結點的深度$k$
 
 $$
-k=\lfloor\log n\rfloor +1 
-$$
+k=\lfloor\log n\rfloor +1  \quad \text{or} \quad k=\lceil \log (n+1) \rceil
+$$ 
 
-或
-
-$$
-k=\lceil \log (n+1) \rceil
-$$
