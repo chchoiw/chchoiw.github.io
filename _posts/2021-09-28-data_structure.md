@@ -136,8 +136,8 @@ $$
 \text{ltag}=
 \Bigg\{
 \begin{array}{cccc}
-0 \quad & \text{lchild指向左孩子}\\
-1 \quad & \text{lchild指向前趨}
+&0 \quad &\text{lchild指向左孩子}\\
+&1 \quad &\text{lchild指向前趨}
 \end{array}
 $$
 
@@ -145,8 +145,8 @@ $$
 \text{rtag}=
 \Bigg\{
 \begin{array}{cccc}
-0 \quad & \text{lchild指向右孩子}\\
-1 \quad & \text{lchild指向后繼}
+&0 \quad &\text{rchild指向右孩子}\\
+&1 \quad & text{rchild指向后繼}
 \end{array}
 $$
 
