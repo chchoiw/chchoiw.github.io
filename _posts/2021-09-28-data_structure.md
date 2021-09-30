@@ -146,7 +146,7 @@ $$
 \Bigg\{
 \begin{array}{cccc}
 &0 \quad &\text{rchild指向右孩子}\\
-&1 \quad & text{rchild指向后繼}
+&1 \quad &\text{rchild指向后繼}
 \end{array}
 $$
 
@@ -183,3 +183,5 @@ $$
 ## 最小生成樹
 - 極小連通子圖:若在圖中去掉一邊,會變成非連通。若加一邊，則有回路
 
+### Prim算法
+- $O(n^2)$
