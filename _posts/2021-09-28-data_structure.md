@@ -275,16 +275,16 @@ $$
 - 快速排序
 - $B=a_1$為基準
 - $i=1,j=n$
-- for some biggest j_b $a_{j_b}<B$ for some biggest $j$, 
+- for some biggest $j_b$ $a_{j_b}<B$ for some biggest $j$, 
   
-  $$a_i=a_j \quad j=j_{b} \quad i=i+1$$
+  $$a_i=a_{j_b} \quad j=j_{b} \quad i=i+1$$
 
-- for some smallest i_s $a_{i_s}>B$ for some smallest $i$, 
+- for some smallest $i_s$ $a_{i_s}>B$ for some smallest $i$, 
   
-  $$a_j=a_i \quad i=i_{s} \quad j=j+1$$
+  $$a_j=a_{i_s} \quad i=i_{s} \quad j=j+1$$
 
 - 不穩定的，因為$i,j$互換數值
-- 平均時間$O(n \log_2 n)$,排序已為有序時，第一趟只固定$a_1$的位置，但還有$a_2,\dots \a_{n-1}$,所以時間$O(n^2)$
+- 平均時間$O(n \log_2 n)$,排序已為有序時，第一趟只固定$a_1$的位置，但還有$a_2,\dots a_{n-1}$,所以時間$O(n^2)$
 - 空間時間$O(n \log_2 n)$，棧最大深度為$\lceil n \log_2 n \rceil+1$
 
 ## 選擇排序
