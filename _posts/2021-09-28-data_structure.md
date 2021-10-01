@@ -281,3 +281,7 @@ $$
 - for some smallest i_s $a_{i_s}>B$ for some smallest $i$, 
   
   $$a_j=a_i \quad i=i_{s} \quad j=j+1$$
+
+- 不穩定的，因為$i,j$互換數值
+- 平均時間$O(n \log_2 n)$,排序已為有序時，時間$O(n^2)$
+- 空間時間$O(n \log_2 n)$，棧最大深度為$\lceil n \log_2 n \rceil+1$
