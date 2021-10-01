@@ -272,3 +272,12 @@ $$
   - 最好的情況$O(n)$，最壞的情況$O(n^2)$,平均$O(n^2)$
   - 穩定的
 - 快速排序
+- $B=a_1$為基準
+- $i=1,j=n$
+- for some biggest j_b $a_{j_b}<B$ for some biggest $j$, 
+  
+  $$a_i=a_j \quad j=j_{b} \quad i=i+1$$
+
+- for some smallest i_s $a_{i_s}>B$ for some smallest $i$, 
+  
+  $$a_j=a_i \quad i=i_{s} \quad j=j+1$$
