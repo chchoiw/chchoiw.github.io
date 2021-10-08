@@ -337,6 +337,6 @@ $$
   - 直接插入、直接選擇、冒泡、希爾和堆排$O(1)$
 
 
-<div style="text-align:center" id="image1"><img src="/images/02331/sort.jpg" /></div>
+<div style="text-align:center" id="image1"><img src="/images/02331/sort.png" /></div>
 
 
