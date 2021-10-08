@@ -36,6 +36,7 @@ category:
   - [歸並排序](#歸並排序)
   - [分配排序](#分配排序)
   - [內部排序比較](#內部排序比較)
+- [第八章](#第八章)
 
 
 # 第一章
@@ -339,4 +340,4 @@ $$
 
 <div style="text-align:center" id="image1"><img src="/images/02331/sort.png" /></div>
 
-
+# 第八章
