@@ -40,7 +40,8 @@ category:
 
 # 第一章
 
-
+- 算法滿足輸入、輸出、有窮性、確定性和可行性
+- 
 
 # 第三章
 
@@ -111,7 +112,7 @@ $$
 
 $$
 A=
-[[a_{00},...,a_{1,n-1}],...[a_{m-1,0},...,a_{m-1,n-1}]]
+[[a_{00},...,a{1,n-1}],...[a_{m-1,0},...,a_{m-1,n-1}]]
 $$
 
 
@@ -335,11 +336,3 @@ $$
   - 快速$O(\log_2 n))$
   - 歸並$O(n)$
   - 直接插入、直接選擇、冒泡、希爾和堆排$O(1)$
-
-
-<div style="text-align:center" id="image1"><img src="/images/02331/sort.png" /></div>
-
-- [圖片來源](https://www.runoob.com/w3cnote/ten-sorting-algorithm.html)
-
-
-
