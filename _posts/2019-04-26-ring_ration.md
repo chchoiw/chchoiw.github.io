@@ -1,5 +1,5 @@
 ---
-title: 'Ring Ration'
+title: '澳門統計局-知識教室(Ring Ration)'
 date: 2019-04-26
 permalink: /posts/2019/04/ring_ration/
 tags:
