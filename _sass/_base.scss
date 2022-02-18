@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     color: $text-color;
-    font-family: "Fira Code Regular","JetLink","HanSans",$global-font-family;
+    font-family: $global-font-family;
     line-height: 1.5;
   
     &.overflow--hidden {
@@ -21,7 +21,7 @@
   h1, h2, h3, h4, h5, h6 {
     margin: 2em 0 0.5em;
     line-height: 1.2;
-    font-family: "Fira Code Regular","HanSans",$header-font-family;
+    font-family: $header-font-family;
     // font-weight: bold;
     color:#007C6E;
   }
