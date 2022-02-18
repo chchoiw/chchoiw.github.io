@@ -13,3 +13,15 @@
 //   font-weight: normal;
 //   font-style: normal;
 // }
+
+
+@font-face {
+    font-family: "Fira Code Regular";
+    src: url("/images/FiraCode-Regular.woff2") format("woff2"),
+         url("/images/FiraCode-Regular.woff") format("woff");
+  }
+  
+@font-face {
+font-family: "JetLink";
+src: url("/images/JetLink_MediumRound.woff2") format("woff2");
+}
