@@ -120,7 +120,7 @@
   /* links */
   
   a {
-    font-family: "Fira Code Regular","HanSans",$monospace;
+    font-family: $sans-serif,$monospace;
     &:focus {
       @extend %tab-focus;
     }
@@ -134,7 +134,7 @@
   /* code */
   
   tt, code, kbd, samp, pre {
-    font-family: "Fira Code Regular","HanSans",$monospace;
+    font-family: $sans-serif,$monospace;
     font-size:12px;
   }
   
