@@ -23,42 +23,40 @@
     line-height: 1.2;
     font-family: $header-font-family;
     // font-weight: bold;
-    color:#007C6E;
+    color:#5C6BC0;
   }
   
   h1 {
     margin-top: 0;
     font-size: $type-size-2;
-    color:#68217a;
-    color:#002d7c;
+
+    color:#1A237E;
   }
   
   h2 {
     font-size: $type-size-3;
-    // color:#237893;
-    // color:#0062a3;
-    color:#68217a;
+    color:#283593;
   }
   
   h3 {
     font-size: $type-size-4;
     // color:#68217a;
-    color:#237893;
+    color:#303F9F;
   }
   
   h4 {
     font-size: $type-size-5;
-    // color:#87D37C;
+    color:#3949AB;
   }
   
   h5 {
     font-size: $type-size-5;
-    // color:#87D37C;
+    color:#3F51B5;
   }
   
   h6 {
     font-size: $type-size-5;
-    // color:#87D37C;
+    color:#5C6BC0;
   }
   
   small, .small {
