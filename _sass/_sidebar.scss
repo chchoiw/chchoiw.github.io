@@ -21,9 +21,9 @@
     }
   }
 
-  // @include breakpoint($x-large) {
-  //   padding-right: 0;
-  // }
+  @include breakpoint($x-large) {
+    padding-right: 0;
+  }
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
@@ -48,7 +48,7 @@
 .sidebar__right {
   margin-bottom: 1em;
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     position: relative;
     float: right;
     width: $right-sidebar-width-narrow;
@@ -71,7 +71,7 @@
   width: 36px;
   height: 36px;
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     display: block;
     width: auto;
     height: auto;
@@ -81,7 +81,7 @@
     max-width: 110px;
     border-radius: 50%;
 
-    @include breakpoint($large) {
+    @include breakpoint($xx-large) {
       padding: 5px;
       border: 1px solid $border-color;
     }
@@ -95,7 +95,7 @@
   padding-right: 25px;
   line-height: 1;
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     display: block;
     width: 100%;
     padding-left: 0;
@@ -106,7 +106,7 @@
 .author__name {
   margin: 0;
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -119,7 +119,7 @@
 .author__bio {
   margin: 0;
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -140,14 +140,14 @@
     }
   }
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     display: block;
   }
 
   button {
     margin-bottom: 0;
 
-    @include breakpoint($large) {
+    @include breakpoint($xx-large) {
       display: none;
     }
   }
@@ -167,7 +167,7 @@
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
 
-  @include breakpoint($large) {
+  @include breakpoint($xx-large) {
     display: block;
     position: relative;
     margin: 0;
