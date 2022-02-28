@@ -93,6 +93,13 @@ category:
   - 缺點:效率考慮, 用戶只能通過微內核𡧟互通信, 不能提供好的效率
 - 助記: 曾為整體
 
+
+# 處理器
+
+- 處理器一般由<span color="red">運算器</span>、<span color="red">控制器</span>、一系列的<span color="red">寄存器</span>和<span color="red">高速緩存</span>
+- 運算器實現指令的<span color="red">算術</span>和<span color="red">邏輯</span>
+- 寄存器的類型
+
 # 進程與線程
 
 ## 程序
