@@ -96,8 +96,8 @@ category:
 
 # 處理器
 
-- 處理器一般由<span color="red">運算器</span>、<span color="red">控制器</span>、一系列的<span color="red">寄存器</span>和<span color="red">高速緩存</span>
-- 運算器實現指令的<span color="red">算術</span>和<span color="red">邏輯</span>
+- 處理器一般由<span style="color:red">運算器</span>、<span style="color:red">控制器</span>、一系列的<span style="color:red">寄存器</span>和<span style="color:red">高速緩存</span>
+- 運算器實現指令的<span style="color:red">算術</span>和<span style="color:red">邏輯</span>
 - 寄存器的類型
   - 程序計數器: 取出的指令地址
   - 指令寄存器: 包含了最近取出的指令
@@ -107,8 +107,8 @@ category:
 - 非特權指令: 操作系統和普通用戶都能使用
 - 管態: 操作系統管理程序運行的狀態, 具有較高的特權級別, 又稱內核態、特權態
 - 目態: 用戶程序運行時的狀態, 具有較低的特權級別, 又稱為用戶態和普通態
-- 目態到管態: 通過<span color="red">中斷</span>,程序狀態字標志為管態
-- 管態: 修改<span color="red">程序狀態字(PSW)</span>實現
+- 目態到管態: 通過<span style="color:red">中斷</span>,程序狀態字標志為管態
+- 管態: 修改<span style="color:red">程序狀態字(PSW)</span>實現
 
 # 進程與線程
 
