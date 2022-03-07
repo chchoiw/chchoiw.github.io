@@ -16,7 +16,7 @@ category:
 - [完成真題](https://drive.google.com/drive/folders/11Q28HN94vHKmIWU3VQynMXRGqgtvuueW?usp=sharing)
   
 
-# 操作系統概論
+# 第一章 操作系統概論
 - 操作系統是一種複雜的系統軟件，是不同程序代碼、數據結構、數據初始化文件的集合，可執行
 - 操作系統
 
@@ -96,7 +96,7 @@ category:
 
 
 
-# 操作系統運行環境
+# 第二章 操作系統運行環境
 ## 處理器
 
 - 處理器一般由<span style="color:red">運算器</span>、<span style="color:red">控制器</span>、一系列的<span style="color:red">寄存器</span>和<span style="color:red">高速緩存</span>
@@ -117,7 +117,7 @@ category:
 - 目態到管態: 通過<span style="color:red">中斷</span>,程序狀態字標志為管態
 - 管態: 修改<span style="color:red">程序狀態字(PSW)</span>實現
 
-# 進程與線程
+# 第三章 進程與線程
 
 ## 程序
 - 順序性
@@ -233,7 +233,7 @@ category:
   - 時鐘管理
 
 
-# 存儲管理
+# 第五章 存儲管理
 
 - 由快到慢
   - 寄存器
