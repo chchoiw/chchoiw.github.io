@@ -161,13 +161,14 @@ category:
 
 
 ## 中斷機制
-- 中斷是由外部事件弔發的
+- <span style="color:red">硬件中斷裝置</span>和<span style="color:red">中斷處理程序</span>
+- <span style="color:red">中斷是由外部事件引發的</span>
   - 時鐘中斷
   - 輸入輸出中斷
   - 控制台中斷
   - 硬件固障中斷
 
-- 異常是由正在執行的指令引發的
+- <span style="color:red">異常是由正在執行的指令引發的</span>
   - 程序性中斷
   - 訪管指令異常
   
