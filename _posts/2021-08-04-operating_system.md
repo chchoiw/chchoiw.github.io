@@ -68,6 +68,11 @@ category:
   - 內核、硬件、系統調用接口和UNIX命令和庫
 - Linux
   - 系統資源、內核、Shell、用戶應用程序和文件系統
+- Android
+  - Android應用程序
+  - Android應用框架
+  - C,C++本地庫和Android運行時環境
+  - Lunix內核 
 
 ## 操作系統分類
 
