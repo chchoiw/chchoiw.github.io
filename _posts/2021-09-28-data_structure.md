@@ -53,8 +53,8 @@ category:
 ## 棧
 - 先進後出
 - $a_1$,$a_2,\dots,a_n$
-- TOP:$a_n$
-- BOTTOM:$a_1$
+- 棧頂TOP:$a_n$
+- 棧底BOTTOM:$a_1$
 - 出的在棧頂的元素$a_n$
 - 進棧: S.top+1
 - 退棧: S.top-1
