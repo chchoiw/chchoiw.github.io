@@ -219,6 +219,9 @@ $$
   - A的第一個元素,head(A)=a
   - A刪除第一個元素的廣義表,tail(A)=((b,c,d),e,(f,g))
 - 通常采用鏈式存儲結構, 可用一個結點表示
+  - tag=0,表示為子表,用slink
+  - tag=1,表示為結點,用data
+  - link為下一個元素的指針
 
   |tag|data/slink     | link     |
 
