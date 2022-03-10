@@ -158,10 +158,10 @@ $$
   a_{i,j}=a_{00}+(m*j+i)*d
   $$
 
-- 對稱(存,$n=m$), 只存$\frac{n*(n+1)}{2}$
+- 對稱(存,$n=m$), 只存$\frac{n*(n+1)}{2}$,在$a_{i,j}$順序來存, 它在$k$的位置
 
 $$  
-a_{i,j}=\Bigg\{
+k=\Bigg\{
 \begin{array}{cccc}
 \frac{i(i+1)}{2}+j \quad & i\geq j  &\quad (\text{lower triangle})\\
 \frac{j(j+1)}{2}+i \quad & i<j &\quad (\text{upper triangle})
