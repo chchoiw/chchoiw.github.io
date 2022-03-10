@@ -158,10 +158,10 @@ $$
   a_{i,j}=a_{00}+(m*j+i)*d
   $$
 
-- 對稱
+- 對稱(存,$n=m$), 只存$\frac{n*(n+1)}{2}$
 
 $$  
-\Bigg\{
+a_{i,j}=\Bigg\{
 \begin{array}{cccc}
 \frac{i(i+1)}{2}+j \quad & i\geq j  \\
 \frac{j(j+1)}{2}+i \quad & i<j
