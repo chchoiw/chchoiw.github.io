@@ -168,6 +168,27 @@ k=\Bigg\{
 \end{array}
 $$
 
+- 下三角矩陣, 即上三角(不包括對角綫)為常數
+
+$$  
+k=\Bigg\{
+\begin{array}{cccc}
+\frac{i(i+1)}{2}+j \quad & i\geq j  \\
+\frac{n(n+1)}{2} \quad & i<j 
+\end{array}
+$$
+
+- 上三角矩陣, 即下三角(不包括對角綫)為常數
+
+$$  
+k=\Bigg\{
+\begin{array}{cccc}
+\frac{i(2n-i+1)}{2}+j-i \quad & i\leq j  \\
+\frac{n(n+1)}{2} \quad & i>j 
+\end{array}
+$$
+
+- 稀疏矩陣
 
 # 第五章
 
