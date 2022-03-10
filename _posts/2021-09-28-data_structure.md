@@ -55,7 +55,8 @@ category:
 - $a_1$,$a_2,\dots,a_n$
 - 棧頂TOP:$a_n$
 - 棧底BOTTOM:$a_1$
-- 出的在棧頂的元素$a_n$
+- 入出的也在棧頂
+- 出的元素順序$a_n,\dots,a_1$
 - 進棧: S.top+1
 - 退棧: S.top-1
 - 棧空: S.top=-1
