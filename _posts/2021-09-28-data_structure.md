@@ -55,6 +55,11 @@ category:
 - TOP:$a_n$
 - BOTTOM:$a_1$
 - 出的在棧頂的元素$a_n$
+- 進棧: S.top+1
+- 退棧: S.top-1
+- 棧空: S.top=-1
+- 棧滿: S.top=stackSize-1
+
 
 ## 隊列
 
