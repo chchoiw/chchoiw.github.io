@@ -163,8 +163,8 @@ $$
 $$  
 a_{i,j}=\Bigg\{
 \begin{array}{cccc}
-\frac{i(i+1)}{2}+j \quad & i\geq j  \\
-\frac{j(j+1)}{2}+i \quad & i<j
+\frac{i(i+1)}{2}+j \quad & i\geq j  &\quad (\text{upper triangle})\\
+\frac{j(j+1)}{2}+i \quad & i<j &\quad (\text{upper triangle})
 \end{array}
 $$
 
