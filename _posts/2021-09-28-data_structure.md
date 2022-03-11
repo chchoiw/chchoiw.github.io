@@ -456,3 +456,4 @@ $$
 - 所有葉結點都在同一層上,並且不帶信息
 - 關鍵字個數 $\lceil \frac{m}{2} \rceil-1 \leq n \leq m-1$
 - 除結點外, 結點有子樹$\lceil \frac{m}{2} \rceil \leq n \leq m$
+- 
