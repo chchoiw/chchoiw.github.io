@@ -425,3 +425,5 @@ $$
   - 快速$O(\log_2 n)$
   - 歸並$O(n)$
   - 直接插入、直接選擇、冒泡、希爾和堆排$O(1)$
+
+- [link](https://www.itread01.com/content/1546104976.html)
