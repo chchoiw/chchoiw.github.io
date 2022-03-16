@@ -484,6 +484,8 @@ $$
 
 # 考試常見名詞
 - 數據項是具有獨立含義的<span style="color:red">最小</span>標識單位
+- 算法滿足輸入、輸出、有窮性、確定性和<span style="color:red">可行性</span>
+- 數據的四種基本存儲方法是<span style="color:red">順序,鏈接,索引和散列存儲</span>
 - <span style="color:red">遞歸函數</span>
 - <span style="color:red">遞歸終止條件</span>
 - <span style="color:red">有向無環圖</span>
