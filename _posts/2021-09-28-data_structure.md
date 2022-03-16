@@ -514,3 +514,4 @@ $$
 - 二分查找是<span style="color:red">順序查找結構, 按關鍵字有序</span>
 - 分塊查找, 先查<span style="color:red">索引表</span>,再找相應的<span style="color:red">塊</span>
 - 平均查找長度與結點無關的查找方法是<span style="color:red">散列查找</span>
+- 三種查找方法: <span style="color:red">樹表, 順序和散列</span>
