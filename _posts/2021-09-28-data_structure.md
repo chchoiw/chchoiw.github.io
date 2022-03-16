@@ -489,6 +489,13 @@ $$
 - <span style="color:red">裝填因子</span>
 - <span style="color:red">儲存地址</span>
 - <span style="color:red">帶權路徑長度</span>
-- <span style="color:red">生成樹</span>
+- 最小<span style="color:red">生成樹</span>
+- 極小<span style="color:red">連通圖</span>
 - <span style="color:red">順序存儲</span>
 - <span style="color:red">基數大小</span>
+- 分塊查找<span style="color:red">索引查找</span>
+- 數據的運算,即對數據元素施加的操作, 是定義在數據的<span style="color:red">邏輯</span>結構
+- <span style="color:red">三元組表</span>
+- <span style="color:red">索引查找</span>
+- 線索取代<span style="color:red">空指針</span>
+- 無序數組用<span style="color:red">順序查找</span>
