@@ -483,6 +483,7 @@ $$
 - 所有非終結點可看成索引部分, 結點中僅含其子樹中最大或最小的關鍵字
 
 # 考試常見名詞
+- 數據項是具有獨立含義的<span style="color:red">最小</span>標識單位
 - <span style="color:red">遞歸函數</span>
 - <span style="color:red">遞歸終止條件</span>
 - <span style="color:red">有向無環圖</span>
@@ -502,3 +503,4 @@ $$
 - 無序數組用<span style="color:red">順序查找</span>
 - 數據邏輯結構是從邏輯關係上描述數據,它與數據的存儲<span style="color:red">無關</span>
 - 散列存儲,解決沖突方法有<span style="color:red">開放地址法</span>和<span style="color:red">拉鏈法</span>
+- 頂點表示活動,邊表示活動間的先後關係,稱<span style="color:red">頂點活動網(AOV)</span>
