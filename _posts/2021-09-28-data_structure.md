@@ -486,11 +486,12 @@ $$
 - 數據項是具有獨立含義的<span style="color:red">最小</span>標識單位
 - 算法滿足輸入、輸出、有窮性、確定性和<span style="color:red">可行性</span>
 - 數據的四種基本存儲方法是<span style="color:red">順序,鏈接,索引和散列存儲</span>
+- 數據結構是數據的<span style="color:red">邏輯結構和儲存結構</span>
 - <span style="color:red">遞歸函數</span>
 - <span style="color:red">遞歸終止條件</span>
 - <span style="color:red">有向無環圖</span>
 - <span style="color:red">父結點或兄弟</span>
-- <span style="color:red">裝填因子</span>
+- <span style="color:red">裝填因子</span>,大則發生沖突機率大
 - <span style="color:red">儲存地址</span>
 - <span style="color:red">帶權路徑長度</span>
 - 最小<span style="color:red">生成樹</span>
@@ -506,3 +507,10 @@ $$
 - 數據邏輯結構是從邏輯關係上描述數據,它與數據的存儲<span style="color:red">無關</span>
 - 散列存儲,解決沖突方法有<span style="color:red">開放地址法</span>和<span style="color:red">拉鏈法</span>
 - 頂點表示活動,邊表示活動間的先後關係,稱<span style="color:red">頂點活動網(AOV)</span>
+- 借助一個棧來實現圖的遍歷遍算法是<span style="color:red">深度遍歷</span>
+- 若有向圖中存在排序序列,則一定不存在<span style="color:red">回路</span>
+- 最短路徑<span style="color:red">Dijkstria</span>,最小生成樹<span style="color:red">Prim,Kruskal</span>
+- 在<span style="color:red">隊尾</span>加元素,在<span style="color:red">隊頭</span>減元素
+- 二分查找是<span style="color:red">順序查找結構, 按關鍵字有序</span>
+- 分塊查找, 先查<span style="color:red">索引表</span>,再找相應的<span style="color:red">塊</span>
+- 平均查找長度與結點無關的查找方法是<span style="color:red">散列查找</span>
