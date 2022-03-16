@@ -409,7 +409,7 @@ $$
   - 從第一棵樹中選出根，其餘再組成最大堆，再取根
   - 樹的排序的時間$O(n \log_2 n)$，並$n-1$棵樹，所以時間$O(n \log_2 n)$
   - 不穩定
-  - 小根堆 $k_{2i+1},k_{2i+2}\geq k_i \quad i\leq \lceil n \rceil$,降序
+  - 小根堆 $k_{2i+1},k_{2i+2}\geq k_i \quad i\leq \lceil \frac{n}{2} \rceil$,降序
   - 大根堆，升序
 
 
