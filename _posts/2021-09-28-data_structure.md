@@ -499,3 +499,4 @@ $$
 - <span style="color:red">索引查找</span>
 - 線索取代<span style="color:red">空指針</span>
 - 無序數組用<span style="color:red">順序查找</span>
+- 數據邏輯結構是從邏輯關係上描述數據,它與數據的存儲<span style="color:red">無關</span>
