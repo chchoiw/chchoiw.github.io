@@ -41,6 +41,7 @@ category:
 - [第八章 查找](#第八章-查找)
   - [B樹](#b樹)
   - [B+樹](#b樹-1)
+- [考試常見名詞](#考試常見名詞)
 
 
 # 第一章
@@ -480,3 +481,14 @@ $$
 - 有$k$個孩子就有$k$個關鍵字
 - 葉結點中包含了關鍵字的信息及指向相應的指針,且葉子結點本身依照閞鍵字的大小自小到大順序鏈接
 - 所有非終結點可看成索引部分, 結點中僅含其子樹中最大或最小的關鍵字
+
+# 考試常見名詞
+- <span style="color:red">遞歸函數</span>
+- <span style="color:red">有向無環圖</span>
+- <span style="color:red">父結點或兄弟</span>
+- <span style="color:red">裝填因子</span>
+- <span style="color:red">儲存地址</span>
+- <span style="color:red">帶權路徑長度</span>
+- <span style="color:red">生成樹</span>
+- <span style="color:red">順序存儲</span>
+- <span style="color:red">基數大小</span>
