@@ -428,9 +428,10 @@ $$
 
 ## CRAY-1
 
-1. $V_3 \leftarrow $存儲器
-2. $V_2 \leftarrow V_0+V_1 : B+C \rightarrow K$
-3. $V_4 \leftarrow V_2\times V_3 : K\times A \rightarrow D$
+P.207
+1. $V_3 \leftarrow $存儲器, 時間$6T$
+2. $V_2 \leftarrow V_0+V_1 : B+C \rightarrow K$,, 時間$6T$
+3. $V_4 \leftarrow V_2\times V_3 : K\times A \rightarrow D$,, 時間$7T$
 
 ## 脈動陣列
 
