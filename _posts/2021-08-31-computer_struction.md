@@ -51,6 +51,7 @@ category:
   - [超流水線](#超流水線)
   - [全局性相關](#全局性相關)
 - [第六章](#第六章)
+  - [CRAY-1](#cray-1)
   - [脈動陣列](#脈動陣列)
   - [簡述SIMD系統的互連網絡的設計目標](#簡述simd系統的互連網絡的設計目標)
   - [互連函數](#互連函數)
@@ -424,6 +425,12 @@ $$
 4. 加速短循環程序的處理
 
 # 第六章
+
+## CRAY-1
+
+1. $V_3 \leftarrow $存儲器
+2. $V_2 \leftarrow V_0+V_1 : B+C \rightarrow K$
+3. $V_4 \leftarrow V_2\times V_3 : K\times A \rightarrow D$
 
 ## 脈動陣列
 
