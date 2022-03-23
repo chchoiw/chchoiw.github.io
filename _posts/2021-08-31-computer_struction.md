@@ -446,6 +446,13 @@ $$
 
 
 - 互連函數
+
+- Cube
+
+$$
+C_i(P_{n-1}P_i \dots P_0)=P_{n-1}\bar{P_i}\dots P_0
+$$
+
 - PM
   
   $$
