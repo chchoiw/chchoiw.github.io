@@ -467,16 +467,19 @@ $$
 
 ##  存儲分散
 
-- P219
+- P229
 
 $$
-m=2^{2p}+1 \quad \delta_1=2^p \quad \delta_2=1
+m=2^{2p}+1, \quad \delta_1=2^p, \quad \delta_2=1
 $$
 
 $$
-j=(a\delta_1+b\delta_2+c) \quad \text{mod} \quad m \quad i=a
+j=(a\delta_1+b\delta_2+c) \quad \text{mod} \quad m 
 $$
 
+$$
+i=a
+$$
 
 其中, $A_{ab}$放在$A_{ij}$位置上,$C$是$A_{00}$所在體號地址，通常為0。
 
