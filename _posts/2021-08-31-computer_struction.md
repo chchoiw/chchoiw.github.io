@@ -449,19 +449,25 @@ $$
 - PM
   
   $$
-  \text{PM}_{\pm i}(j)=j+2^i \quad \text{mod} N
+  \text{PM}_{\pm i}(j)=j\pm 2^i \quad \text{mod} \quad N
   $$
 
 
 - Shuffle
 
 $$
-S(P_{n-1}\dots P_0)=P_{n-1}\dots P_{n} P_{n-1}
+S(P_{n-1}\dots P_0)=P_{n-2}\dots P_{0} P_{n-1}
+$$
+
+- Butterfly
+
+$$
+B(P_{n-1}\dots P_0)=P_{0}P_{n-2}\dots P_{1} P_{n-1}
 $$
 
 ##  存儲分散
 
-- P29
+- P219
 
 $$
 m=2^{2p}+1 \quad \delta_1=2^p \quad \delta_2=1
