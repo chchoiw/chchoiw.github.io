@@ -480,17 +480,17 @@ P（214）
 
 1. 放置全部$PE_i$為活躍狀態，$0\leq i \leq 15$,
 
-2. 放置全部$A(I)$從$PEM_i$的$\alpha$單元讀到對應$PE_i$的累加寄存器$RCA_i$中，$0 \leq i \leq 15 $
+2. 放置全部$A(I)$從$PEM_i$的$\alpha$單元讀到對應$PE_i$的累加寄存器$RGA_i$中，$0 \leq i \leq 15 $
 
 3. 令$K=0$；
 
-4. 將全部$PE_i$的$RCA_i$，轉輸到傳送寄存器$RGR_i$，$0\leq i \leq 15$
+4. 將全部$PE_i$的$RGA_i$，轉輸到傳送寄存器$RGR_i$，$0\leq i \leq 15$
 
-5. 將全部$PE_i$，$RGR_i$經過互連網絡各下傳$2_K$步距，$0\leq i \leq 15$
+5. 將全部$PE_i$，$RGR_i$經過互連網絡各下傳$2^K$步距，$0\leq i \leq 15$
 
 6. 令$j=2^K-1$,放置$PE_0$-$PE_j$為不活躍狀態；
 
-7. 處理活躍狀態的所有PE，執行$（RGA_i）：=（RGA_i）+（RGR_i)$，$j\leq i \leq15$
+7. 處理活躍狀態的所有$PE_i$，執行$（RGA_i）：=（RGA_i）+（RGR_i)$，$j\leq i \leq15$
 
 8. $K:=K+1$
 
