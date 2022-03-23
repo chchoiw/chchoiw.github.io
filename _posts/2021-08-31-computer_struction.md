@@ -450,7 +450,7 @@ $$
 - Cube
 
 $$
-C_i(P_{n-1}P_i \dots P_0)=P_{n-1}\bar{P_i}\dots P_0
+C_i(P_{n-1}\dots P_i \dots P_0)=P_{n-1}\dots\bar{P_i}\dots P_0
 $$
 
 - PM
