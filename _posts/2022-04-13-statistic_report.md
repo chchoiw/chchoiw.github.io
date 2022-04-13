@@ -1,8 +1,8 @@
 
 ---
 title: '統計報告字句'
-date: 2021-09-28
-permalink: /posts/2021/09/02331/
+date: 2022-04-13
+permalink: /posts/2022/04/statistic_report/
 tags:
   - 數據結構
 category:
