@@ -110,3 +110,4 @@ category:
   - 旅遊增加值,旅遊相關行業直接向旅客提供商品/服務而為本地經濟帶來的增加價值。
 - [旅遊物價指數基期修訂](https://www.dsec.gov.mo/getAttachment/482ada6d-1884-4c29-9170-3b4c6b949f40/C_RIPT_PUB_2020_Y.aspx)
   -  看公式和它的貢獻
+- [消費物價指數](https://www.dsec.gov.mo/getAttachment/7153a142-302a-4172-bdf9-58c796e99351/C_IPC_FR_2022_M02.aspx)
