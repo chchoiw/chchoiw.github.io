@@ -135,4 +135,4 @@ category:
   - 2017/2018住戶收支調查採用「大折刀連續重疊抽樣法」Jackknife Repeated Replications (JRR)估計方差。
   - 變異係數
   - [年齡中位數](https://www.dsec.gov.mo/getAttachment/5b11a04d-095d-4514-a761-17d33d76d40d/C_DEM_TN_2018_Y.aspx)
-- 澳門在上世紀九十年 代中已進入老齡化社會, 即1980s？
+- 澳門在上世紀九十年 代中已進入老齡化社會, 即1980s？s
