@@ -124,4 +124,15 @@ category:
   - 總括時講失業率、就業率和勞動力不足率
   - 講解時按，勞動人口，就業人口，就業足25小時，薪金
   - 再講，失業人口,就業不足率
-  
+
+
+## 人口
+
+- [住戶收支，一些名詞解釋](https://www.dsec.gov.mo/getAttachment/18873957-ec9c-4ab3-80ab-4f60bf1ffde9/C_IOF_PUB_2017_2018_Y.aspx)
+  - 堅尼系數
+  - 財富分配比率
+  - 庫茲系數
+  - 2017/2018住戶收支調查採用「大折刀連續重疊抽樣法」Jackknife Repeated Replications (JRR)估計方差。
+  - 變異係數
+  - [年齡中位數](https://www.dsec.gov.mo/getAttachment/5b11a04d-095d-4514-a761-17d33d76d40d/C_DEM_TN_2018_Y.aspx)
+- 澳門在上世紀九十年 代中已進入老齡化社會, 即1980s？
