@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
+
+
+<meta name="google-site-verification" content="kj32LUroXpgD4_6o0W5AhQ8yu46XEx9sq8r-Q3UnBdA" />
 I am a math graduated student who is working at Macao China. Here is the blog I take a record what I have studied.
 <hr>
 
