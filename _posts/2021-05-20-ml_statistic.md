@@ -204,11 +204,10 @@ $$
 
 $$
 m_{0.5}=
-\Big{
-  \begin{array}
+\begin{aligned}
   & x_{\frac{n+1}{2}} \quad & \text{n is odd}\\
   & 0.5*(x_{\frac{n}{2}} +x_{\frac{n+1}{2}}) \quad & \text{n is even}
-  \end{array} 
+\end{aligned}
 $$
 
 
