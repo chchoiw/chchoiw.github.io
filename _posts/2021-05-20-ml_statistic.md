@@ -24,6 +24,7 @@ category:
 - [一些基本定理](#一些基本定理)
   - [中央極限定理](#中央極限定理)
   - [柴比雪夫不等式](#柴比雪夫不等式)
+  - [大數法則](#大數法則)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -220,6 +221,9 @@ $$
 \text{Pr}(|X-\mu|\geq k \sigma) \leq \frac{1}{k^2}
 $$
 
+## 大數法則
+
+- 大數定律討律的是在甚麽條件下, <span style="color:red">隨機變量序列的算術平均依概率收斂到其均值的算術平均</span>
 
 - [大數法則](http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/Lec11_slides.pdf?crazycache=1)
   
