@@ -392,6 +392,20 @@ $$
 - 卡方：單個總體的方差檢驗
 - 卡方圖形在$y$軸右側
 - 總體方差服從卡方分佈
+  
+定理1
+
+$$
+\bar x \quad s^2 \quad \text{is independent}
+$$
+
+$$
+\bar x \sim N(\mu, \frac{\sigma^2}{n})
+$$
+
+$$
+\frac{(n-1)s^2}{\sigma^2} \sim \kappa^2(n-1)
+$$
 
 ## t驗檢
 
