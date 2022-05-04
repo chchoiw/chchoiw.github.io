@@ -42,6 +42,8 @@ category:
   - [F分布](#f分布)
   - [t驗檢](#t驗檢)
   - [檢驗正態分佈](#檢驗正態分佈)
+- [參數估計](#參數估計)
+  - [無偏估計](#無偏估計)
 - [主成分分析、因子分析、對應分析等](#主成分分析因子分析對應分析等)
   - [主成份分析(PCA)](#主成份分析pca)
   - [對應分析](#對應分析)
@@ -220,6 +222,8 @@ m_{p}=\Big\{
   & 0.5*(x_{np} +x_{np+1}) \quad & np \text{ is an integer}
 \end{aligned}
 $$
+
+
 
 
 ## 五數概括與箱線圖
@@ -450,6 +454,14 @@ $$
 In linear least squares multiple regression with an estimated intercept term,   equals the square of the Pearson correlation coefficient between the observed  and modeled (predicted)  data values of the dependent variable.”在帶有截距項的線性最小二乘多元迴歸中，  等於實測值  和擬合值  的相關係數的平方。注意前面有一串限定條件。
 
 
+
+# 參數估計
+
+## 無偏估計
+
+$$
+E(s_n)=\theta
+$$
 
 
 # 主成分分析、因子分析、對應分析等
