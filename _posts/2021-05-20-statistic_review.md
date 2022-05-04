@@ -423,6 +423,10 @@ F_\alpha(n,m)=\frac{1}{F_{1-\alpha}(m,n)}
 $$
 
 
+$$
+F=\frac{s_x^2/ \sigma_1^2}{s_y^2/ \sigma_1^2} \sim F(m-1,n-1)
+$$
+
 ## t驗檢
 
 - 正態性、連續變量、獨立性和方差齊性
