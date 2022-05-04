@@ -41,6 +41,7 @@ category:
   - [卡方](#卡方)
   - [t驗檢](#t驗檢)
   - [檢驗正態分佈](#檢驗正態分佈)
+  - [F分布](#f分布)
 - [主成分分析、因子分析、對應分析等](#主成分分析因子分析對應分析等)
   - [主成份分析(PCA)](#主成份分析pca)
   - [對應分析](#對應分析)
@@ -407,6 +408,8 @@ $$
 \frac{(n-1)s^2}{\sigma^2} \sim \chi^2(n-1)
 $$
 
+
+
 ## t驗檢
 
 - 正態性、連續變量、獨立性和方差齊性
@@ -419,6 +422,13 @@ $$
 - 繪製Q-Q圖
 
 In linear least squares multiple regression with an estimated intercept term,   equals the square of the Pearson correlation coefficient between the observed  and modeled (predicted)  data values of the dependent variable.”在帶有截距項的線性最小二乘多元迴歸中，  等於實測值  和擬合值  的相關係數的平方。注意前面有一串限定條件。
+
+
+## F分布
+
+$$
+F=\frac{\chi_1/m}{\chi_2/n}
+$$
 
 
 
