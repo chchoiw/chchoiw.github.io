@@ -216,8 +216,8 @@ $$
 $$
 m_{p}=\Big\{
 \begin{aligned}
-  & x_{[np+1]} \quad & \text{ np is not a integer}\\
-  & 0.5*(x_{np} +x_{np+1}) \quad & \text{np is a integer}
+  & x_{[np+1]} \quad & np\text{ is not an integer}\\
+  & 0.5*(x_{np} +x_{np+1}) \quad & np \text{ is an integer}
 \end{aligned}
 $$
 
