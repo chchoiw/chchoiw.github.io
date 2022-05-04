@@ -404,7 +404,7 @@ $$
 $$
 
 $$
-\frac{(n-1)s^2}{\sigma^2} \sim \kappa^2(n-1)
+\frac{(n-1)s^2}{\sigma^2} \sim \chi^2(n-1)
 $$
 
 ## t驗檢
