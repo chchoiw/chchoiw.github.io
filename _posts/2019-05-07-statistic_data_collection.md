@@ -58,6 +58,7 @@ category:
 ref:
 - [web link](http://www.xnjdcbs.com/upfile/file/201705/14960508785536.pdf)
 - [local link](https://drive.google.com/file/d/11_ZdTICdxH9R2hYqXoeZH3ADbSGnWwHb/view?usp=sharing)
+  
 ## 數據來源
 
 ### 間接來源(二手)
@@ -104,6 +105,7 @@ ref:
    1. 來源可靠：有較完整的規范和完善，周密的統計信息系統,，保證資料的統一性。
    2. 回收率：因要求嚴格時間和程序上報，具相對穩性，可以完整累積形成時間序列資料。
    3. 方式靈活：越級或逐級滙總。
+
 #### 專門調查
 了解特定某種情況和問題而專門組織的統計調查，包括抽樣調查、普查、重點調查和典型調查這幾種方法。
 
