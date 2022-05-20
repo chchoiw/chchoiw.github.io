@@ -87,7 +87,7 @@ $$
 
 ## 時間序列預測步驟
 - [REF 1](https://www.zhihu.com/question/52866306)
-- [vedio 1](https://www.youtube.com/watch?v=wF42Z3R2Bz8)
+- [vedio 2](https://www.youtube.com/watch?v=wF42Z3R2Bz8)
 
 ```mermaid
 graph LB
