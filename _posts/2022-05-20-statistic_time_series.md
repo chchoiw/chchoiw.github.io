@@ -93,7 +93,7 @@ $$
 - [vedio 1](https://www.youtube.com/watch?v=wF42Z3R2Bz8)
 
 ```mermaid
-graph TB
+graph LB
 id0[平穩非白噪聲序列]
 id1[計算樣本相關係數]
 id2[模型識別,即p,q]
