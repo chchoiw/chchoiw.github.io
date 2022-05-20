@@ -111,8 +111,7 @@ id3-->id4
 id4-->id5
 
 
-id4-->|yes|id5
-id4-->|no|id3
+id4-->|yes|id5|no|id3
 id5-->id6
 ```
 
