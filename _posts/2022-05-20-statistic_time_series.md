@@ -81,3 +81,5 @@ $$
 - [vedio link 2](https://www.bilibili.com/video/BV18g411u7ms/?spm_id_from=333.788.recommend_more_video.-1)
 - 有空再補
   
+## 時間序列預測步驟
+- [REF 1](https://www.zhihu.com/question/52866306)
