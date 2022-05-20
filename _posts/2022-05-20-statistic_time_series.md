@@ -16,13 +16,13 @@ category:
 
 
 $$
-I=\bar y \bar y_s
+I=\bar y_s - \bar y
 $$
 
 - 乘法: $\bar y$全部平均, $\bar y_s$季節平均
 
 $$
-I=\frac{ \bar y} {\bar y_s}
+I=\frac{ \bar y_s} {\bar y}
 $$
 
 
