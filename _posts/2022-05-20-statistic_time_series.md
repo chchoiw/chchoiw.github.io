@@ -67,7 +67,7 @@ $$
   - k是奇數
 
 $$
-\hat x_t=\frac{1}{k} \{ \sum_{i=1}^{ \frac{k-1}{2}} x_{t-i} \sum_{i=-\frac{k-1}{2}}^{-1 } x_{t-i} +x_t\}
+\hat x_t=\frac{1}{k} \Bigg\{x_t+ \sum_{i=1}^{ \frac{k-1}{2}} x_{t-i} \sum_{i=-\frac{k-1}{2}}^{-1 } x_{t-i} \Bigg\}
 $$
 
   - k是偶數,例如k=4
