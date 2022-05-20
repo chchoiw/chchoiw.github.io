@@ -27,7 +27,13 @@ category:
 - 應消除長期趨勢,常用消除方法是回歸方程法消除,$\hat Y_t$是回歸預測值
   
   $$
-  A_t=\frac{Y_t}{\hat Y_t}  \quad \text{or }\quad A_t=Y_t-\hat Y_t
+  A_t=\frac{Y_t}{\hat Y_t}
+  $$
+
+- 消除季節變動
+
+  $$
+  A_t=\frac{Y_t}{\hat I_t} 
   $$
 
 - 加法: $\bar y$全部平均, $\bar y_s$季節平均
