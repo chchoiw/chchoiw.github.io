@@ -27,21 +27,21 @@ category:
 - 應消除長期趨勢,常用消除方法是回歸方程法消除,$\hat Y_t$是回歸預測值
   
   $$
-  I_t=\frac{Y_t}{\hat Y_t}
+  A_t=\frac{Y_t}{\hat Y_t}
   $$
 
-- 計算$I_t$的季節比率(季節指數)
-  - 加法: $\bar y$全部平均, $\bar y_s$季節平均
+- 計算$A_t$的季節比率(季節指數)
+  - 加法: $\bar A$全部平均, $\bar A_s$季節平均
 
 
   $$
-  I=\bar y_s - \bar y
+  I=\bar A_s - \bar A
   $$
 
   - 乘法: $\bar y$全部平均, $\bar y_s$季節平均
 
   $$
-  I=\frac{ \bar y_s} {\bar y}
+  I=\frac{ \bar A_s} {\bar A}
   $$
 
 - 用回歸方程得到未來預測值$\hat Y_t$再乘以$I_t$便得到相對的季節的預測值
