@@ -83,4 +83,28 @@ $$
   
 ## 時間序列預測步驟
 - [REF 1](https://www.zhihu.com/question/52866306)
+- [vedio 1](https://www.youtube.com/watch?v=wF42Z3R2Bz8)
 
+```mermaid
+graph TB
+id0[平穩非白噪聲序列]
+id1[計算樣本相關係數]
+id2[模型識別,即p,q]
+id3[參數估計,即平均值,MA1,AR1等]
+id4[模型檢驗]
+id5[模型優化]
+id6[序列預測]
+
+
+id0-->id1
+id1-->id2
+id2-->id3
+
+id3-->id4
+id4-->id5
+
+
+id4-->|yes|id5
+id4-->|no|id3
+id5-->id6
+```
