@@ -74,3 +74,8 @@ $$
 $$
 \hat x_{t+1}=\alpha  x_{t}+(1-\alpha) \hat x_{t}
 $$
+
+
+# ARMA
+- [vedio link 1](https://www.bilibili.com/video/BV1Ev411h7nT/?spm_id_from=333.788.recommend_more_video.-1)
+- [vedio link 2](https://www.bilibili.com/video/BV18g411u7ms/?spm_id_from=333.788.recommend_more_video.-1)
