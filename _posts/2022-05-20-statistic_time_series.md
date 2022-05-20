@@ -79,8 +79,15 @@ $$
 # ARMA
 - [vedio link 1](https://www.bilibili.com/video/BV1Ev411h7nT/?spm_id_from=333.788.recommend_more_video.-1)
 - [vedio link 2](https://www.bilibili.com/video/BV18g411u7ms/?spm_id_from=333.788.recommend_more_video.-1)
+
+  |       |  自相關系數ACF     | 偏相關系數PACF      |
+| :---: | :---: | :---: |
+|    AR(p)   |  拖尾    |  截尾     |
+|    MA(q)|   截尾    |  拖尾     |
+
+
 - 有空再補
-  
+
 ## 時間序列預測步驟
 - [REF 1](https://www.zhihu.com/question/52866306)
 - [vedio 1](https://www.youtube.com/watch?v=wF42Z3R2Bz8)
@@ -112,5 +119,15 @@ id5-->id6
 - 序列判斷
   - 是否為平穩:不是就差分, 差分到平穩
   - 是否為白噪聲序列:不是才能做,是白噪聲不能構成ARMA
-- 模型估計
-  - 判斷$p$和$q$的值
+- 模型識別
+  - 判斷$p$和$q$的值,上述的自相關系數或偏相關系數截尾和拖尾性質判斷$p$和$q$
+  - 若自相關系數或偏相關系數截尾不明顯,使用AIC,或AIC的改進BIC
+- 參數估計
+  - 計算模型平均值$\mu$,moving average factors $H(B)$
+- 模型檢驗
+- - 殘差是否白噪聲,$p>\alpha$,不能回絕$H_0:\epsilon$ 是白噪聲
+  - 參數$\mu,ma_1, ar_1$是否等於0, 即要顯著,$p<\alpha$
+- 模型優化
+  - 有很多模型(p,q)都符合, 找最小誤差
+- 預測
+  - 利用參數估計計算後的公式, 預測之後的數值
