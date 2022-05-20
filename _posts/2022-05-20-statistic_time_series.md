@@ -31,25 +31,25 @@ category:
   $$
 
 - 計算$I_t$的季節比率(季節指數)
+  - 加法: $\bar y$全部平均, $\bar y_s$季節平均
 
-- 用回歸方程得到未來預測值再乘以$I_t$便得到相對的季節的預測值
 
   $$
-  A_t=\frac{Y_t}{\hat I_t} 
+  I=\bar y_s - \bar y
   $$
 
-- 加法: $\bar y$全部平均, $\bar y_s$季節平均
+  - 乘法: $\bar y$全部平均, $\bar y_s$季節平均
 
+  $$
+  I=\frac{ \bar y_s} {\bar y}
+  $$
 
-$$
-I=\bar y_s - \bar y
-$$
+- 用回歸方程得到未來預測值$\hat Y_t$再乘以$I_t$便得到相對的季節的預測值
 
-- 乘法: $\bar y$全部平均, $\bar y_s$季節平均
+  $$
+  B_t=\hat Y_t I_t
+  $$
 
-$$
-I=\frac{ \bar y_s} {\bar y}
-$$
 
 
 ## 移動平均
