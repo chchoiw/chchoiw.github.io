@@ -374,10 +374,10 @@ id7-->id8
   - 等方差
 - 多重共線性檢測:VIF>2,有共線性，共線性會成對出現
 - 極端值的檢測：
-  - Cook's Distance:衡量第I個觀測刪除後，回歸系數估計的影響度$>\frac{4}{#obs}$是強影響點
+  - Cook's Distance:衡量第I個觀測刪除後，回歸系數估計的影響度$>\frac{4}{number of obs}$是強影響點
   - STUDNET residual：即殘差除以標準誤,-2到2之間是合理
   - RSTUDENT residual:不含該觀測的模型的學生化殘差，>3是強影響點
-  - DIFFITS:對應預測值的標準化影響度，$>2\sqrt{\frac{#params}{#obs}}$是強影響點
+  - DIFFITS:對應預測值的標準化影響度，$>2\sqrt{\frac{number of params}{number of obs}}$是強影響點
 - 回歸顯著性測試
 - 模型擬合程度：$R^2$，比較不同模型，取殘差平方和最小，也即$R^2$最大
   - 變量越多，$R^2$越大
