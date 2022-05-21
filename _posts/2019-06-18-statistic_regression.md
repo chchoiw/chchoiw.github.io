@@ -354,8 +354,8 @@ id5-->|yes|id7
 id6-->|yes|id7
 id3-->|no|id2
 id4-->|no,去除共線性變量|id2
-id5-->|no，去除極端值|id2
-id6-->|no，去除不顯著的變量|id2 
+id5-->|no,去除極端值|id2
+id6-->|no,去除不顯著的變量|id2 
 id7-->id8
 ```
 
