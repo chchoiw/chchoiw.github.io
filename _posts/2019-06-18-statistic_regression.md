@@ -297,6 +297,8 @@ $，則否定$H_0$。
 # 回歸分析的步驟
 - [REF 1](https://blog.csdn.net/Noob_daniel/article/details/76087829)
 - [REF 2](https://mengte.online/archives/1899)
+- [REF 3](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/regression-analysis-basics.htm)
+
 - 線性回歸的假設理論
   - 線性關係
     - 觀察自因變量的圖，看是否呈直線關係 
@@ -305,6 +307,9 @@ $，則否定$H_0$。
   - 殘差：
     - 正態性假設：即所研究的變量均服從正態分布；
       - Q-Q圖或一些正態檢驗
+      - [圖](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/h-transformation.htm)
+      - 若不是正態，正偏態（峰值偏左），對數轉換
+      - 若不是正態，負偏態（峰值偏右），指數轉換
     - 等方差假設：即各變量總體的方差是相等的；
       - 觀察殘差分佈圖，若殘差規律有除X軸變大或變小，就有異方差性問題
     - 殘差項無自相關性，即誤差項之間互不相關，Cov(ei,ej)=0
@@ -317,8 +322,10 @@ $，則否定$H_0$。
   - Cook's Distance： CD>0.5為異常點
 
 ## 過程
-
-- 觀察自因變量的圖，看是否呈直線關係 
+- 確定變量
+  - 若變量間有多重線性或變量太多，則主成分
+- 觀察自因變量的圖，看是否呈直線關係，多變量時用相關分析看
+- 建立回歸預測模型 
 - 根據公式計算出線性的系數
 - 一系列看殘差的檢證
   - 正態
@@ -330,3 +337,4 @@ $，則否定$H_0$。
 - 模型擬合程度：$R^2$
   - 變量越多，$R^2$越大
   - 為校正自變量個數的影響，一般采用後面的Adjusted $R^2$(調整$R^2$)
+- 預測
