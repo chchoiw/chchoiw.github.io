@@ -298,6 +298,7 @@ $，則否定$H_0$。
 - [REF 1](https://blog.csdn.net/Noob_daniel/article/details/76087829)
 - [REF 2](https://mengte.online/archives/1899)
 - [REF 3](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/regression-analysis-basics.htm)
+- [REF 4](http://www.360doc.com/content/20/0619/07/67596171_919293926.shtml)
 
 - 線性回歸的假設理論
   - 線性關係
@@ -312,6 +313,7 @@ $，則否定$H_0$。
       - 若不是正態，負偏態（峰值偏右），指數轉換
     - 等方差假設：即各變量總體的方差是相等的；
       - 觀察殘差分佈圖，若殘差規律有除X軸變大或變小，就有異方差性問題
+      - 若方差不齊，使用加權最小二乘法估計回歸系數
     - 殘差項無自相關性，即誤差項之間互不相關，Cov(ei,ej)=0
       - DW檢測：0<DW<2為正常，不然會有自相關問題
 
@@ -325,6 +327,8 @@ $，則否定$H_0$。
 
 
 ## 過程
+- [VEDIO](https://www.bilibili.com/video/BV1zW411C72A?p=6)
+
 ```mermaid
 graph LR
 id0[數據預處理]
@@ -349,9 +353,9 @@ id4-->|yes|id7
 id5-->|yes|id7
 id6-->|yes|id7
 id3-->|no|id2
-id4-->|no|id2
-id5-->|no|id2
-id6-->|no|id2 
+id4-->|no,去除共線性變量|id2
+id5-->|no，去除極端值|id2
+id6-->|no，去除不顯著的變量|id2 
 
 id7-->id8
 ```
