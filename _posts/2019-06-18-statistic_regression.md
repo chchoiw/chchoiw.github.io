@@ -8,10 +8,11 @@ category:
   - Statistic
 ---
 
-- [回歸分析的步驟](#回歸分析的步驟)
-  - [過程](#過程)
-- [一元簡單線性迴歸](#一元簡單線性迴歸)
-- [多元線性迴歸](#多元線性迴歸)
+- [回歸分析的概念](#回歸分析的概念)
+  - [回歸的步驟](#回歸的步驟)
+- [回歸的一些數學公式](#回歸的一些數學公式)
+  - [一元簡單線性迴歸](#一元簡單線性迴歸)
+  - [多元線性迴歸](#多元線性迴歸)
   - [最小二乘法](#最小二乘法)
   - [$\beta$的估計](#beta的估計)
   - [$\hat \sigma$ 的估計](#hat-sigma-的估計)
@@ -29,7 +30,7 @@ category:
   - [回歸系數的顯著性檢驗](#回歸系數的顯著性檢驗)
 
 
-# 回歸分析的步驟
+# 回歸分析的概念
 - [REF 1](https://blog.csdn.net/Noob_daniel/article/details/76087829)
 - [REF 2](https://mengte.online/archives/1899)
 - [REF 3](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/regression-analysis-basics.htm)
@@ -61,7 +62,7 @@ category:
 
 
 
-## 過程
+## 回歸的步驟
 - [VEDIO](https://www.bilibili.com/video/BV1zW411C72A?p=6)
 
 ```mermaid
@@ -117,7 +118,8 @@ id7-->id8
   - 為校正自變量個數的影響，一般采用後面的Adjusted $R^2$(調整$R^2$)
 - 預測
 
-# 一元簡單線性迴歸
+# 回歸的一些數學公式
+## 一元簡單線性迴歸
 令 
 
 $$
@@ -171,7 +173,7 @@ $$
 - $\text{Cov}(\hat \beta_0,\hat \beta_1)$
 
 
-# 多元線性迴歸
+## 多元線性迴歸
 
 $$
 C = 
