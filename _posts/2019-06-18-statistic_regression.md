@@ -8,6 +8,8 @@ category:
   - Statistic
 ---
 
+- [回歸分析的步驟](#回歸分析的步驟)
+  - [過程](#過程)
 - [一元簡單線性迴歸](#一元簡單線性迴歸)
 - [多元線性迴歸](#多元線性迴歸)
   - [最小二乘法](#最小二乘法)
@@ -25,9 +27,96 @@ category:
   - [共線性問題](#共線性問題)
   - [偏判定係數](#偏判定係數)
   - [回歸系數的顯著性檢驗](#回歸系數的顯著性檢驗)
-- [回歸分析的步驟](#回歸分析的步驟)
-  - [過程](#過程)
-  
+
+
+# 回歸分析的步驟
+- [REF 1](https://blog.csdn.net/Noob_daniel/article/details/76087829)
+- [REF 2](https://mengte.online/archives/1899)
+- [REF 3](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/regression-analysis-basics.htm)
+- [REF 4](http://www.360doc.com/content/20/0619/07/67596171_919293926.shtml)
+
+- 線性回歸的假設理論
+  - 線性關係
+    - 觀察自因變量的圖，看是否呈直線關係 
+  - 獨立性假設, 即各變量之間是相互獨立的；
+    - VIF<3，無多重線性，VIF>10有多重線性
+  - 殘差：
+    - 正態性假設：即所研究的變量均服從正態分布；
+      - Q-Q圖或一些正態檢驗
+      - [圖](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/h-transformation.htm)
+      - 若不是正態，正偏態（峰值偏左），對數轉換
+      - 若不是正態，負偏態（峰值偏右），指數轉換
+    - 等方差假設：即各變量總體的方差是相等的；
+      - 觀察殘差分佈圖，若殘差規律有除X軸變大或變小，就有異方差性問題
+      - 若方差不齊，使用加權最小二乘法估計回歸系數
+    - 殘差項無自相關性，即誤差項之間互不相關，Cov(ei,ej)=0
+      - DW檢測：0<DW<2為正常，不然會有自相關問題
+
+- 回歸顯著性問題
+  - 回歸系數的檢驗（t檢驗）
+  - 回歸方程的檢驗（F檢驗）：ANOVA方差分析
+- 異常值檢測：因為異常值為大為影響回歸的結果
+  - Cook's Distance： CD>0.5為異常點
+
+
+
+
+## 過程
+- [VEDIO](https://www.bilibili.com/video/BV1zW411C72A?p=6)
+
+```mermaid
+graph LR
+id0[數據預處理]
+id1[數據深索]
+id2[建立回歸預測模型]
+id3[殘差的檢證]
+id4[多重共線性檢測]
+id5[極端值的檢測]
+id6[回歸顯著性測試]
+id7[模型擬合程度,比較模型]
+id8[預測]
+
+id0-->id1
+id1-->id2
+id2-->id3
+id2-->id4
+id2-->id5
+id2-->id6
+id3-->|yes|id7
+id4-->|yes|id7
+id5-->|yes|id7
+id6-->|yes|id7
+id3-->|no|id2
+id4-->|no,去除共線性變量|id2
+id5-->|no,去除極端值|id2
+id6-->|no,去除不顯著的變量|id2 
+id7-->id8
+```
+
+
+- 數據預處理
+- 數據深索
+  - 確定Y變量是正態：Q-Q圖或P-P圖
+  - X可以不是正態，但不能是散得太厲害 
+  - 散點圖，看是否呈直線關係
+  - 相關系數，$X_i,y$,看與$y$是否有顯著相關
+- 建立回歸預測模型,根據公式計算出線性的系數
+- 殘差的檢證
+  - 正態
+  - 獨立
+  - 等方差
+- 多重共線性檢測:VIF>2,有共線性，共線性會成對出現
+- 極端值的檢測：
+  - Cook's Distance:衡量第I個觀測刪除後，回歸系數估計的影響度$\text{Cook's Distance}>\frac{4}{\text{number of obs}}$是強影響點
+  - STUDNET residual：即殘差除以標準誤,-2到2之間是合理
+  - RSTUDENT residual:不含該觀測的模型的學生化殘差，RSTUDENT residual>3是強影響點
+  - DIFFITS:對應預測值的標準化影響度，$\text{DIFFITS}>2\sqrt{\frac{ \text{number of params} }{\text{number of obs} } }$是強影響點
+- 回歸顯著性測試
+- 模型擬合程度：$R^2$，比較不同模型，取殘差平方和最小，也即$R^2$最大
+  - 變量越多，$R^2$越大
+  - 為校正自變量個數的影響，一般采用後面的Adjusted $R^2$(調整$R^2$)
+- 預測
+
 # 一元簡單線性迴歸
 令 
 
@@ -296,90 +385,3 @@ F >F_\alpha \quad \text{ or } \quad p=\{F>F_\alpha\} <\alpha
 $，則否定$H_0$。
 
 
-# 回歸分析的步驟
-- [REF 1](https://blog.csdn.net/Noob_daniel/article/details/76087829)
-- [REF 2](https://mengte.online/archives/1899)
-- [REF 3](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/regression-analysis-basics.htm)
-- [REF 4](http://www.360doc.com/content/20/0619/07/67596171_919293926.shtml)
-
-- 線性回歸的假設理論
-  - 線性關係
-    - 觀察自因變量的圖，看是否呈直線關係 
-  - 獨立性假設, 即各變量之間是相互獨立的；
-    - VIF<3，無多重線性，VIF>10有多重線性
-  - 殘差：
-    - 正態性假設：即所研究的變量均服從正態分布；
-      - Q-Q圖或一些正態檢驗
-      - [圖](https://pro.arcgis.com/zh-cn/pro-app/2.8/tool-reference/spatial-statistics/h-transformation.htm)
-      - 若不是正態，正偏態（峰值偏左），對數轉換
-      - 若不是正態，負偏態（峰值偏右），指數轉換
-    - 等方差假設：即各變量總體的方差是相等的；
-      - 觀察殘差分佈圖，若殘差規律有除X軸變大或變小，就有異方差性問題
-      - 若方差不齊，使用加權最小二乘法估計回歸系數
-    - 殘差項無自相關性，即誤差項之間互不相關，Cov(ei,ej)=0
-      - DW檢測：0<DW<2為正常，不然會有自相關問題
-
-- 回歸顯著性問題
-  - 回歸系數的檢驗（t檢驗）
-  - 回歸方程的檢驗（F檢驗）：ANOVA方差分析
-- 異常值檢測：因為異常值為大為影響回歸的結果
-  - Cook's Distance： CD>0.5為異常點
-
-
-
-
-## 過程
-- [VEDIO](https://www.bilibili.com/video/BV1zW411C72A?p=6)
-
-```mermaid
-graph LR
-id0[數據預處理]
-id1[數據深索]
-id2[建立回歸預測模型]
-id3[殘差的檢證]
-id4[多重共線性檢測]
-id5[極端值的檢測]
-id6[回歸顯著性測試]
-id7[模型擬合程度,比較模型]
-id8[預測]
-
-id0-->id1
-id1-->id2
-id2-->id3
-id2-->id4
-id2-->id5
-id2-->id6
-id3-->|yes|id7
-id4-->|yes|id7
-id5-->|yes|id7
-id6-->|yes|id7
-id3-->|no|id2
-id4-->|no,去除共線性變量|id2
-id5-->|no,去除極端值|id2
-id6-->|no,去除不顯著的變量|id2 
-id7-->id8
-```
-
-
-- 數據預處理
-- 數據深索
-  - 確定Y變量是正態：Q-Q圖或P-P圖
-  - X可以不是正態，但不能是散得太厲害 
-  - 散點圖，看是否呈直線關係
-  - 相關系數，$X_i,y$,看與$y$是否有顯著相關
-- 建立回歸預測模型,根據公式計算出線性的系數
-- 殘差的檢證
-  - 正態
-  - 獨立
-  - 等方差
-- 多重共線性檢測:VIF>2,有共線性，共線性會成對出現
-- 極端值的檢測：
-  - Cook's Distance:衡量第I個觀測刪除後，回歸系數估計的影響度$\text{Cook's Distance}>\frac{4}{\text{number of obs}}$是強影響點
-  - STUDNET residual：即殘差除以標準誤,-2到2之間是合理
-  - RSTUDENT residual:不含該觀測的模型的學生化殘差，RSTUDENT residual>3是強影響點
-  - DIFFITS:對應預測值的標準化影響度，$\text{DIFFITS}>2\sqrt{\frac{ \text{number of params} }{\text{number of obs} } }$是強影響點
-- 回歸顯著性測試
-- 模型擬合程度：$R^2$，比較不同模型，取殘差平方和最小，也即$R^2$最大
-  - 變量越多，$R^2$越大
-  - 為校正自變量個數的影響，一般采用後面的Adjusted $R^2$(調整$R^2$)
-- 預測
