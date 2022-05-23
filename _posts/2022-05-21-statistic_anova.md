@@ -19,10 +19,21 @@ category:
   - 方法:最大似然,矩估計法,最小二乘法
   - $\mu \in [\bar x -u_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}},\bar x +u_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}]$
   - $\mu \in [\bar x -t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}},\bar x +t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}]$
-  - $\sigma^2 in [\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)},\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)}]$
+  - $\sigma^2 \in [\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)},\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)}]$
 - 檢驗:它是從樣本值出發去判斷關於總體分布的某種看法是否成立
 
 ## 成對比較
+
+|   X數據類型   |  X組別     |   Y    | 分析方法      |
+|  ---  |  ---  |  ---  |  ---  |
+|  定類     |  2組或多組     | 定量      |   方差 (ANOVA)   |
+|  定類     |   僅僅2組    |   定量    |   T檢驗    |
+|  定類    |    2組或多組   |  定類     |   卡方$\chi$    |
+|       |       |       |       |
+
+
+
+
 
 
 
