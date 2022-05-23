@@ -29,8 +29,10 @@ category:
 
 
 # 屬性數據分析(列聯表)
+
+## $\chi$檢驗
 - X,Y 是屬性變量
-- $\chi$檢驗,自由度為$(r-1)(c-1)$
+- 數據量大時使用$\chi$檢驗,自由度為$(r-1)(c-1)$
 - $H_0:\text{column and row data are not related}$
   
 
@@ -43,3 +45,5 @@ $$
      \frac{n_{i \cdot }n_{\cdot j}}{n}
   }
 $$
+
+
