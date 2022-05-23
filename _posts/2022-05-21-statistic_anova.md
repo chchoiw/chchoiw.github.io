@@ -124,10 +124,16 @@ $$
 
 # 相關分析
 - [REF 1](http://120.118.226.200/member/hunght/%E6%B4%AA%E5%83%96%E9%BB%9B%E8%80%81%E5%B8%AB%E6%95%99%E6%9D%90(IEM)/Canonical%20Analysis.pdf)
+  - 典型相關之基本假設
+    - 分配:對典型相關的顯著性檢定是基於變數是多變量常態分配
+    - 樣本數:想對第一典型變量的負荷得到可靠估計，則樣本數至少是分析內變數個數的20倍(即n>20)
+    - 異常點:異常點對相關係數的大小會產生很大的影響，而典型相關也是以相關係數為基礎，所以也會受異常點很嚴重的影響
 - [REF 2](https://dasanlin888.pixnet.net/blog/post/34469087)
 - [REF 3](https://dasanlin888.pixnet.net/blog/post/34469093)
 - [REF 4](http://epaper.gotop.com.tw/PDFSample/AEM002600.pdf)
 - [ANOVA 與 MANOVA](/images/A97038118.pdf)
+
+
 
 ##  過程
 
