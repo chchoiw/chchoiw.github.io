@@ -17,9 +17,9 @@ category:
 - 估計:
   - 總體參數估計,分布函數、密度函數
   - 方法:最大似然,矩估計法,最小二乘法
-  - $\mu \in [\bar x -u_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}},\bar x +u_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}]$
-  - $\mu \in [\bar x -t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}},\bar x +t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}]$
-  - $\sigma^2 \in [\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)},\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)}]$
+  - $\mu \in \Bigg[\bar x -u_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}},\bar x +u_{1-\frac{\alpha}{2}}\frac{\sigma}{\sqrt{n}}\Bigg]$
+  - $\mu \in \Bigg[\bar x -t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}},\bar x +t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}\Bigg]$
+  - $\sigma^2 \in \Bigg[\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)},\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)}\Bigg]$
 - 檢驗:它是從樣本值出發去判斷關於總體分布的某種看法是否成立
 
 ## 成對比較
