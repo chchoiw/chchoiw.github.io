@@ -123,15 +123,19 @@ $$
 
 
 # 相關分析
-- [REF 1](http://120.118.226.200/member/hunght/%E6%B4%AA%E5%83%96%E9%BB%9B%E8%80%81%E5%B8%AB%E6%95%99%E6%9D%90(IEM)/Canonical%20Analysis.pdf)
-  - 典型相關之基本假設
-    - 分配:對典型相關的顯著性檢定是基於變數是多變量常態分配
+
+- 典型相關之基本假設
+  - 線性關係:兩組變數的相關係數是基於線性關係，若不是線性關係，則變數需要 轉換，以達成線性關係。
+  - 常態性(normality):雖然，典型相關並無最嚴格要求常態性，但常態性會使分配標 準化以允許變數間擁有較高的相關，因此，符合常態性是較好的作法，由於多變 量的常態難以判讀，所以大多都是針對單一變量要求是常態性。
+  - 變異數相等(Homoscedasticity):若不相等，會降低變數間的相關，因此，需要符 合變異數相等。
+  - 複共線性問題:若是變數間有複共線性問題，則無法說明任何一個變數的影響， 導致解釋的結果並不可靠，因此，需要變數無複共線性問題。
     - 樣本數:想對第一典型變量的負荷得到可靠估計，則樣本數至少是分析內變數個數的20倍(即n>20)
     - 異常點:異常點對相關係數的大小會產生很大的影響，而典型相關也是以相關係數為基礎，所以也會受異常點很嚴重的影響
-- [REF 2](https://dasanlin888.pixnet.net/blog/post/34469087)
-- [REF 3](https://dasanlin888.pixnet.net/blog/post/34469093)
-- [REF 4](http://epaper.gotop.com.tw/PDFSample/AEM002600.pdf)
-- [ANOVA 與 MANOVA](/images/A97038118.pdf)
+- [REF 1](http://120.118.226.200/member/hunght/%E6%B4%AA%E5%83%96%E9%BB%9B%E8%80%81%E5%B8%AB%E6%95%99%E6%9D%90(IEM)/Canonical%20Analysis.pdf)
+- [REF 2](http://epaper.gotop.com.tw/PDFSample/AEM002600.pdf)
+- [REF 3](https://dasanlin888.pixnet.net/blog/post/34469087)
+- [REF 4](https://dasanlin888.pixnet.net/blog/post/34469093)
+- [ANOVA 與 MANOVA分別](/images/A97038118.pdf)
 
 
 
