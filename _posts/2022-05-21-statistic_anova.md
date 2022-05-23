@@ -123,3 +123,6 @@ $$
 
 
 # 相關分析
+- [REF 1](http://120.118.226.200/member/hunght/%E6%B4%AA%E5%83%96%E9%BB%9B%E8%80%81%E5%B8%AB%E6%95%99%E6%9D%90(IEM)/Canonical%20Analysis.pdf)
+- [REF 2](https://dasanlin888.pixnet.net/blog/post/34469087)
+- 兩組變量的相關分析:用戶可根據實際問題的需要規定哪些是第一組，哪些是第二組
