@@ -30,7 +30,8 @@ category:
 
 # 屬性數據分析(列聯表)
 
-## $\chi$檢驗
+## 無序變量
+### $\chi$檢驗
 - X,Y 是屬性變量
 - 數據量大時使用$\chi$檢驗,自由度為$(r-1)(c-1)$
 - $H_0:\text{column and row data are not related}$
@@ -47,3 +48,9 @@ $$
 $$
 
 
+### Fisher exact test
+- 適合抽查數量少
+- 計算方法為超幾何分布
+- $H_0:\text{column and row data are not related}$
+
+## 有序變量關聯性
