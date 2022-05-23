@@ -21,7 +21,9 @@ category:
   - $\mu \in [\bar x -t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}},\bar x +t_{1-\frac{\alpha}{2}}\frac{s}{\sqrt{n}}]$
   - $\sigma^2 in [\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)},\frac{(n-1)s^2}{\chi_{1-\frac{\alpha}{2}} (n-1)}]$
 - 檢驗:它是從樣本值出發去判斷關於總體分布的某種看法是否成立
-  - 
+
+## 成對比較
+
 
 
 # 方差分析
