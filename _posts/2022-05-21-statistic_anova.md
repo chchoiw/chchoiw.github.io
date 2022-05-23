@@ -54,7 +54,18 @@ $$
 t=\frac{(\bar x_1- \bar x_2)}{\sqrt{(\frac{s_1^2}{n_1}+\frac{s^2_2}{n_2})}}
 $$
 
+### 兩樣成組對差值的T檢驗
+- 需滿兩個假定 
+  - 每對觀測的差值是來自正態總體
+  - 每對觀測與其他對觀測是獨立
+  - $H_0$:兩次測驗沒有顯著性差別
 
+## 正態性檢驗
+- Shapiro-Wilk
+- Kolmogorov-Smirnov
+- Cramer-von Mises
+- Anderson-Darling
+- 若p value <0.05, 拒絕分佈是正態
 
 # 方差分析
 - [REF 1](https://zhuanlan.zhihu.com/p/92787523)
