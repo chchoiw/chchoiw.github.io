@@ -31,9 +31,22 @@ category:
 |  定類    |    2組或多組   |  定類     |   卡方$\chi$    |
 
 
+- $\sigma_1=sigma_2$
+  
+$$
+t=\frac{(\bar x_1- \bar x_2)}{\sqrt{s^2(\frac{1}{n_1}+\frac{1}{n_2})}}
+$$
 
+where 
 
+$$ 
+s^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}
+$$
 
+- $\sigma_1\neq sigma_2$
+$$
+t=\frac{(\bar x_1- \bar x_2)}{\sqrt{(\frac{s_1^2}{n_1}+\frac{s^2_2}{n_2})}}
+$$
 
 
 
