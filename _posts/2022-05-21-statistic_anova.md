@@ -57,7 +57,7 @@ $$
 
 ## Mentel-Haenszel
 - 有序相關:即隨著一個變量取值的增加,另一變量的取值是否也有變大
-- $H_0:\text{column and row data are not order related}$
-- 關聯程度$-1 \leq \gamma,\tau_b,\tau_a \leq 1$,越接近-1 或1就有序關聯越大
-- $\tau_b$ 95% 置信區間是$[\tau_b-2\text{ASE},\tau_b+2\text{ASE}]$
+- Mentel-Haenszel Test $H_0:\text{column and row data are not order related}$
+- 關聯程度可用$-1 \leq \gamma,\tau_b,\tau_a \leq 1$,越接近-1 或1就有序關聯越大
+- $\tau_b$的95%置信區間是$[\tau_b-2\text{ASE},\tau_b+2\text{ASE}]$
 - $\tau_b$全名叫Kendall的Tau-b 
