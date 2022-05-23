@@ -30,7 +30,7 @@ category:
 
 # 屬性數據分析(列聯表)
 - X,Y 是屬性變量
-- $\chi$檢驗
+- $\chi$檢驗, $H_0:\text{column and row data are not related}$
 
 $$
 \sum \sum 
