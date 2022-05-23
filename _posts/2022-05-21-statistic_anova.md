@@ -37,7 +37,7 @@ category:
   - 每組觀測是來自正態總體
   - 兩個獨立方差相等
   - $H_0: \mu_1=\mu_2$
-- $\sigma_1=sigma_2$
+- $\sigma_1=\sigma_2$
   
 $$
 t=\frac{(\bar x_1- \bar x_2)}{\sqrt{s^2(\frac{1}{n_1}+\frac{1}{n_2})}}
@@ -49,7 +49,8 @@ $$
 s^2=\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}
 $$
 
-- $\sigma_1\neq sigma_2$
+- $\sigma_1\neq \sigma_2$
+  
 $$
 t=\frac{(\bar x_1- \bar x_2)}{\sqrt{(\frac{s_1^2}{n_1}+\frac{s^2_2}{n_2})}}
 $$
@@ -119,3 +120,6 @@ $$
 - 關聯程度可用$-1 \leq \gamma,\tau_b,\tau_a \leq 1$,越接近-1 或1就有序關聯越大
 - $\tau_b$的95%置信區間是$[\tau_b-2\text{ASE},\tau_b+2\text{ASE}]$
 - $\tau_b$全名叫Kendall的Tau-b 
+
+
+# 相關分析
