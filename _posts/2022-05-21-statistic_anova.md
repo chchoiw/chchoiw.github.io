@@ -54,3 +54,6 @@ $$
 - $H_0:\text{column and row data are not related}$
 
 ## 有序變量關聯性
+
+## Mentel-Haenszel
+- $H_0:\text{column and row data are not related}$
