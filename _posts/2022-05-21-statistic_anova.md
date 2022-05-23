@@ -56,4 +56,5 @@ $$
 ## 有序變量關聯性
 
 ## Mentel-Haenszel
-- $H_0:\text{column and row data are not related}$
+- 有序相關:即隨著一個變量取值的增加,另一變量的取值是否也有變大
+- $H_0:\text{column and row data are not order related}$
