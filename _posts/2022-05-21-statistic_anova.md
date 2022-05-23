@@ -128,3 +128,20 @@ $$
 - [REF 3](https://dasanlin888.pixnet.net/blog/post/34469093)
 - [REF 4](http://epaper.gotop.com.tw/PDFSample/AEM002600.pdf)
 - [ANOVA 與 MANOVA](/images/A97038118.pdf)
+
+##  過程
+
+- 均值、標準差和兩組變量間的相系數
+- 與主成分分析類似, 找出VAR($V_i$)最大,$\lambda_1$為它的最大的eigenvalue,稱$\lambda_1$為第一典型相闗係數
+- $H_0:\Sigma_{12}=0$,
+  - Wilks' Lambda
+  - Pillai's Trace
+  - Hotelling-Lawley Trace
+  - Roy's Greatest Root
+  - p<0.05 ,即$\Sigma_{12}\neq 0$
+- $H_0:\lambda_i=0 \forall j>=i$
+  - F test 
+  - p<0.05 ,即$\lambda_i\neq 0$
+- $(v_{ti},w_{ti})$為第t個觀測值在第i對典型向量,也是第i對樣本典型變量的得分值
+  - 繪制散點圖$(v_{ti},w_{ti})$, 應在同一直線上,因為差個$\lambda_i$,
+  - 若有異常值, 應分析原因
