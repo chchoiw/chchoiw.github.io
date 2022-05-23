@@ -31,3 +31,13 @@ category:
 # 屬性數據分析(列聯表)
 - X,Y 是屬性變量
 - $\chi$檢驗
+
+$$
+\sum \sum 
+\frac{ 
+  (n_{i,j}- \frac{n_{ i \cdot}n_{\cdot j} }{n})^2
+  } 
+  {
+     \frac{n_{i \cdot }n_{\cdot j}}{n}
+  }
+$$
