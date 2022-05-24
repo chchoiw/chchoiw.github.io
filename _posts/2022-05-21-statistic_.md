@@ -60,9 +60,10 @@ iid3-->iid4
 iid4-->iid5
 iid5-->iid6
 iid6-->iid7
+```
+
 iid7-->|yes|iid8
 iid7-->|no|iid5
-```
 
 1. 提煉具體問題，確定欲達的目標
 2. 確定定性理論，設置指標變量
