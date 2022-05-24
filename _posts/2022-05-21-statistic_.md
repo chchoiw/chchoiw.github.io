@@ -52,7 +52,6 @@ iid5[選擇統計方法，構造理論模型]
 iid6[統計估計]
 iid7[統計檢驗]
 iid8[統計應用]
-
 iid0-->iid1
 iid1-->iid2
 iid2-->iid3
@@ -60,10 +59,9 @@ iid3-->iid4
 iid4-->iid5
 iid5-->iid6
 iid6-->iid7
-```
-
 iid7-->|yes|iid8
 iid7-->|no|iid5
+```
 
 1. 提煉具體問題，確定欲達的目標
 2. 確定定性理論，設置指標變量
