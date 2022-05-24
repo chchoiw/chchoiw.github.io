@@ -43,24 +43,24 @@ category:
 
 ```mermaid
 graph TB
-id0[統計分析目的]
-id1[確定母體範圍]
-id2[量表,如何量測樣表]
-id3[抽樣]
-id4[統計數據整理,樣本統計量]
-id5[選擇統計方法，構造理論模型]
-id6[統計估計]
-id7[統計檢驗]
-id8[統計應用]
-id0-->id1
-id1-->id2
-id2-->id3
-id3-->id4
-id4-->id5
-id5-->id6
-id6-->id7
-id7-->|yes|id8
-id7-->|no|id5
+iid0[統計分析目的]
+iid1[確定母體範圍]
+iid2[量表,如何量測樣表]
+iid3[抽樣]
+iid4[統計數據整理,樣本統計量]
+iid5[選擇統計方法，構造理論模型]
+iid6[統計估計]
+iid7[統計檢驗]
+iid8[統計應用]
+iid0-->iid1
+iid1-->iid2
+iid2-->iid3
+iid3-->iid4
+iid4-->iid5
+iid5-->iid6
+iid6-->iid7
+iid7-->|yes|iid8
+iid7-->|no|iid5
 ```
 
 1. 提煉具體問題，確定欲達的目標
