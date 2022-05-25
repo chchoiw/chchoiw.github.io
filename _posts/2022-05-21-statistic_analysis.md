@@ -379,6 +379,8 @@ id3-->id4
 id4-->id5
 ```
 
+
+- [REF 1](https://www.mercy.org.tw/public/ufile/ufile/2ce058b96885f861a7e7f1f7a14a4fe6.pdf)
 - 項目分析:確認量表題目的堪用程度
   - t檢定
 - 信效度檢驗:提供各項客觀指標,
