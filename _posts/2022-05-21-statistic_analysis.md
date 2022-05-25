@@ -28,6 +28,7 @@ category:
   - [過程](#過程-1)
 - [聚類](#聚類)
   - [系統聚類](#系統聚類)
+- [問卷](#問卷)
 
 
 # 統計分析方法
@@ -131,6 +132,10 @@ iid7-->|no|iid5
 - [web link2](http://www.reea.agri.cn/sttzgg/201608/P020160831597768501898.pdf)
 - [web link3](https://blog.csdn.net/nxcjh321/article/details/89095564)
 - [web link4](http://epaper.gotop.com.tw/PDFSample/AEM002100.pdf)
+
+
+
+
 
 
 # 估計與檢驗
@@ -355,3 +360,19 @@ id3-->id4
   - $R^2$越大說明NCL個類分得越開
   - 偽$F$越大說明樣品可明顯分為NCL個
   - 偽$t^2$越大說明上次合併結果最好
+
+# 問卷
+
+```mermaid
+graph LR
+id0[充份性檢驗]
+id1[選擇因子個數]
+id2[提取公共因子並做旋轉]
+id3[判斷因子與題項對應關係]
+id4[計算因子得分]
+
+id0-->id1
+id1-->id2
+id2-->id3
+id3-->id4
+```
