@@ -381,6 +381,7 @@ id4-->id5
 
 
 - [REF 1](https://www.mercy.org.tw/public/ufile/ufile/2ce058b96885f861a7e7f1f7a14a4fe6.pdf)
+- [REF 2](http://web.thu.edu.tw/s974836/www/%E4%BF%A1%E5%BA%A6%E6%95%88%E5%BA%A6.pdf)
 - 項目分析(信度):確認量表題目的堪用程度
   - 刪除鑑別力不夠的題目
   - 所謂效度是指衡量的工具是否能真正衡量到研究者想要衡量的問題。
