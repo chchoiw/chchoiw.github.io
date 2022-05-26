@@ -418,7 +418,7 @@ id4-->id5
 
 ```mermaid
 graph LR
-id0[統計誤差]]
+id0[統計誤差]
 id1[登記性誤差]
 id2[代表性誤差]
 id3[系統性誤差]
@@ -430,7 +430,7 @@ id7[實際誤差]
 id0-->id1
 id0-->id2
 id2-->id4
-
+id2-->id3
 id3-->id4
 id4-->id5
 id4-->id6
@@ -439,5 +439,3 @@ id3-->id7
 id5-->id7
 id6-->id7
 ```
-
-id2-->id3
