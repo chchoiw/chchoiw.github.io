@@ -1,5 +1,5 @@
 ---
-title: '數據收集'
+title: '統計調查'
 date: 2019-05-07
 permalink: /posts/2019/05/statistic_data_collection/
 tags:
