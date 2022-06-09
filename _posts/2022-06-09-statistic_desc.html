@@ -55,7 +55,7 @@ else{
 // var typeValue = tagObj[0].getElementsByTagName("type")[0].childNodes[0].nodeValue;
 // var titleValue = tagObj[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 var a=xmlDoc.getElementsByTagName("Text");
-console.log(a)
+console.log(a);
 }
 // readXml(xmlFile)
 function parse_xml(xmlString,tagName)
@@ -72,7 +72,7 @@ function parse_xml(xmlString,tagName)
         xmlDoc.loadXML(xmlString);
     }
     var a=xmlDoc.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
-    return a
+    return a;
 }
 var a=parse_xml(response,"Text");
 document.getElementById('macauarea').innerHTML=a;
