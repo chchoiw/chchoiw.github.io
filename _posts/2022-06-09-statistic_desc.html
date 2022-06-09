@@ -72,7 +72,7 @@ function parse_xml(xmlString,tagName)
 var a=parse_xml(response,"Text");
 document.getElementById('macauarea').innerHTML=a;
 var b=parse_xml(GDPchart,"ChartData");
-b="data:image/png;base64, "+b
+b="data:image/png;base64, "+b;
 console.log(b);
 document.getElementById('GDPchart').src= b;
 </script>
