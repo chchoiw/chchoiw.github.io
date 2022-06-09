@@ -60,7 +60,7 @@ function parse_xml(xmlString,tagName)
         parser = new DOMParser();
         xmlDoc = parser.parseFromString(xmlString, "text/xml");
     }
-    else // Internet Explorer
+    else 
     {
         xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
         xmlDoc.async = false;
