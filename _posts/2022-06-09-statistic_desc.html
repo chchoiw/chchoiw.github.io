@@ -27,7 +27,6 @@ function httpGet(theUrl)
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }
-// var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorList?vLanguageType=1");
 var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorValue?iKeyIndicatorID=11&vLanguageType=TraditionalChinese");
 var GDPchart=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getChart?iIndicatorID=1111&vLanguageType=TraditionalChinese&vFunctionType=VAL&vDataPeriodType=Yearly&vChartSeriesType=LineChart&iLatestNRecords=6");
 document.getElementById('response').innerHTML =(response);
@@ -51,9 +50,6 @@ else{
     xmlDoc.async="false";
     xmlDoc.load(xmlFile);
 }
-// var tagObj=xmlDoc.getElementsByTagName("marker");
-// var typeValue = tagObj[0].getElementsByTagName("type")[0].childNodes[0].nodeValue;
-// var titleValue = tagObj[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 var a=xmlDoc.getElementsByTagName("Text");
 console.log(a);
 }
@@ -79,5 +75,4 @@ var b=parse_xml(GDPchart,"ChartData");
 b="data:image/png;base64, "+b
 console.log(b);
 document.getElementById('GDPchart').src= b;
-// document.getElementById("myImg").src = "hackanm.gif";
 </script>
