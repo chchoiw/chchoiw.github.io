@@ -1,0 +1,84 @@
+---
+title: '統計分析方法'
+date: 2022-06-08
+permalink: /posts/2022/06/statistic_desc/
+tags:
+  - DESC
+category:
+  - Statistic
+---
+
+
+<!-- https://www.dsec.gov.mo/TimeSeriesDatabase.asmx -->
+<textarea id="response" style="width:1000px;height:500px;"> </textarea>
+<div id="macauarea"> </div>
+<div>
+  <p>Taken from wikpedia</p>
+  <img  id ="GDPchart"src="" alt="Red dot" />
+  <!-- data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg== -->
+</div>
+
+
+<script>
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+// var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorList?vLanguageType=1");
+var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorValue?iKeyIndicatorID=11&vLanguageType=TraditionalChinese");
+var GDPchart=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getChart?iIndicatorID=1111&vLanguageType=TraditionalChinese&vFunctionType=VAL&vDataPeriodType=Yearly&vChartSeriesType=LineChart&iLatestNRecords=6");
+document.getElementById('response').innerHTML =(response);
+console.log(httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorList?vLanguageType=1"))
+
+function readXml(xmlFile){
+
+var xmlDoc;
+
+if(typeof window.DOMParser != "undefined") {
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.open("GET",xmlFile,false);
+    if (xmlhttp.overrideMimeType){
+        xmlhttp.overrideMimeType('text/xml');
+    }
+    xmlhttp.send();
+    xmlDoc=xmlhttp.responseXML;
+}
+else{
+    xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+    xmlDoc.async="false";
+    xmlDoc.load(xmlFile);
+}
+// var tagObj=xmlDoc.getElementsByTagName("marker");
+// var typeValue = tagObj[0].getElementsByTagName("type")[0].childNodes[0].nodeValue;
+// var titleValue = tagObj[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+var a=xmlDoc.getElementsByTagName("Text");
+console.log(a)
+}
+// readXml(xmlFile)
+function parse_xml(xmlString,tagName)
+{
+    if (window.DOMParser)
+    {
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(xmlString, "text/xml");
+    }
+    else // Internet Explorer
+    {
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = false;
+        xmlDoc.loadXML(xmlString);
+    }
+    var a=xmlDoc.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
+    return a
+}
+var a=parse_xml(response,"Text");
+document.getElementById('macauarea').innerHTML=a;
+var b=parse_xml(GDPchart,"ChartData");
+b="data:image/png;base64, "+b
+console.log(b);
+document.getElementById('GDPchart').src= b;
+// document.getElementById("myImg").src = "hackanm.gif";
+</script>
