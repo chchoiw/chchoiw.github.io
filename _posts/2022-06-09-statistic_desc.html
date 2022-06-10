@@ -1,5 +1,5 @@
 ---
-title: 'DESC'
+title: 'DESC Web Service'
 date: 2022-06-08
 permalink: /posts/2022/06/statistic_desc/
 tags:
@@ -9,70 +9,249 @@ category:
 ---
 
 
-<!-- https://www.dsec.gov.mo/TimeSeriesDatabase.asmx -->
-<textarea id="response" style="width:1000px;height:500px;"> </textarea>
-<div id="macauarea"> </div>
-<div>
-  <p>Taken from wikpedia</p>
-  <img  id ="GDPchart"src="" alt="Red dot" />
-  <!-- data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg== -->
-</div>
+<!-- <textarea id="response" style="width:1000px;height:500px;"> </textarea> -->
 
+<!-- <form id="form"> -->
 
-<script>
-function httpGet(theUrl)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); 
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
-var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorValue?iKeyIndicatorID=11&vLanguageType=TraditionalChinese");
-var GDPchart=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getChart?iIndicatorID=1111&vLanguageType=TraditionalChinese&vFunctionType=VAL&vDataPeriodType=Yearly&vChartSeriesType=LineChart&iLatestNRecords=6");
-document.getElementById('response').innerHTML =(response);
-console.log(httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorList?vLanguageType=1"));
-
-function readXml(xmlFile){
-
-var xmlDoc;
-
-if(typeof window.DOMParser != "undefined") {
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET",xmlFile,false);
-    if (xmlhttp.overrideMimeType){
-        xmlhttp.overrideMimeType('text/xml');
+    <!-- strIndicatorDescription:<input id="strIndicatorDescription" name="strIndicatorDescription"></input> -->
+    <table>
+        <tr>
+            <td>strIndicatorDescription</td>
+            <td>
+                <select name="strIndicatorDescription" id="strIndicatorDescription">
+                    <option value="None">請選擇</option>
+                    <option value="本地生產總值">生產總值</option>
+                    <option value="面積">面積</option>
+                    <option value="貿易">貿易</option>
+                    <option value="人口">人口</option>
+                    <option value="住宅">住宅</option>
+                    <option value="消費">消費</option>
+                    <option value="旅遊">旅遊</option>
+                </select>
+            </td>
+        </tr>
+        <!-- <br>IndicatorID:<input id="IndicatorID" name="IndicatorID"></input> -->
+        <tr>
+            <td>IndicatorID:</td>
+            <td>
+                <select name="IndicatorID" id="IndicatorID" style="display:none;">
+                    <option value="test">test</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Function Type:</td>
+            <td>
+                <select name="vFunctionType" id="vFunctionType" style="display:none;">
+                    <option value="VAL">VAL</option>
+                    <option value="SPV">SPV</option>
+                    <option value="PPV">PPV</option>
+                    <option value="POT">POT</option>
+                    <option value="SPD">SPD</option>
+                    <option value="PPD">PPD</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Chart Type:</td>
+            <td>    
+                <select name="vChartSeriesType" id="vChartSeriesType" style="display:none;">
+                <option value="LineChart">LineChart</option>
+                <option value="BarChart">BarChart</option>
+                </select>
+            </td>
+    
+        </tr>
+        <tr>
+            <td>Data Period Type:</td>
+            <td>
+                <select name="vDataPeriodType" id="vDataPeriodType" style="display:none;">
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>iLatestNRecords:</td>
+            <td>
+                <input id="iLatestNRecords" name="iLatestNRecords" type="number" min='0' max='100' step='1' value="5" style="display:none;"></input>
+            </td>
+        </tr>
+        <tr >
+            <td colspan="2">
+            <button type="submit" id="submitBtn">submit</button>
+            </td>
+        </tr>
+        </table>
+    <!-- </form> -->
+    <br>
+    <textarea id="xmlStr" style="width:80%; height:50%; display:none;"> </textarea>
+    <div>
+      <img  id ="GDPchart"src="" alt="會在這處顯示圖像" />
+      <!-- data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg== -->
+    </div>
+    
+    
+    <script>
+    var strIndicatorDescription = document.getElementById("strIndicatorDescription");
+    var IndicatorID             = document.getElementById("IndicatorID");
+    var vFunctionType           = document.getElementById("vFunctionType");
+    var vChartSeriesType        = document.getElementById("vChartSeriesType");
+    var vDataPeriodType         = document.getElementById("vDataPeriodType");
+    var iLatestNRecords         = document.getElementById("iLatestNRecords");
+    var submitBtn               = document.getElementById("submitBtn");
+    var id_obj={};
+    strIndicatorDescription.addEventListener('change', function() {
+        var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getIndicatorID?strIndicatorDescription="+this.value+"&vLanguageType=TraditionalChinese");
+        document.getElementById('xmlStr').innerHTML=response;
+        
+        var tmp=parse_xml(response,"DSECIndicator");
+        
+        console.log(tmp.length);
+        id_obj={};
+        for (let i = 0; i < tmp.length; i++) {
+            var id=tmp[i].getElementsByTagName("IndicatorID")[0].childNodes[0].nodeValue;
+            var hirDesc=tmp[i].getElementsByTagName("HierarchicalDescription")[0].childNodes[0].nodeValue;
+            var val=tmp[i].getElementsByTagName("Val")[0].childNodes[0].nodeValue;
+            var spv=tmp[i].getElementsByTagName("SPV")[0].childNodes[0].nodeValue;
+            var ppv=tmp[i].getElementsByTagName("PPV")[0].childNodes[0].nodeValue;
+            var pot=tmp[i].getElementsByTagName("POT")[0].childNodes[0].nodeValue;
+            var spd=tmp[i].getElementsByTagName("SPD")[0].childNodes[0].nodeValue;
+            var ppd=tmp[i].getElementsByTagName("PPD")[0].childNodes[0].nodeValue;
+            var dataPeriodAry=[];
+            var functionAry=[];
+            if (val=="true") functionAry.push("VAL");
+            if (spv=="true") functionAry.push("SPV");
+            if (ppv=="true") functionAry.push("PPV");
+            if (pot=="true") functionAry.push("POT");
+            if (spd=="true") functionAry.push("SPD");
+            if (ppd=="true") functionAry.push("PPD");
+            
+            var DataPeriod=tmp[i].getElementsByTagName("AvailableDataPeriod")[0].getElementsByTagName("DataPeriod");
+            
+            for (let j = 0; j < DataPeriod.length; j++) {
+                
+                dataPeriodAry.push(DataPeriod[j].childNodes[0].nodeValue);
+            }   
+           
+            id_obj[id]={
+                "hirDesc":hirDesc,
+                "vfunction":functionAry,
+                "dataPeriod":dataPeriodAry,                      
+            };
+        }
+        console.log(IndicatorID);
+        removeOptions(IndicatorID);
+        var opt = document.createElement('option');
+        opt.value = "None";
+        opt.innerHTML = "請選擇";
+        IndicatorID.appendChild(opt);
+        for (const key in id_obj) {
+            var opt = document.createElement('option');
+            opt.value = key;
+            opt.innerHTML = id_obj[key]["hirDesc"];
+            IndicatorID.appendChild(opt);
+        }
+        IndicatorID.style.display = "inline-block";
+        vDataPeriodType.style.display = "none";
+        vFunctionType.style.display = "none"; 
+        iLatestNRecords.style.display = "none"; 
+        vChartSeriesType.style.display = "none"; 
+    
+    });
+    submitBtn.addEventListener('click', function() {
+        var link="https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getChart?iIndicatorID="+IndicatorID.value+"&vLanguageType=TraditionalChinese&vFunctionType="+vFunctionType.value+"&vDataPeriodType="+vDataPeriodType.value+"&vChartSeriesType="+vChartSeriesType.value+"&iLatestNRecords="+iLatestNRecords.value;
+        var response=httpGet(link);
+        document.getElementById('xmlStr').innerHTML=response;
+        
+        var bAry=parse_xml(response,"ChartData");
+        b="data:image/png;base64, "+bAry[0].childNodes[0].nodeValue;
+        console.log(b);
+        document.getElementById('GDPchart').src= b;
+    });
+    
+    
+    
+    IndicatorID.addEventListener('change', function() {
+        removeOptions(vFunctionType);
+        console.log(this.value);
+        var tmpAry=id_obj[this.value]["vfunction"];
+        for (let i=0; i<tmpAry.length; i++) {
+            var opt = document.createElement('option');
+            opt.value = tmpAry[i];
+            opt.innerHTML = tmpAry[i];
+            vFunctionType.appendChild(opt);
+        }
+        var tmpAry=id_obj[this.value]["dataPeriod"];
+        removeOptions(vDataPeriodType);
+        for (let i=0; i<tmpAry.length; i++) {
+            var opt = document.createElement('option');
+            opt.value = tmpAry[i];
+            opt.innerHTML = tmpAry[i];
+            vDataPeriodType.appendChild(opt);
+        }
+        
+        vDataPeriodType.style.display = "inline-block";
+        vFunctionType.style.display = "inline-block"; 
+        iLatestNRecords.style.display = "inline-block"; 
+        vChartSeriesType.style.display = "inline-block"; 
+    });
+    
+    function removeOptions(selectElement) {
+       var i, L = selectElement.options.length - 1;
+       for(i = L; i >= 0; i--) {
+          selectElement.remove(i);
+       }
     }
-    xmlhttp.send();
-    xmlDoc=xmlhttp.responseXML;
-}
-else{
-    xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-    xmlDoc.async="false";
-    xmlDoc.load(xmlFile);
-}
-var a=xmlDoc.getElementsByTagName("Text");
-console.log(a);
-}
-function parse_xml(xmlString,tagName)
-{
-    if (window.DOMParser)
+    
+    
+    
+    
+    function httpGet(theUrl)
     {
-        parser = new DOMParser();
-        xmlDoc = parser.parseFromString(xmlString, "text/xml");
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); 
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
     }
-    else 
+    var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorValue?iKeyIndicatorID=11&vLanguageType=TraditionalChinese");
+    var GDPchart=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getChart?iIndicatorID=1111&vLanguageType=TraditionalChinese&vFunctionType=VAL&vDataPeriodType=Yearly&vChartSeriesType=LineChart&iLatestNRecords=6");
+    console.log(httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getKeyIndicatorList?vLanguageType=1"));
+    
+    function readXml(xmlFile){
+    
+    var xmlDoc;
+    
+    if(typeof window.DOMParser != "undefined") {
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET",xmlFile,false);
+        if (xmlhttp.overrideMimeType){
+            xmlhttp.overrideMimeType('text/xml');
+        }
+        xmlhttp.send();
+        xmlDoc=xmlhttp.responseXML;
+        }
+        else{
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async="false";
+            xmlDoc.load(xmlFile);
+        }
+        var a=xmlDoc.getElementsByTagName("Text");
+    }
+    function parse_xml(xmlString,tagName)
     {
-        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-        xmlDoc.async = false;
-        xmlDoc.loadXML(xmlString);
+        if (window.DOMParser)
+        {
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(xmlString, "text/xml");
+        }
+        else 
+        {
+            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.loadXML(xmlString);
+        }
+        var a=xmlDoc.getElementsByTagName(tagName);
+        return a;
     }
-    var a=xmlDoc.getElementsByTagName(tagName)[0].childNodes[0].nodeValue;
-    return a;
-}
-var a=parse_xml(response,"Text");
-document.getElementById('macauarea').innerHTML=a;
-var b=parse_xml(GDPchart,"ChartData");
-b="data:image/png;base64, "+b;
-console.log(b);
-document.getElementById('GDPchart').src= b;
-</script>
+    
+    
+    </script>
