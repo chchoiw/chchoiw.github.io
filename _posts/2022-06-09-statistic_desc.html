@@ -85,11 +85,20 @@ category:
     <br>
     <textarea id="xmlStr" style="width:80%; height:50%; display:none;"> </textarea>
     <div>
-      <img  id ="GDPchart"src="" alt="會在這處顯示圖像" />
+      <img  id ="chart"src="" alt="會在這處顯示圖像" style="display:none"/>
       <!-- data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg== -->
     </div>
+    <table id="dataTable" style="display:none">
+        <thead>
+            <td id="yearHeader">參考時間</td>
+            <td id="valueHeader">數值/指標題()</td>
+        </thead>
+        <tbody id="dataTbody">
     
+        </tbody>
     
+    </table>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
     var strIndicatorDescription = document.getElementById("strIndicatorDescription");
     var IndicatorID             = document.getElementById("IndicatorID");
@@ -98,7 +107,13 @@ category:
     var vDataPeriodType         = document.getElementById("vDataPeriodType");
     var iLatestNRecords         = document.getElementById("iLatestNRecords");
     var submitBtn               = document.getElementById("submitBtn");
+    var dataTbody               = document.getElementById("dataTbody");
+    var yearHeader               = document.getElementById("yearHeader");
+    var valueHeader               = document.getElementById("valueHeader");
+    var dataTable               = document.getElementById("dataTable");
+    var chart               = document.getElementById("chart");
     var id_obj={};
+    var data_obj={};
     strIndicatorDescription.addEventListener('change', function() {
         var response=httpGet("https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getIndicatorID?strIndicatorDescription="+this.value+"&vLanguageType=TraditionalChinese");
         document.getElementById('xmlStr').innerHTML=response;
@@ -155,17 +170,53 @@ category:
         vFunctionType.style.display = "none"; 
         iLatestNRecords.style.display = "none"; 
         vChartSeriesType.style.display = "none"; 
+        chart.style.display = "none"; 
+        dataTable.style.display = "none"; 
     
     });
     submitBtn.addEventListener('click', function() {
         var link="https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getChart?iIndicatorID="+IndicatorID.value+"&vLanguageType=TraditionalChinese&vFunctionType="+vFunctionType.value+"&vDataPeriodType="+vDataPeriodType.value+"&vChartSeriesType="+vChartSeriesType.value+"&iLatestNRecords="+iLatestNRecords.value;
+        var linkData="https://www.dsec.gov.mo/TimeSeriesDatabase.asmx/getIndicatorLatestNValues?iIndicatorID="+IndicatorID.value+"&vLanguageType=TraditionalChinese&vFunctionType="+vFunctionType.value+"&vDataPeriodType="+vDataPeriodType.value+"&iLatestNRecords="+iLatestNRecords.value;
         var response=httpGet(link);
+        var responseData=httpGet(linkData);
         document.getElementById('xmlStr').innerHTML=response;
         
+        console.log("image",response);
         var bAry=parse_xml(response,"ChartData");
         b="data:image/png;base64, "+bAry[0].childNodes[0].nodeValue;
-        console.log(b);
-        document.getElementById('GDPchart').src= b;
+        chart.src= b;
+    
+        var tmp=parse_xml(responseData,"DSECIndicatorWSData");
+        console.log(responseData);
+        dataTbody.innerHTML = "";
+        for (let i = 0; i < tmp.length; i++) {
+            var text=tmp[i].getElementsByTagName("Text")[0].childNodes[0].nodeValue;
+            var ReferencePeriod=tmp[i].getElementsByTagName("ReferencePeriod")[0].childNodes[0].nodeValue;
+            var UnitLabel=tmp[i].getElementsByTagName("UnitLabel")[0].childNodes[0].nodeValue;
+            var Year=tmp[i].getElementsByTagName("Year")[0].childNodes[0].nodeValue;
+            var IndicatorValue=tmp[i].getElementsByTagName("IndicatorValue")[0].childNodes[0].nodeValue;
+            data_obj={
+                "IndicatorValue":IndicatorValue,
+                "Year":Year,
+                "ReferencePeriod":ReferencePeriod,
+                 "UnitLabel":UnitLabel,                     
+            };
+            
+            valueHeader.innerHTML="數值/指標題("+UnitLabel+")";
+            yearHeader.innerHTML="參考時間";
+            var tr = document.createElement('tr');
+    
+            var td = document.createElement('td');
+            td.appendChild(document.createTextNode(ReferencePeriod));
+            tr.appendChild(td);
+            var td = document.createElement('td');
+            td.appendChild(document.createTextNode(IndicatorValue));
+            tr.appendChild(td);        
+            dataTbody.appendChild(tr);
+        }
+    
+        chart.style.display = "inline-block"; 
+        dataTable.style.display = "inline-block"; 
     });
     
     
