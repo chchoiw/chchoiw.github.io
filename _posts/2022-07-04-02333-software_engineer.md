@@ -11,7 +11,7 @@ category:
 
 <style>
 em { font-style: normal; font-weight: bold;text-decoration:underline; }
-em { color: #3f50cb }
+em { color: #002FA7 }
 </style>
 
 # 第一章
