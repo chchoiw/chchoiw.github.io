@@ -8,6 +8,14 @@ category:
   - Computer Science
 ---
 
+s { text-decoration:none; } 
+em { font-style: normal; font-weight: bold; }
+
+
+
+s { color: green }
+em { color: blue }
+
 
 # 第一章
 
