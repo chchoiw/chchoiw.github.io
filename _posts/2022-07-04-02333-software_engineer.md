@@ -7,7 +7,7 @@ tags:
 category:
   - Computer Science
 ---
-
+<style>
 s { text-decoration:none; } 
 em { font-style: normal; font-weight: bold; }
 
@@ -15,7 +15,7 @@ em { font-style: normal; font-weight: bold; }
 
 s { color: green }
 em { color: blue }
-
+</style>
 
 # 第一章
 
