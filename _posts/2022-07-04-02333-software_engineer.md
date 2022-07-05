@@ -10,10 +10,8 @@ category:
 
 
 <style>
-s { text-decoration:none; } 
-em { font-style: normal; font-weight: bold; }
-s { color: green }
-em { color: blue }
+em { font-style: normal; font-weight: bold;text-decoration:underline; }
+em { color: #3f50cb }
 </style>
 
 # 第一章
