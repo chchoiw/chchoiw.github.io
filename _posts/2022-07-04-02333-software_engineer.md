@@ -12,6 +12,10 @@ category:
 <style>
 em { font-style: normal; font-weight: bold;text-decoration:underline; }
 em { color: #002Fa7 }
+.center{
+  margin:auto;
+  display:inline-block;
+}
 </style>
 
 
