@@ -241,7 +241,7 @@ id1((數據流))
 id3[數據存儲]
 id2--加工符號-->id1
 id1-->id3
-style id3 fill:#ffffff,stroke-width:1px 0 1px 0
+style id3 fill:#ffffff,stroke-width:1px 0px 1px 0px
 style id2 fill:#ffffff
 style id1 fill:#ffffff
 ```
