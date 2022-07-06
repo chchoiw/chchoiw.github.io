@@ -237,7 +237,7 @@ id3-->id4
 ```mermaid
 graph LR
 id2[數據源和數據潭]
-id1((加工))
+id1((數據流))
 id3[數據存儲]
 id2--加工符號-->id1
 id1-->id3
