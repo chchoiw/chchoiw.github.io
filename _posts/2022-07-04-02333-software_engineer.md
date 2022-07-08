@@ -506,7 +506,7 @@ id2-->id3
     - 使用某種自然語言的詞匯。
   
 
-```mermdid
+```mermaid
 graph TB
 id1[結構化設計工具]
 id2[總體設計工具]
