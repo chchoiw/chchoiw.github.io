@@ -566,7 +566,7 @@ id3-->id10
   - 例1：```+ origin:Point =(0.0) ```
   - 例2: ```#visibility:Boolean```
 - 可見性
-  - \+ :公有的( public 
+  - \+ :公有的(public) 
   - \# :受保護的(protecte)
   - \-:私有的( private）
   - ~ :包內的
