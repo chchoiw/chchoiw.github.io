@@ -1248,7 +1248,7 @@ graph TB
 id1[軟件CMM]
 id2[產品集成開發CMM]
 id3[系統工程CMM]
-id4[集成化能力成熟度模型(CMMI)]
+id4[集成化能力成熟度模型,CMMI]
 
 id1-->id4
 id2-->id4
