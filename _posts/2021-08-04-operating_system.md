@@ -57,6 +57,15 @@ category:
   - [緩沖技術](#緩沖技術)
   - [虛擬設備技術-SPOOLing](#虛擬設備技術-spooling)
 
+<style>
+em { font-style: normal; font-weight: bold;text-decoration:underline; }
+em { color: red; }
+.center{
+  margin:auto;
+  display:inline-block;
+}
+</style>
+
 # 簡介
 - 這是我[自考](http://eea.gd.gov.cn/zxks/index.html)計算機科學與應用中操作系統(02326)的複習要點
 - 開始學習是使用[網上教學視頻](https://www.bilibili.com/video/BV1P4411z7cH?from=search&seid=3564874264541170958)
@@ -131,7 +140,10 @@ category:
 
 ## 操作系統的結構
 - 整體式結構
-  - 優點:結構緊密、接口簡單直接和系統效率高
+  - 優點:
+    - 結構緊密
+    - 接口簡單直接
+    - 系統效率高
   - 缺點:
     - 獨立性差,系統結構不清晰
     - 數據基本上為全程量處理,相當複雜的事
