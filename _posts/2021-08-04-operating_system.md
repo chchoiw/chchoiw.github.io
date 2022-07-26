@@ -439,33 +439,6 @@ graph TB
 
 <div style="width:800px;text-align:center;"><img  src="/images/02326/1.png"/></div>
 
-  ```mermaid
-  graph LR
-  id1[创建状态]
-  id2[就绪状态]
-  id3[运行状态]
-  id4[等待状态]
-  id5[结束状态]
-  id6[就绪掛起状态]
-  id7[等待掛起狀態]
-
-  id1--提交-->id2
-  id1--提交-->id6
-  id2--调度-->id3
-  id3--超時,被搶占-->id2
-  id3--等待某个事件发生-->id4
-  id4--等待的事件已发生-->id2
-  id7--等待的事件已发生-->id6
-
-  id4--释放-->id5
-  id4--掛起-->id7
-  id7--激活-->id4
-  id2--掛起-->id6
-  id6--激活-->id2
-  id3--掛起-->id6
-  ```
-
-
 ### 進程控制塊(PCB)
 - PCB的内容
   - 进程控制块的内容可以分成*调度信息*和*现场信息*两大部分。
