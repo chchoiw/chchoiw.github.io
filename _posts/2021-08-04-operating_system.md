@@ -437,7 +437,7 @@ graph TB
   - 就绪挂起到就绪
   - 阻塞挂起到阻基
 
-<img src="/images/02326/1.png"/>
+<div style="width:800px;text-align:center;"><img  src="/images/02326/1.png"/></div>
 
   ```mermaid
   graph LR
