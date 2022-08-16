@@ -86,7 +86,7 @@ category:
   Q-->rear=(Q-->rear+1) %n
   ```
 
-  - 測滿: ```(Q-->rear+1) %m==(Q-->font)}```
+  - 測滿: ```(Q-->rear+1) %n==(Q-->font)```
 - 元素個數:
   
   $$
