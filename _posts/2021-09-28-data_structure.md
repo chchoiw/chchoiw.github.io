@@ -80,6 +80,12 @@ category:
 - 非空隊列時
   - font是出隊,非空隊列font是有內容
   - rear是入隊,非空隊列rear是最後有內容的後一個位置,沒有內容
+  
+  ```
+  Q-->data[Q-->rear]=x;
+  Q-->rear=(Q-->rear+1) %n
+  ```
+
   - 測滿: ```(Q-->rear+1) %m==(Q-->font)}```
 - 元素個數:
   
