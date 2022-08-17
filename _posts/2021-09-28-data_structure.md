@@ -256,6 +256,8 @@ n_0=n_2+1
 $$
 
 - 完全二叉樹:深度為$k$的二叉樹, 在前$k-1$層是滿樹,第$k$層的結點都在左邊。則有$n$結點的深度$k$
+- 分支結點即度不為0的結點。
+
 
 $$
 k=\lfloor\log n\rfloor +1  \quad \text{or} \quad k=\lceil \log (n+1) \rceil
