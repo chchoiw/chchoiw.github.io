@@ -263,7 +263,7 @@ $$
 k=\lfloor\log n\rfloor +1  \quad \text{or} \quad k=\lceil \log (n+1) \rceil
 $$
 
-- 從data[], 轉換成樹
+- P.113:從data[], 轉換成樹
 
 ```C
 void create (int* Data, int n)
