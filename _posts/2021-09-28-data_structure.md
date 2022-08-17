@@ -263,6 +263,38 @@ $$
 k=\lfloor\log n\rfloor +1  \quad \text{or} \quad k=\lceil \log (n+1) \rceil
 $$ 
 
+```C
+void create (int* Data, int n)
+{
+  BinTNode *Q[100],*Bt=NULL,*p;
+  int font=0;rear=0,k;
+  for (k=0;k<n;k++)
+  {
+    p=NULL;
+    if (data[k]!=0)
+    {
+      p=(BinTree)malloc(sizeof (BinTNode));
+      p->data=data[k];
+      p->lchild=p->rchild=NULL;
+    }
+    Q[rear++]=p;
+    if (rear==1) Bt=p;
+    else 
+    {
+      if (p!=NULL && Q[font]!=NULL)
+      {
+        if (rear%2==0) Q[font]->lchild=p;
+        else Q[font]->rchild=p;
+        if (rear%2==1) font++;
+
+      }
+    }
+  }
+}
+
+```
+
+
 - 前序歷遍:根左右
 - 中序歷遍:左根右
 - 後序歷遍:左右根
