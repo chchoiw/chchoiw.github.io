@@ -265,7 +265,7 @@ $$
 
 - P.113:從data[], 轉換成樹
 
-```C
+```c
 void create (int* Data, int n)
 {
   BinTNode *Q[100],*Bt=NULL,*p;
@@ -293,7 +293,6 @@ void create (int* Data, int n)
     }
   }
 }
-
 ```
 
 
