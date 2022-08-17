@@ -533,7 +533,7 @@ $$
 - 數據的四種基本存儲方法是<span style="color:red">順序,鏈接,索引和散列存儲</span>
 - 數據結構是數據的<span style="color:red">邏輯結構和儲存結構</span>
 - <span style="color:red">遞歸函數</span>
-- <span style="color:red">遞歸終止條件</span>
+- 遞歸的最小子問題稱<span style="color:red">遞歸終止條件</span>
 - <span style="color:red">有向無環圖</span>
 - <span style="color:red">父結點或兄弟</span>
 - <span style="color:red">裝填因子</span>,大則發生沖突機率大
