@@ -593,3 +593,4 @@ $$
 - 分塊查找, 先查<span style="color:red">索引表</span>,再找相應的<span style="color:red">塊</span>
 - 平均查找長度與結點無關的查找方法是<span style="color:red">散列查找</span>
 - 三種查找方法: <span style="color:red">樹表, 順序和散列</span>
+- Dijkstra 算法是按照路徑: <span style="color:red">長度</span>不減的次序求出各條路徑的
