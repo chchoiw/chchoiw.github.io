@@ -594,3 +594,4 @@ $$
 - 平均查找長度與結點無關的查找方法是<span style="color:red">散列查找</span>
 - 三種查找方法: <span style="color:red">樹表, 順序和散列</span>
 - Dijkstra 算法是按照路徑: <span style="color:red">長度</span>不減的次序求出各條路徑的
+- 一個連通圖的<span style="color:red">生成樹</span>是包含圖中所有頂點的極小連通子圖
