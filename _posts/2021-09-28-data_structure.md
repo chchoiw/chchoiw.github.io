@@ -595,3 +595,4 @@ $$
 - 三種查找方法: <span style="color:red">樹表, 順序和散列</span>
 - Dijkstra 算法是按照路徑: <span style="color:red">長度</span>不減的次序求出各條路徑的
 - 一個連通圖的<span style="color:red">生成樹</span>是包含圖中所有頂點的極小連通子圖
+- 箱排序的改進和推廣的算法是<span style="color:red">基數排序</span>
