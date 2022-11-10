@@ -136,6 +136,13 @@ $$
 P(A_1\cup A_2 \cup A_3|B)=\frac{P(A_1)}{P(B)}+\frac{P(A_2)}{P(B)}+\frac{P(A_3)}{P(B)}
 $$
 
+- 乘法公式
+
+$$
+P(A_1A_2A_3\dots A_n)=\frac{P(A_1A_2)}{P(A_1)}\frac{P(A_1A_2A_3)}{P(A_1A_2)} \dots \frac{P(A_1A_2\dots A_{n})}{P(A_1A_2\dots A_{n-1})}
+$$
+
+
 # 一些基本的分佈
 ## 二次項分佈
 - [wiki](https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%A0%85%E5%88%86%E4%BD%88)
@@ -152,7 +159,7 @@ $$
 
 ## 幾何分佈
 - [wiki](https://zh.wikipedia.org/wiki/%E5%B9%BE%E4%BD%95%E5%88%86%E4%BD%88)
-- 如果每次試驗的成功概率是$p$，那麼$k$次試驗中，第$k$次纔得到第一次成功的概率是，
+- 如果每次試驗的成功概率是$p$，那麼$k$次試驗中，第$k$次才得到第一次成功的概率是，
 
 $$ \text{Pr}(X=k)= (1-p)^{k-1}p $$
 
