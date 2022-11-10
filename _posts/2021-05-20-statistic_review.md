@@ -236,11 +236,13 @@ $$
 
 ## 樣本分位數與樣本中位數
 
+- 數列下標由1開始
+
 $$
 m_{0.5}=\Big\{
 \begin{aligned}
   & x_{\frac{n+1}{2}} \quad & \text{n is odd}\\
-  & 0.5*(x_{\frac{n}{2}} +x_{\frac{n+1}{2}}) \quad & \text{n is even}
+  & 0.5*(x_{\frac{n}{2}} +x_{\frac{n}{2}+1}) \quad & \text{n is even}
 \end{aligned}
 $$
 
