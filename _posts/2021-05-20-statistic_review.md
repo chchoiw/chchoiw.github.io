@@ -142,7 +142,13 @@ $$
 - 乘法公式
 
 $$
-P(A_1A_2A_3\dots A_n)=\frac{P(A_1A_2)}{P(A_1)}\frac{P(A_1A_2A_3)}{P(A_1A_2)} \dots \frac{P(A_1A_2\dots A_{n})}{P(A_1A_2\dots A_{n-1})} P(1)
+P(A_1A_2A_3\dots A_n)=\frac{P(A_1A_2)}{P(A_1)}\frac{P(A_1A_2A_3)}{P(A_1A_2)} \dots \frac{P(A_1A_2\dots A_{n})}{P(A_1A_2\dots A_{n-1})} P(A_1)
+$$
+
+- 貝叶斯公式
+
+$$
+P(B_i|A)=\frac{P(B_i)P(A|B_i)}{ \sum_{j=1}^n P(j)P(A|B_j)}
 $$
 
 
