@@ -148,7 +148,7 @@ $$
 - 貝叶斯公式
 
 $$
-P(B_i|A)=\frac{P(B_i)P(A|B_i)}{ \sum_{j=1}^n P(j)P(A|B_j)}
+P(B_i|A)=\frac{P(B_i)P(A|B_i)}{ \sum_{j=1}^n P(B_j)P(A|B_j)}
 $$
 
 
