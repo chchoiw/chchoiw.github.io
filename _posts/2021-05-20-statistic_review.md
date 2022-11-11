@@ -393,9 +393,9 @@ $$
 
 $$
 \begin{aligned}
-I &H_0:\theta \leq \theta_0 \quad &VS\quad  &H_1:\theta > \theta_0 \\
-II &H_0:\theta \geq \theta_0 \quad &VS\quad  &H_1:\theta < \theta_0 \\
-III &H_0:\theta = \theta_0 \quad &VS\quad  &H_1:\theta \neq \theta_0 
+I \quad &H_0:\theta \leq \theta_0 \quad &VS\quad  &H_1:\theta > \theta_0 \\
+II \quad &H_0:\theta \geq \theta_0 \quad &VS\quad  &H_1:\theta < \theta_0 \\
+III \quad &H_0:\theta = \theta_0 \quad &VS\quad  &H_1:\theta \neq \theta_0 
 \end{aligned}
 $$
 
