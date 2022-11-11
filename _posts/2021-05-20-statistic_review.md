@@ -275,7 +275,7 @@ $$
 - 中心極限定理就是研究隨機變量和的極限分布在甚麽條件下為正態分布的問題
 
 $$
-\frac{\sum X_i-E(\sum X_i)}{ Var{\sum X_i}}=
+\frac{\sum X_i-E(\sum X_i)}{ \text{Var}(\sum X_i)}=
 \frac{\sum X_i -n\mu}{\sigma\sqrt{n}}
   \rightarrow N(0,1)
 $$
