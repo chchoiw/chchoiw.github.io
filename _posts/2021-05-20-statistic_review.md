@@ -415,8 +415,16 @@ $$
 
 ## $\chi^2$分類數據擬合度檢驗
 
+- 有$r$類, $A_1,A_2,\dots,A_r$
+
+$$
+H_0: A_i \text{的所占的比率是} p_{i0},\quad i=1,2,\dots,r
+$$
 
 
+$$
+\chi^2=\sum\frac{(n_i-np_{i0})^2}{np_{i0}}
+$$
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
