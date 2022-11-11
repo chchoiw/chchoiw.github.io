@@ -392,8 +392,6 @@ $$
 $$
 \begin{algined}
 I &H_0:\theta \leq \theta_0 \quad &V.S.\quad  &H_1:\theta > \theta_0 \\
-II &H_0:\theta \geq \theta_0 \quad &V.S.\quad  &H_1:\theta < \theta_0 \\
-III &H_0:\theta = \theta_0 \quad &V.S.\quad  &H_1:\theta \neq \theta_0 
 \end{aligned}
 $$
 
