@@ -36,6 +36,7 @@ category:
 - [假設檢驗](#假設檢驗)
   - [大樣本檢驗](#大樣本檢驗)
   - [$\chi^2$分類數據擬合度檢驗](#chi2分類數據擬合度檢驗)
+  - [列聯表的獨立性檢驗](#列聯表的獨立性檢驗)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -425,8 +426,18 @@ $$
 
 
 $$
-\chi^2=\sum\frac{(n_i-np_{i0})^2}{np_{i0}} \sim \chi^2()
+\chi^2=\sum\frac{(n_i-np_{i0})^2}{np_{i0}} \sim \chi^2(r-1)
 $$
+
+## 列聯表的獨立性檢驗
+
+$$H_0:p_{ij} =p_{i\dot}p_{\dot j} \quad i=1,\dots,r,j=1,2,\dots,c$$ 
+
+$$
+\chi^2=\sum\sum\frac{(n_{ij}-n\hat p_{ij})^2}{n\hat p_{ij}} \sim \chi^2((r-1)(c-1))
+$$
+
+- 拒絕域$W=\{\chi^2\geq \chi^2_{1-\alpha}((r-1)(c-1))\}$
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
