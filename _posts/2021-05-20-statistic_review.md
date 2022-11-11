@@ -40,6 +40,7 @@ category:
   - [$\chi^2$分類數據擬合度檢驗](#chi2分類數據擬合度檢驗)
   - [列聯表的獨立性檢驗](#列聯表的獨立性檢驗)
   - [正態分布](#正態分布)
+- [線性迴歸和邏輯迴歸](#線性迴歸和邏輯迴歸)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -47,7 +48,6 @@ category:
   - [羣集抽樣(cluster sampling)](#羣集抽樣cluster-sampling)
   - [最大似然](#最大似然)
 - [數據清理和檢查](#數據清理和檢查)
-- [線性迴歸和邏輯迴歸](#線性迴歸和邏輯迴歸)
 - [卡方、F、T、正態和ANOVA等檢測](#卡方ft正態和anova等檢測)
   - [列联表分析](#列联表分析)
   - [卡方](#卡方)
@@ -497,7 +497,16 @@ $$
 
 
 
+# 線性迴歸和邏輯迴歸
+- [百度百科](https://baike.baidu.com/item/logistic%E5%9B%9E%E5%BD%92)
+- [知乎參考](https://zhuanlan.zhihu.com/p/28408516)
+- [一些例子](http://web.ncyu.edu.tw/~lanjc/lesson/C7/class/ch02-AN.pdf)
+- [線性回歸](https://chchoiw.github.io/posts/2019/04/regression/)
 
+- 多重線性識別方法：VIF、散點圖和相關係數矩陣
+- 多元線性迴歸中容易出現的問題是 正態分佈問題、異方差問題、異常值問題和共線性問題 
+
+- DW檢測：誤差項自相關或(序列相關)  
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
@@ -563,16 +572,7 @@ $$
 
 
 <br>
-# 線性迴歸和邏輯迴歸
-- [百度百科](https://baike.baidu.com/item/logistic%E5%9B%9E%E5%BD%92)
-- [知乎參考](https://zhuanlan.zhihu.com/p/28408516)
-- [一些例子](http://web.ncyu.edu.tw/~lanjc/lesson/C7/class/ch02-AN.pdf)
-- [線性回歸](https://chchoiw.github.io/posts/2019/04/regression/)
 
-- 多重線性識別方法：VIF、散點圖和相關係數矩陣
-- 多元線性迴歸中容易出現的問題是 正態分佈問題、異方差問題、異常值問題和共線性問題 
-
-- DW檢測：誤差項自相關或(序列相關)  
 
   
 
