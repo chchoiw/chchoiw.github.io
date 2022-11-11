@@ -300,7 +300,9 @@ $$
 - [大數法則](http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/Lec11_slides.pdf?crazycache=1)
   
 $$
-\lim_{n\rightarrow \infty} P(\vert \bar X -\mu \vert \geq \epsilon) =0
+\lim_{n\rightarrow \infty} P(\vert\
+frac{1}{n} \sum _{i=1}^n X_i -\frac{1}{n} \sum _{i=1}^n E(X_i)
+ \vert \geq \epsilon) =0
 $$
 
 - 弱大數是極限的趨向是弱
