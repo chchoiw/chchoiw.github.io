@@ -48,12 +48,6 @@ category:
   - [羣集抽樣(cluster sampling)](#羣集抽樣cluster-sampling)
   - [最大似然](#最大似然)
 - [數據清理和檢查](#數據清理和檢查)
-- [卡方、F、T、正態和ANOVA等檢測](#卡方ft正態和anova等檢測)
-  - [列联表分析](#列联表分析)
-  - [卡方](#卡方)
-  - [F分布](#f分布-1)
-  - [t驗檢](#t驗檢)
-  - [檢驗正態分佈](#檢驗正態分佈)
 - [主成分分析、因子分析、對應分析等](#主成分分析因子分析對應分析等)
   - [主成份分析(PCA)](#主成份分析pca)
   - [對應分析](#對應分析)
@@ -569,92 +563,10 @@ $$
 
 
 
-
-
-<br>
-
-
   
 
-# 卡方、F、T、正態和ANOVA等檢測
-
-## 列联表分析
-- [知乎參考](https://zhuanlan.zhihu.com/p/24552283)
-
-$$
-\sum \sum 
-\frac{ 
-  (n_{i,j}- \frac{n_{ i \cdot}n_{\cdot j} }{n})^2
-  } 
-  {
-     \frac{n_{i \cdot }n_{\cdot j}}{n}
-  }
-$$
-
-- [T、ANOVA、卡方檢驗和迴歸分別](https://www1.cgmh.org.tw/intr/intr2/ebmlink/doc/%E7%B5%B1%E8%A8%88%E6%95%99%E5%AD%B89411.pdf)
-- [12 種檢測與其例子](/images/machine_learning/twelveTest.pdf)
-
-## 卡方
-
-- 卡方：名義測量類型的數據
-- 卡方：單個總體的方差檢驗
-- 卡方圖形在$y$軸右側
-- 總體方差服從卡方分佈
-  
-
-$X_i \sim N(0,1)$,那麽$\sum X_i \sim \chi(n)$   
-
-定理1
-
-$$
-\bar x \quad s^2 \quad \text{is independent}
-$$
-
-$$
-\bar x \sim N(\mu, \frac{\sigma^2}{n})
-$$
-
-$$
-\frac{(n-1)s^2}{\sigma^2} \sim \chi^2(n-1)
-$$
 
 
-## F分布
-
-$$
-F=\frac{\chi_1/m}{\chi_2/n}
-$$
-
-$$
-F_\alpha(n,m)=\frac{1}{F_{1-\alpha}(m,n)}
-$$
-
-
-$$
-F=\frac{s_x^2/ \sigma_1^2}{s_y^2/ \sigma_1^2} \sim F(m-1,n-1)
-$$
-
-## t驗檢
-
-- 正態性、連續變量、獨立性和方差齊性
-
-$$
-t(n) = \frac{N(0,1)}{\sqrt{\chi{n}/n}}
-$$
-
-推論
-
-$$
-\frac{\bar x -\mu}{s/\sqrt{n}} \sim t(n-1)
-$$
-
-## 檢驗正態分佈
-- 繪製頻數分佈圖
-- 繪製P-P圖
-- 進行KS檢驗
-- 繪製Q-Q圖
-
-In linear least squares multiple regression with an estimated intercept term,   equals the square of the Pearson correlation coefficient between the observed  and modeled (predicted)  data values of the dependent variable.”在帶有截距項的線性最小二乘多元迴歸中，  等於實測值  和擬合值  的相關係數的平方。注意前面有一串限定條件。
 
 
 
