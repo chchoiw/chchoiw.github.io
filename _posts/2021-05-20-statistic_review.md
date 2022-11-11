@@ -32,8 +32,9 @@ category:
   - [$\chi^2$分布](#chi2分布)
   - [$F$分布](#f分布)
   - [$t$分布](#t分布)
-  - [參數估計](#參數估計)
-  - [假設檢驗](#假設檢驗)
+- [參數估計](#參數估計)
+- [假設檢驗](#假設檢驗)
+  - [大樣本檢驗](#大樣本檢驗)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -379,10 +380,35 @@ t=\frac{\sqrt{n}(\bar x -\mu)}{s}\sim t(n-1)
 $$
 
 
-## 參數估計
+# 參數估計
 - 待續
 
-## 假設檢驗
+# 假設檢驗
+## 大樣本檢驗
+
+- p.384
+
+\begin{algined}
+I &H_0:\theta \leq \theta_0 \quad &V.S.\quad  &H_1:\theta > \theta_0 \\
+II &H_0:\theta \geq \theta_0 \quad &V.S.\quad  &H_1:\theta < \theta_0 \\
+III &H_0:\theta = \theta_0 \quad &V.S.\quad  &H_1:\theta \neq \theta_0 
+\end{aligned}
+
+- 二點分布$b(1,\theta)$ ,方差$\theta(1-\theta)$
+
+$$
+u=\frac{\sqrt{n}(\bar x-\theta_0)}{\sqrt{\sigma^2(\hat \theta)}} \sim N(0,1)
+$$
+
+- possion 
+$$H_0:\lambda \leq \lambda_0 \quad V.S.\quad  &H_1:\lambda > \lambda_0 $$ 
+
+$$
+u=\frac{\sqrt{n}(\bar x-\lambda_0)}{\sqrt{\hat \lambda}} \sim N(0,1)
+$$
+
+其中, $\hat \lambda$是樣本平均值
+
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
