@@ -31,6 +31,7 @@ category:
 - [三大分佈](#三大分佈)
   - [$\chi^2$分布](#chi2分布)
   - [$F$分布](#f分布)
+  - [$t$分布](#t分布)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -358,6 +359,9 @@ $$
 $$
 F=\frac{\frac{(m-1)s_x^2}{\sigma}}{\frac{(n-1)s_y^2}{\sigma}}  =\frac{s_x^2}{s_y^2}
 $$
+
+
+## $t$分布
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
