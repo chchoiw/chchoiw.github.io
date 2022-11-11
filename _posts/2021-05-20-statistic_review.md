@@ -389,11 +389,14 @@ $$
 
 - p.384
 
+$$
 \begin{algined}
 I &H_0:\theta \leq \theta_0 \quad &V.S.\quad  &H_1:\theta > \theta_0 \\
 II &H_0:\theta \geq \theta_0 \quad &V.S.\quad  &H_1:\theta < \theta_0 \\
 III &H_0:\theta = \theta_0 \quad &V.S.\quad  &H_1:\theta \neq \theta_0 
 \end{aligned}
+$$
+
 
 - 二點分布$b(1,\theta)$ ,方差$\theta(1-\theta)$
 
