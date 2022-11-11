@@ -391,9 +391,9 @@ $$
 
 $$
 \begin{algined}
-I &H_0:\theta \leq \theta_0 \quad &VS\quad  &H_1:\theta > \theta_0 \\
-II &H_0:\theta \geq \theta_0 \quad &VS\quad  &H_1:\theta < \theta_0 \\
-III &H_0:\theta = \theta_0 \quad &VS\quad  &H_1:\theta \neq \theta_0 
+I H_0:\theta \leq \theta_0 \quad VS\quad  H_1:\theta > \theta_0 \\
+II H_0:\theta \geq \theta_0 \quad VS\quad  H_1:\theta < \theta_0 \\
+III H_0:\theta = \theta_0 \quad VS\quad  H_1:\theta \neq \theta_0 
 \end{aligned}
 $$
 
@@ -405,7 +405,9 @@ u=\frac{\sqrt{n}(\bar x-\theta_0)}{\sqrt{\sigma^2(\hat \theta)}} \sim N(0,1)
 $$
 
 - possion 
-$$H_0:\lambda \leq \lambda_0 \quad VS \quad  &H_1:\lambda > \lambda_0 $$ 
+
+
+$$H_0:\lambda \leq \lambda_0 \quad VS \quad  H_1:\lambda > \lambda_0 $$ 
 
 $$
 u=\frac{\sqrt{n}(\bar x-\lambda_0)}{\sqrt{\hat \lambda}} \sim N(0,1)
