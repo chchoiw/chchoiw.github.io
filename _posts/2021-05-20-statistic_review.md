@@ -32,6 +32,8 @@ category:
   - [$\chi^2$分布](#chi2分布)
   - [$F$分布](#f分布)
   - [$t$分布](#t分布)
+  - [參數估計](#參數估計)
+  - [假設檢驗](#假設檢驗)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -47,7 +49,7 @@ category:
   - [F分布](#f分布-1)
   - [t驗檢](#t驗檢)
   - [檢驗正態分佈](#檢驗正態分佈)
-- [參數估計](#參數估計)
+- [參數估計](#參數估計-1)
   - [無偏估計](#無偏估計)
   - [有效性](#有效性)
 - [主成分分析、因子分析、對應分析等](#主成分分析因子分析對應分析等)
@@ -364,6 +366,23 @@ $$
 
 
 ## $t$分布
+- $X_1 \sim N(0,1),X_2\sim \chi^2(n)$,則
+
+$$
+t=\frac{X_1}{\sqrt{X_2/n}}
+$$
+
+- $x1,\dots, x_n N(\mu,\sigma)$,$\bar x , s^2$是樣本的平均和方差,則
+
+$$
+t=\frac{\sqrt{n}(\bar x -\mu)}{s}\sim t(n-1)
+$$
+
+
+## 參數估計
+- 待續
+
+## 假設檢驗
 
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
