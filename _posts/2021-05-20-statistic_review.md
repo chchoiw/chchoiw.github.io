@@ -35,6 +35,7 @@ category:
 - [參數估計](#參數估計)
 - [假設檢驗](#假設檢驗)
   - [大樣本檢驗](#大樣本檢驗)
+  - [$\chi^2$分類數據擬合度檢驗](#chi2分類數據擬合度檢驗)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -408,6 +409,10 @@ u=\frac{\sqrt{n}(\bar x-\lambda_0)}{\sqrt{\hat \lambda}} \sim N(0,1)
 $$
 
 其中, $\hat \lambda$是樣本平均值
+
+## $\chi^2$分類數據擬合度檢驗
+
+
 
 
 # 抽樣
