@@ -328,8 +328,13 @@ $$
 $$
 
 - $x_i$是來自$N(0,1)$樣本
-- 
+- $\bar x=\frac{1}{n}\sum x_i$
+- $s^2=\frac{1}{n-1}\sum(x-\bar x)^2$
 
+$$
+
+\frac{(n-1)s^2}{\sigma^2} \sim \chi^2(n-1)
+$$
 
 
 # 抽樣
