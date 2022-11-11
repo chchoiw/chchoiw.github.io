@@ -30,6 +30,7 @@ category:
   - [大數法則](#大數法則)
 - [三大分佈](#三大分佈)
   - [$\chi^2$分布](#chi2分布)
+  - [$F$分布](#f分布)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -42,7 +43,7 @@ category:
 - [卡方、F、T、正態和ANOVA等檢測](#卡方ft正態和anova等檢測)
   - [列联表分析](#列联表分析)
   - [卡方](#卡方)
-  - [F分布](#f分布)
+  - [F分布](#f分布-1)
   - [t驗檢](#t驗檢)
   - [檢驗正態分佈](#檢驗正態分佈)
 - [參數估計](#參數估計)
@@ -334,6 +335,20 @@ $$
 $$
 
 \frac{(n-1)s^2}{\sigma^2} \sim \chi^2(n-1)
+$$
+
+
+
+## $F$分布
+
+$$X_i\sim \chi^2(m),X_2 \sim \chi^2(n)$$
+
+$$
+F=\frac{X_1/m}{X_2/n}
+$$
+
+$$
+F_\alpha(n,m)=\frac{1}{F_{1-\alpha}(m,n)}
 $$
 
 
