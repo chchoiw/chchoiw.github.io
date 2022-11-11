@@ -284,6 +284,8 @@ $$
 
 - [柴比雪夫不等式 wiki](https://zh.wikipedia.org/wiki/%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E4%B8%8D%E7%AD%89%E5%BC%8F)
 
+
+
 $$
 \text{Pr}(|X-E(X)|\geq b) \leq \frac{\text{Var}(X)}{b^2}
 $$
