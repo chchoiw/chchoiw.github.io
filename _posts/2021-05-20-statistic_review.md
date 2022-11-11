@@ -28,6 +28,8 @@ category:
   - [中央極限定理](#中央極限定理)
   - [柴比雪夫不等式](#柴比雪夫不等式)
   - [大數法則](#大數法則)
+- [三大分佈](#三大分佈)
+  - [$\chi^2$分布](#chi2分布)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -314,6 +316,21 @@ $$
 
 
 <br>
+
+# 三大分佈
+
+## $\chi^2$分布
+- $X_i \sim N(0,1)$
+
+$$
+\chi^2=X_1^2+X_2^2+\dots +X_n^2
+$$
+
+- $x_i$是來自$N(0,1)$樣本
+- 
+
+
+
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
 - 分類:
