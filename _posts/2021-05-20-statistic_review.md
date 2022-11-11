@@ -327,7 +327,7 @@ $$
 \chi^2=X_1^2+X_2^2+\dots +X_n^2
 $$
 
-- $x_i$是來自$N(0,1)$樣本
+- $x_i$是來自$N(\mu,\sigma)$樣本
 - $\bar x=\frac{1}{n}\sum x_i$
 - $s^2=\frac{1}{n-1}\sum(x-\bar x)^2$
 
