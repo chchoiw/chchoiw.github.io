@@ -38,6 +38,7 @@ category:
   - [$\chi^2$分類數據擬合度檢驗](#chi2分類數據擬合度檢驗)
   - [列聯表的獨立性檢驗](#列聯表的獨立性檢驗)
   - [正態分布](#正態分布)
+- [線性回歸](#線性回歸)
 - [抽樣](#抽樣)
   - [簡單隨機抽樣(simple random sampling)](#簡單隨機抽樣simple-random-sampling)
   - [分層抽樣(stratified sampling)](#分層抽樣stratified-sampling)
@@ -444,6 +445,11 @@ $$
 ## 正態分布
 - [正態分佈、獨立性和方差齊次性檢驗](https://chchoiw.github.io/posts/2019/06/normal_independ_cvar/)
 
+
+# 線性回歸
+
+- [線性回歸](https://chchoiw.github.io/posts/2019/04/regression/)
+  
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
 - 分類:
