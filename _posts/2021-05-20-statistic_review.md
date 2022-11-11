@@ -431,7 +431,7 @@ $$
 
 ## 列聯表的獨立性檢驗
 
-$$H_0:p_{ij} =p_{i\dot}p_{\dot j} \quad i=1,\dots,r,j=1,2,\dots,c$$ 
+$$H_0:p_{ij} =p_{i\cdot}p_{\cdot j} \quad i=1,\dots,r,j=1,2,\dots,c$$ 
 
 $$
 \chi^2=\sum\sum\frac{(n_{ij}-n\hat p_{ij})^2}{n\hat p_{ij}} \sim \chi^2((r-1)(c-1))
