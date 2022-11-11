@@ -430,7 +430,8 @@ $$
 $$
 
 ## 列聯表的獨立性檢驗
-
+- P.395
+  
 $$H_0:p_{ij} =p_{i\cdot}p_{\cdot j} \quad i=1,\dots,r,j=1,2,\dots,c$$ 
 
 $$
