@@ -391,9 +391,7 @@ $$
 
 $$
 \begin{algined}
-I H_0:\theta \leq \theta_0 \quad VS\quad  H_1:\theta > \theta_0 \\
-II H_0:\theta \geq \theta_0 \quad VS\quad  H_1:\theta < \theta_0 \\
-III H_0:\theta = \theta_0 \quad VS\quad  H_1:\theta \neq \theta_0 
+I H_0:\theta \leq \theta_0 \quad VS\quad  H_1:\theta > \theta_0 
 \end{aligned}
 $$
 
@@ -425,7 +423,7 @@ $$
 
 
 $$
-\chi^2=\sum\frac{(n_i-np_{i0})^2}{np_{i0}}
+\chi^2=\sum\frac{(n_i-np_{i0})^2}{np_{i0}} \sim \chi^2(r-1)
 $$
 
 # 抽樣
