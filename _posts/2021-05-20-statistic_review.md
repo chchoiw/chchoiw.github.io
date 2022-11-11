@@ -352,6 +352,13 @@ F_\alpha(n,m)=\frac{1}{F_{1-\alpha}(m,n)}
 $$
 
 
+- 若$x_1,\dots x_n \sim N(\mu_1, \sigma)$,$y_1,\dots y_n \sim N(\mu_2, \sigma)$
+  
+
+$$
+F=\frac{\frac{(m-1)s_x^2}{\sigma}}{\frac{(n-1)s_y^2}{\sigma}}  =\frac{s_x^2}{s_y^2}
+$$
+
 # 抽樣
 - [reference](https://zh.wikipedia.org/wiki/%E6%8A%BD%E6%A8%A3)
 - 分類:
