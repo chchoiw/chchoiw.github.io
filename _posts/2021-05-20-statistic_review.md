@@ -253,7 +253,7 @@ $$
 $$
 m_{p}=\Big\{
 \begin{aligned}
-  & x_{[np+1]} \quad & np\text{ is not an integer}\\
+  & x_{ \lfloor np+1 \rfloor]} \quad & np\text{ is not an integer}\\
   & 0.5*(x_{np} +x_{np+1}) \quad & np \text{ is an integer}
 \end{aligned}
 $$
