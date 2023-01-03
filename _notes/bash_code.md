@@ -10,6 +10,7 @@ permalink: /posts/notes/bash_code/
   - [Create a file and change pression of rw](#create-a-file-and-change-pression-of-rw)
   - [ssh technique](#ssh-technique)
   - [zip folder](#zip-folder)
+  - [unzip folder](#unzip-folder)
   - [loop file](#loop-file)
   - [date](#date)
   - [vim set utf-8](#vim-set-utf-8)
@@ -71,6 +72,13 @@ ssh ecmfuser@172.16.2.149 df -h /pub >& $workdir/fileLoc2txt/ecmwf.txt
 ## zip folder
 ```bash
 tar -czvf archive.tar.gz /usr/local/something
+```
+
+## unzip folder
+
+
+```
+tar -xzvf archive.tar.gz -C /tmp
 ```
 
 
