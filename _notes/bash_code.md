@@ -11,6 +11,7 @@ permalink: /posts/notes/bash_code/
   - [ssh technique](#ssh-technique)
   - [zip folder](#zip-folder)
   - [unzip folder](#unzip-folder)
+- [regex](#regex)
   - [loop file](#loop-file)
   - [date](#date)
   - [vim set utf-8](#vim-set-utf-8)
@@ -79,6 +80,12 @@ tar -czvf archive.tar.gz /usr/local/something
 
 ```
 tar -xzvf archive.tar.gz -C /tmp
+```
+
+#  regex
+
+```
+find /diskStation5/backupData/dailyBackup/2022-01/20220101/cam/4/ -regex "/diskStation5/backupData/dailyBackup/2022-01/20220101/cam/4/video_.*_[0-9][0-9]\(00\|15\|30\|45\)00\.jpg" -exec cp "{}" /home/cptmain/elsa/weatherCamBackup/ \
 ```
 
 
