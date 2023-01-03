@@ -12,6 +12,7 @@ permalink: /posts/notes/bash_code/
   - [zip folder](#zip-folder)
   - [unzip folder](#unzip-folder)
 - [regex](#regex)
+- [Mount nas](#mount-nas)
   - [loop file](#loop-file)
   - [date](#date)
   - [vim set utf-8](#vim-set-utf-8)
@@ -87,6 +88,37 @@ tar -xzvf archive.tar.gz -C /tmp
 ```
 find /diskStation5/backupData/dailyBackup/2022-01/20220101/cam/4/ -regex "/diskStation5/backupData/dailyBackup/2022-01/20220101/cam/4/video_.*_[0-9][0-9]\(00\|15\|30\|45\)00\.jpg" -exec cp "{}" /home/cptmain/elsa/weatherCamBackup/ \
 ```
+
+
+#  Mount nas
+
+- install nfs-utils ([ref](https://computingforgeeks.com/install-and-configure-nfs-server-on-centos-rhel/))
+
+```
+sudo yum -y install nfs-utils
+```
+
+- make a folder
+
+```
+sudo mkdir /datacenter
+```
+
+- vi /etc/fstab ([ref](https://www.simplified.guide/linux/disk-mount))
+  
+```
+nfs001.smg.net:/DC              /datacenter             nfs     suid,exec,dev,rw,async        0 0
+nfs001.smg.net:/DC2      /datacenter2     nfs     suid,exec,dev,rw,async 0 0
+172.16.5.172:/volume2/data   /diskStation3       nfs     suid,exec,dev,rw,async 0 0
+```
+
+
+- mount all 
+
+```
+sudo mount -a
+```
+
 
 
 ## loop file
