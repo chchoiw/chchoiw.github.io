@@ -74,13 +74,17 @@ ssh ecmfuser@172.16.2.149 df -h /pub >& $workdir/fileLoc2txt/ecmwf.txt
 ## zip folder
 ```bash
 tar -czvf archive.tar.gz /usr/local/something
+zip -r cam4_2022_12_28.zip cam4_2022_12_28
 ```
+
+
 
 ## unzip folder
 
 
 ```
 tar -xzvf archive.tar.gz -C /tmp
+unzip cam4_2022_12_28.zip
 ```
 
 #  regex
