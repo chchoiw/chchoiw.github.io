@@ -1,5 +1,5 @@
 ---
-title: '立法會摘要'
+title: 'Python maplotlib 例子'
 date: 2022-07-04
 permalink: /posts/2023/01/matploblib
 tags:
