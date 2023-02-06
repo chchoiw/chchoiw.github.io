@@ -7,6 +7,7 @@ permalink: /posts/notes/mysql_code/
 - [Mysql Code](#mysql-code)
   - [Enter to db host](#enter-to-db-host)
   - [Create table](#create-table)
+  - [add index](#add-index)
   - [Add column](#add-column)
   - [Modife column](#modife-column)
   - [Drop column](#drop-column)
@@ -45,6 +46,12 @@ CREATE TABLE check_alert (
     PRIMARY KEY (ID)
     )
     CHARACTER SET utf8;
+```
+
+## add index
+
+```sql
+ALTER TABLE CPTMAIN.GTS_WARNING ADD INDEX `DATETIME_INDEX` (`DATETIME`);
 ```
 
 ## Add column

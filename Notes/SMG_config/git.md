@@ -26,6 +26,12 @@ git clone ssh://tfs002.smg.net:22/DefaultCollection/Station%20Maintain%20Config/
 
 ```
 
+
+
+```
+https://tfs002.smg.net/DefaultCollection/
+```
+
 再在clone 的 folder上加入新檔
 
 git core
