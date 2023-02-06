@@ -1,6 +1,6 @@
 ---
 title: 'Python maplotlib 例子'
-date: 2022-07-04
+date: 2023-01-13
 permalink: /posts/2023/01/matploblib
 tags:
   - python,mathplotlib
