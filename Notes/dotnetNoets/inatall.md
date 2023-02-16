@@ -79,3 +79,10 @@ sqlcmd -S SMGSQL01 -U skyview -P Idced@11ic -d SkyView -C
 ```
 select top(1) * from tghokobs_input;
 ```
+
+
+
+
+## dotnet and  svelte
+
+- [link](https://khalidabuhakmeh.com/add-svelte-to-aspnet-core-projects)

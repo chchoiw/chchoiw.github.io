@@ -21,17 +21,17 @@ Hello, my name is Choi Chong Ha, and I received my bachelor's degree in mathemat
 
 In terms of work experience, I previously worked as a clerk at the Macau University of Science and Technology's business school, where I provided administrative support and assisted event organization. I currently work at the Macao Meteorological and Geophysical Bureau, where my primary responsibilities include data analysis and data visualization by programming.
 
-With respect to the tools, I mostly use SQL for data selection, Python for data analysis, and then PHP and JavaScript for data visualization.  I took a tableau course at the start of February.
+With respect to the tools, I mostly use SQL for data selection, Python for data analysis, and then PHP and JavaScript for data visualization.   Moreover, I am able work with tableau.
 
 
-Regarding the projects I've worked on, I joined a project that described airport observatory data. It showed multiple characteristics on a monthly and hourly basis, including visibility, the height of the cloud base, and humidity. Citizens can view the reports on the SMG website.
+I have worked on two projects about data analysis. The first one is a descriptive statistical project for airport observatory data. The second is the typhoon track probability map.
 
 In summary, I have a solid background in mathematics and practical experience in programming, which enables me to learn theoretic models quickly and put them into practice.
 
 
+<!-- Regarding the projects I've worked on, I joined a project that described airport observatory data. It showed multiple characteristics on a monthly and hourly basis, including visibility, the height of the cloud base, and humidity. Citizens can view the reports on the SMG website. -->
 
-## 機場報告難的地方
-Communication is the most difficult part. I worked with airport colleagues. They determined the rules for computing and the boundaries of ranges. As a result, I . needed to communicate what they wanted to reach and make a crompromised plan. I put into practice a program that required flexibility and achieveability.
+
 
 ## 興趣  
     
@@ -39,26 +39,23 @@ I enjoy reading; for instance, I recently finished reading volumes 1 and 2 of "T
 
 
 
-## 不是數據分析師，為什麽要考  
-I have data analysis experience in my current job and I found that data analysis with statistics or further machine learning would match my primary study. Furthermore, the way to find and conclude the basic principle behind data would interest me and give me a sense of achievement.  
-  
-## 離職原因是什麽  
-
-Macao Meteorological and Geophysical Bureau focuses mainly on weather observation, and I found that data analysis with statistics or further machine learning would match my primary study. In addition, I find that joining a professional team helps me to improve my data analysis abilities.
-  
-
   
 ## 怎樣才是一名合格的數據分析師  
 Being a qualified data analysis is a long-term process . There are a lot of traits would be required. First, find the valued questions that draw public attention and help decision-making for government. Second, applying academic methods to achieve the purposes required comprehensive abilities. When outcomes of analyzing data do curnot fit the expectation, finding the reasons and modifying the methods are vital. Finally, displaying results with concise articles and interactive and dynamic diagrams would be better to delivery the messages.  
 
 ## 工作中的挑戰和應對  (成功)
-My colleague contacted the vendor for the typhoon forecast products. One day, he asked me about a math/statistical algorithm that the render used to calculate the typhoon track probabilities. I tried to explain the professional terms, such as integral and 1-sigma for 70 percent, to him. Furthermore, my colleagues discovered that the outcome differs from that of the ECMWF, an authoritative organization in numerical forecasting. I was interested in those problems and found information from the Hong Kong Observatory's YouTube channel, and I  succeeded in following the algorithm introduced to generate the typhoon track probabilities map similar to ECMWF.
+My colleague contacted the vendor for the typhoon forecast products. He discovered that the outcome differs from that of the ECMWF, an authoritative organization in numerical forecasting. I was interested in those problems and found information from the Hong Kong Observatory's YouTube channel, and I  succeeded in following the algorithm introduced to generate the typhoon track probabilities map similar to ECMWF.
+
+We needed to estimate the difficulty of the problem and how long it would take to solve it. Second, and most importantly, how to find possible methods in a sea of information and  customize them for your project.
 
 ## 工作中的挑戰和應對  (失敗)
 This job's first mission was to build up a weather numerical model and merge obserative data into models, named LAPS. Rare information can be found online. I could only read the code from the model and found the rules how to create suitable formatted data and inject into the model. However, after several months, Laps announced that it would not be updated anymore. As a result, predicted the trendcy in industry is curcial, and understanding the fundamental principles would aid in problem solving. 
 
 ## Data analysis project 
-I joined a project that aimed to describe airport observatory data that described multiple elements such as humidity , temperature and the height of cloud base. Citizens can view the reports on the SMG website. First, I mainly select data from databases by using SQL. Second, I clean up the null and useless data and organize it from month to month, hour to hour, and various value ranges by programming. Finally, I applied the Python library to create a formatted table on PDF.
+I joined a project that aimed to describe airport observatory data that described multiple elements such as humidity , temperature and the height of cloud base. Citizens can view the reports on the SMG website.
+
+## 機場報告難的地方
+Communication is the most challenging part. I worked with airport colleagues. They determined the rules for computing and the boundaries of ranges. As a result, I needed to communicate what they wanted in order to reach out and make a compromise plan. I put into practice a program that required flexibility and achieveability.
 
 ## 最大的優勢  
 I love studying and challenges. Encountering new challenges would push me to think outside the box and more creative, new ideas and methods will be found in the processing in order to tackle them.  
@@ -72,10 +69,15 @@ I would rather reading than speaking. I like stay alone and as a result i have l
 ## Where do you see yourself in five years?
 我希望在數據分析上有所發展, 我有結實的數學基礎和有寫程序的經驗, 現在還在不斷學習編程技和機器學習的理論, 相信將來會有很好的實踐
 
-I see my long-term career in data analysis. I have a strong background in math and now working at programming. Moreover, I plan to study new programming techinques and theories of machine learning. I'm sure I'll have a successful practice in the future.
+I see my long-term career in data analysis. I have a strong background in math and now working at programming. Moreover, I plan to study new programming techinques and theories of machine learning. I'm sure these would support my future career path.
 
+## 不是數據分析師，為什麽要考,離職原因是什麽  
+I have data analysis experience in my current job but Macao Meteorological and Geophysical Bureau focuses mainly on weather observation. Besides, I found that data analysis with statistics or further machine learning would match my primary study. Furthermore, the way to find and conclude the basic principle behind data would interest me and give me a sense of achievement.  
 
+## 為什麽要請你
+I have some experience in programming and develping websites, so I can design an API for the pulbic to access the data. Besides, the new forms of tourism , such as smart tourism and meta tourism, are rising. The source of data acquisition would not in survay form.
 
+  
 
 ## What are your career aspirations?
 
@@ -94,6 +96,13 @@ The majority of the content is described in text rather than in clearly dynamic 
 However, if the site visitors include the general public, the websites from the Statistics and Census Service are more attractive.
 
 
+## 澳旅院四教職員獲國際權威期刊《酒店與旅遊管理》 高度推薦論文獎
+- [論文 新聞局](https://www.gcs.gov.mo/detail/en/N23BM3uFer)
+
+
+Tne Best Paper Award and two Highly Commended Paper Awards.
+
+ The study examined how public and private sectors partnered to spur the recovery of the tourism industry from COVID-19. Specifically, it highlighted the crucial roles played by the Macao SAR Government and the crisis leader in tourism recovery. As a part of the research project under the Greater Bay Area Tourism Research Alliance in which IFTM is a founding member, this study was funded by IFTM and supported by the IFTM Tourism Research Centre (ITRC).
 
 
 ## Why do you want to work at this company?
@@ -108,7 +117,13 @@ Finally, there is a new graph on the MTSI website that describes the joint matri
 ## 有甚麽問題 
 I found that MHRM is related to human resources instead of focusing on tourism. Hence, is there room to study topics other than tourism?
 
+我去註冊帳號為了可以看TCC的報告，但最新的卻是2015年，請問是否最近這幾年的報近如2019年都沒有。
+I attempted to create an account to view the TCC report, but the most recent is from 2015. Was the TCC project suspended?.
+## 可改善的地方
+最近幾年的報告都是DASHBOARD, 可否追加這幾年的可下載的文本報告。
+The reports of the last few years are all in dashboard format; it is great that we can find and review the downloadable PDF reports of these years.
 
+The reports of the last few years are all in dashboard format; will you consider adding the downloadable PDF reports of these years?
 
 
 
@@ -141,11 +156,91 @@ The forth is Macao Humoan Resource Monitor Survey (MHRM)
 There are 4 key variables monitored by the MHRM project over time. These are perceived fairness of compensation and benefits, general job satisfaction, job stress and intent to stay at organizations.  All 4 variables are measured along a 5-point Likert scale ranged from 1 (lowest) to 5 (highest). The job changing characteristics include average job tenure and main reasons of changing jobs.
 
 
+
+## 論述你想做的Project
+
+
+- [macau daily news](https://macaudailytimes.com.mo/strolling-on-almeida-ribeiro-meets-with-mixed-reviews-from-lawmakers.html)
+市民對中國農歷新年新馬路任我行計劃 滿意度高, 旅遊局亦透露會將此計劃恒常化。特此可考慮這個方向做一個調查。從不同的角度出發, 如遊客、市民(特別是附近居住的市民)和運輸行業的工作人員,可收集不同的意見如下：
+- 舉辦前
+1. 舉辦地點
+2. 舉辦頻率
+3. 舉辦時間
+4.  the lack of emergency lanes and other safety-related issues
+5.  the government to develop a contingency plan that includes evacuation routes and signage to ensure the safety of residents and tourists.
+6.  
+
+可以將舉辦前的結果，與旅遊局不同景點的人客量作加權分析，取得舉辦的地點，時間和頻率
+
+- 舉辦後
+PCC
+1. 舉辦帶來的人流量, 包括機票, 船票等銷售量, 巴士的士的載客量
+
+2. 舉辦帶來各行業的盈利, 增加的客流量
+SCC
+3. 對涌塞程度、交通、安全、事後垃圾處理/街道清潔, 景點和休閑活動, 等待時間和服務程度等的滿意度(如同TCC)
+4. 與同個景點，不同季度，不同景點，相同季度的比較
+
+
+5. preceived level of crowdedness, satisfaction with quality of the environment, transportation serices , service quality and waiting time at foood and beverage as well as retail services.
+
+
+The public is satisfied with the Chinese Lunar New Year New Road Project, MGTO also revealed that the project will be permanent. Therefore, we can consider this topic for conducting a survey. From different perspectives, such as tourists, dislocation of the residents and transportation industry workers, different opinions can be collected as follows.
+
+
 # 應聘的專業知識-統計
 
 ## 中心极限定理，大数定律
+Central limit theorem
+for identically distributed independent samples, the standardized sample mean tends towards the standard normal distribution even if the original variables themselves are not normally distributed.
+
+Law of Large Numbers
+
+If the same experiment or study is repeated independently a large number of times, the average of the results of the trials must be close to the expected value
 
 ## 特征值和特征向量的定义
+
+## 線性迴歸的問題
+
+- [link](https://blog.csdn.net/weixin_41761357/article/details/111589392)
+## 概率和似然的分別
+
+
+Probability is the measure of the likelihood that an event will occur. 
+概率是对一个事件发生的可能性的度量。
+
+When evaluated on a given sample, the likelihood function indicates which parameter values are more likely than others, in the sense that they would have made the observed data more probable.
+
+
+## 第一類錯誤和第二類錯誤分別
+Type I error is when you reject a true null hypothesis and is the more serious error.
+solely on you.
+
+
+Type II error is when you accept a false null hypothesis.
+
+##　罝信區間
+
+Confidence interval
+a confidence interval is a range of estimates for an unknown parameter. A confidence interval is computed at a designated confidence level;  The confidence level represents the long-run proportion of CIs (at the given confidence level) that theoretically contain the true value of the parameter. For example, out of all intervals computed at the 95% level, 95% of them should contain the parameter's true value.[3]
+
+
+
+ 這裡要特別強調信賴區間的解讀，很多人都會計算信賴區間，例如上面的例
+題，有些人會把他解釋為“甲候選人的支持度約有 95%的機率落在(0.539,0.601)
+中＂，但是這是一個很嚴重的錯誤觀念。我們在上面一直強調我們拿不同的樣本
+調查算出來的結果可能會不一樣，不能只拿一個樣本來說明，因為只拿一個樣本
+他算出來的信賴區間已經固定，而母體的 p 也是固定的常數(雖然我們不知道是
+多少)，既然都是固定的何來機率之有呢？那要如何解釋呢？
+ 正確的說法是對同一事件做調查 100 次(假設)，每次會得到一組數據，將這
+100 個信賴區間求出來，在這麼多的信賴區間中， p 約有 95%的機率落在這些信
+賴區間中，也就是說大約有 95 個信賴區間會包含參數 p.
+
+- [link](https://web.ntnu.edu.tw/~494402345/CI/CI.pdf)
+
+## Confidence Interval 
+
+ refers to the probability that a unknown parameter will fall between a set of values for a certain proportion of times.
 
 
 ## 數據分析思維
@@ -206,6 +301,20 @@ the MGTO will follow a strategy based on the Southeast Asian countries that have
 [Macau Daily Week](https://macaudailytimes.com.mo/macau-records-almost-half-a-million-visitors-during-cny-golden-week.html)
 
 The Government’s “Strolling Through Almeida Ribeiro – Pilot Project for a Pedestrian Area”
+
+“San Ma Lo Pedestrian Area Pilot Project”
+
+
+## 旅遊團抵澳
+
+- [Macau Daily News](https://macaudailytimes.com.mo/chinas-land-ports-with-sars-saw-568000-exits-and-entries.html)
+
+The long-awaited resumption of mainland tour groups has commenced, with the city welcoming a total of 135 tourists Monday, divided into six tour groups.
+
+
+## 澳大經濟預測2023
+
+- [Macau Daily News](https://macaudailytimes.com.mo/um-forecasts-up-to-44-gdp-growth-in-2023.html)
 
 ## 復
 [link](https://www.macaudata.mo/showbook?bno=j440050)
