@@ -8,6 +8,14 @@
 
 
 
+
+
+## 真正的面試題目
+1. 你有參與過什麽數據分析的項目（英文）
+2. 你為什麽適合旅遊學院（英）
+3. 可以為旅遊學院帶什麽（中）
+4. 你希望旅遊學院為你帶來什麽（中）
+
 # 關於自己
 
 ## Why there is a Gap between 06/2010 and 09/2013
@@ -49,7 +57,7 @@ My colleague contacted the vendor for the typhoon forecast products. He discover
 We needed to estimate the difficulty of the problem and how long it would take to solve it. Second, and most importantly, how to find possible methods in a sea of information and  customize them for your project.
 
 ## 工作中的挑戰和應對  (失敗)
-This job's first mission was to build up a weather numerical model and merge obserative data into models, named LAPS. Rare information can be found online. I could only read the code from the model and found the rules how to create suitable formatted data and inject into the model. However, after several months, Laps announced that it would not be updated anymore. As a result, predicted the trendcy in industry is curcial, and understanding the fundamental principles would aid in problem solving. 
+This job's first mission was to build up a numerical weather model and merge observed data into models, named LAPS. Rare information can be found online. I needed to read the code of the model. However, after several months, Laps announced that it would not be updated anymore. As a result, predicting industry trends through online information is crucial, and understanding the fundamental principles would assist in problem-solving. 
 
 ## Data analysis project 
 I joined a project that aimed to describe airport observatory data that described multiple elements such as humidity , temperature and the height of cloud base. Citizens can view the reports on the SMG website.
@@ -90,70 +98,69 @@ I have some experience in programming and develping websites, so I can design an
 
 # 對應聘的公司的了解
 
-## 您認為我們公司有哪些尚待改進的地方嗎？
-I mainly learn about the mission on websites. I found that the website was designed like a newspaper or academic report.
-The majority of the content is described in text rather than in clearly dynamic graphs showing important indexes, as on the websites of the Macau Government Tourism Office and the Statistics and Census Service.
-However, if the site visitors include the general public, the websites from the Statistics and Census Service are more attractive.
-
-
-## 澳旅院四教職員獲國際權威期刊《酒店與旅遊管理》 高度推薦論文獎
-- [論文 新聞局](https://www.gcs.gov.mo/detail/en/N23BM3uFer)
-
-
-Tne Best Paper Award and two Highly Commended Paper Awards.
-
- The study examined how public and private sectors partnered to spur the recovery of the tourism industry from COVID-19. Specifically, it highlighted the crucial roles played by the Macao SAR Government and the crisis leader in tourism recovery. As a part of the research project under the Greater Bay Area Tourism Research Alliance in which IFTM is a founding member, this study was funded by IFTM and supported by the IFTM Tourism Research Centre (ITRC).
-
-
-## Why do you want to work at this company?
-There are three points why I want to work at IFT.
-
-First, I saw MTSI and other useful indexes on ITRC, and there are many dynamic graphs showing various comparisons, which is my field. I am able to build a website and i have my own blog.
-
-Second, MTSI study is adopted from the American Customer Satisfaction Index (ACSI). Appling thesis and recreating in macau version is inspiring.
-
-Finally, there is a new graph on the MTSI website that describes the joint matrix of sector TSI and its relative contribution to overall MTSI. This implies the project is steadily improving, which encourages me to join.
-
-## 有甚麽問題 
-I found that MHRM is related to human resources instead of focusing on tourism. Hence, is there room to study topics other than tourism?
-
-我去註冊帳號為了可以看TCC的報告，但最新的卻是2015年，請問是否最近這幾年的報近如2019年都沒有。
-I attempted to create an account to view the TCC report, but the most recent is from 2015. Was the TCC project suspended?.
-## 可改善的地方
-最近幾年的報告都是DASHBOARD, 可否追加這幾年的可下載的文本報告。
-The reports of the last few years are all in dashboard format; it is great that we can find and review the downloadable PDF reports of these years.
-
-The reports of the last few years are all in dashboard format; will you consider adding the downloadable PDF reports of these years?
-
-
-
-
 ## 對我們公司有甚麽了解
 
 [itrc](http://itrc.iftm.edu.mo/the-centre)
-ITRC is the policy research and industry development unit of the Macao Institute for Tourism Studies (IFTM). The Centre serves as a management and public policy think-tank and a knowledge provider for tourism and hospitality related research. 
+The Centre serves as a management and public policy think-tank and a knowledge provider for tourism and hospitality related research. 
 
-Our activities include conducting policy studies, monitoring and evaluation studies, research design and opinion surveys,  reporting of research findings, as well as organizing seminars.
+The activities include conducting policy studies, designing surveys,  reporting findings, as well as organizing seminar
 
-There are four indexes posted online.
-The First is Macau Tourism Carrying Capacity Study(TCC)
-
-the Institute combined studies on “social and psychological carrying capacity” and “physical capacity of tourism facilities” in the research, to attempt at estimating the optimal tourism carrying capacity of Macao.
-- [link](https://www.iftm.edu.mo/media/press-release?news_id=573)
+There are four researchs conducted by the center.
+The First is Macau Tourism Carrying Capacity Study(TCC). It divided two sections, social carrying capacity and phyical carrying capacity. The approach is multiple regression modeling.
 
 
 The Second is Macau Tourist Satisfaction Index(MTSI)
 
 The MTSI measures visitors’ satisfaction across 10 tourism related sectors. This includes hotels,  restaurants, transportation,  heritage attractions, non-heritage attractions,  retail shops, public services (e.g. customs and immigration), events,tour operators and guides, and gaming. An overall satisfaction index (or TSI) for the tourism industry in Macao is then estimated based on the sectoral results.
 
+adopted from the American Customer Satisfaction Index (ACSI)
+
 The third is Macau Visitor Profile Survey (VPS)
 
-The VPS is a year-round survey that studies the the trip characteristics, purpose of visit, source of gaining travel information, travel arrangement and activity, spending behaviour, length of stay, source market, etc. of the visitors.
+The VPS is shows the trip characteristics, purpose of visit, source of gaining travel information, travel arrangement and activity, spending behaviour, length of stay, source market, etc. of the visitors.
 
 
 The forth is Macao Humoan Resource Monitor Survey (MHRM)
 
 There are 4 key variables monitored by the MHRM project over time. These are perceived fairness of compensation and benefits, general job satisfaction, job stress and intent to stay at organizations.  All 4 variables are measured along a 5-point Likert scale ranged from 1 (lowest) to 5 (highest). The job changing characteristics include average job tenure and main reasons of changing jobs.
+
+## 澳旅院四教職員獲國際權威期刊《酒店與旅遊管理》 高度推薦論文獎
+- [論文 新聞局](https://www.gcs.gov.mo/detail/en/N23BM3uFer)
+
+
+A paper about the role of public-private partnership in tourisum recovery from covid-19 received highly Commended Paper Awards by JHTM (Journal of Hospitality and Tourism Management)
+
+
+
+
+
+
+
+
+## Why do you want to work at this company?
+
+1. 我很了解你們的研究
+2. 我有數學背景, 研究方向可以很快掌握
+3. 新的旅遊方式如智慧旅遊和元宇宙旅遊
+   
+
+I am able to pick up research-oriented projects quickly, especially in statistical and machine-learning models.
+The new forms of tourism, such as metatourism and smart tourism, are rising; most data will be in digital form, and the approaches to collecting data will be diversified. In this situation, programming ability is a power tool.
+
+
+
+
+
+
+## 有甚麽問題 
+
+
+我去註冊帳號為了可以看TCC的報告，但最新的卻是2015年，請問是否最近這幾年的報近如2019年都沒有。
+I created an account to view the TCC report, but the most recent is from 2015. Is the TCC project suspended?.
+
+## 可改善的地方
+最近幾年的報告都是DASHBOARD, 可否追加這幾年的可下載的文本報告。
+The reports of the last few years are in dashboard format; it is great that we can find and review the downloadable PDF reports of these years.
 
 
 
@@ -184,9 +191,10 @@ SCC
 
 5. preceived level of crowdedness, satisfaction with quality of the environment, transportation serices , service quality and waiting time at foood and beverage as well as retail services.
 
+The public is satisfied with the pilot project of New pedestrian area, and MGTO also revealed that the project will be permanent. However, safety and transportation problems were widely discussed by the public, the government, and lawmakers.  Therefore, we can consider this topic for conducting a survey.
 
-The public is satisfied with the Chinese Lunar New Year New Road Project, MGTO also revealed that the project will be permanent. Therefore, we can consider this topic for conducting a survey. From different perspectives, such as tourists, dislocation of the residents and transportation industry workers, different opinions can be collected as follows.
-
+This research aims to find the best location for this activity during certain seasons or months.
+The approach would be similar to that of TCC and would be combined with the MTGO Visitor Flow Forecast. 
 
 # 應聘的專業知識-統計
 
@@ -206,11 +214,15 @@ If the same experiment or study is repeated independently a large number of time
 ## 概率和似然的分別
 
 
+- [LINK](https://sebastianraschka.com/faq/docs/probability-vs-likelihood.html)
+
 Probability is the measure of the likelihood that an event will occur. 
 概率是对一个事件发生的可能性的度量。
+Using the term probability, we calculate how probable (or likely) it is to draw a sample from a given distribution with certain parameters. 
 
-When evaluated on a given sample, the likelihood function indicates which parameter values are more likely than others, in the sense that they would have made the observed data more probable.
+ probability quantified how probable it is to sample data (x) with certain values from a given distribution given the parameters (w) of the distributio
 
+the likelihood, L(w|x), computes how likely the parameters are given the observed data
 
 ## 第一類錯誤和第二類錯誤分別
 Type I error is when you reject a true null hypothesis and is the more serious error.

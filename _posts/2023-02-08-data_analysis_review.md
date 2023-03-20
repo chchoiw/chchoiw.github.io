@@ -1,11 +1,11 @@
 ---
-title: 'Python maplotlib 例子'
+title: 'Data analysis review'
 date: 2023-01-13
 permalink: /posts/2023/02/data_analysis_review
 tags:
   - python,mathplotlib
 category:
-  - computer science
+  - Machine Learning
 ---
 
 
