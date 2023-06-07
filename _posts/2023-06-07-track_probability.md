@@ -8,9 +8,7 @@ category:
   - 工作成果
 ---
 
-```
-https://charts.ecmwf.int/products/cyclone?base_time=202305200120&product=tc_strike_probability&unique_id=04W_MAWAR_2023
-```
+
 
 <!-- <select name="strIndicatorDescription" id="strIndicatorDescription">
     <option value="2023052012">2023052012</option>
@@ -32,6 +30,10 @@ https://charts.ecmwf.int/products/cyclone?base_time=202305200120&product=tc_stri
 - 雖然這個問題並不是困難的,但是計算方法和參考資料也是上述所列舉的,也是本人獨立完成, 沒有任何除上述的提及的資料或前人基礎下完成, 若有雷同, 請諒解本人並不是抄襲。
   
 
+
+## 圖片比較
+
+- 以下為我用python生成的圖片與[EC的圖片](https://charts.ecmwf.int/products/cyclone?base_time=202305200120&product=tc_strike_probability&unique_id=04W_MAWAR_2023)以2023年瑪娃颱風為例子的比較
 
 <!-- _MAWAR2023052412_MAWAR -->
 <table>
