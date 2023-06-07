@@ -28,8 +28,8 @@ https://charts.ecmwf.int/products/cyclone?base_time=202305210000&product=tc_stri
 <!-- _MAWAR2023052412_MAWAR -->
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
+    <th>EC</th>
+    <th>Result</th>
 
   </tr>
   <tr>
