@@ -9,7 +9,7 @@ category:
 ---
 
 ```
-https://charts.ecmwf.int/products/cyclone?base_time=202305210000&product=tc_strike_probability&unique_id=04W_MAWAR_2023
+https://charts.ecmwf.int/products/cyclone?base_time=202305200120&product=tc_strike_probability&unique_id=04W_MAWAR_2023
 ```
 
 <select name="strIndicatorDescription" id="strIndicatorDescription">
