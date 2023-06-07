@@ -31,7 +31,7 @@ category:
 
   <tr><div style="text-align:center" id="image1"><img src="/images/track_probability/ec/2023052100.png" /></div></tr>
   <tr><div style="text-align:center" id="image1"><img src="/images/track_probability/result/prob_2023052100_MAWAR.png" /></div></tr>
-  <tr><div style="text-align:center" id="image1"><img src="/images/track_probability/hko/2023052100.png" /></div></tr>
+  <tr><div style="text-align:center" id="image1"><img src="/images/track_probability/hko/2023052100.jpg" /></div></tr>
 
 </table>
 - 雖然這個問題並不是困難的,但是計算方法和參考資料也是上述所列舉的,也是本人獨立完成, 沒有任何除上述的提及的資料或前人基礎下完成, 若有雷同, 請諒解本人並不是抄襲。
