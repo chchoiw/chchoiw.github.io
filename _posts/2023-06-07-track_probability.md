@@ -51,7 +51,7 @@ category:
     <th>Result</th>
   </tr>
   <tr>
-    <td><div style="text-align:center" id="image1"><img src="/images/track_probability/ec/2023052012.png" /></div></td>
+    <td ><div style="text-align:center" id="image1"><img src="/images/track_probability/ec/2023052012.png" /></div></td>
     <td><div style="text-align:center" id="image1"><img src="/images/track_probability/result/prob_2023052012_MAWAR.png" /></div></td>
   </tr>
   <tr>
