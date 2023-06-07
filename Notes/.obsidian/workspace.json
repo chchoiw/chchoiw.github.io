@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "7739defa0c475afc",
+    "type": "split",
+    "children": [
+      {
+        "id": "9fba38d6ce1a00ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82a02cb890995fcb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "記錄/淘.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "251488e00fe5d667",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac9911062794c6cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30a5f7db91bc7db9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "21ddcfc3273eea6a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0f7932838ce2dd0f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d24abb32f849104a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6be566c3dad53857",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65232adf561d9a61",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "記錄/淘.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "91fa25acaa51d619",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "記錄/淘.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4b499309bb7481a8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "009daa64b93e187d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "記錄/淘.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "30a5f7db91bc7db9",
+  "lastOpenFiles": [
+    "SMG_config/sms.md",
+    "SMG_config/server.md",
+    "SMG_config/internetSafe.md",
+    "SMG_config/git.md",
+    "SMG_config/amowww.md",
+    "開考/面試題目/數據分析題目.md",
+    "開考/統計局430/筆試和面試題目.md",
+    "開考/理工430/理工筆試.md",
+    "開考/旅院430/interview.md",
+    "開考/旅院430/exam.md",
+    "說明文檔/sms_alert_流程圖.pdf",
+    "記錄/淘.md",
+    "自考/04735數據庫/數據庫系統原理 (1).md",
+    "typeScript/note.md",
+    "linux/command.md",
+    "linux/linuxCommand/regex.pdf"
+  ]
+}
