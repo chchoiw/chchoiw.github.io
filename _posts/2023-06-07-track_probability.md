@@ -45,7 +45,7 @@ category:
 - 以下為我用python生成的圖片與[EC的圖片](https://charts.ecmwf.int/products/cyclone?base_time=202305230000&product=tc_strike_probability&unique_id=04W_MAWAR_2023)以2023年瑪娃颱風為例子的比較
 
 <!-- _MAWAR2023052412_MAWAR -->
-<table>
+<table style="max-width:700px;margin-left:auto;">
   <tr>
     <th>EC</th>
     <th>Result</th>
