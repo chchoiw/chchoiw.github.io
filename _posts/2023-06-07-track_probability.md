@@ -29,9 +29,9 @@ category:
 - 這個EC的機率圖與香港天文台的圖片有些許不一樣, [香港天文台的結果(只有最新颱風的機率圖)](https://www.hko.gov.hk/tc/probfcst/tc_spm.htm)較圓滑(比較如下表),估計是香港天文台將EC的路徑數據經圓滑變曲線, 再進行機率計算, 這個猜測有機會再檢證。
 <table style="width:50%">
 
-  <tr><div style="text-align:center;max-width:700px;" id="image1"><img src="/images/track_probability/ec/2023052100.png" /></div></tr>
-  <tr><div style="text-align:center;max-width:700px;" id="image1"><img src="/images/track_probability/result/prob_2023052100_MAWAR.png" /></div></tr>
-  <tr><div style="text-align:center;max-width:700px;" id="image1"><img src="/images/track_probability/hko/2023052100.jpg" /></div></tr>
+  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1"><img src="/images/track_probability/ec/2023052100.png" /></div></tr>
+  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1"><img src="/images/track_probability/result/prob_2023052100_MAWAR.png" /></div></tr>
+  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1"><img src="/images/track_probability/hko/2023052100.jpg" /></div></tr>
 
 </table>
 - 雖然這個問題並不是困難的,但是計算方法和參考資料也是上述所列舉的,也是本人獨立完成, 沒有任何除上述的提及的資料或前人基礎下完成, 若有雷同, 請諒解本人並不是抄襲。
@@ -45,7 +45,7 @@ category:
 - 以下為我用python生成的圖片與[EC的圖片](https://charts.ecmwf.int/products/cyclone?base_time=202305230000&product=tc_strike_probability&unique_id=04W_MAWAR_2023)以2023年瑪娃颱風為例子的比較
 
 <!-- _MAWAR2023052412_MAWAR -->
-<table style="max-width:700px;margin-left:auto;">
+<table >
   <tr>
     <th>EC</th>
     <th>Result</th>
