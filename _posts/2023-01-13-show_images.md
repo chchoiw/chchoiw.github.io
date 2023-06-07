@@ -5,7 +5,7 @@ permalink: /posts/2023/01/matploblib
 tags:
   - python,mathplotlib
 category:
-  - computer science
+  - 工作成果
 ---
 
 
