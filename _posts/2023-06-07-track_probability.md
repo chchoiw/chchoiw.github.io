@@ -31,7 +31,7 @@ category:
   - 再者進行一些[latitude,longitude 和 great circle](http://www.movable-type.co.uk/scripts/latlong.html)的計算,最主要是運用一點到一直線距離的great circle版本。
   - 最後使用python生成我的成果圖。
   
-- 這個ECMWF的機率圖與香港天文台的圖片有些許不一樣, [香港天文台的結果(只有最新颱風的機率圖)](https://www.hko.gov.hk/tc/probfcst/tc_spm.htm)較圓滑(比較如下表),估計是香港天文台將ECMWF的路徑數據經圓滑變曲線, 再進行機率計算, 這個猜測有機會再檢證。
+- 這個ECMWF的機率圖與香港天文台的圖片有些許不一樣, [香港天文台的結果(只有最新颱風的機率圖)](https://www.hko.gov.hk/tc/probfcst/tc_spm.htm)較圓滑(比較如下表),估計是香港天文台將ECMWF的路徑數據經圓滑變曲線, 再進行機率計算, 這個猜測有機會再驗證。
 <table style="width:50%">
 
   <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1">ECMWF<img src="/images/track_probability/ec/2023052100.png" /></div></tr>
