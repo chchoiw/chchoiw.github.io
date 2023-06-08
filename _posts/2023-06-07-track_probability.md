@@ -25,9 +25,10 @@ category:
 
 ## 介紹
 
-- 以下的圖片是由很多條颱風路徑而生成的機率圖, 因為看見此圖, 感覺是很直觀的結果, 所以我試圖在網絡上尋找資料去計算在地圖每格點的機率計算方法, 幸運的是我找到
+- 颱風路徑機率圖是由很多條颱風路徑而生成的機率圖,其中很知名的ECMWF也有一些圖片是形容這個[機率圖](https://charts.ecmwf.int/products/cyclone?base_time=202305230000&product=tc_strike_probability&unique_id=04W_MAWAR_2023)
+- 因為看見此圖, 感覺是很直觀計算的結果, 所以我試圖在網絡上尋找資料去計算在地圖每格點的機率計算方法, 幸運的是我找到
   - [香港天文台的科普視頻](https://youtu.be/OS0RVNajhto)並以它為起點
-  - 並且使用ECMWF的ensemble的多路徑預測作為數據而生成的颱風機率圖
+  - 數據:使用ECMWF的ensemble的多路徑預測作為數據而生成的颱風機率圖
   - 再者進行一些[latitude,longitude 和 great circle](http://www.movable-type.co.uk/scripts/latlong.html)的計算,最主要是運用一點到一直線距離的great circle版本。
   - 最後使用python生成我的成果圖。
   
@@ -38,7 +39,7 @@ category:
   <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1">香港天文台<img src="/images/track_probability/hko/2023052100.jpg" /></div></tr>
   <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1">我的結果<img src="/images/track_probability/result/prob_2023052100_MAWAR.png" /></div></tr>
 </table>
-- 雖然這個問題並不是困難的,但是計算方法和參考資料也是上述所列舉的,也是本人獨立完成, 沒有任何除上述的提及的資料或前人基礎下完成, 若有雷同, 請諒解本人並不是抄襲。
+
   
 
 
