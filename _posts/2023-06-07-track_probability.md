@@ -25,14 +25,18 @@ category:
 
 ## 介紹
 
-- 以下的圖片是由很多條颱風路徑而生成的機率圖, 因為看見此圖, 感覺是很直觀的結果, 所以我試圖在網絡上尋找資料去計算在地圖每格點的機率計算方法, 幸運的是我找到[香港天文台的科普視頻](https://youtu.be/OS0RVNajhto)並以它為起點, 並且使用EC的ensemble的多路徑預測作為數據而生成的颱風機率圖, 以下為比較圖。
-- 這個EC的機率圖與香港天文台的圖片有些許不一樣, [香港天文台的結果(只有最新颱風的機率圖)](https://www.hko.gov.hk/tc/probfcst/tc_spm.htm)較圓滑(比較如下表),估計是香港天文台將EC的路徑數據經圓滑變曲線, 再進行機率計算, 這個猜測有機會再檢證。
+- 以下的圖片是由很多條颱風路徑而生成的機率圖, 因為看見此圖, 感覺是很直觀的結果, 所以我試圖在網絡上尋找資料去計算在地圖每格點的機率計算方法, 幸運的是我找到
+  - [香港天文台的科普視頻](https://youtu.be/OS0RVNajhto)並以它為起點
+  - 並且使用ECMWF的ensemble的多路徑預測作為數據而生成的颱風機率圖
+  - 再者進行一些[latitude,longitude 和 great circle](http://www.movable-type.co.uk/scripts/latlong.html)的計算,最主要是運用一點到一直線距離的great circle版本。
+  - 最後使用python生成我的成果圖。
+  
+- 這個ECMWF的機率圖與香港天文台的圖片有些許不一樣, [香港天文台的結果(只有最新颱風的機率圖)](https://www.hko.gov.hk/tc/probfcst/tc_spm.htm)較圓滑(比較如下表),估計是香港天文台將ECMWF的路徑數據經圓滑變曲線, 再進行機率計算, 這個猜測有機會再檢證。
 <table style="width:50%">
 
-  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1"><img src="/images/track_probability/ec/2023052100.png" /></div></tr>
-  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1"><img src="/images/track_probability/result/prob_2023052100_MAWAR.png" /></div></tr>
-  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1"><img src="/images/track_probability/hko/2023052100.jpg" /></div></tr>
-
+  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1">ECMWF<img src="/images/track_probability/ec/2023052100.png" /></div></tr>
+  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1">香港天文台<img src="/images/track_probability/hko/2023052100.jpg" /></div></tr>
+  <tr><div style="text-align:center;max-width:700px;margin:auto;" id="image1">我的結果<img src="/images/track_probability/result/prob_2023052100_MAWAR.png" /></div></tr>
 </table>
 - 雖然這個問題並不是困難的,但是計算方法和參考資料也是上述所列舉的,也是本人獨立完成, 沒有任何除上述的提及的資料或前人基礎下完成, 若有雷同, 請諒解本人並不是抄襲。
   
@@ -47,8 +51,8 @@ category:
 <!-- _MAWAR2023052412_MAWAR -->
 <table >
   <tr>
-    <th>EC</th>
-    <th>Result</th>
+    <th>ECMWF</th>
+    <th>我的結果</th>
   </tr>
   <tr>
     <td ><div style="text-align:center" id="image1"><img src="/images/track_probability/ec/2023052012.png" /></div></td>
