@@ -1,0 +1,227 @@
+{
+    "type": "FeatureCollection",
+    "totalFeatures": 2124,
+    "features": [
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.5786111111111, 22.13722222222222]
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 31.8,
+                "windSpeed": 2.7,
+                "windDirection": 125,
+                "humidity":66,
+                "name":"CC"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.55111111111111,22.11722222222222],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": -60.619,
+                "windSpeed": 1.8,
+                "windDirection": 117.,
+                "humidity":65,
+                "name":"DC"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b4",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.54333333333334,22.21527777777778],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 33.5,
+                "windSpeed": 2.0,
+                "windDirection": 69,
+                "humidity":68,
+                "name":"DP"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b5",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.56,22.20722222222222],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 33.8,
+                "windSpeed": 2.3,
+                "windDirection": 139,
+                "humidity":60,
+                "name":"EM"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b6",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.54222222222222,22.197222222222223],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 32,
+                "windSpeed": 2.0,
+                "windDirection": 109,
+                "humidity":67,
+                "name":"FM"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b7",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.5425,22.154999999999998],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 33.6,
+                "windSpeed": 1.8,
+                "windDirection": 170,
+                "humidity":64,
+                "name":"JA"
+            }
+        },
+
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b9",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113,22],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 33.4,
+                "windSpeed": 2.2,
+                "windDirection": 182,
+                "humidity":64,
+                "name":"KV"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c08b0",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.58027777777778,22.134722222222223],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 32.9,
+                "windSpeed": 1.7,
+                "windDirection": 148,
+                "humidity":64,
+                "name":"MM"
+            }
+        },        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c01b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.55833333333334,22.196666666666665],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 35.8,
+                "windSpeed": 3.2,
+                "windDirection": 146,
+                "humidity":54,
+                "name":"PE"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c02b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.54166666666667,22.180833333333336],
+            },
+            "properties": {
+                "altitude": 38615,
+
+                "windSpeed": 3.4,
+                "windDirection": 95,
+   
+                "name":"PG"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c03b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.56,22.191666666666666],
+            },
+            "properties": {
+                "altitude": 38615,
+                "windSpeed": 3.1,
+                "windDirection": 112,
+                "name":"PN"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c04b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.56,2.1816666666666666],
+            },
+            "properties": {
+                "altitude": 38615,
+  
+                "windSpeed": 3.1,
+                "windDirection": 95,
+                "name":"PS"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c05b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [13.534722222222221,22.175555555555558],
+            },
+            "properties": {
+                "altitude": 38615,
+                
+                "windSpeed": 3.5,
+                "windDirection": 90,
+                "name":"PV"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "1bdffe7b-af88-4f33-a792-e3a2a53c06b3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.56861111111111,22.159444444444443],
+            },
+            "properties": {
+                "altitude": 38615,
+                "temperature": 31.8,
+                "windSpeed": 2.7,
+                "windDirection": 80,
+                "humidity":72,
+                "name":"TG"
+            }
+        },
+
+    ]
+}
