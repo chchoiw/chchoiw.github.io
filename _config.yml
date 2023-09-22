@@ -183,12 +183,26 @@ collections:
   notes:
     output: true
     permalink: /:collection/:path/
+  gis_exercise:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
   # _posts
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: "gis_exercise"
       type: posts
     values:
       layout: single
