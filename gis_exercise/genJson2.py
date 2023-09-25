@@ -116,7 +116,7 @@ id2Sation={
 nowdt=(datetime.datetime.now()+datetime.timedelta(hours=8,minutes=-1))
 nowdtStr=nowdt.strftime("%Y-%m-%d %H:%M:00")
 nowdt24hoursAgo=nowdt+datetime.timedelta(hours=-24)
-nowdt24hoursAgoStr=nowdt24hoursAgo.strftime("%Y-%m-%d %H:%M:00")
+nowdt24hoursAgoStr=nowdt24hoursAgo.strftime("%Y-%m-%d %H:00:00")
 # try:
 #     mydb = connection.connect(host="mssv01.smg.net", database = 'AWS',user="", passwd="")
 #     query = "SELECT OBS_DATETIME,STATIONCODE,TEMP,HUMI,WSPD,WDIR,WSPD_10, WDIR_10 FROM AWS.min_tab1 where obs_datetime=%s order by obs_datetime desc limit 50;" %nowdt
@@ -237,7 +237,7 @@ mydb.close()
 
 
 def awsDataHandle(nowdt,stationOutputFlag=True,fileNameWithTime=True):
-    reftime=nowdt.strftime("%Y-%m-%dT%H:%M:00.000Z")
+    reftime=nowdt.strftime("%Y-%m-%dT%H:%M:00.000")
     nowdtStr = nowdt.strftime("%Y-%m-%d %H:%M:00")
     mydb = connection.connect(host="mssv01.smg.net", database = 'AWS',user="cptmain", passwd="",use_pure=True,charset='utf8')
     query = "SELECT OBS_DATETIME,STATIONCODE,TEMP,HUMI,WSPD,WDIR,WSPD_10, WDIR_10 FROM AWS.min_tab1 where obs_datetime='%s' order by obs_datetime desc limit 50;" %nowdtStr
@@ -261,6 +261,9 @@ def awsDataHandle(nowdt,stationOutputFlag=True,fileNameWithTime=True):
             awsData.loc[i,"v"]=awsData.loc[i,"WSPD_10"]*math.sin( rad)
             awsData.loc[i,"u"]=awsData.loc[i,"WSPD_10"]*math.cos( rad) 
             awsData.loc[i,"WSPD_10"]=awsData.loc[i,"WSPD_10"]
+            filenameDTStr=nowdt.strftime("%Y%m%d%H")
+            if (i=="TG"):
+                print(i,filenameDTStr,awsData.loc[i,"OBS_DATETIME"],awsData.loc[i,"WSPD_10"])
             # if i not in stationAry:
             if  np.isnan(awsData.loc[i,"TEMP"]):
                 temp=-999
@@ -285,30 +288,35 @@ def awsDataHandle(nowdt,stationOutputFlag=True,fileNameWithTime=True):
             }
             }
             stationAry.append(tmpDict)
-                                    
+                               
     awsData = awsData.dropna(subset=['long', 'lat'])
+
     awsList=awsData[["long","lat","WSPD_10","WDIR_10"]].values.tolist()
     awsString = json.dumps({0: awsList}, indent=4, cls=NpEncoder)
     
     ############
     # windbarb station data
     ###########
-    filenameDTStr=nowdt.strftime("%Y%m%d%H")
+    stationString = json.dumps({0:stationAry}, indent=4, cls=NpEncoder)
     if stationOutputFlag:
         if fileNameWithTime:
             with open(workdir+"awsData/stationPoint/windbarb_"+filenameDTStr+".json", "w") as awsFile:
                 awsFile.write(awsString)
             # print(stationAry)
-            stationString = json.dumps({0:stationAry}, indent=4, cls=NpEncoder)
-
-            with open(workdir+"awsData/stationPoint/station_"+filenameDTStr+".json", "w") as stationFile:
+            awsFile.close()
+            # stationString = json.dumps({0:stationAry}, indent=4, cls=NpEncoder)
+            
+            print(stationString)
+            # os.system("rm "+workdir+"/awsData/stationPoint/station_"+filenameDTStr+".json")
+            with open(workdir+"/awsData/stationPoint/station_"+filenameDTStr+".json", "w") as stationFile:
                 stationFile.write(stationString)
             stationFile.close()
         else:
             with open(workdir+"awsData/stationPoint/windbarb.json", "w") as awsFile:
                 awsFile.write(awsString)
+            awsFile.close()
             # print(stationAry)
-            stationString = json.dumps({0:stationAry}, indent=4, cls=NpEncoder)
+            # stationString = json.dumps({0:stationAry}, indent=4, cls=NpEncoder)
 
             with open(workdir+"awsData/stationPoint/station.json", "w") as stationFile:
                 stationFile.write(stationString)
@@ -469,13 +477,13 @@ def awsContourGen(j,minZeroFlag=False):
         nlags=2,
     )
     
-    print("begin ok")
-    print(awsData[["OBS_DATETIME","long","lat","WSPD_10"]],gridx,gridy)
+    # print("begin ok")
+    # print(awsData[["OBS_DATETIME","long","lat","WSPD_10"]],gridx,gridy)
     z, ss = OK.execute("grid",gridx , gridy)
     zz=z
     plt.imshow(z)
     # plt.show()
-    print(z)
+    # print(z)
     plt.savefig('a.png')
     n,m = longlatGridDict["nx"],longlatGridDict["ny"]
     speedAry= {        
@@ -497,7 +505,7 @@ def awsContourGen(j,minZeroFlag=False):
     with open(workdir+"awsData/contour/speedOK.json", "w") as speedCoutour:
         speedCoutour.write(speedAryString)
     speedCoutour.close()    
-    print("end ok")
+    # print("end ok")
 
             # print(i,j,grid[j][i])
     # lon1=longlatGridDict["lo1"]-1*longlatGridDict["dx"]
@@ -722,9 +730,13 @@ awsDataHandle(nowdt,stationOutputFlag=True,fileNameWithTime=False)
 tempQuantileList=[]
 humiQuantileList=[]
 wspdQuantileList=[]
+
 nowdt=(datetime.datetime.now()+datetime.timedelta(hours=8,minutes=-1))
-nowdt24hoursAgo=nowdt+datetime.timedelta(hours=-24)
-for j in range(1441):
+nowmin=nowdt.minute
+
+nowdt24hoursAgo=nowdt+datetime.timedelta(hours=-24,minutes=-nowmin)
+# nowdt24hoursAgo.replace(minute=0)
+for j in range(1440+nowmin):
     
     
     # nowdt=nowdt.replace( minute=0)
@@ -733,7 +745,7 @@ for j in range(1441):
     #     stationOutputFlag=True
     # else:
     #     stationOutputFlag=False
-    awsData=awsDataHandle(nowdt,stationOutputFlag=True)
+    awsData=awsDataHandle(nowdt,stationOutputFlag=False)
     reftime=nowdt.strftime("%Y-%m-%dT%H:%M:%M.000Z")
     nowdtStr=nowdt.strftime("%Y-%m-%d %H:%M:00")
     # filesTimeStr=nowdt.strftime("%Y%m-%d %H:00:00")

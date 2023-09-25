@@ -309,7 +309,7 @@ L.VelocityLayer = (L.Layer ? L.Layer : L.Class).extend({
   },
   addWindBarb:function addWindBarb()
   {
-    console.log("]]]]]]]]]]]]]]check goe",this.options.displayOptions.stationGeoPath)
+
     var filename=this.options.displayOptions.stationGeoPath;
     var meteoPoints = getJsonFun(filename,0);
     var windBarbGroup=[];
@@ -558,9 +558,9 @@ var Windy = function Windy(params) {
   var OPACITY = 0.97;
 
 
-  var PARTICLE_MULTIPLIER=1/300
+  var PARTICLE_MULTIPLIER=1/700
   // var PARTICLE_LINE_WIDTH=2a
-  // var VELOCITY_SCALE=0.0
+  var VELOCITY_SCALE=0.02;
 
 
   var defaulColorScale = ["rgb(36,104, 180)", "rgb(60,157, 194)", "rgb(128,205,193 )", "rgb(151,218,168 )", "rgb(198,231,181)", "rgb(238,247,217)", "rgb(255,238,159)", "rgb(252,217,125)", "rgb(255,182,100)", "rgb(252,150,75)", "rgb(250,112,52)", "rgb(245,64,32)", "rgb(237,45,28)", "rgb(220,24,32)", "rgb(180,0,35)"];
@@ -585,6 +585,7 @@ var Windy = function Windy(params) {
     if (options.hasOwnProperty("minVelocity")) MIN_VELOCITY_INTENSITY = options.minVelocity;
     if (options.hasOwnProperty("maxVelocity")) MAX_VELOCITY_INTENSITY = options.maxVelocity;
     if (options.hasOwnProperty("velocityScale")) VELOCITY_SCALE = (options.velocityScale || 0.005) * (Math.pow(window.devicePixelRatio, 1 / 3) || 1);
+    
     if (options.hasOwnProperty("particleAge")) MAX_PARTICLE_AGE = options.particleAge;
     if (options.hasOwnProperty("lineWidth")) PARTICLE_LINE_WIDTH = options.lineWidth;
     if (options.hasOwnProperty("particleMultiplier")) PARTICLE_MULTIPLIER = options.particleMultiplier;
@@ -649,8 +650,10 @@ var Windy = function Windy(params) {
     builder = createBuilder(data);
     
     var header = builder.header;
+    var keyData=params.displayOptions.velocityType;
+    var showDate=header.refTime.substring(0, 19);
     if (header.hasOwnProperty("gridDefinitionTemplate") && header.gridDefinitionTemplate != 0) supported = false;
-    document.getElementById("datetime").innerHTML=(header.refTime);
+    document.getElementById("datetime").innerHTML=(keyData+" "+showDate);
     if (!supported) {
       console.log("Windy Error: Only data with Latitude_Longitude coordinates is supported");
     }

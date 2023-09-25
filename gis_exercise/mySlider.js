@@ -312,8 +312,7 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   focus
     .select("text.y1")
     .attr("transform", "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")")
-    //.text(aa + ", q:" + bb + ", 3q:" + cc);
-	.text(aa);
+    .text(aa);
 
   // .text(d[varName]);
   // focus
@@ -446,11 +445,13 @@ elem2filename = {
   "TEMP": "temp",
   "wl": "wl"
 }
-
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
 function changeStation(path, colorLevel, dataKey) {
-  var stationData = getJsonFun(path, 0);
-  console.log("--------- start stationData", stationData)
+  var stationData = getJsonFun(path+"?id="+getRandomInt(100000), 0);
+  console.log("--------- start stationData",path+"?id="+getRandomInt(100000), stationData)
   var htmlstrAry = [];
   var windBarbGroup = [];
 
@@ -695,7 +696,11 @@ playBtn.addEventListener("click", function (ev) {
       // alert('clean');
 
     }
-    dateSlider.noUiSlider.set(loopVar);
+    
+    
+
+
+
     if (window.mobileAndTabletCheck())
       var chartID = "my_dataviz2";
     else var chartID = "my_dataviz";

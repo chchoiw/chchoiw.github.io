@@ -599,7 +599,7 @@ function getColorFromColorLevel(value,colorLevel)
   var speedOKLayer = L.contourLayer(speedOKLayerOption);
   var speedOKLayer2 = L.layerGroup([wdirLayer2, speedOKLayer]);
   // var speedLayer2 = L.layerGroup([ speedLayer]);
-  layerControl.addOverlay(speedOKLayer2, "WSPD_OK");
+  // layerControl.addOverlay(speedOKLayer2, "WSPD_OK");
   // speedOKLayer2.addTo(map);
     var tempdata = getJsonFun("awsData/contour/temp.json", key = "");
     console.log(tempdata)
@@ -674,8 +674,8 @@ function getColorFromColorLevel(value,colorLevel)
     //   maxVelocity: 15
   };
   // $.getJSON("wlData/contour/wl.json", function(data) {
-    var wlLayer = L.contourLayer(wlLayerOption);
-    layerControl.addOverlay(wlLayer, "WaterLevel");
+    // var wlLayer = L.contourLayer(wlLayerOption);
+    // layerControl.addOverlay(wlLayer, "WaterLevel");
   // });
   var layerDict={
     "WSPD_10":speedLayer,
@@ -874,6 +874,7 @@ window.mobileAndTabletCheck = function () {
 };
 
 function appendData(stationcode,varName ) {
+
 if (window.mobileAndTabletCheck())
 {
   console.log(window.mobileAndTabletCheck());
@@ -905,7 +906,7 @@ document.getElementById(chartID).setAttribute("statName",stationcode)
   width = 960 - margin.left - margin.right,
   height = 500 - margin.top - margin.bottom;
   // const x = d3.scaleTime().range([0, width]);
-  // const margin = { top: R0, right: 0, bottom: 20, left: 20 },
+  // const margin = { top: R0, righFt: 0, bottom: 20, left: 20 },
   // width = 550 - margin.left - margin.right,
   // height = 325 - margin.top - margin.bottom;
   if (varName!="wl")var filename="awsData/stationTimeSeries/"+stationcode+".json"
@@ -1009,6 +1010,7 @@ document.getElementById(chartID).setAttribute("statName",stationcode)
   var minY=d3.min(data, (d) => { return d["min"]; });
 
   var minDate=formatDate(d3.min(data, (d) => { return d["OBS_DATETIME"]; }));
+  var maxDate=formatDate(d3.max(data, (d) => { return d["OBS_DATETIME"]; }));
   var minX=d3.min(data, (d) => { return d["OBS_DATETIME"]; })
   var step=1;
   var breakY=minY/2;
@@ -1402,9 +1404,9 @@ svg
             .append("text")
             .attr("class", "title")
             .attr("x", width / 2)
-            .attr("y", 0 - margin.top / 2)
+            .attr("y", 30 - margin.top / 2)
             .attr("text-anchor", "middle")
-            .text(stationcode+"   "+varName+"    "+minDate)
+            .text(stationcode+"   "+varName+"    "+maxDate)
             // .text("USD to RUB Exchange Rates, " + year);
         if(varName=="WSPD_10")
         {
@@ -1543,7 +1545,7 @@ svg
                 .select("text.y1")
                 .attr("transform", "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")")
                 //.text(aa+", q:"+bb+", 3q:"+cc);
-		.text(aa);
+		            .text(aa);
 
                 // .text(d[varName]);
             // focus
@@ -1600,6 +1602,7 @@ svg
             // var remainderMins = values % (60 * 60 * 1000);
             // var values2 = values - remainderMins;
             // if (action=="click")sliderAction(values2);
+            
         }
         function mouseClick(event) {
           var d=mouseMove(event,"click"); 
@@ -1613,6 +1616,7 @@ svg
                       var remainderMins = values % (60 * 60 * 1000);
                       var values2 = values - remainderMins;
                       sliderAction(values2);
+                      dateSlider.noUiSlider.set(values2);
         }
         svg
           .append("rect")
@@ -1633,7 +1637,10 @@ svg
           })
           .on("click", mouseClick);
     // });
-    
+    console.log("ddddddddddddddddddd");
+    map.eachLayer(function (layer) {
+      layer.closePopup();
+    });
     return svg
 }
 
