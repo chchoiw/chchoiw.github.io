@@ -701,8 +701,8 @@ playBtn.addEventListener("click", function (ev) {
     if (window.mobileAndTabletCheck()) var chartID = "my_dataviz2";
     else var chartID = "my_dataviz";
     var timeSeriesElem = document.getElementById(chartID);
-    console.log("llllllllll", timeSeriesElem.innerHTML);
-    if (timeSeriesElem.innerHTML != "")
+    // console.log("llllllllll", timeSeriesElem.innerHTML);
+    if (timeSeriesElem!=null && timeSeriesElem.innerHTML != "")
       sliderAction(loopVar, (showTooltips = true));
     else sliderAction(loopVar, (showTooltips = false));
 
