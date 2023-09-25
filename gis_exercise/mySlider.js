@@ -635,7 +635,7 @@ function sliderAction(values, showTooltips = false) {
     layerWdirChange._windBarbLayer.addTo(map);
     changeStation(filenameStation, colorLevel, varName);
   }
-
+  
   if (showTooltips)
     showChartTooltips(
       extractValue,
@@ -705,7 +705,7 @@ playBtn.addEventListener("click", function (ev) {
     if (timeSeriesElem!=null && timeSeriesElem.innerHTML != "")
       sliderAction(loopVar, (showTooltips = true));
     else sliderAction(loopVar, (showTooltips = false));
-
+    dateSlider.noUiSlider.set(loopVar);
     // sliderAction(loopVar,showTooltips=true);
     // var filename = "awsData/contour/temp.json";
     // reDraw(filename);
