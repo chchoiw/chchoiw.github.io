@@ -1,5 +1,5 @@
-var dateSlider = document.getElementById('timeSlider');
-var hourLoopMillSeconds = 2 * 1000
+var dateSlider = document.getElementById("timeSlider");
+var hourLoopMillSeconds = 2 * 1000;
 function timestamp(str) {
   return new Date(str).getTime();
 }
@@ -28,7 +28,7 @@ var nowstr = speeddata.header.refTime;
 
 var now = dayjs(nowstr).subtract(8, "hour");
 console.log(" now", nowstr, now);
-var labelToTime = {}
+var labelToTime = {};
 var remainderMins = now.valueOf() % (60 * 60 * 1000);
 var endTimeStamp = now.valueOf() - remainderMins;
 for (var i = 0; i < 24; i++) {
@@ -36,16 +36,15 @@ for (var i = 0; i < 24; i++) {
   var labelFormat = "HH";
   var label = dayjs(timestamp).format(labelFormat) + " H";
   labelToTime[label] = timestamp;
-
 }
 
-var remainderMins = (now.valueOf()) % (60 * 60 * 1000);
-var endTimeStamp = (now.valueOf()) - remainderMins;
+var remainderMins = now.valueOf() % (60 * 60 * 1000);
+var endTimeStamp = now.valueOf() - remainderMins;
 // var endTimeStamp = now.valueOf() ;
-var startTimeStamp = (endTimeStamp) - 24 * (60 * 60 * 1000);
-var timeFormat = "YYYY-MM-DD HH:mm:ss"
+var startTimeStamp = endTimeStamp - 24 * (60 * 60 * 1000);
+var timeFormat = "YYYY-MM-DD HH:mm:ss";
 // console.log("now34444444", now1minuteAgo.format(timeFormat))
-var dateSlider = document.getElementById('timeSlider');
+var dateSlider = document.getElementById("timeSlider");
 
 noUiSlider.create(dateSlider, {
   start: [endTimeStamp],
@@ -69,8 +68,7 @@ noUiSlider.create(dateSlider, {
         var b = dayjs(value2).format("HH");
         if (b == "0") {
           var a = b + " H<br>" + dayjs(value).format("DD");
-        }
-        else var a = b + " H";
+        } else var a = b + " H";
         return a;
       },
       // 'from' the formatted value.
@@ -88,7 +86,7 @@ noUiSlider.create(dateSlider, {
       if (b == "00") {
         var a = b + " H<br>" + dayjs(value).format("DD");
       } else var a = b + " H";
-      return a
+      return a;
     },
     // 'from' the formatted value.
     // Receives a string, should return a number.
@@ -97,7 +95,12 @@ noUiSlider.create(dateSlider, {
     },
   },
 });
-function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 1000) {
+function showChartTooltips(
+  extractValue,
+  varName,
+  colorLevel,
+  timeMillSeconds = 1000
+) {
   //##########################
   // show moveover tooltip when run
   //##########################
@@ -105,28 +108,29 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   // var stationcode="TG";
   if (window.mobileAndTabletCheck()) var chartID = "my_dataviz2";
   else var chartID = "my_dataviz";
-  var stationcode = document
-    .getElementById(chartID)
-    .getAttribute("statName");
+  var stationcode = document.getElementById(chartID).getAttribute("statName");
   var parseDate = d3.timeParse("%Y-%m-%d %H:%M:%S");
   const margin = { top: 40, right: 80, bottom: 60, left: 50 },
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-  if (varName != "wl") var filename = "awsData/stationTimeSeries/" + stationcode + ".json"
-  else filename = "wlData/stationTimeSeries/" + stationcode + ".json"
+  if (varName != "wl")
+    var filename = "awsData/stationTimeSeries/" + stationcode + ".json";
+  else filename = "wlData/stationTimeSeries/" + stationcode + ".json";
 
-  if (varName != "wl") var quantilefilename = "awsData/stationTimeSeries/quantile_" + varName + ".json"
-  else quantilefilename = "wlData/stationTimeSeries/" + stationcode + ".json"
+  if (varName != "wl")
+    var quantilefilename =
+      "awsData/stationTimeSeries/quantile_" + varName + ".json";
+  else quantilefilename = "wlData/stationTimeSeries/" + stationcode + ".json";
   // const parseDate = d3.timeParse("%m/%d/%Y"),
 
-  formatDate = d3.timeFormat("%Y-%m-%d"),
-    formatMonth = d3.timeFormat("%b"),
-    formatTime = d3.timeFormat("%dd%H:%M");
+  (formatDate = d3.timeFormat("%Y-%m-%d")),
+    (formatMonth = d3.timeFormat("%b")),
+    (formatTime = d3.timeFormat("%dd%H:%M"));
   numberformat = d3.format(".1f");
   formatMin = d3.timeFormat("%M");
-  var data = getJsonFun(filename, key = 0)
-  var quantile_data = getJsonFun(quantilefilename, key = 0)
+  var data = getJsonFun(filename, (key = 0));
+  var quantile_data = getJsonFun(quantilefilename, (key = 0));
 
   var XHour = [];
   var YHour = [];
@@ -134,39 +138,34 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
 
   // quantile_data.forEach((dd) => {
   for (var j = 0; j < data.length; j++) {
-    var dd = quantile_data[j]
+    var dd = quantile_data[j];
 
     dd["OBS_DATETIME"] = parseDate(dd["OBS_DATETIME"]);
 
-
-
     if (varName == "WSPD_10") {
       if (dd["quantile"] == dd["quantile"]) {
-        data[j]["quantile"] = (parseFloat(dd["quantile"]) * 3.6);
-        data[j]["thirdQuantile"] = (parseFloat(dd["thirdQuantile"]) * 3.6);
-        data[j]["min"] = (parseFloat(dd["min"]) * 3.6);
-        data[j]["max"] = (parseFloat(dd["max"]) * 3.6);
-        data[j]["mean"] = (parseFloat(dd["mean"]) * 3.6);
-      }
-      else {
+        data[j]["quantile"] = parseFloat(dd["quantile"]) * 3.6;
+        data[j]["thirdQuantile"] = parseFloat(dd["thirdQuantile"]) * 3.6;
+        data[j]["min"] = parseFloat(dd["min"]) * 3.6;
+        data[j]["max"] = parseFloat(dd["max"]) * 3.6;
+        data[j]["mean"] = parseFloat(dd["mean"]) * 3.6;
+      } else {
         data[j]["quantile"] = 0;
         data[j]["thirdQuantile"] = 0;
         data[j]["min"] = 0;
         data[j]["max"] = 0;
         data[j]["mean"] = 0;
       }
-
-    }
-    else {
+    } else {
       data[j]["quantile"] = Number(dd["quantile"]);
-      data[j]["thirdQuantile"] = Number(dd["thirdQuantile"])
-      data[j]["min"] = Number(dd["min"])
-      data[j]["max"] = Number(dd["max"])
-      data[j]["mean"] = Number(dd["mean"])
+      data[j]["thirdQuantile"] = Number(dd["thirdQuantile"]);
+      data[j]["min"] = Number(dd["min"]);
+      data[j]["max"] = Number(dd["max"]);
+      data[j]["mean"] = Number(dd["mean"]);
     }
   }
   // });
-  console.log("data", data)
+  console.log("data", data);
   // if (formatMin( d["OBS_DATETIME"])=="00")
   // {
   //   XHour.push(d["OBS_DATETIME"]);
@@ -179,36 +178,30 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
     const numberformat = d3.format(".1f");
     d["OBS_DATETIME"] = parseDate(d["OBS_DATETIME"]);
     d["quantile"] = d["quantile"];
-    d["min"] = d["min"]
+    d["min"] = d["min"];
 
     if (varName == "WSPD_10") {
       if (d[varName] == d[varName]) {
-        d[varName] = (parseFloat(d[varName]) * 3.6);
-      }
-      else d[varName] = 0
-    }
-    else d[varName] = Number(d[varName])
+        d[varName] = parseFloat(d[varName]) * 3.6;
+      } else d[varName] = 0;
+    } else d[varName] = Number(d[varName]);
     if (formatMin(d["OBS_DATETIME"]) == "00") {
       XHour.push(d["OBS_DATETIME"]);
-      YHour.push(d[varName])
-      DirHour.push(d["WDIR_10"])
+      YHour.push(d[varName]);
+      DirHour.push(d["WDIR_10"]);
     }
     // console.log(d,d["OBS_DATETIME"],d[varName])
   });
 
+  const svg = d3.select("#" + chartID);
 
-
-  const svg = d3
-    .select("#" + chartID)
-
-  const focus = svg
-    .selectAll('.focus').style("display", null);
-  console.log("focus", focus)
+  const focus = svg.selectAll(".focus").style("display", null);
+  console.log("focus", focus);
   // focus;
 
   const bisect = d3.bisector((d) => d["OBS_DATETIME"]).left;
   var timeString = dayjs(extractValue).format("YYYY-MM-DD HH:mm:ss");
-  console.log("extractValue", extractValue)
+  console.log("extractValue", extractValue);
   // x0 = x.invert(parseDate(timeString));
   x0 = parseDate(timeString);
 
@@ -216,13 +209,12 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   d0 = data[bisectIndex - 1];
   d1 = data[bisectIndex];
 
-  // d = 
+  // d =
   if (x0 - d0.OBS_DATETIME > d1.OBS_DATETIME - x0) {
-    d = d1
-
+    d = d1;
   } else {
     d = d0;
-    bisectIndex = bisectIndex - 1
+    bisectIndex = bisectIndex - 1;
   }
 
   var maxY = d3.max(data, (d) => {
@@ -234,62 +226,67 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   // var maxY=d3.max(data, (d) => (d3.max(d[varName], (d) => (d[varName]))))
   const x = d3.scaleTime().range([0, width]);
 
-  var minY = d3.min(data, (d) => { return d["min"]; });
+  var minY = d3.min(data, (d) => {
+    return d["min"];
+  });
 
-  var minDate = formatDate(d3.min(data, (d) => { return d["OBS_DATETIME"]; }));
-  var minX = d3.min(data, (d) => { return d["OBS_DATETIME"]; })
+  var minDate = formatDate(
+    d3.min(data, (d) => {
+      return d["OBS_DATETIME"];
+    })
+  );
+  var minX = d3.min(data, (d) => {
+    return d["OBS_DATETIME"];
+  });
   var step = 1;
   var breakY = 2;
   if (varName == "WSPD_10") {
     step = 1;
     breakY = 2;
-  }
-
-  else if (varName == "TEMP") {
-    step = .5;
-    breakY = 2
-  }
-  else if (varName == "HUMI") {
+  } else if (varName == "TEMP") {
+    step = 0.5;
+    breakY = 2;
+  } else if (varName == "HUMI") {
     step = 5;
-  }
-  else if (varName == "wl") {
-    step = 0.1,
-      breakY = 0
+  } else if (varName == "wl") {
+    (step = 0.1), (breakY = 0);
   }
 
   if (breakY > (maxY - breakY) / 5 || minY < breakY) breakAxisY = false;
   else breakAxisY = true;
   var y;
   if (breakAxisY) {
-    y = d3.scaleLinear().range([height,
-      (height * 4 / 5 + 20),
-      (height * 4 / 5 - 20),
-      margin.bottom]);
-  }
-  else {
-    y = d3.scaleLinear().range([height,
-      margin.bottom]);
+    y = d3
+      .scaleLinear()
+      .range([
+        height,
+        (height * 4) / 5 + 20,
+        (height * 4) / 5 - 20,
+        margin.bottom,
+      ]);
+  } else {
+    y = d3.scaleLinear().range([height, margin.bottom]);
   }
   x.domain(
-    d3.extent(data, (d) => { return d["OBS_DATETIME"]; })
+    d3.extent(data, (d) => {
+      return d["OBS_DATETIME"];
+    })
   );
 
   if (breakAxisY) {
-    y.domain([0, breakY, minY, maxY])
+    y.domain([0, breakY, minY, maxY]);
 
     var rangeYAry = [0, breakY];
     for (let i = minY; i <= maxY; i += step) {
       rangeYAry.push(i);
     }
-  }
-  else {
-    y.domain([0, maxY])
+  } else {
+    y.domain([0, maxY]);
     var rangeYAry = [];
     for (let i = 0; i <= maxY; i += step) {
       rangeYAry.push(i);
     }
-
-  };
+  }
   var loopX = x(d["OBS_DATETIME"]);
   var loopY = y(d[varName]);
   // var xgap(d1.OBS_DATETIME-d0.OBS_DATETIME);
@@ -303,15 +300,20 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   var d = data[loopIndex];
   focus
     .select("circle.y")
-    .attr("transform", "translate(" + x(d["OBS_DATETIME"]) + ","
-      + y(d[varName]) + ")");
-  console.log("event check", x0, i, d, x(d["OBS_DATETIME"]))
-  var aa = (d[varName]).toFixed(1).toString();
+    .attr(
+      "transform",
+      "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")"
+    );
+  console.log("event check", x0, i, d, x(d["OBS_DATETIME"]));
+  var aa = d[varName].toFixed(1).toString();
   var bb = d["quantile"].toFixed(1).toString();
   var cc = d["thirdQuantile"].toFixed(1).toString();
   focus
     .select("text.y1")
-    .attr("transform", "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")")
+    .attr(
+      "transform",
+      "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")"
+    )
     .text(aa);
 
   // .text(d[varName]);
@@ -321,10 +323,14 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   //     .text(d[varName]);
   focus
     .select("rect.y3")
-    .attr("transform",
-      "translate(" + (x(d["OBS_DATETIME"]) - 3) + "," + (y(d[varName]) - 28) + ")")
-
-
+    .attr(
+      "transform",
+      "translate(" +
+        (x(d["OBS_DATETIME"]) - 3) +
+        "," +
+        (y(d[varName]) - 28) +
+        ")"
+    );
 
   for (var j = 0; j < colorLevel.length - 1; j++) {
     var red = colorLevel[j][1][0];
@@ -335,16 +341,19 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
     if (d[varName] >= colorLevel[j][0] && d[varName] < colorLevel[j + 1][0]) {
       focus
         .select("rect.y1")
-        .attr("transform", "translate(" + x(d["OBS_DATETIME"])
-          + "," +
-          (y(d[varName]) - 25) + ")")
-        .style("fill", color)
+        .attr(
+          "transform",
+          "translate(" + x(d["OBS_DATETIME"]) + "," + (y(d[varName]) - 25) + ")"
+        )
+        .style("fill", color);
     }
   }
   focus
     .select("text.y3")
-    .attr("transform",
-      "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")")
+    .attr(
+      "transform",
+      "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")"
+    )
     .text(formatTime(d["OBS_DATETIME"]))
     .style("fill", "#fff");
 
@@ -355,7 +364,10 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
 
   focus
     .select(".x")
-    .attr("transform", "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")")
+    .attr(
+      "transform",
+      "translate(" + x(d["OBS_DATETIME"]) + "," + y(d[varName]) + ")"
+    )
     .attr("y2", height - y(d[varName]));
 
   focus
@@ -366,7 +378,6 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
   numLoop = numLoop + 1;
   loopIndex = loopIndex + 1;
   if (numLoop > 60) {
-
     clearInterval(loopTooltip);
     numLoop = 0;
   }
@@ -377,8 +388,7 @@ function showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 
     .attr("width", width)
     .attr("height", height)
     .style("fill", "none")
-    .style("pointer-events", "all")
-
+    .style("pointer-events", "all");
 }
 
 function removeElementsByClass(className) {
@@ -440,18 +450,22 @@ function removeElementsByClass(className) {
 //     velocityLayer.addTo(map);
 // }
 elem2filename = {
-  "WSPD_10": "speed",
-  "HUMI": "humi",
-  "TEMP": "temp",
-  "wl": "wl"
-}
+  WSPD_10: "speed",
+  HUMI: "humi",
+  TEMP: "temp",
+  wl: "wl",
+};
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
 function changeStation(path, colorLevel, dataKey) {
-  var stationData = getJsonFun(path+"?id="+getRandomInt(100000), 0);
-  console.log("--------- start stationData",path+"?id="+getRandomInt(100000), stationData)
+  var stationData = getJsonFun(path + "?id=" + getRandomInt(100000), 0);
+  console.log(
+    "--------- start stationData",
+    path + "?id=" + getRandomInt(100000),
+    stationData
+  );
   var htmlstrAry = [];
   var windBarbGroup = [];
 
@@ -461,16 +475,15 @@ function changeStation(path, colorLevel, dataKey) {
     var long = loopVar["geometry"]["coordinates"][0];
     var lat = loopVar["geometry"]["coordinates"][1];
     var speedcolor;
-    if (dataKey == "WSPD_10") var zScale = (loopVar.properties.WSPD_10 * 3.6).toFixed(1);
+    if (dataKey == "WSPD_10")
+      var zScale = (loopVar.properties.WSPD_10 * 3.6).toFixed(1);
     else if (dataKey == "HUMI") var zScale = loopVar.properties[dataKey];
-    else var zScale = (loopVar.properties[dataKey]).toFixed(1);
+    else var zScale = loopVar.properties[dataKey].toFixed(1);
 
     if (zScale == -999) {
       classStr = "NaNClass";
       zScale = "NaN";
-    }
-    else classStr = "toopltipClass";
-
+    } else classStr = "toopltipClass";
 
     var name = loopVar["properties"]["name"];
     var speedcolor = getColorFromColorLevel(zScale, colorLevel);
@@ -478,16 +491,13 @@ function changeStation(path, colorLevel, dataKey) {
     var idstr = name + "_" + dataKey;
     var nameMarker = document.getElementById(idstr + "_spanName");
     var valueMarker = document.getElementById(idstr + "_spanValue");
-    if (typeof (nameMarker) != 'undefined' && nameMarker != null) {
+    if (typeof nameMarker != "undefined" && nameMarker != null) {
       valueMarker.innerHTML = zScale;
       valueMarker.style.backgroundColor = speedcolor;
     }
   }
 }
 function sliderAction(values, showTooltips = false) {
-
-
-
   console.log("test", values[0], values);
   if (Array.isArray(values)) extractValue = values[0];
   else extractValue = values;
@@ -505,24 +515,14 @@ function sliderAction(values, showTooltips = false) {
   );
   var fileTime = dayjs(Number(extractValue)).format(fileTimeFormat);
   var fileAry = [];
-  var varName = document
-    .getElementById("datetime")
-    .getAttribute("varName");
+  var varName = document.getElementById("datetime").getAttribute("varName");
 
   if (varName != "wl")
     var filename =
-      "awsData/contour/" +
-      elem2filename[varName] +
-      "_" +
-      fileTime +
-      ".json";
+      "awsData/contour/" + elem2filename[varName] + "_" + fileTime + ".json";
   else
     var filename =
-      "wlData/contour/" +
-      elem2filename[varName] +
-      "_" +
-      fileTime +
-      ".json";
+      "wlData/contour/" + elem2filename[varName] + "_" + fileTime + ".json";
   // var filename= "awsData/contour/temp.json"
   //##########################
   // HUMI TEMP contour change
@@ -533,14 +533,13 @@ function sliderAction(values, showTooltips = false) {
 
   var bounds = map.getBounds();
 
-  var size = map.getSize(); // bounds, width, height, extent         
+  var size = map.getSize(); // bounds, width, height, extent
   var layerChange = layerDict[varName];
-    if (varName != "wl")
-      var filenameStation =
-        "awsData/stationPoint/station_" + fileTime + ".json";
-    else
-      var filenameStation =
-        "awsData/stationPoint/stationWL_" + fileTime + ".json";
+  if (varName != "wl")
+    var filenameStation = "awsData/stationPoint/station_" + fileTime + ".json";
+  else
+    var filenameStation =
+      "awsData/stationPoint/stationWL_" + fileTime + ".json";
   if (map.hasLayer(layerChange)) {
     console.log("check layerchange", layerChange, layerDict);
     layerChange._windy.setData(dataRedraw);
@@ -561,28 +560,21 @@ function sliderAction(values, showTooltips = false) {
         [bounds._northEast.lng, bounds._northEast.lat],
       ]
     );
-
-
   }
 
   //##########################
   // total station change
   //##########################
   if (map.hasLayer(layerDict["station"])) {
-
-    var filename =
-      "awsData/stationPoint/station_" +
-      fileTime +
-      ".json";
+    var filename = "awsData/stationPoint/station_" + fileTime + ".json";
 
     layerControl.removeLayer(layerDict["station"]);
-    map.removeLayer(layerDict["station"])
-    layerDict["station"] = addTotalSation(filename, 0, fileTime)
+    map.removeLayer(layerDict["station"]);
+    layerDict["station"] = addTotalSation(filename, 0, fileTime);
 
     layerControl.addOverlay(layerDict["station"], "Station");
 
     layerDict["station"].addTo(map);
-
   }
   //##########################
   // WDIR contour change
@@ -594,15 +586,24 @@ function sliderAction(values, showTooltips = false) {
     console.log("layerWdirRedraw", layerWdirChange);
     var dataWdirRedraw = getJsonFun(fileWdir, "");
     layerWdirChange._windy.setData(dataWdirRedraw);
-    layerWdirChange._windy.start([[0, 0], [size.x, size.y]], size.x, size.y, [[bounds._southWest.lng, bounds._southWest.lat], [bounds._northEast.lng, bounds._northEast.lat]]);
-
+    layerWdirChange._windy.start(
+      [
+        [0, 0],
+        [size.x, size.y],
+      ],
+      size.x,
+      size.y,
+      [
+        [bounds._southWest.lng, bounds._southWest.lat],
+        [bounds._northEast.lng, bounds._northEast.lat],
+      ]
+    );
 
     //##########################
     // windbarb change
     //##########################
 
-    var filename =
-      "./awsData/stationPoint/windbarb_" + fileTime + ".json";
+    var filename = "./awsData/stationPoint/windbarb_" + fileTime + ".json";
     // layerWdirChange.options.displayOptions.stationGeoPath = filename;
 
     // var colorLevel = colorDict[varName];
@@ -635,9 +636,13 @@ function sliderAction(values, showTooltips = false) {
     changeStation(filenameStation, colorLevel, varName);
   }
 
-
   if (showTooltips)
-    showChartTooltips(extractValue, varName, colorLevel, timeMillSeconds = 1000)
+    showChartTooltips(
+      extractValue,
+      varName,
+      colorLevel,
+      (timeMillSeconds = 1000)
+    );
 
   // removeElementsByClass("contour-overlay");
   //     var option=speedLayer.options=tempLayerOption;
@@ -661,23 +666,22 @@ function sliderAction(values, showTooltips = false) {
   //     b.style.display='inline-block';
   // }, 2000);
 }
-if (window.mobileAndTabletCheck())
-  var chartID = "my_dataviz2";
+if (window.mobileAndTabletCheck()) var chartID = "my_dataviz2";
 else var chartID = "my_dataviz";
-dateSlider.noUiSlider.on('change', function (values, handle, unencoded, tap, positions, noUiSlider) {
-  clearInterval(playTimeSeries);
-  if (window.mobileAndTabletCheck()) var chartID = "my_dataviz2";
-  else var chartID = "my_dataviz";
-  var timeSeriesElem = document.getElementById(chartID);
-  console.log("llllllllll", timeSeriesElem.innerHTML);
-  if (timeSeriesElem.innerHTML != "") sliderAction(values, showTooltips = true);
-  else sliderAction(values, showTooltips = false);
-  console.log("values", values)
-  loopVar =
-    labelToTime[values];
-
-
-});
+dateSlider.noUiSlider.on(
+  "change",
+  function (values, handle, unencoded, tap, positions, noUiSlider) {
+    clearInterval(playTimeSeries);
+    if (window.mobileAndTabletCheck()) var chartID = "my_dataviz2";
+    else var chartID = "my_dataviz";
+    var timeSeriesElem = document.getElementById(chartID);
+    if (timeSeriesElem != null && timeSeriesElem.innerHTML != "")
+      sliderAction(values, (showTooltips = true));
+    else sliderAction(values, (showTooltips = false));
+    console.log("values", values);
+    loopVar = labelToTime[values];
+  }
+);
 
 var playBtn = document.getElementById("play");
 var stopBtn = document.getElementById("stop");
@@ -687,22 +691,14 @@ var rangeMax = sliderOptions.range.max;
 var loopVar = rangeMin;
 var playTimeSeries;
 playBtn.addEventListener("click", function (ev) {
-
-
   if (loopVar >= rangeMax) loopVar = rangeMin;
   playTimeSeries = setInterval(function () {
     if (loopVar > rangeMax) {
       clearInterval(playTimeSeries);
       // alert('clean');
-
     }
-    
-    
 
-
-
-    if (window.mobileAndTabletCheck())
-      var chartID = "my_dataviz2";
+    if (window.mobileAndTabletCheck()) var chartID = "my_dataviz2";
     else var chartID = "my_dataviz";
     var timeSeriesElem = document.getElementById(chartID);
     console.log("llllllllll", timeSeriesElem.innerHTML);
@@ -715,8 +711,7 @@ playBtn.addEventListener("click", function (ev) {
     // reDraw(filename);
     loopVar += 60 * 60 * 1000;
   }, hourLoopMillSeconds);
-
-})
+});
 stopBtn.addEventListener("click", function (ev) {
   clearInterval(playTimeSeries);
-})
+});
