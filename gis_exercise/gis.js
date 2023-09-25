@@ -681,7 +681,7 @@ function getColorFromColorLevel(value,colorLevel)
     "WSPD_10":speedLayer,
     "TEMP":tempLayer,
     "HUMI":humiLayer,
-    "wl":wlLayer,
+    // "wl":wlLayer,
     "WDIR_10":wdirLayer,
     "windbarb":windBarbLayer,
     "station":staionLayer,
