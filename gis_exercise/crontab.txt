@@ -1,0 +1,4 @@
+############# test and remove recently#############
+#* * * * * /home/cptmain/anaconda3_kelvin/bin/python /srv/www/htdocs/gis_exercise/genJson2.py >&  /srv/www/htdocs/gis_exercise/log.txt
+0 0 * * * sh  /srv/www/htdocs/gis_exercise/rm_json.sh >&  /srv/www/htdocs/gis_exercise/rm_log.txt
+##########################

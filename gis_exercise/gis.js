@@ -31,9 +31,10 @@ function initDemoMap() {
   );
 
   var Esri_DarkGreyCanvas = L.tileLayer(
-    "http://{s}.sm.mapstack.stamen.com/" +
-      "(toner-lite,$fff[difference],$fff[@23],$fff[hsl-saturation@20])/" +
-      "{z}/{x}/{y}.png",
+    "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    // "http://{s}.sm.mapstack.stamen.com/" +
+    //   "(toner-lite,$fff[difference],$fff[@23],$fff[hsl-saturation@20])/" +
+    //   "{z}/{x}/{y}.png",
     {
       attribution: "", //'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, ' +
       //'NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community',
@@ -45,7 +46,7 @@ function initDemoMap() {
     test: positron,
     Street: Esri_WorldImagery,
     Satellite: Esri_satImagery,
-    "Grey Canvas": Esri_DarkGreyCanvas,
+    "Default Map": Esri_DarkGreyCanvas,
   };
 
   var map = L.map("map", {
