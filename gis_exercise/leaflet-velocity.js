@@ -1260,7 +1260,8 @@ var Windy = function Windy(params) {
       particleCount *= PARTICLE_REDUCTION;
     }
 
-    var fadeFillStyle = "rgba(0, 0, 0, ".concat(OPACITY, ")");
+    var fadeFillStyle = "rgba(255,255,255,1)";
+    // "rgba(0, 0, 0, ".concat(OPACITY, ")");
     var particles = [];
 
     for (var i = 0; i < particleCount; i++) {
@@ -1324,7 +1325,8 @@ var Windy = function Windy(params) {
       buckets.forEach(function (bucket, i) {
         if (bucket.length > 0) {
           g.beginPath();
-          g.strokeStyle = colorStyles[i];
+          // g.strokeStyle = colorStyles[i];
+          g.strokeStyle="rgba(255,255,255,1)";
           bucket.forEach(function (particle) {
             g.moveTo(particle.x, particle.y);
             g.lineTo(particle.xt, particle.yt);

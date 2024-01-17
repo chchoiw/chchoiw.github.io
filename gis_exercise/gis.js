@@ -43,9 +43,9 @@ function initDemoMap() {
   );
 
   var baseLayers = {
-    test: positron,
-    Street: Esri_WorldImagery,
-    Satellite: Esri_satImagery,
+    // test: positron,
+    // Street: Esri_WorldImagery,
+    // Satellite: Esri_satImagery,
     "Default Map": Esri_DarkGreyCanvas,
   };
 
@@ -542,6 +542,7 @@ var wdirLayer = L.velocityLayer({
     topoJsonPath: "macau.topojson",
     stationGeoPath: "awsData/stationPoint/windbarb.json",
     // ['ms', 'k/h', 'mph', 'kt']
+    // colorScale: ['rgb(255,255,0)'], 
   },
   data: wdirdata,
   frameRate: 30,
