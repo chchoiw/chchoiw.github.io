@@ -1329,7 +1329,8 @@ var Windy = function Windy(params) {
         if (bucket.length > 0) {
           g.beginPath();
           // g.strokeStyle = colorStyles[i];
-          g.strokeStyle="rgba(255,255,255,1)";
+          g.strokeStyle=colorStyles[i];
+          // "rgba(255,255,255,1)";
           bucket.forEach(function (particle) {
             g.moveTo(particle.x, particle.y);
             g.lineTo(particle.xt, particle.yt);
