@@ -1,5 +1,5 @@
 ---
-title: '統計分析方法'
+title: '統計2-分析方法'
 date: 2022-05-19
 permalink: /posts/2022/05/statistic_analysis/
 tags:
@@ -18,7 +18,7 @@ category:
 - [方差分析](#方差分析)
 - [屬性數據分析(列聯表)](#屬性數據分析列聯表)
   - [無序變量](#無序變量)
-    - [$\chi$檢驗](#chi檢驗)
+    - [$\\chi$檢驗](#chi檢驗)
     - [Fisher exact test](#fisher-exact-test)
   - [有序變量關聯性](#有序變量關聯性)
   - [Mentel-Haenszel](#mentel-haenszel)
