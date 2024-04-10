@@ -470,7 +470,7 @@ $$
 2. 其估計參數和總體矩的函數, 亦用估計參數和樣本矩代替
 
 $$
-E(X)=\frac{1}{\theta} \implies  \bar X=frac{1}{\hat \theta}
+E(X)=\frac{1}{\theta} \implies  \bar X=\frac{1}{\hat \theta}
 $$
 
 ## 極大似然估計
