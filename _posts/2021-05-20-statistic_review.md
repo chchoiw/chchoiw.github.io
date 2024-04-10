@@ -42,8 +42,9 @@ category:
   - [$F$分布](#f分布)
   - [$t$分布](#t分布)
 - [參數估計](#參數估計)
-  - [無偏性](#無偏性)
+  - [矩法估計](#矩法估計)
   - [相合性](#相合性)
+  - [無偏性](#無偏性)
   - [有效性](#有效性)
 - [假設檢驗](#假設檢驗)
   - [大樣本檢驗](#大樣本檢驗)
@@ -455,20 +456,47 @@ $$
 
 # 參數估計
 
+
+
+
+
 - $ \hat \theta$ 是估計出來
 - $\theta$ 是參數
-  
+
+## 矩法估計
+
+1. 樣本矩代替總體矩，矩可以是中心矩或原點矩
+2. 其估計參數和總體矩的函數, 亦用估計參數和樣本矩代替
+
+$$
+E(X)=\frac{1}{\theta} \implies  \bar X=frac{1}{\hat \theta}
+$$
+
+
+
+## 相合性
+
+- 相合性是滿足以下: 
+
+$$
+lim_{n \leftarrow \infty} P{ | \hat \theta -\theta| \geq \epsilon} =0
+$$
+
+- 定理, 若滿足以下
+
+$$
+lim_{n \leftarrow \infty} E(\hat \theta) = \theta , \quad lim_{n \leftarrow \infty} Var(\hat \theta) = 0
+$$
+
+則$\hat \theta$ 是相合
+
+
 ## 無偏性
 
 $$
 E(\hat \theta)=\theta
 $$
 
-## 相合性
-
-$$
-lim_{n \leftarrow \infty} P{ | \hat \theta -\theta| \geq \epsilon} ==0
-$$
 
 - 刀切法(Jackknife)
   - P304
