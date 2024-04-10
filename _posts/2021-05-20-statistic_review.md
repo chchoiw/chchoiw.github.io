@@ -475,7 +475,13 @@ $$
 
 ## 極大似然估計
 
-1. 
+$$
+L(\theta)=L(\thata,X_1,X_2,\dots,X_n)=f(x_1,\theat)f(x_2,\theat)\dots f(x_n,\theat)
+$$
+
+$$
+L(\hat \theta)=\max_{\theta} L(\theta)
+$$
 
 ## 相合性
 
