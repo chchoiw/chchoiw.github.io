@@ -479,7 +479,7 @@ $$
 - $f$ 為概率函數
   
 $$
-L(\theta)=L(\thata,X_1,X_2,\dots,X_n)=f(x_1,\theat)f(x_2,\theat)\dots f(x_n,\theat)
+L(\theta)=L(\theta,X_1,X_2,\dots,X_n)=f(x_1,\theta)f(x_2,\theta)\dots f(x_n,\theta)
 $$
 
 $$
