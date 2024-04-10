@@ -86,7 +86,7 @@ category:
 1. $E(X\pmY)=E(X)\pm E(Y)$
 2. $E(aX)=aE(X)$
 3. $E(c)=c$
-4. $E(\bar X)=\frac{E(X)}{n}$
+4. $E(\bar X)=E(X_i) \quad \forall i$
    
 ## $var$
 
