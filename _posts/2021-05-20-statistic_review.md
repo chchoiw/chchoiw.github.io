@@ -252,7 +252,7 @@ $$
 ### 正態分佈
 
 $$
-f(x)=\frac{1}{\sqrt{2\pi \sigma} \exp{-\frac{(x-\mu)^2}{2\sigma^2}}}
+f(x)=\frac{1}{\sqrt{2\pi \sigma} }\exp{-\frac{(x-\mu)^2}{2\sigma^2}}
 $$
 
 <br>
@@ -475,6 +475,9 @@ $$
 
 ## 極大似然估計
 
+
+- $f$ 為概率函數
+  
 $$
 L(\theta)=L(\thata,X_1,X_2,\dots,X_n)=f(x_1,\theat)f(x_2,\theat)\dots f(x_n,\theat)
 $$
