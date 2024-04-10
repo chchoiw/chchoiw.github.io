@@ -16,6 +16,7 @@ category:
   - [cov](#cov)
 - [條件概率](#條件概率)
 - [一些基本的分佈](#一些基本的分佈)
+  - [常數分佈](#常數分佈)
   - [二次項分佈](#二次項分佈)
   - [幾何分佈](#幾何分佈)
   - [超幾何分佈](#超幾何分佈)
@@ -87,8 +88,9 @@ category:
 
 1. $var(c)=0$
 2. $var(aX)=a^2 var(X)$
-3. 
-4. $var(X)=E(X^2)-E(X)^2$
+3. $var(X\pmY)=var(X)+var(Y)-2Con(X,Y)$
+4. $var(\bar X)=\frac{var(X)}{n}$
+5. $var(X)=E(X^2)-E(X)^2$
    
 
 
@@ -98,6 +100,7 @@ category:
 3. $Cov(X,Y)=E((X-E(X))(Y-E(Y)))=E(XY)-E(X)E(Y)$
 4. $var(X\pmY)=var(X)+var(Y)-2Con(X,Y)$
 5. $\rho=\frac{\rho}{\sqrt{var(X)} \sqrt{var(Y)}}$
+6. $X,Y$獨立, 則$Cov(X,Y)=0$
    
 <br>
 # 條件概率
@@ -132,6 +135,11 @@ $$
 
 
 # 一些基本的分佈
+
+## 常數分佈
+
+$$E(X)=b-a \quad var(X)=\frac{b-a}{12}$$
+
 ## 二次項分佈
 - [wiki](https://zh.wikipedia.org/wiki/%E4%BA%8C%E9%A0%85%E5%88%86%E4%BD%88)
 - $n$次伯努利分佈
