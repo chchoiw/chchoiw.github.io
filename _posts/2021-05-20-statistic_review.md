@@ -10,6 +10,10 @@ category:
 
 - [一些基本描述統計](#一些基本描述統計)
   - [信賴區間](#信賴區間)
+- [$期望值E,方差var和協方差Cov$](#期望值e方差var和協方差cov)
+  - [$E$](#e)
+  - [$var$](#var)
+  - [cov](#cov)
 - [條件概率](#條件概率)
 - [一些基本的分佈](#一些基本的分佈)
   - [二次項分佈](#二次項分佈)
@@ -71,9 +75,30 @@ category:
   
 
 
+# $期望值E,方差var和協方差Cov$
+
+## $E$
+1. $E(X\pmY)=E(X)\pm E(Y)$
+2. $E(aX)=aE(X)$
+3. $E(c)=c$
+4. $E(\bar X)=\frac{E(X)}{n}$
+   
+## $var$
+
+1. $var(c)=0$
+2. $var(aX)=a^2 var(X)$
+3. 
+4. $var(X)=E(X^2)-E(X)^2$
+   
 
 
-
+## cov
+1. $Cov(X,Y)$ is bilinear
+2. $Con(aX,bY)=ab Con(X,Y)$
+3. $Cov(X,Y)=E((X-E(X))(Y-E(Y)))=E(XY)-E(X)E(Y)$
+4. $var(X\pmY)=var(X)+var(Y)-2Con(X,Y)$
+5. $\rho=\frac{\rho}{\sqrt{var(X)} \sqrt{var(Y)}}$
+   
 <br>
 # 條件概率
 
@@ -563,7 +588,7 @@ $$
 
 
 
-  
+
 
 
 
