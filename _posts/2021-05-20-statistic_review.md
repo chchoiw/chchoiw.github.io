@@ -237,7 +237,7 @@ $$E(X)=\frac{b+a}{2} \quad var(X)=\frac{b-a}{12}$$
 ### 指數分佈
 
 $$
-f(x)=\lambda exp(-\lambda x) \quad x \lq 0
+f(x)=\lambda \exp(-\lambda x) \quad x > 0
 $$
 
 
@@ -349,7 +349,8 @@ $$
 
 $$
 \frac{\sum X_i-E(\sum X_i)}{ \text{Var}(\sum X_i)}=
-\frac{\sum X_i -n\mu}{\sigma\sqrt{n}}
+\frac{\sum X_i -n\mu}{\sigma\sqrt{n}}=
+\frac{\frac{\sum X_i}{n} -\mu}{\frac{\sigma}{\sqrt{n}}}
   \rightarrow N(0,1)
 $$
 
@@ -367,7 +368,7 @@ $$
 
 
 $$
-\text{Pr}(|X-\mu|\geq k \sigma) \leq \frac{1}{k^2}
+\text{Pr}(| \frac{\bar X-\frac{\mu}{n}}{\frac{\sigma}{\sqrt{n}}}|\geq b ) \leq \frac{1}{b^2}
 $$
 
 ## 大數法則
