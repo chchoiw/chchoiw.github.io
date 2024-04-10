@@ -83,7 +83,7 @@ category:
 # $期望值E,方差var和協方差Cov$
 
 ## $E$
-1. $E(X\pmY)=E(X)\pm E(Y)$
+1. $E(X\pm Y)=E(X)\pm E(Y)$
 2. $E(aX)=aE(X)$
 3. $E(c)=c$
 4. $E(\bar X)=E(X_i) \quad \forall i$
@@ -92,7 +92,7 @@ category:
 
 1. $var(c)=0$
 2. $var(aX)=a^2 var(X)$
-3. $var(X\pmY)=var(X)+var(Y)-2Con(X,Y)$
+3. $var(X\pm Y)=var(X)+var(Y)-2Con(X,Y)$
 4. $var(\bar X)=\frac{var(X)}{n}$
 5. $var(X)=E(X^2)-E(X)^2$
    
@@ -368,7 +368,7 @@ $$
 
 
 $$
-\text{Pr}(| \frac{\bar X-\frac{\mu}{n}}{\frac{\sigma}{\sqrt{n}}}|\geq b ) \leq \frac{1}{b^2}
+\text{Pr}(| \frac{\bar X-\mu}{\frac{\sigma}{\sqrt{n}}}|\geq b ) \leq \frac{1}{b^2}
 $$
 
 ## 大數法則
