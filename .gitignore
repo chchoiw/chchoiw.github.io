@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 _site/
 .idea
 
 
+=======
+_site/
+.idea
+.DS_Store
+*/.DS_Store
+
+>>>>>>> origin/master
