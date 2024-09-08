@@ -1,6 +1,0 @@
-1. find regex and copy
-
-find . -regex "\./video_220101_[0-9][0-9]\(00\)00\.jpg" --
-
-
- ls -l|egrep "video_220101_[0-9][0](00)00"
