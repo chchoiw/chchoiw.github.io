@@ -24,6 +24,11 @@ main:
   - title: "Notes"
     url: /notes/
 
+  - title: "About me"
+    url: /notes/about.md
+
+  - title: "Category"
+    url: /categories/
   # - title: "Contact"
   #   url: /contact/  
     
