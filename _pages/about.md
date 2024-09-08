@@ -23,7 +23,7 @@ email: chchoiw@gmail.com
 # Recent News
 * 2024-10 完成計算機本科自考
 * 2024-02 完成CISSP考試
-* 2023-10 完成[計算機本科自考畢業作品](/gis_exercises/)
+* 2023-10 完成[計算機本科自考畢業作品](/gis_exercise/)
 * 2021-05 準備溫習，溫習後繼續自考計算機本科
 * 2021-03 準備自考計算機本科
 * 2020-07 學習[After Effect](https://www.adobe.com/products/aftereffects.html), 做了一些作品
