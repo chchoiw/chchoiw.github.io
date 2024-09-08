@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 permalink: /
 title: "About me"
