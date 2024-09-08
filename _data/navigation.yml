@@ -17,18 +17,22 @@ main:
     
   # - title: "Portfolio"
   #   url: /portfolio/
-        
-  - title: "Blogs"
+
+  - title: "About me"
+    url: /pages/about.md
+
+  - title: "Blogs(years)"
     url: /year-archive/
 
   - title: "Notes"
     url: /notes/
 
-  - title: "About me"
-    url: /notes/about.md
-
-  - title: "Category"
+  - title: "Blog(Category)"
     url: /categories/
+
+  - title: "Blogs(tag)"
+    url: /tags/
+
   # - title: "Contact"
   #   url: /contact/  
     
