@@ -19,7 +19,7 @@ main:
   #   url: /portfolio/
 
   - title: "About me"
-    url: /pages/about
+    url: /about/
 
   - title: "Blogs(years)"
     url: /year-archive/
