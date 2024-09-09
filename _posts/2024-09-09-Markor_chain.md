@@ -84,8 +84,9 @@ $$
 $$\sum_{n}n f_{j,j}(n) = \infty
 $$
 
-$$d_i=gcd{k|P_{i,i}(k)>0}$$
+$$d_i=gcd\{k|P_{i,i}(k)>0\}$$
 
+- when $d_i=1$, the diagram is non-periodic
 
 ## stable converage
 - if finite state Diagram D is irreducible and non-perodic, then 
@@ -96,7 +97,7 @@ $$
 - if finite states Diagram D is irreducibe and recurrent, then 
 
 $$
-lim_{n\rightarrow \infity}\sum_{k=1}^n\frac{1}{k}P_{i,j}(k) \rightarrow \hat \pi_{i,j}
+lim_{n\rightarrow \infty}\sum_{k=1}^n\frac{1}{k}P_{i,j}(k) \rightarrow \hat \pi_{i,j}
 $$
 
 
