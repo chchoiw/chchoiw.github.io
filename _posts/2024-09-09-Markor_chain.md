@@ -10,6 +10,8 @@ category:
 
 ## Markov Chain
 
+
+
 $$
 P(X_n=x_n|X_{n-1}=x_{n-1},\dots,X_{1}=x_1)=P(X_n=x_n|X_{n-1}=x_{n-1})
 $$
