@@ -22,7 +22,7 @@ $$
 
 
 ## Reachable
-- when $i,j$ is reachable, there exists $n$ such that $P_{i,j}(n)>0$, i.e.  $i \leftarrow j$
+- when $i,j$ is reachable, there exists $n$ such that $P_{i,j}(n)>0$, i.e.  $i \rightarrow j$
 
 
 ## Commutative
@@ -53,7 +53,7 @@ $$\sum_{n} P_{i,j}(n)=\infty$$
 - the proof is using 
 
 $$ 
-P_{i,j}(z)&=\delta_{i,j}+f_{i,j}(z)P_{j,j}(z)
+P_{i,j}(z)=\delta_{i,j}+f_{i,j}(z)P_{j,j}(z)
 $$
 
 $$
@@ -93,7 +93,7 @@ $$d_i=gcd\{k|P_{i,i}(k)>0\}$$
 ## stable converage
 - if finite state Diagram D is irreducible and non-perodic, then 
 $$
-P_{i,j}(n) \rightarrow \pi{i,j}
+P_{i,j}(n) \rightarrow \pi_{i,j}
 $$
 
 - if finite states Diagram D is irreducibe and recurrent, then 
