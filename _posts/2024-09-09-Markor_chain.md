@@ -51,9 +51,8 @@ $$\sum_{n} P_{i,j}(n)=\infty$$
 - the proof is using 
 
 $$ 
-\begin{equation}
 P_{i,j}(z)&=\delta_{i,j}+f_{i,j}(z)P_{j,j}(z)
-\end{equation}
+$$
 
 $$
 P_{i,i}(z)=\frac{1}{1-F_{i,j}(z)} 
