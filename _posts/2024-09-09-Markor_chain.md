@@ -1,6 +1,6 @@
 ---
 title: 'Markov Chain'
-date: 2023-06-07
+date: 2024-09-09
 permalink: /posts/2024/09/markov_chain
 tags:
   - Markov Chain, 
