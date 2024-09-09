@@ -78,7 +78,7 @@ $$
 
 - positive recurrent:
 
-$$\sum_{n}n f_{j,j}(n) \le \infty
+$$\sum_{n}n f_{j,j}(n) < \infty
 $$
 
 - null recurrent:
@@ -86,9 +86,11 @@ $$
 $$\sum_{n}n f_{j,j}(n) = \infty
 $$
 
+- when $d_i=1$, the diagram is non-periodic
+
 $$d_i=gcd\{k|P_{i,i}(k)>0\}$$
 
-- when $d_i=1$, the diagram is non-periodic
+
 
 ## stable converage
 - if finite state Diagram D is irreducible and non-perodic, then 
