@@ -20,14 +20,14 @@ $$
 
 
 ## Reachable
-- when $i,j$ is reachable, there exists $n$ such that P_{i,j}(n)>0$, i.e.  $i \leftarrow j$
+- when $i,j$ is reachable, there exists $n$ such that $P_{i,j}(n)>0$, i.e.  $i \leftarrow j$
 
 
 ## Commutative
-- $i \leftrightarrow j$ that means $i \leftarrow j$ and $j \leftarrow $
+- $i \leftrightarrow j$ that means $i \rightarrow j$ and $j \rightarrow i$
 
 ## Closed
-- a set $S$ is defined as closed if a subset $C$ of $S$, $a \in C$, $b \notin C$ , which imples $a \notto b$
+- a set $S$ is defined as closed if a subset $C$ of $S$, $a \in C$, $b \notin C$ , which imples $a \not\to b$
 
 ## Irreducible
 - a set $S$ is irreducible if $S$ do not include closed true subset $C$ 
@@ -45,7 +45,7 @@ $$\sum_{n} f_{i,j}(n) =1$$
 
 or
 
-$$\sum_{n} P_{i,j}(n)=\infity$$
+$$\sum_{n} P_{i,j}(n)=\infty$$
 
 
 - the proof is using 
@@ -61,7 +61,7 @@ $$
 
 where 
 
-$$
+
 $$P_{i,j}(z)=\sum_{n}P_{i,j}(n)z^n$$
 
 - finite state has an elemnent which is recurrent
@@ -77,27 +77,27 @@ $$
 
 - positive recurrent:
 
-$$\sum_{n}n f_{j,j}(n) \le \infinty
+$$\sum_{n}n f_{j,j}(n) \le \infty
 $$
 
 - null recurrent:
 
-$$\sum_{n}n f_{j,j}(n) = \infinty
+$$\sum_{n}n f_{j,j}(n) = \infty
 $$
 
-- $d_i=gcd{k|P_{i,i}(k)>0}
+$$d_i=gcd{k|P_{i,i}(k)>0}$$
 
 
 ## stable converage
 - if finite state Diagram D is irreducible and non-perodic, then 
 $$
-P_{i,j}(n) \leftarrow \pi{i,j}
+P_{i,j}(n) \rightarrow \pi{i,j}
 $$
 
 - if finite states Diagram D is irreducibe and recurrent, then 
 
 $$
-lim_{n\arrow \infity}\sum_{k=1}^n\frac{1}{k}P_{i,j}(k) \leftarrow \hat \pi_{i,j}
+lim_{n\rightarrow \infity}\sum_{k=1}^n\frac{1}{k}P_{i,j}(k) \rightarrow \hat \pi_{i,j}
 $$
 
 
