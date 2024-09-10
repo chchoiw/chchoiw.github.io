@@ -1,12 +1,31 @@
 ---
-title: 'Markov Chain'
+title: 'Stochastic Processs'
 date: 2024-09-09
-permalink: /posts/2024/09/markov_chain
+permalink: /posts/2024/09/stochastic_process
 tags:
-  - Markov Chain, 
+  - Stochastic Process, Markov Chain, Possion Process
 category:
   - Statistic
 ---
+
+
+# Stochastic Process
+
+
+## Possion Process
+
+The stochastic countng satifies the following conditions is defined as Possion Process
+- $N(0) = 0$
+- $N(t)$是indepentent increment process
+
+
+$$ (X_{t_1}-_{t_0}),\dots,(X_{t_{n+1}}-_{t_n})$$ are indepentent
+
+
+- $N(t)$是statoinary increment process
+
+$$(X_{t_1}-_{t_0}) \sim \text{Pission}(\lambda)$$
+
 
 ## Markov Chain
 
@@ -17,7 +36,11 @@ P(X_n=x_n|X_{n-1}=x_{n-1},\dots,X_{1}=x_1)=P(X_n=x_n|X_{n-1}=x_{n-1})
 $$
 
 
-## C-K formular
+## Chapman–Kolmogorov equation
+
+$$
+P_{i,j}(n)=\sum_k P_{i,k}(n) P_{k,j}(n) 
+$$
 
 
 
