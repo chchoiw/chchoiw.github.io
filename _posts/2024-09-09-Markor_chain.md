@@ -16,15 +16,22 @@ category:
 
 The stochastic countng satifies the following conditions is defined as Possion Process
 - $N(0) = 0$
-- $N(t)$是indepentent increment process
+- $N(t)$ is indepentent increment process
 
 
 $$ (X_{t_1}-_{t_0}),\dots,(X_{t_{n+1}}-_{t_n})$$ are indepentent
 
 
-- $N(t)$是statoinary increment process
+- $N(t)$ is statoinary increment process
 
 $$(X_{t_1}-_{t_0}) \sim \text{Pission}(\lambda)$$
+
+
+
+Using Generating function $G(z,t)=E(z^(N(t)))=sum_k z^k P(N(t)=k)$ to find that possion process is 
+
+$$P(N(t) = k) = \frac{(\lambda t)^k}{k!} \exp{-\lambda t}$$
+
 
 
 ## Markov Chain
