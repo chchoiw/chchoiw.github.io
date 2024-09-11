@@ -9,10 +9,10 @@ category:
 ---
 
 
-# Stochastic Process
 
 
-## Possion Process
+
+# Possion Process
 
 The stochastic countng satifies the following conditions is defined as Possion Process
 - $N(0) = 0$
@@ -34,9 +34,13 @@ $$P(N(t) = k) = \frac{(\lambda t)^k}{k!} \exp{-\lambda t}$$
 
 
 
-## Markov Chain
+# Markov Process
 
-
+- [interveiw questions 1](https://www.robots.ox.ac.uk/~lsgs/posts/2020-12-13-recursion-markov.html)
+- [interview questions 2](https://analyticsarora.com/9-unique-machine-learning-interview-questions-on-markov-chains/)
+- [Markov notes](https://blog.csdn.net/weixin_45768147/article/details/131738269?spm=1001.2014.3001.5502)
+- [Markov videos](https://www.bilibili.com/video/BV11b421E7nh/?spm_id_from=333.999.0.0&vd_source=1e739a4b8bd8d83d5b7daf376a61bdf3)
+- [Markov videos(easier)](https://www.bilibili.com/video/BV1Kt4y1C7Z7/?spm_id_from=333.337.search-card.all.click)
 
 $$
 P(X_n=x_n|X_{n-1}=x_{n-1},\dots,X_{1}=x_1)=P(X_n=x_n|X_{n-1}=x_{n-1})
